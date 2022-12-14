@@ -1,0 +1,39 @@
+.navigation {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  .logo{
+    margin-left:-30px;
+  }
+  button {
+    width: 194px;
+    height: 67px;
+    left: 1180px;
+    top: 59px;
+    background: #c63a2f;
+    border-radius: 10px;
+    border: 1px solid #c63a2f;
+    font-family: '\u4d';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 34px;
+    color: #ffffff;
+  }
+  .header-text {
+    font-family: 'Londrina Solid' cursive;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 41px;
+    color: #ffffff;
+
+    span {
+      color: red;
+      font-weight: 900;
+    }
+  }
+}

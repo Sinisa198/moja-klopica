@@ -1,0 +1,92 @@
+.App {
+  background: url('../../images/background-header.png') no-repeat;
+  height: 800px;
+}
+.span-heart {
+  background: #c63a2f;
+  border-radius: 40px 0px 0px 40px;
+  width: 100%;
+  color: white;
+}
+.icon-favorite {
+  background: #c63a2f;
+  border-radius: 40px 0px 0px 40px;
+  width: 50px;
+  height: 30px;
+  color: #ffff;
+}
+.icon-arrow {
+  width: 50px;
+  height: 50px;
+  background: #c63a2f;
+  border-radius: 30px;
+  color: #ffff;
+}
+
+.forms-input {
+  width: 527px;
+  height: 67px;
+  left: 90px;
+  top: 590px;
+  background: #ffffff;
+  border-radius: 40px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+.forms-main {
+  width: 400px;
+  height: 83px;
+  margin-left: 90px;
+  margin-top: 250px;
+  font-family: 'Londrina Solid';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #c63a2f;
+
+  h2 {
+    width: 400px;
+    height: 83px;
+    left: 90px;
+    top: 395px;
+    font-family: 'Londrina Solid';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 83px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #c63a2f;
+  }
+  h4 {
+    width: 477px;
+    height: 66px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 33px;
+    color: #ffffff;
+  }
+  .divv {
+    background-color: #ffff;
+    border-radius: 40px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    width: max-content;
+
+    input {
+      all: unset;
+      text-align: center;
+      border-radius: 40px;
+      width: 500px;
+      height: 50px;
+      background-color: #ffff;
+    }
+  }
+}

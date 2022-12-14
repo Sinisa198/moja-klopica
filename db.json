@@ -1,0 +1,100 @@
+{
+  "listrestoran": [
+    {
+      "img": "/images/pasta.png",
+      "name": "Lorem Ipsum",
+      "description": "RESTORANI * Lorem Ipsum ",
+      "minutes": " 0.2km 25min",
+      "stars": "4.2 zvezda",
+      "free": "Besplatna dostava"
+    },
+    {
+      "img": "topfood",
+      "name": "Lorem Ipsum",
+      "description": "RESTORANI * Lorem Ipsum ",
+      "minutes": " 0.2km 25min",
+      "stars": "4.2 zvezda",
+      "free": "Besplatna dostava"
+    },
+    {
+      "img": "lorem2",
+      "name": "Lorem Ipsum",
+      "description": "RESTORANI * Lorem Ipsum ",
+      "minutes": "0.2km 25min",
+      "stars": "4.2 zvezda",
+      "free": "Besplatna dostava"
+    },
+    {
+      "img": "topfood",
+      "name": "Lorem Ipsum",
+      "description": "RESTORANI * Lorem Ipsum ",
+      "minutes": " 0.2km 25min",
+      "stars": "4.2 zvezda",
+      "free": "Besplatna dostava"
+    },
+    {
+      "img": "lorem2",
+      "name": "Restoran Lorem Ipsum",
+      "description": "RESTORAN * Lorem Ipsum ",
+      "minutes": "0.2km 25min",
+      "stars": "4.2 zvezda",
+      "free": "Besplatna dostava"
+    },
+    {
+      "img": "pasta",
+      "name": "Restoran Lorem Ipsum",
+      "description": "RESTORANI * Lorem Ipsum",
+      "minutes": "0.2km 25min",
+      "stars": "4.2 zvezda",
+      "free": "Besplatna dostava"
+    },
+    {
+      "img": "lorem1",
+      "name": "Restoran Lorem Ipsum",
+      "description": "RESTORANI * Lorem Ipsum ",
+      "minutes": "0.2km 25min",
+      "stars": "4.2 zvezda",
+      "free": "Besplatna dostava"
+    },
+    {
+      "img": "pasta",
+      "name": "Restoran Lorem Ipsum",
+      "description": "RESTORANI * Lorem Ipsum",
+      "minutes": "0.2km 25min",
+      "stars": "4.2 zvezda",
+      "free": "Besplatna dostava"
+    },
+    {
+      "img": "topfood",
+      "name": "Restoran Lorem Ipsum",
+      "description": "RESTORANI * Lorem Ipsum",
+      "minutes": "0.2km 25min",
+      "stars": "4.2 zvezda",
+      "free": "Besplatna dostava"
+    },
+    {
+      "img": "topfood",
+      "name": "Restoran Top FOOD 021",
+      "description": "RESTORANI * Domaca Kuhinja",
+      "minutes": "0.2km 25min",
+      "stars": "4.2 zvezda",
+      "free": "Besplatna dostava"
+    },
+    {
+      "img": "atina",
+      "name": "Restoran Atina",
+      "description": "RESTORANI * Cafe Bar",
+      "minutes": "0.2km 25min",
+      "stars": "4.5 zvezda",
+      "free": "Besplatna dostava"
+    },
+    {
+      "img": "mima",
+      "name": "Restoran Mima's fit 'n' sit",
+      "description": "RESTORANI * Veganska Kuhinja",
+      "minutes": "0.2km 25min",
+      "stars": "4.0 zvezda",
+      "free": "Besplatna dostava"
+    }
+  ]
+}

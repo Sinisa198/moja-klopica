@@ -1,0 +1,24 @@
+.restoran-top-food {
+  background: url('../../images/background-restoran.png');
+  height: 500px;
+  padding-top:20px;
+  padding-left:20px;
+  .burger-logo {
+    display: flex;
+    width: 132px;
+    height: 63.06px;
+    left: 52px;
+    top: 60px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+      drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  // .restoran-title {
+  //   font-family: 'Londrina Solid';
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 32px;
+  //   line-height: 38px;
+  //   letter-spacing: 0.05em;
+  //   color:red;
+  // }
+}
