@@ -131,7 +131,9 @@ const ListRestorans = () => {
           </div>
         </div>
       ))}
-    <button className='button-more'>Vidi vise</button>
+      <div className='button-restoran'>
+        <button>Click</button>
+      </div>
     </div>
   );
 };

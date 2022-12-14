@@ -6,8 +6,8 @@ const Forms = () => {
   return (
     <div className='forms-main'>
       <div className='forms-text'>
-        <h2>MOJA KLOPICA</h2>
-        <h4>
+        <h2 className='form-title'>MOJA KLOPICA</h2>
+        <h4 className='form-text'>
           Lorem ipsum dolor sit amet,
           <br />
           consectetur adipiscing elit.
@@ -17,7 +17,7 @@ const Forms = () => {
         <div className='divv'>
           <span><MdFavoriteBorder className='icon-favorite'/></span>
           <input placeholder='Unesi adresu na kojoj se nalazis'/>
-          <span><MdOutlineArrowForwardIos className='icon-arrow'/></span>
+          <span className='span-arrow'><MdOutlineArrowForwardIos className='icon-arrow'/></span>
         </div>
       </div>
     </div>

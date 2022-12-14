@@ -11,11 +11,13 @@
   p {
     text-decoration: none;
   }
+  .button-restoran{
+    display: flex;
+  }
   .image-for-listrestoran {
     width: 378.01px;
     height: 198.6px;
-    left: 530.71px;
-    top: 954.03px;
+    margin-left:15px;
     margin-top: 20px;
     border-radius: 4.7971px;
   }

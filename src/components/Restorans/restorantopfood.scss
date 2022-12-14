@@ -1,8 +1,8 @@
 .restoran-top-food {
   background: url('../../images/background-restoran.png');
-  height: 500px;
-  padding-top:20px;
-  padding-left:20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 200px;
   .burger-logo {
     display: flex;
     width: 132px;
@@ -12,13 +12,102 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
       drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
-  // .restoran-title {
-  //   font-family: 'Londrina Solid';
-  //   font-style: normal;
-  //   font-weight: 400;
-  //   font-size: 32px;
-  //   line-height: 38px;
-  //   letter-spacing: 0.05em;
-  //   color:red;
-  // }
+  .input {
+    display: flex;
+    gap: 2.1rem;
+    border: 1px solid #aaa;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-left: 350px;
+    background-color: #ffff;
+  }
+  .background-for-box {
+    width: 1316px;
+    height: 299px;
+  }
+  .box-together {
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+  .second-box {
+    width: 1316px;
+    background-color: #ffff;
+    border-radius: 0 0 30px 30px;
+    margin-top: -20px;
+    height: 299px;
+  }
+  .logo-for-restoran {
+    margin-left: 100px;
+    margin-top: -100px;
+  }
+  .span-green {
+    color: #00872f;
+  }
+  .paragraf-restoran {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8a8a8a;
+  }
+  .second-paragraf {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8a8a8a;
+  }
+  .title-for-restoran {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 75px;
+    color: #333333;
+  }
+  .text-for-restoran {
+    padding-top: 40px;
+    margin-left: 119px;
+  }
+  input {
+    all: unset;
+  }
+  .prefix {
+    border-radius: 40px 0px 0px 40px;
+  }
+  .box {
+    margin-top: 20px;
+    width: 1316px;
+    height: 299px;
+    box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+  }
+  .prefix,
+  .suffix {
+    color: #ffff;
+    margin-top: 10px;
+    background-color: #c63a2f;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    border-radius: 30px;
+  }
+  .button-restoran {
+    width: 194px;
+    height: 67px;
+    left: 1180px;
+    top: 59px;
+    background: #c63a2f;
+    border-radius: 10px;
+    font-family: 'Nunito';
+    border: 1px solid #c63a2f;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 34px;
+    margin-left: 270px;
+    color: #ffffff;
+  }
 }
