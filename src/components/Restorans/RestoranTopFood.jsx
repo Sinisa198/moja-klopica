@@ -1,6 +1,6 @@
 import React from 'react';
 import logoRestoran from '../../images/logo-restoran.png';
-import miniLogo from '../../images/miniLogo.png'
+import miniLogo from '../../images/miniLogo.png';
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import { MdFavoriteBorder } from 'react-icons/md';
 import topFood from '../../images/restorantopfood.png';
@@ -29,13 +29,34 @@ const RestoranTopFood = () => {
       <div className='box-together'>
         <div className='box'>
           <img src={topFood} alt='' className='background-for-box' />
-          <img src={logoRestoran} alt='' className='logo-for-restoran'/>
+          <img src={logoRestoran} alt='' className='logo-for-restoran' />
         </div>
         <div className='second-box'>
           <div className='text-for-restoran'>
-          <h2 className='title-for-restoran'>Restoran Top Food 021</h2>
-          <p className='paragraf-restoran'>RESTORANI * Domaca kuhinja * 4,2  60 ocena Besplatna dostava</p>
-          <p className='second-paragraf'><span className='span-green'> Otvoreno sad </span>* Zatvara se u 23:30 </p>
+            <h2 className='title-for-restoran'>Restoran Top Food 021</h2>
+            <p className='paragraf-restoran'>
+              RESTORANI * Domaca kuhinja * 4,2 60 ocena Besplatna dostava
+            </p>
+            <p className='second-paragraf'>
+              <span className='span-green'> Otvoreno sad </span>* Zatvara se u
+              23:30{' '}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className='navigation-menu'>
+        <div className='nav'>
+          <div className='nav-restoran'>
+            <p>O restoranu</p>
+          </div>
+          <div className='nav-meni'>
+            <p>Meni</p>
+          </div>
+          <div className='nav-utisci'>
+            <p>Utisci</p>
+          </div>
+          <div className='nav-galerija'>
+            <p>Galerija</p>
           </div>
         </div>
       </div>
