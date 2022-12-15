@@ -100,7 +100,7 @@ const RestoranTopFood = () => {
               <p>Svetozala Miletica 26, 21000 Novi Sad</p>
             </div>
             <div className='phone-restoran'>
-              <img src={Phone} alt='' />
+              <img src={Phone} alt=''  className='phone-image' />
               <p>0644226471</p>
             </div>
             <img src={map} className='image-map' alt='' />{' '}
