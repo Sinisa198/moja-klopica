@@ -9,12 +9,14 @@ import RestoranIcon from '../../images/Vector.png';
 import Notepad from '../../images/notepad.png';
 import Star from '../../images/star.png';
 import Picture from '../../images/picture.png';
-
+import Burger from '../../images/burger.png';
+import Location from '../../images/location.png';
+import Phone from '../../images/phone.png';
 const RestoranTopFood = () => {
   return (
     <div className='restoran-top-food'>
       <div className='burger-logo'>
-        TEST
+        <img src={Burger} className='burger-meni' alt='' />
         <img src={miniLogo} alt='' className='logo-restoran' />
         <div>
           <p className='restoran-paragraf'>Moja klopica</p>
@@ -53,7 +55,7 @@ const RestoranTopFood = () => {
       <div className='navigation-menu'>
         <div className='nav'>
           <div className='nav-restoran'>
-            <img src={RestoranIcon}   className='meni-icon' alt='' />
+            <img src={RestoranIcon} className='meni-icon' alt='' />
             <p className='paragraf-meni'>O restoranu</p>
           </div>
           <div className='nav-meni'>
@@ -61,11 +63,11 @@ const RestoranTopFood = () => {
             <p className='paragraf-meni'>Meni</p>
           </div>
           <div className='nav-impressions'>
-            <img src={Star} className='meni-icon' alt=''/>
+            <img src={Star} className='meni-icon' alt='' />
             <p className='paragraf-meni'>Utisci</p>
           </div>
           <div className='nav-galery'>
-            <img src={Picture} className='meni-icon' alt=''/>
+            <img src={Picture} className='meni-icon' alt='' />
             <p className='paragraf-meni'>Galerija</p>
           </div>
         </div>
@@ -93,8 +95,14 @@ const RestoranTopFood = () => {
           </p>
           <div className='location'>
             <p>Restoran Top Food 021</p>
-            <p>Svetozala Miletica 26, 21000 Novi Sad</p>
-            <p>0644226471</p>
+            <div className='location-restoran'>
+              <img src={Location} alt='' />
+              <p>Svetozala Miletica 26, 21000 Novi Sad</p>
+            </div>
+            <div className='phone-restoran'>
+              <img src={Phone} alt='' />
+              <p>0644226471</p>
+            </div>
             <img src={map} className='image-map' alt='' />{' '}
             {/*Stavljena slika samo zbog pregleda*/}
           </div>

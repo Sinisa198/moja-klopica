@@ -18,6 +18,11 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
       drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
+  .burger-meni {
+    width: 30px;
+    margin-top: 20px;
+    height: 20px;
+  }
   .nav-galery,
   .nav-impressions,
   .nav-restoran,
@@ -27,12 +32,12 @@
   .meni-icon {
     width: 25px;
     height: 25px;
-    margin-top:30px;
-    margin-left:85px;
+    margin-top: 30px;
+    margin-left: 85px;
   }
-  .paragraf-meni{
-    margin-top:35px;
-    margin-left:15px;
+  .paragraf-meni {
+    margin-top: 35px;
+    margin-left: 15px;
   }
   .input {
     display: flex;
@@ -40,7 +45,7 @@
     border: 1px solid #aaa;
     border-radius: 40px;
     margin-top: 10px;
-    margin-left: 350px;
+    margin-left: 150px;
     background-color: #ffff;
   }
   .text-restoran {
@@ -76,6 +81,20 @@
   .location {
     margin-top: 35px;
   }
+  .restoran-paragraf {
+    font-family: 'Londrina Solid';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    width: 200px;
+    margin-left:5px;
+    margin-top:10px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #c63a2f;
+  }
   .restoran-hr {
     width: 1139px;
     height: 1px;
@@ -107,7 +126,7 @@
     color: #00872f;
   }
   .navigation-menu {
-    margin-left:-20px;
+    margin-left: -20px;
     width: 1440px;
     height: 1569px;
     background: #f3f1f0;
@@ -224,6 +243,12 @@
     font-size: 30px;
     border-radius: 30px;
   }
+  .phone-restoran, .location-restoran{
+    display: flex;
+  }
+  .phone-restoran{
+    width: 25px;
+  }
   .button-restoran {
     width: 194px;
     height: 67px;
@@ -237,7 +262,7 @@
     font-weight: 800;
     font-size: 25px;
     line-height: 34px;
-    margin-left: 270px;
+    margin-left: 310px;
     color: #ffffff;
   }
 }
