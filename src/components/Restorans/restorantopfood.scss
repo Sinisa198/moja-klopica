@@ -87,8 +87,8 @@
     font-weight: 400;
     font-size: 32px;
     width: 200px;
-    margin-left:5px;
-    margin-top:10px;
+    margin-left: 5px;
+    margin-top: 10px;
     line-height: 38px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -107,7 +107,7 @@
     height: 394px;
     margin-right: 30px;
     left: 858px;
-    margin-top:40px;
+    margin-top: 40px;
     top: 1263px;
     border-radius: 4.7971px;
   }
@@ -244,12 +244,17 @@
     font-size: 30px;
     border-radius: 30px;
   }
-  .phone-restoran, .location-restoran{
+  .phone-restoran,
+  .location-restoran {
     display: flex;
     height: 25px;
   }
-  .phone-restoran{
+  .phone-restoran {
     width: 25px;
+  }
+  .three-div {
+    margin-left: -900px;
+    margin-top: 700px;
   }
   .button-restoran {
     width: 194px;
