@@ -5,7 +5,9 @@ import Forms from './components/Forms/Forms';
 import ListRestorans from './components/ListRestorans/ListRestorans';
 import Footer from './components/Footer/Footer';
 import RestoranTopFood from './components/Restorans/RestoranTopFood';
-
+import Meni from './components/Restorans/Meni/Meni';
+import Galery from './components/Restorans/Galery/Galery';
+import Impressions from './components/Restorans/Impressions/Impressions';
 const App = () => {
   return (
     <div className='App'>
@@ -21,6 +23,9 @@ const App = () => {
         <Route path='/forms' element={<Forms />} />
         <Route path='/listrestoran' element={<ListRestorans />} />
         <Route path='/footer' element={<Footer />} />
+        <Route path='/meni' element={<Meni />} />
+        <Route path='/impressions' element={<Impressions />} />
+        <Route path='/galery' element={<Galery />} />
       </Routes>
     </div>
   );

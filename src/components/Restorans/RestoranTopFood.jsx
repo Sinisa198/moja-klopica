@@ -12,7 +12,64 @@ import Picture from '../../images/picture.png';
 import Burger from '../../images/burger.png';
 import Location from '../../images/location.png';
 import Phone from '../../images/phone.png';
+import listpicture from '../../images/listpicture.png';
+import { useNavigate } from 'react-router';
+import { key } from 'localforage';
 const RestoranTopFood = () => {
+  const listpictures = [
+    {
+      image: listpicture,
+      title: 'Lorem Ipsum',
+      description: 'RESTORANI * Lorem Ipsum',
+      rating: '4.2',
+    },
+    {
+      image: listpicture,
+      title: 'Lorem Ipsum',
+      description: 'RESTORANI * Lorem Ipsum',
+      rating: '4.2',
+    },
+    {
+      image: listpicture,
+      title: 'Lorem Ipsum',
+      description: 'RESTORANI * Lorem Ipsum',
+      rating: '4.2',
+    },
+    {
+      image: listpicture,
+      title: 'Lorem Ipsum',
+      description: 'RESTORANI * Lorem Ipsum',
+      rating: '4.2',
+    },
+    {
+      image: listpicture,
+      title: 'Lorem Ipsum',
+      description: 'RESTORANI * Lorem Ipsum',
+      rating: '4.2',
+    },
+    {
+      image: listpicture,
+      title: 'Lorem Ipsum',
+      description: 'RESTORANI * Lorem Ipsum',
+      rating: '4.2',
+    },
+    {
+      image: listpicture,
+      title: 'Lorem Ipsum',
+      description: 'RESTORANI * Lorem Ipsum',
+      rating: '4.2',
+    },
+    {
+      image: listpicture,
+      title: 'Lorem Ipsum',
+      description: 'RESTORANI * Lorem Ipsum',
+      rating: '4.2',
+    },
+  ];
+  const navigate = useNavigate();
+  const navigateToMeni = () => {
+    navigate('/meni');
+  };
   return (
     <div className='restoran-top-food'>
       <div className='burger-logo'>
@@ -60,7 +117,9 @@ const RestoranTopFood = () => {
           </div>
           <div className='nav-meni'>
             <img src={Notepad} className='meni-icon' alt='' />
-            <p className='paragraf-meni'>Meni</p>
+            <p className='paragraf-meni' onClick={() => navigateToMeni()}>
+              Meni
+            </p>
           </div>
           <div className='nav-impressions'>
             <img src={Star} className='meni-icon' alt='' />
@@ -108,6 +167,19 @@ const RestoranTopFood = () => {
           </div>
           <div className='three-div'>
             <p>Slicna mesta</p>
+            <div className='multiple-pictures'>
+              {listpictures.map((item) => (
+                <div className='slide-picture'>
+                  <p>{key.id}</p>
+                  <div className='prop'>
+                    <img src={item.image} alt='' />
+                    <p>{item.title}</p>
+                    <p>{item.description}</p>
+                    <p>{item.rating}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
