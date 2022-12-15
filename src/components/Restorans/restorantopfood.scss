@@ -1,8 +1,8 @@
-@font-face {
-  font-family: 'Poppins';
-  src: url('../../fonts/Poppins/Poppins-Black.ttf');
-  src: url('../../fonts/Poppins/Poppins-Bold.ttf');
-}
+// @font-face {
+//   font-family: 'Poppins';
+//   src: url('../../fonts/Poppins/Poppins-Black.ttf');
+//   src: url('../../fonts/Poppins/Poppins-Bold.ttf');
+// }
 
 .restoran-top-food {
   background: url('../../images/background-restoran.png');
@@ -17,6 +17,22 @@
     top: 60px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
       drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .nav-galery,
+  .nav-impressions,
+  .nav-restoran,
+  .nav-meni {
+    display: flex;
+  }
+  .meni-icon {
+    width: 25px;
+    height: 25px;
+    margin-top:30px;
+    margin-left:85px;
+  }
+  .paragraf-meni{
+    margin-top:35px;
+    margin-left:15px;
   }
   .input {
     display: flex;
@@ -65,10 +81,7 @@
     height: 1px;
     left: 142px;
     top: 1771px;
-    color:gray;
-  }
-  .s{
-    display: table-column
+    color: gray;
   }
   .image-map {
     width: 373px;
@@ -80,6 +93,7 @@
   }
   .second-box {
     width: 1316px;
+    padding-bottom: 50px;
     background-color: #ffff;
     border-radius: 0 0 30px 30px;
     margin-top: -20px;
@@ -93,11 +107,9 @@
     color: #00872f;
   }
   .navigation-menu {
-    margin-left: 40px;
-    width: 1316px;
+    margin-left:-20px;
+    width: 1440px;
     height: 1569px;
-    left: 0px;
-    top: 889px;
     background: #f3f1f0;
     margin-top: 20px;
     height: 5000px;
@@ -116,7 +128,7 @@
     border-style: solid;
     border-color: #c4c4c4;
   }
-  .nav-utisci {
+  .nav-impressions {
     text-align: center;
     width: 329px;
     height: 90px;
@@ -127,7 +139,7 @@
     border-style: solid;
     border-color: #c4c4c4;
   }
-  .nav-galerija {
+  .nav-galery {
     text-align: center;
     width: 329px;
     height: 90px;

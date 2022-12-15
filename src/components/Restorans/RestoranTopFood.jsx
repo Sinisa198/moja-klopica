@@ -5,15 +5,11 @@ import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import { MdFavoriteBorder } from 'react-icons/md';
 import firstimageRestoran from '../../images/firstimageRestoran.png';
 import map from '../../images/map.png';
+import RestoranIcon from '../../images/Vector.png';
+import Notepad from '../../images/notepad.png';
+import Star from '../../images/star.png';
+import Picture from '../../images/picture.png';
 
-const listpictures = [
-  {
-    image: '',
-    name: 'Lorem Ipsum',
-    description: 'RESTORANI * Lorem ipsum',
-    rating: '4.2',
-  },
-];
 const RestoranTopFood = () => {
   return (
     <div className='restoran-top-food'>
@@ -57,16 +53,20 @@ const RestoranTopFood = () => {
       <div className='navigation-menu'>
         <div className='nav'>
           <div className='nav-restoran'>
-            <p>O restoranu</p>
+            <img src={RestoranIcon}   className='meni-icon' alt='' />
+            <p className='paragraf-meni'>O restoranu</p>
           </div>
           <div className='nav-meni'>
-            <p>Meni</p>
+            <img src={Notepad} className='meni-icon' alt='' />
+            <p className='paragraf-meni'>Meni</p>
           </div>
-          <div className='nav-utisci'>
-            <p>Utisci</p>
+          <div className='nav-impressions'>
+            <img src={Star} className='meni-icon' alt=''/>
+            <p className='paragraf-meni'>Utisci</p>
           </div>
-          <div className='nav-galerija'>
-            <p>Galerija</p>
+          <div className='nav-galery'>
+            <img src={Picture} className='meni-icon' alt=''/>
+            <p className='paragraf-meni'>Galerija</p>
           </div>
         </div>
         <div className='text-and-location'>

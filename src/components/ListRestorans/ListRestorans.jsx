@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import atina from '../../images/restoranatina.png';
 import topfood from '../../images/restorantopfood.png';
 import mima from '../../images/restoranmima.png';
@@ -107,12 +109,18 @@ const listrestorans = [
 ];
 
 const ListRestorans = () => {
+  const navigate = useNavigate();
+  const navigateToRestoran = () => {
+    navigate('/topfood')
+  }
   return (
 
     <div className='listrestoran-main'>
       {listrestorans.map((item) => (
         <div className='list' key={item.id}>
-          <img className='image-for-listrestoran' src={item.img} alt='' />
+          <Link to='/topfood'>
+          <img className='image-for-listrestoran' onClick={() =>navigateToRestoran()} src={item.img} alt='' />
+          </Link>
           <div className='title-listrestoran'>{item.name}</div>
           <div className='description-listrestoran'>
             {item.description}
