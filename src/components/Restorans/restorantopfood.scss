@@ -239,8 +239,6 @@
     font-size: 30px;
     border-radius: 30px;
   }
-  .phone-image {
-  }
   .phone-restoran,
   .location-restoran {
     display: flex;
@@ -264,6 +262,45 @@
     line-height: 34px;
     margin-left: 310px;
     color: #ffffff;
+  }
+  .first-box-picture {
+    display: flex;
+    width: 267.69px;
+    height: 185.4px;
+    left: 1006.31px;
+    top: 1894px;
+    background: #ffffff;
+    box-shadow: 0px 0px 2.97884px rgba(0, 0, 0, 0.2);
+    border-radius: 5.95768px;
+    margin-top: -600px;
+    margin-left: 200px;
+  }
+  .list-rating {
+    margin-left: 70px;
+    color: #c63a2f;
+  }
+  .second-box-picture {
+    display: flex;
+    margin-left: 200px;
+  }
+  .title-rating {
+    display: flex;
+  }
+  .list-picture1 {
+    padding-bottom: 70px;
+  }
+  .foreach-box {
+    background: #ffffff;
+    box-shadow: 0px 0px 2.97884px rgba(0, 0, 0, 0.2);
+    border-radius: 5.95768px;
+  }
+  .title-list {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7.74499px;
+    line-height: 12px;
+    color: #8a8a8a;
   }
   .list-pictures {
     display: flex;

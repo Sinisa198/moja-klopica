@@ -1,12 +1,15 @@
 import React from 'react';
-import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
+import Header from '../Header/Header';
+import FooterForRestoran from '../FooterForRestoran/FooterForRestoran';
 const Galery = () => {
   return (
-    <div>
+    <div className='main-galery'>
       <Header />
-      <Nav />
-      <div>GALERY</div>
+      <div className='nav-and-galery'>
+        <Nav />
+      </div>
+      <FooterForRestoran />
     </div>
   );
 };

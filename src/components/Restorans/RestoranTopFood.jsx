@@ -15,58 +15,9 @@ import Phone from '../../images/phone.png';
 import listpicture from '../../images/listpicture.png';
 import { useNavigate } from 'react-router';
 import { AiTwotoneStar } from 'react-icons/ai';
-import Footer from '../Footer/Footer';
+import { RiStarSFill } from 'react-icons/ri';
+import FooterForRestoran from './FooterForRestoran/FooterForRestoran';
 const RestoranTopFood = () => {
-  const listpictures = [
-    {
-      image: listpicture,
-      title: 'Lorem Ipsum',
-      description: 'RESTORANI * Lorem Ipsum',
-      rating: '4.2',
-    },
-    {
-      image: listpicture,
-      title: 'Lorem Ipsum',
-      description: 'RESTORANI * Lorem Ipsum',
-      rating: '4.2',
-    },
-    {
-      image: listpicture,
-      title: 'Lorem Ipsum',
-      description: 'RESTORANI * Lorem Ipsum',
-      rating: '4.2',
-    },
-    {
-      image: listpicture,
-      title: 'Lorem Ipsum',
-      description: 'RESTORANI * Lorem Ipsum',
-      rating: '4.2',
-    },
-    {
-      image: listpicture,
-      title: 'Lorem Ipsum',
-      description: 'RESTORANI * Lorem Ipsum',
-      rating: '4.2',
-    },
-    {
-      image: listpicture,
-      title: 'Lorem Ipsum',
-      description: 'RESTORANI * Lorem Ipsum',
-      rating: '4.2',
-    },
-    {
-      image: listpicture,
-      title: 'Lorem Ipsum',
-      description: 'RESTORANI * Lorem Ipsum',
-      rating: '4.2',
-    },
-    {
-      image: listpicture,
-      title: 'Lorem Ipsum',
-      description: 'RESTORANI * Lorem Ipsum',
-      rating: '4.2',
-    },
-  ];
   const navigate = useNavigate();
   const navigateToMeni = () => {
     navigate('/meni');
@@ -181,18 +132,99 @@ const RestoranTopFood = () => {
             {/*Stavljena slika samo zbog pregleda*/}
           </div>
         </div>
-
-        <div className='list-pictures'>
-          {listpictures.map((item) => (
-            <div className='slide-picture' key={item.id}>
-              <img src={item.image} alt='' />
-              <p>{item.title}</p>
-              <p>{item.description}</p>
-              <p>{item.rating}</p>
+        <div className='main-list-picture'>
+          <div className='list-picture1'>
+            <div className='first-box-picture'>
+              <div className='foreach-box'>
+                <img src={listpicture} alt='' />
+                <p>Lorem Ipsum</p>
+                <div className='title-rating'>
+                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
+                  <span className='list-rating'>
+                    4.2
+                    <RiStarSFill />
+                  </span>
+                </div>
+              </div>
+              <div className='foreach-box'>
+                <img src={listpicture} alt='' />
+                <p>Lorem Ipsum</p>
+                <div className='title-rating'>
+                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
+                  <span className='list-rating'>
+                    4.2 <RiStarSFill />
+                  </span>
+                </div>
+              </div>
+              <div className='foreach-box'>
+                <img src={listpicture} alt='' />
+                <p>Lorem Ipsum</p>
+                <div className='title-rating'>
+                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
+                  <span className='list-rating'>
+                    4.2 <RiStarSFill />
+                  </span>
+                </div>
+              </div>
+              <div className='foreach-box'>
+                <img src={listpicture} alt='' />
+                <p>Lorem Ipsum</p>
+                <div className='title-rating'>
+                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
+                  <span className='list-rating'>
+                    4.2 <RiStarSFill />
+                  </span>
+                </div>
+              </div>
             </div>
-          ))}
+          </div>
+          <div className='list-picture2'>
+            <div className='second-box-picture'>
+              <div className='foreach-box'>
+                <img src={listpicture} alt='' />
+                <p>Lorem Ipsum</p>
+                <div className='title-rating'>
+                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
+                  <span className='list-rating'>
+                    4.2 <RiStarSFill />
+                  </span>
+                </div>
+              </div>
+              <div className='foreach-box'>
+                <img src={listpicture} alt='' />
+                <p>Lorem Ipsum</p>
+                <div className='title-rating'>
+                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
+                  <span className='list-rating'>
+                    4.2 <RiStarSFill />
+                  </span>
+                </div>
+              </div>
+              <div className='foreach-box'>
+                <img src={listpicture} alt='' />
+                <p>Lorem Ipsum</p>
+                <div className='title-rating'>
+                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
+                  <span className='list-rating'>
+                    4.2 <RiStarSFill />
+                  </span>
+                </div>
+              </div>
+              <div className='foreach-box'>
+                <img src={listpicture} alt='' />
+                <p>Lorem Ipsum</p>
+                <div className='title-rating'>
+                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
+                  <span className='list-rating'>
+                    4.2 <RiStarSFill />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      {/* <FooterForRestoran /> */}
     </div>
   );
 };
