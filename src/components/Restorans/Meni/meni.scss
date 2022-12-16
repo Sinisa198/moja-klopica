@@ -1,11 +1,51 @@
 .main-nav-with-meni {
   margin-top: -150px;
   background: #f3f1f0;
+  .shopping-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+  }
+}
+.meni-image {
+  width: 121.11px;
+  height: 127.31px;
+}
+.dl {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 275;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+.price {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #c63a2f;
+}
+.meni-button {
+  margin-left: 110px;
+  background: #c63a2f;
+  border: 1.19648px solid #d9d9d9;
+  border-radius: 5.98242px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
 }
 .meni {
   margin-left: 115px;
   width: 800px;
-  height: 3098px;
+  height: 2800px;
   margin-top: -150px;
   left: 63px;
   top: 1070px;
@@ -48,7 +88,7 @@
   width: 398px;
   height: 45px;
   left: 251px;
-  top: -20px;
+  top: -60px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -57,11 +97,21 @@
   text-transform: uppercase;
   color: #333333;
 }
-.shopping-hr {
+.shopping-hr,
+.salate-hr,
+.dezert-hr {
   width: 369px;
   height: 1px;
   left: 381px;
   top: 1175px;
+  background: #333333;
+}
+
+.main-hrr {
+  left: 181px;
+  top: 1175px;
+  width: 369px;
+  height: 1px;
   background: #333333;
 }
 .calculator-paragraf {
@@ -78,6 +128,9 @@
   color: #333333;
 }
 .calculator-hr {
-  color: black;
-  width: 200px;
+  width: 271px;
+  height: 1px;
+  margin-left: 10px;
+  top: 1175px;
+  background: #d9d9d9;
 }

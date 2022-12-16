@@ -20,159 +20,161 @@ const Meni = () => {
               <p>SUPE I CORBE</p>
               <div className='shopping-hr' />
               <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' />
+                <img src={logoMeni} alt='' className='meni-image' />
                 <div className='title-meni-shopping'>
-                  <p>Domaća supa</p>
-                  <p>5dl</p>
+                  <p className='shopping-title'>Domaća supa</p>
+                  <span className='dl'>5dl</span>
                   <div className='price-button'>
-                    <p>200 din</p>
-                    <button>Dodaj</button>
+                    <span className='price'>200 din</span>
+                    <button className='meni-button'>Dodaj</button>
                   </div>
                 </div>
               </div>
               <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' />
+                <img src={logoMeni} alt='' className='meni-image' />
                 <div className='title-meni-shopping'>
-                  <p>Domaća supa</p>
-                  <p>5dl</p>
+                  <p className='shopping-title'>Ragu čorba</p>
+                  <span className='dl'>5dl</span>
                   <div className='price-button'>
-                    <p>200 din</p>
-                    <button>Dodaj</button>
+                    <span className='price'>200 din</span>
+                    <button className='meni-button'>Dodaj</button>
                   </div>
                 </div>
               </div>
               <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' />
+                <img src={logoMeni} alt='' className='meni-image' />
                 <div className='title-meni-shopping'>
-                  <p>Domaća supa</p>
-                  <p>5dl</p>
+                  <p className='shopping-title'>Potaž</p>
+                  <span className='dl'>5dl</span>
                   <div className='price-button'>
-                    <p>200 din</p>
-                    <button>Dodaj</button>
+                    <span className='price'>200 din</span>
+                    <button className='meni-button'>Dodaj</button>
                   </div>
                 </div>
               </div>
               <p>GLAVNA JELA</p>
+              <div className='main-hrr' />
               <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' />
+                <img src={logoMeni} alt='' className='meni-image' />
                 <div className='title-meni-shopping'>
-                  <p>Domaća supa</p>
-                  <p>5dl</p>
+                  <p className='shopping-title'>Pileći paprikaš</p>
+                  <span className='dl'>5dl</span>
                   <div className='price-button'>
-                    <p>200 din</p>
-                    <button>Dodaj</button>
+                    <span className='price'>200 din</span>
+                    <button className='meni-button'>Dodaj</button>
                   </div>
                 </div>
               </div>
               <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' />
+                <img src={logoMeni} alt='' className='meni-image' />
                 <div className='title-meni-shopping'>
-                  <p>Domaća supa</p>
-                  <p>5dl</p>
+                  <p className='shopping-title'>Pasulj sa butkicom</p>
+                  <span className='dl'>5dl</span>
                   <div className='price-button'>
-                    <p>200 din</p>
-                    <button>Dodaj</button>
+                    <span className='price'>200 din</span>
+                    <button className='meni-button'>Dodaj</button>
                   </div>
                 </div>
               </div>
               <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' />
+                <img src={logoMeni} alt='' className='meni-image' />
                 <div className='title-meni-shopping'>
-                  <p>Domaća supa</p>
-                  <p>5dl</p>
+                  <p className='shopping-title'>Butkica sa renom</p>
+                  <span className='dl'>5dl</span>
                   <div className='price-button'>
-                    <p>200 din</p>
-                    <button>Dodaj</button>
+                    <span className='price'>200 din</span>
+                    <button className='meni-button'>Dodaj</button>
                   </div>
                 </div>
               </div>
               <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' />
+                <img src={logoMeni} alt='' className='meni-image' />
                 <div className='title-meni-shopping'>
-                  <p>Domaća supa</p>
-                  <p>5dl</p>
+                  <p className='shopping-title'>Piletina u kari sosu</p>
+                  <span className='dl'>5dl</span>
                   <div className='price-button'>
-                    <p>200 din</p>
-                    <button>Dodaj</button>
+                    <span className='price'>200 din</span>
+                    <button className='meni-button'>Dodaj</button>
                   </div>
                 </div>
               </div>
               <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' />
+                <img src={logoMeni} alt='' className='meni-image' />
                 <div className='title-meni-shopping'>
-                  <p>Domaća supa</p>
-                  <p>5dl</p>
+                  <p className='shopping-title'>Pasulj sa kobasicom</p>
+                  <span className='dl'>5dl</span>
                   <div className='price-button'>
-                    <p>200 din</p>
-                    <button>Dodaj</button>
+                    <span className='price'>200 din</span>
+                    <button className='meni-button'>Dodaj</button>
                   </div>
                 </div>
               </div>
               <p>SALATE</p>
+              <div className='salate-hr' />
               <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' />
+                <img src={logoMeni} alt='' className='meni-image' />
                 <div className='title-meni-shopping'>
-                  <p>Domaća supa</p>
-                  <p>5dl</p>
+                  <p className='shopping-title'>Kupus</p>
+                  <span className='dl'>5dl</span>
                   <div className='price-button'>
-                    <p>200 din</p>
-                    <button>Dodaj</button>
+                    <span className='price'>200 din</span>
+                    <button className='meni-button'>Dodaj</button>
                   </div>
                 </div>
               </div>
               <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' />
+                <img src={logoMeni} alt='' className='meni-image' />
                 <div className='title-meni-shopping'>
-                  <p>Domaća supa</p>
-                  <p>5dl</p>
+                  <p className='shopping-title'>Paradajz</p>
+                  <span className='dl'>5dl</span>
                   <div className='price-button'>
-                    <p>200 din</p>
-                    <button>Dodaj</button>
+                    <span className='price'>200 din</span>
+                    <button className='meni-button'>Dodaj</button>
                   </div>
                 </div>
               </div>
               <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' />
+                <img src={logoMeni} alt='' className='meni-image' />
                 <div className='title-meni-shopping'>
-                  <p>Domaća supa</p>
-                  <p>5dl</p>
+                  <p className='shopping-title'>Krastavac</p>
+                  <span className='dl'>5dl</span>
                   <div className='price-button'>
-                    <p>200 din</p>
-                    <button>Dodaj</button>
+                    <span className='price'>200 din</span>
+                    <button className='meni-button'>Dodaj</button>
                   </div>
                 </div>
               </div>
-              <p>DEZERTI</p>{' '}
+              <p>DEZERTI</p> <div className='dezert-hr' />
               <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' />
+                <img src={logoMeni} alt='' className='meni-image' />
                 <div className='title-meni-shopping'>
-                  <p>Domaća supa</p>
-                  <p>5dl</p>
+                  <p className='shopping-title'>Sutlijaš</p>
+                  <span className='dl'>5dl</span>
                   <div className='price-button'>
-                    <p>200 din</p>
-                    <button>Dodaj</button>
-                  </div>
-                </div>
-              </div>
-              <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' />
-                <div className='title-meni-shopping'>
-                  <p>Domaća supa</p>
-                  <p>5dl</p>
-                  <div className='price-button'>
-                    <p>200 din</p>
-                    <button>Dodaj</button>
+                    <span className='price'>200 din</span>
+                    <button className='meni-button'>Dodaj</button>
                   </div>
                 </div>
               </div>
               <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' />
+                <img src={logoMeni} alt='' className='meni-image' />
                 <div className='title-meni-shopping'>
-                  <p>Domaća supa</p>
-                  <p>5dl</p>
+                  <p className='shopping-title'>Palačinke</p>
+                  <span className='dl'>5dl</span>
                   <div className='price-button'>
-                    <p>200 din</p>
-                    <button>Dodaj</button>
+                    <span className='price'>200 din</span>
+                    <button className='meni-button'>Dodaj</button>
+                  </div>
+                </div>
+              </div>
+              <div className='div-for-complet-meni'>
+                <img src={logoMeni} alt='' className='meni-image' />
+                <div className='title-meni-shopping'>
+                  <p className='shopping-title'>Voćna salata</p>
+                  <span className='dl'>5dl</span>
+                  <div className='price-button'>
+                    <span className='price'>200 din</span>
+                    <button className='meni-button'>Dodaj</button>
                   </div>
                 </div>
               </div>
@@ -184,6 +186,7 @@ const Meni = () => {
           </div>
         </div>
       </div>
+      <FooterForRestoran />
     </div>
   );
 };
