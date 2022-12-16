@@ -49,7 +49,7 @@ const Impressions = () => {
                   <RiStarSFill />
                   <RiStarSFill />
                   <RiStarSFill />
-                  <RiStarSFill />
+                  <RiStarSFill className='second-star' />
                 </span>
               </p>
               <p className='impressions-text'>

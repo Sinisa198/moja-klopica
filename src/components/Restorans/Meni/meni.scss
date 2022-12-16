@@ -1,0 +1,83 @@
+.main-nav-with-meni {
+  margin-top: -150px;
+  background: #f3f1f0;
+}
+.meni {
+  margin-left: 115px;
+  width: 800px;
+  height: 3098px;
+  margin-top: -150px;
+  left: 63px;
+  top: 1070px;
+  background: #ffffff;
+  box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+.calculator {
+  position: absolute;
+  width: 300px;
+  height: 335px;
+  left: 950px;
+  top: 980px;
+  background: #ffffff;
+  box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+.nav-meni-meni {
+  position: absolute;
+  width: 258px;
+  height: 36px;
+  left: 158px;
+  top: 1022px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #333333;
+}
+.div-for-complet-meni {
+  display: flex;
+}
+.price-button {
+  display: flex;
+}
+.shopping-cart {
+  position: absolute;
+  width: 398px;
+  height: 45px;
+  left: 251px;
+  top: -20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #333333;
+}
+.shopping-hr {
+  width: 369px;
+  height: 1px;
+  left: 381px;
+  top: 1175px;
+  background: #333333;
+}
+.calculator-paragraf {
+  width: 117px;
+  height: 36px;
+  left: 1108px;
+  margin-left: 20px;
+  top: 1115px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+.calculator-hr {
+  color: black;
+  width: 200px;
+}
