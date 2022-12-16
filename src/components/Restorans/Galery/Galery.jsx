@@ -6,6 +6,7 @@ const Galery = () => {
     <div>
       <Header />
       <Nav />
+      <div>GALERY</div>
     </div>
   );
 };

@@ -14,7 +14,8 @@ import Location from '../../images/location.png';
 import Phone from '../../images/phone.png';
 import listpicture from '../../images/listpicture.png';
 import { useNavigate } from 'react-router';
-import { key } from 'localforage';
+import { AiTwotoneStar } from 'react-icons/ai';
+import Footer from '../Footer/Footer';
 const RestoranTopFood = () => {
   const listpictures = [
     {
@@ -70,6 +71,12 @@ const RestoranTopFood = () => {
   const navigateToMeni = () => {
     navigate('/meni');
   };
+  const navigateToImpressions = () => {
+    navigate('/impressions');
+  };
+  const navigateToGalery = () => {
+    navigate('/galery');
+  };
   return (
     <div className='restoran-top-food'>
       <div className='burger-logo'>
@@ -100,7 +107,8 @@ const RestoranTopFood = () => {
           <div className='text-for-restoran'>
             <h2 className='title-for-restoran'>Restoran Top Food 021</h2>
             <p className='paragraf-restoran'>
-              RESTORANI * Domaca kuhinja * 4,2 60 ocena Besplatna dostava
+              RESTORANI * Domaca kuhinja * 4,2
+              <AiTwotoneStar className='star-icon' /> 60 ocena Besplatna dostava
             </p>
             <p className='second-paragraf'>
               <span className='span-green'> Otvoreno sad </span>* Zatvara se u
@@ -123,11 +131,18 @@ const RestoranTopFood = () => {
           </div>
           <div className='nav-impressions'>
             <img src={Star} className='meni-icon' alt='' />
-            <p className='paragraf-meni'>Utisci</p>
+            <p
+              className='paragraf-meni'
+              onClick={() => navigateToImpressions()}
+            >
+              Utisci
+            </p>
           </div>
           <div className='nav-galery'>
             <img src={Picture} className='meni-icon' alt='' />
-            <p className='paragraf-meni'>Galerija</p>
+            <p className='paragraf-meni' onClick={() => navigateToGalery()}>
+              Galerija
+            </p>
           </div>
         </div>
         <div className='text-and-location'>
@@ -165,22 +180,17 @@ const RestoranTopFood = () => {
             <img src={map} className='image-map' alt='' />{' '}
             {/*Stavljena slika samo zbog pregleda*/}
           </div>
-          <div className='three-div'>
-            <p>Slicna mesta</p>
-            <div className='multiple-pictures'>
-              {listpictures.map((item) => (
-                <div className='slide-picture'>
-                  <p>{key.id}</p>
-                  <div className='prop'>
-                    <img src={item.image} alt='' />
-                    <p>{item.title}</p>
-                    <p>{item.description}</p>
-                    <p>{item.rating}</p>
-                  </div>
-                </div>
-              ))}
+        </div>
+
+        <div className='list-pictures'>
+          {listpictures.map((item) => (
+            <div className='slide-picture' key={item.id}>
+              <img src={item.image} alt='' />
+              <p>{item.title}</p>
+              <p>{item.description}</p>
+              <p>{item.rating}</p>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

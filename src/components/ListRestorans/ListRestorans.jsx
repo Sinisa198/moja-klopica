@@ -11,51 +11,27 @@ import { RiStarSFill } from 'react-icons/ri';
 import { AiOutlineStar } from 'react-icons/ai';
 const listrestorans = [
   {
-    img: pasta,
-    name: 'Lorem Ipsum',
-    description: 'RESTORANI * Lorem Ipsum ',
-    minutes: ' 0.2km 25min',
-    stars: '4.2',
-    free: 'Besplatna dostava',
-  },
-  {
     img: topfood,
-    name: 'Lorem Ipsum',
-    description: 'RESTORANI * Lorem Ipsum ',
+    name: 'Restoran Top FOOD 021',
+    description: 'RESTORANI * Domaca Kuhinja ',
     minutes: ' 0.2km 25min',
     stars: '4.2',
     free: 'Besplatna dostava',
   },
   {
-    img: lorem2,
-    name: 'Lorem Ipsum',
-    description: 'RESTORANI * Lorem Ipsum ',
-    minutes: ' 0.2km 25min',
-    stars: '4.2',
+    img: atina,
+    name: 'Restoran Atina',
+    description: 'RESTORANI * Cafe Bar',
+    minutes: '0.2km 25min',
+    stars: '4.5',
     free: 'Besplatna dostava',
   },
   {
-    img: topfood,
-    name: 'Lorem Ipsum',
-    description: 'RESTORANI * Lorem Ipsum ',
+    img: mima,
+    name: "Restoran Mima's fit 'n' sit",
+    description: 'RESTORANI * Veganska Kuhinja',
     minutes: ' 0.2km 25min',
-    stars: '4.2',
-    free: 'Besplatna dostava',
-  },
-  {
-    img: lorem2,
-    name: 'Restoran Lorem Ipsum',
-    description: 'RESTORAN * Lorem Ipsum ',
-    minutes: ' 0.2km 25min',
-    stars: '4.2',
-    free: 'Besplatna dostava',
-  },
-  {
-    img: pasta,
-    name: 'Restoran Lorem Ipsum',
-    description: 'RESTORANI * Lorem Ipsum ',
-    minutes: ' 0.2km 25min',
-    stars: '4.2',
+    stars: '4.0 ',
     free: 'Besplatna dostava',
   },
   {
@@ -84,26 +60,50 @@ const listrestorans = [
   },
   {
     img: topfood,
-    name: 'Restoran Top FOOD 021',
-    description: 'RESTORANI * Domaca Kuhinja ',
+    name: 'Restoran Lorem Ipsum',
+    description: 'RESTORANI * Lorem Ipsum ',
     minutes: ' 0.2km 25min',
     stars: '4.2',
     free: 'Besplatna dostava',
   },
   {
-    img: atina,
-    name: 'Restoran Atina',
-    description: 'RESTORANI * Cafe Bar',
-    minutes: '0.2km 25min',
-    stars: '4.5',
+    img: lorem2,
+    name: 'Restoran Lorem Ipsum',
+    description: 'RESTORANI * Lorem Ipsum ',
+    minutes: ' 0.2km 25min',
+    stars: '4.2',
     free: 'Besplatna dostava',
   },
   {
-    img: mima,
-    name: "Restoran Mima's fit 'n' sit",
-    description: 'RESTORANI * Veganska Kuhinja',
+    img: pasta,
+    name: 'Restoran Lorem Ipsum',
+    description: 'RESTORANI * Lorem Ipsum ',
     minutes: ' 0.2km 25min',
-    stars: '4.0 ',
+    stars: '4.2',
+    free: 'Besplatna dostava',
+  },
+  {
+    img: pasta,
+    name: 'Restoran Lorem Ipsum',
+    description: 'RESTORANI * Lorem Ipsum ',
+    minutes: ' 0.2km 25min',
+    stars: '4.2',
+    free: 'Besplatna dostava',
+  },
+  {
+    img: topfood,
+    name: 'Restoran Lorem Ipsum',
+    description: 'RESTORANI * Lorem Ipsum ',
+    minutes: ' 0.2km 25min',
+    stars: '4.2',
+    free: 'Besplatna dostava',
+  },
+  {
+    img: lorem2,
+    name: 'Restoran Lorem Ipsum',
+    description: 'RESTORANI * Lorem Ipsum ',
+    minutes: ' 0.2km 25min',
+    stars: '4.2',
     free: 'Besplatna dostava',
   },
 ];
@@ -144,7 +144,7 @@ const ListRestorans = () => {
         </div>
       ))}
       <div className='button-restoran'>
-        <button>Click</button>
+        <button className='button-for-restoran'>Vidi više</button>
       </div>
     </div>
   );

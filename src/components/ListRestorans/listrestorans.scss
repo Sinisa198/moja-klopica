@@ -1,6 +1,6 @@
 .listrestoran-main {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   align-items: center;
   background: #f3f1f0;
   margin-top: 280px;
@@ -11,13 +11,25 @@
   p {
     text-decoration: none;
   }
-  .button-restoran{
-    display: flex;
+  .button-for-restoran {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    width: 112px;
+    height: 43px;
+    left: 657px;
+    top: 2382px;
+    background: #8a8a8a;
+    opacity: 0.2;
+    border-radius: 40px;
   }
   .image-for-listrestoran {
     width: 378.01px;
     height: 198.6px;
-    margin-left:15px;
+    margin-left: 15px;
     margin-top: 20px;
     border-radius: 4.7971px;
   }
@@ -63,12 +75,12 @@
     text-align: right;
     color: #8a8a8a;
   }
-  .minutes{
-    margin-left:120px;
+  .minutes {
+    margin-left: 120px;
   }
-  .list-stars{
-    margin-left:5px;
-    margin-top:2px;
+  .list-stars {
+    margin-left: 5px;
+    margin-top: 2px;
   }
 }
 

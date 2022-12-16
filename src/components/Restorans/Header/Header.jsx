@@ -5,6 +5,8 @@ import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import { MdFavoriteBorder } from 'react-icons/md';
 import firstimageRestoran from '../../../images/firstimageRestoran.png';
 import Burger from '../../../images/burger.png';
+import { AiTwotoneStar } from 'react-icons/ai';
+
 const Header = () => {
   return (
     <div className='main-header'>
@@ -36,7 +38,8 @@ const Header = () => {
           <div className='text-for-restoran'>
             <h2 className='title-for-restoran'>Restoran Top Food 021</h2>
             <p className='paragraf-restoran'>
-              RESTORANI * Domaca kuhinja * 4,2 60 ocena Besplatna dostava
+              RESTORANI * Domaca kuhinja * 4,2
+              <AiTwotoneStar /> 60 ocena Besplatna dostava
             </p>
             <p className='second-paragraf'>
               <span className='span-green'> Otvoreno sad </span>* Zatvara se u

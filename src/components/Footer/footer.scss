@@ -26,22 +26,15 @@
   .iconss {
     flex-wrap: 20px;
     background-color: white;
-    padding:5px;    
-    margin-left:2em;
+    padding: 5px;
+    margin-left: 2em;
     width: 30px;
     height: 30px;
     justify-items: right;
   }
   .text-for-footer {
     display: flex;
-    // margin-top: 180px;
     grid-column-gap: 20px;
-    // font-family: 'Poppins';
-    // font-style: normal;
-    // font-weight: 500;
-    // font-size: 15px;
-    // line-height: 22px;
-    // color: #ffffff;
   }
   .paragrafApp {
     margin-left: 35px;
@@ -53,7 +46,7 @@
     line-height: 20px;
     color: #ffffff;
   }
- 
+
   .paragrafGoogle {
     margin-left: 35px;
     margin-top: -40px;
@@ -127,7 +120,6 @@
   }
   .links {
     margin-left: 500px;
-    
   }
   .list-icons {
     margin-left: 500px;

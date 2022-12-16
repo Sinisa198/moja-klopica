@@ -4,13 +4,14 @@ import RestoranIcon from '../../../images/Vector.png';
 import Notepad from '../../../images/notepad.png';
 import Star from '../../../images/star.png';
 import Picture from '../../../images/picture.png';
+
 const Nav = () => {
   const navigate = useNavigate();
   const navigateToMeni = () => {
     navigate('/meni');
   };
   const navigateToRestoran = () => {
-    navigate('/restoran');
+    navigate('/topfood');
   };
   const navigateToGalery = () => {
     navigate('galery');
