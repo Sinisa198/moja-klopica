@@ -8,6 +8,7 @@ import { FaGooglePlay } from 'react-icons/fa';
 import { TiLocation } from 'react-icons/ti';
 import { BiWorld } from 'react-icons/bi';
 import { BiCopyright } from 'react-icons/bi';
+import Googleplay from '../../../images/googleplay.png';
 const FooterForRestoran = () => {
   return (
     <div className='footer-main'>
@@ -22,7 +23,7 @@ const FooterForRestoran = () => {
       </div>
       <div className='box-for-googleplay'>
         <div>
-          <FaGooglePlay className='icons-box' />
+          <img src={Googleplay} alt='' className='icons-box' />
         </div>
         <p className='paragrafGoogle'>
           Nabavite na <br /> <span className='span-google'>Google Play</span>

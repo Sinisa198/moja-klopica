@@ -11,12 +11,6 @@ import Galery from './components/Restorans/Galery/Galery';
 const App = () => {
   return (
     <div className='App'>
-      {/* <Navigation /> 
-      <Forms />
-      <ListRestorans />
-      <Footer />  */}
-      {/* <RestoranTopFood/> */}
-
       <Routes>
         <Route path='/topfood' element={<RestoranTopFood />} />
         <Route path='/navigation' element={<Navigation />} />

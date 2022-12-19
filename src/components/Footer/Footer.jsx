@@ -7,8 +7,8 @@ import { BsApple } from 'react-icons/bs';
 import { FaGooglePlay } from 'react-icons/fa';
 import { TiLocation } from 'react-icons/ti';
 import { BiWorld } from 'react-icons/bi';
-import { RiStarSFill } from 'react-icons/ri';
-import {BiCopyright} from 'react-icons/bi';
+import GooglePlay from '../../images/googleplay.png';
+import { BiCopyright } from 'react-icons/bi';
 const Footer = () => {
   return (
     <div className='footer-main'>
@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
       <div className='box-for-googleplay'>
         <div>
-          <FaGooglePlay className='icons-box' />
+          <GooglePlay />
         </div>
         <p className='paragrafGoogle'>
           Nabavite na <br /> <span className='span-google'>Google Play</span>
@@ -34,8 +34,11 @@ const Footer = () => {
           <BsInstagram className='iconss' />
           <GrFacebookOption className='iconss' />
           <SiTiktok className='iconss' />
-          </div>
-          <p className='paragraf'><BiCopyright className='copy-right'/>Moja Klopica 2022</p>
+        </div>
+        <p className='paragraf'>
+          <BiCopyright className='copy-right' />
+          Moja Klopica 2022
+        </p>
         <div className='line'></div>
         <div className='location'>
           <div className='text-for-footer'>

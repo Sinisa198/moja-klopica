@@ -3,7 +3,118 @@ import FooterForRestoran from '../FooterForRestoran/FooterForRestoran';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import logoMeni from '../../../images/logo-for-meni.png';
-const Meni = () => {
+import { addFood } from '../../../store/actions/food';
+import { useDispatch } from 'react-redux';
+const Meni = (items) => {
+  let Food = [];
+  Food.push(items);
+  const listmeni = [
+    {
+      title: 'Supe i čorbe',
+      image: logoMeni,
+      name: 'Domaća supa',
+      dl: '5dl',
+      price: '200 din',
+      button: 'Dodaj',
+    },
+    {
+      image: logoMeni,
+      name: 'Ragu čorba',
+      dl: '5dl',
+      price: '200 din',
+      button: 'Dodaj',
+    },
+    {
+      image: logoMeni,
+      name: 'Potaž',
+      dl: '5dl',
+      price: '200 din',
+      button: 'Dodaj',
+    },
+    {
+      title: 'Glavna jela',
+      image: logoMeni,
+      name: 'Pileći paprikaš',
+      dl: '5dl',
+      price: '200 din',
+      button: 'Dodaj',
+    },
+    {
+      image: logoMeni,
+      name: 'Pasulj sa butkicom',
+      dl: '5dl',
+      price: '200 din',
+      button: 'Dodaj',
+    },
+    {
+      image: logoMeni,
+      name: 'Butkica sa renom',
+      dl: '5dl',
+      price: '200 din',
+      button: 'Dodaj',
+    },
+    {
+      image: logoMeni,
+      name: 'Piletina u kari sosu',
+      dl: '5dl',
+      price: '200 din',
+      button: 'Dodaj',
+    },
+    {
+      image: logoMeni,
+      name: 'Pasulj sa kobasicom',
+      dl: '5dl',
+      price: '200 din',
+      button: 'Dodaj',
+    },
+    {
+      title: 'Salate',
+      image: logoMeni,
+      name: 'Kupus',
+      dl: '5dl',
+      price: '200 din',
+      button: 'Dodaj',
+    },
+    {
+      image: logoMeni,
+      name: 'Paradajz',
+      dl: '5dl',
+      price: '200 din',
+      button: 'Dodaj',
+    },
+    {
+      image: logoMeni,
+      name: 'Krastavac',
+      dl: '5dl',
+      price: '200 din',
+      button: 'Dodaj',
+    },
+    {
+      title: 'Dezerti',
+      image: logoMeni,
+      name: 'Sutlijaš',
+      dl: '5dl',
+      price: '200 din',
+      button: 'Dodaj',
+    },
+    {
+      image: logoMeni,
+      name: 'Palačinke',
+      dl: '5dl',
+      price: '200 din',
+      button: 'Dodaj',
+    },
+    {
+      image: logoMeni,
+      name: 'Voćna salata',
+      dl: '5dl',
+      price: '200 din',
+      button: 'Dodaj',
+    },
+  ];
+  let Foods = [];
+  const dispatch = useDispatch();
+  console.error('add food :', addFood);
   return (
     <div className='main-meni'>
       <Header />
@@ -16,173 +127,37 @@ const Meni = () => {
             <p>GLAVNA JELA</p>
             <p>SALATE</p>
             <p>DEZERTI</p>
-            <div className='shopping-cart'>
-              <p>SUPE I CORBE</p>
-              <div className='shopping-hr' />
-              <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' className='meni-image' />
-                <div className='title-meni-shopping'>
-                  <p className='shopping-title'>Domaća supa</p>
-                  <span className='dl'>5dl</span>
-                  <div className='price-button'>
-                    <span className='price'>200 din</span>
-                    <button className='meni-button'>Dodaj</button>
+            {listmeni.map((data) => (
+              <div className='shopping-cart' key={data.title}>
+                <p>{data.title}</p>
+                <div className='shopping-hr' />
+                <div className='div-for-complet-meni'>
+                  <img src={logoMeni} alt='' className='meni-image' />
+                  <div className='title-meni-shopping'>
+                    <p className='shopping-title'>{data.name}</p>
+                    <span className='dl'>{data.dl}</span>
+                    <div className='price-button'>
+                      <span className='price'>{data.price}</span>
+                      <button
+                        className='meni-button'
+                        onClick={() => dispatch(addFood(3))}
+                      >
+                        {data.button}
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' className='meni-image' />
-                <div className='title-meni-shopping'>
-                  <p className='shopping-title'>Ragu čorba</p>
-                  <span className='dl'>5dl</span>
-                  <div className='price-button'>
-                    <span className='price'>200 din</span>
-                    <button className='meni-button'>Dodaj</button>
-                  </div>
-                </div>
-              </div>
-              <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' className='meni-image' />
-                <div className='title-meni-shopping'>
-                  <p className='shopping-title'>Potaž</p>
-                  <span className='dl'>5dl</span>
-                  <div className='price-button'>
-                    <span className='price'>200 din</span>
-                    <button className='meni-button'>Dodaj</button>
-                  </div>
-                </div>
-              </div>
-              <p>GLAVNA JELA</p>
-              <div className='main-hrr' />
-              <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' className='meni-image' />
-                <div className='title-meni-shopping'>
-                  <p className='shopping-title'>Pileći paprikaš</p>
-                  <span className='dl'>5dl</span>
-                  <div className='price-button'>
-                    <span className='price'>200 din</span>
-                    <button className='meni-button'>Dodaj</button>
-                  </div>
-                </div>
-              </div>
-              <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' className='meni-image' />
-                <div className='title-meni-shopping'>
-                  <p className='shopping-title'>Pasulj sa butkicom</p>
-                  <span className='dl'>5dl</span>
-                  <div className='price-button'>
-                    <span className='price'>200 din</span>
-                    <button className='meni-button'>Dodaj</button>
-                  </div>
-                </div>
-              </div>
-              <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' className='meni-image' />
-                <div className='title-meni-shopping'>
-                  <p className='shopping-title'>Butkica sa renom</p>
-                  <span className='dl'>5dl</span>
-                  <div className='price-button'>
-                    <span className='price'>200 din</span>
-                    <button className='meni-button'>Dodaj</button>
-                  </div>
-                </div>
-              </div>
-              <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' className='meni-image' />
-                <div className='title-meni-shopping'>
-                  <p className='shopping-title'>Piletina u kari sosu</p>
-                  <span className='dl'>5dl</span>
-                  <div className='price-button'>
-                    <span className='price'>200 din</span>
-                    <button className='meni-button'>Dodaj</button>
-                  </div>
-                </div>
-              </div>
-              <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' className='meni-image' />
-                <div className='title-meni-shopping'>
-                  <p className='shopping-title'>Pasulj sa kobasicom</p>
-                  <span className='dl'>5dl</span>
-                  <div className='price-button'>
-                    <span className='price'>200 din</span>
-                    <button className='meni-button'>Dodaj</button>
-                  </div>
-                </div>
-              </div>
-              <p>SALATE</p>
-              <div className='salate-hr' />
-              <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' className='meni-image' />
-                <div className='title-meni-shopping'>
-                  <p className='shopping-title'>Kupus</p>
-                  <span className='dl'>5dl</span>
-                  <div className='price-button'>
-                    <span className='price'>200 din</span>
-                    <button className='meni-button'>Dodaj</button>
-                  </div>
-                </div>
-              </div>
-              <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' className='meni-image' />
-                <div className='title-meni-shopping'>
-                  <p className='shopping-title'>Paradajz</p>
-                  <span className='dl'>5dl</span>
-                  <div className='price-button'>
-                    <span className='price'>200 din</span>
-                    <button className='meni-button'>Dodaj</button>
-                  </div>
-                </div>
-              </div>
-              <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' className='meni-image' />
-                <div className='title-meni-shopping'>
-                  <p className='shopping-title'>Krastavac</p>
-                  <span className='dl'>5dl</span>
-                  <div className='price-button'>
-                    <span className='price'>200 din</span>
-                    <button className='meni-button'>Dodaj</button>
-                  </div>
-                </div>
-              </div>
-              <p>DEZERTI</p> <div className='dezert-hr' />
-              <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' className='meni-image' />
-                <div className='title-meni-shopping'>
-                  <p className='shopping-title'>Sutlijaš</p>
-                  <span className='dl'>5dl</span>
-                  <div className='price-button'>
-                    <span className='price'>200 din</span>
-                    <button className='meni-button'>Dodaj</button>
-                  </div>
-                </div>
-              </div>
-              <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' className='meni-image' />
-                <div className='title-meni-shopping'>
-                  <p className='shopping-title'>Palačinke</p>
-                  <span className='dl'>5dl</span>
-                  <div className='price-button'>
-                    <span className='price'>200 din</span>
-                    <button className='meni-button'>Dodaj</button>
-                  </div>
-                </div>
-              </div>
-              <div className='div-for-complet-meni'>
-                <img src={logoMeni} alt='' className='meni-image' />
-                <div className='title-meni-shopping'>
-                  <p className='shopping-title'>Voćna salata</p>
-                  <span className='dl'>5dl</span>
-                  <div className='price-button'>
-                    <span className='price'>200 din</span>
-                    <button className='meni-button'>Dodaj</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
           <div className='calculator'>
             <p className='calculator-paragraf'>KALKULATOR</p>
             <div className='calculator-hr' />
+            <p>
+              {Foods.map((item, key) => {
+                return <tr key={key}>{item.name}</tr>;
+              })}
+            </p>
           </div>
         </div>
       </div>

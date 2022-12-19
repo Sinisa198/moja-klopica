@@ -1,0 +1,1 @@
+import foodActions from './food';
