@@ -3,7 +3,7 @@ import FooterForRestoran from '../FooterForRestoran/FooterForRestoran';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import logoMeni from '../../../images/logo-for-meni.png';
-
+import { addFood } from '../../../store/actions/food';
 const Meni = () => {
   const listmeni = [
     {

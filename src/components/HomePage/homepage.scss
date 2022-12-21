@@ -1,25 +1,189 @@
 .main-home {
   padding-bottom: 200px;
-  margin-top: 110px;
+  margin-top: 220px;
 }
+
 .second-box-home {
-  padding-top: 100px;
+  padding-top: 80px;
   position: absolute;
   width: 1440px;
   height: 1497px;
   left: 0px;
+  margin-top: -110px;
   top: 906px;
   background: #f3f1f0;
+}
+.working-time {
+  margin-left: 30px;
+  width: 179px;
+  height: 27px;
+  left: 96px;
+  top: 1208px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+
+  color: #8a8a8a;
+}
+.day-times {
+  display: flex;
+}
+.day-times-price {
+  margin-left: 52px;
+}
+
+.text-bottom {
+  display: flex;
+  flex-direction: column;
+}
+.day-and-price-second {
+  margin-top: -33px;
+  width: 167px;
+  height: 24px;
+  left: 118px;
+  top: 1254px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+}
+.day-and-price-last {
+  margin-top: -55px;
+  width: 167px;
+  height: 24px;
+  left: 118px;
+  top: 1254px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+}
+.day-and-price {
+  width: 167px;
+  height: 24px;
+  left: 118px;
+  top: 1254px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+}
+.closed {
+  color: #c63a2f;
+}
+.home-price {
+  width: 89px;
+  height: 25px;
+  left: 777px;
+  top: 1254px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #c63a2f;
+}
+.icon-home {
+  width: 25px;
+  height: 25px;
+}
+.three-nav {
+  display: flex;
+  box-sizing: border-box;
+  border: 2px solid black;
+  grid-column-gap: 500px;
+}
+.three-span {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  left: 905px;
+  top: 1701px;
+  background: lightcoral;
+  border-radius: 40px;
+  width: 88px;
+  height: 23px;
+  left: 334px;
+  top: 1711px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+}
+.three-price {
+  display: flex;
+  margin-left: 33px;
+  grid-column-gap: 330px;
+  left: 96px;
+  top: 1710px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: #8a8a8a;
+}
+.three-day-times {
+  margin-left: 58px;
+  grid-column-gap: 300px;
+  display: flex;
+  left: 112px;
+  top: 1657px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+}
+.nav-home-last {
+  display: flex;
+  margin-top: -10px;
+  margin-left: 950px;
+  width: 51px;
+  height: 24px;
+  left: 1282px;
+  top: 1320px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  width: 112px;
+  height: 43px;
+  left: 1236px;
+  top: 1257px;
+  background: lightcoral;
+  border-radius: 40px;
 }
 .first-box {
   display: flex;
   position: absolute;
+  padding-bottom: 70px;
   width: 1307px;
   height: 402px;
   left: 66px;
   background: #ffffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+}
+.forms {
+  margin-top: -220px;
 }
 .mini-top-food {
   position: absolute;
@@ -28,15 +192,144 @@
   margin-left: 30px;
   margin-top: 26px;
 }
-.paragraf-home {
-  width: 74px;
-  height: 21px;
+.home-stars {
+  left: 6.24%;
+  right: 6.24%;
+  top: 6.24%;
+  bottom: 9.37%;
+  color: #c63a2f;
+}
+.title-home {
+  margin-left: 285px;
+  width: 389px;
+  margin-top: -5px;
+  height: 38px;
   left: 351px;
-  top: 993px;
+  top: 1029px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+  color: #c63a2f;
+}
+.text-home {
+  margin-left: 285px;
+  width: 1034px;
+  height: 44px;
+  left: 351px;
+  top: 1113px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #8a8a8a;
+}
+.home-hr {
+  margin-left: 20px;
+  width: 1264px;
+  height: 1px;
+  left: 87px;
+  top: 1182px;
+  background: #d9d9d9;
+}
+.adress {
+  margin-left: 285px;
+  width: 300px;
+  margin-top: -5px;
+  height: 24px;
+  left: 351px;
+  top: 1070px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+.day-price-second {
+  margin-top: -30px;
+  width: 289px;
+  height: 25px;
+  left: 574px;
+  top: 1253px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #8a8a8a;
+}
+.day-price {
+  margin-left: 308px;
+  width: 289px;
+  height: 25px;
+  left: 574px;
+  top: 1253px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #8a8a8a;
+}
+.day-price-second {
+  margin-left: 340px;
+}
+.paragraf-home {
+  margin-top: 24px;
+  margin-left: 285px;
+  height: 21px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #8a8a8a;
+}
+.nav-home {
+  margin-left: 353px;
+  width: 40px;
+  display: flex;
+  height: 24px;
+  left: 1284px;
+  top: 1212px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  width: 112px;
+  height: 43px;
+  background: lightcoral;
+  border-radius: 40px;
+}
+.nav-second {
+  display: flex;
+  margin-left: 320px;
+  margin-top: -10px;
+  width: 39px;
+  height: 24px;
+  left: 1282.53px;
+  top: 1266px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  width: 112px;
+  height: 43px;
+  background: lightcoral;
+  border-radius: 40px;
+}
+.three-box-home {
+  margin-top: 650px;
+}
+.four-box-home {
+  margin-top: 1140px;
 }

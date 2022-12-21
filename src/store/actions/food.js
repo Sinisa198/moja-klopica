@@ -3,7 +3,7 @@ export const DELETE_FOOD = 'DELETE_FOOD';
 export const INCREMENTE = 'INCREMENTE';
 export const DECREMENTE = 'DECREMENTE';
 
-export const addFood = (payload) => (dispatch) => {
+export const addFood = (payload) => {
   return {
     type: ADD_FOOD,
     payload,
