@@ -3,11 +3,8 @@ import FooterForRestoran from '../FooterForRestoran/FooterForRestoran';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import logoMeni from '../../../images/logo-for-meni.png';
-import { addFood } from '../../../store/actions/food';
-import { useDispatch } from 'react-redux';
-const Meni = (items) => {
-  let Food = [];
-  Food.push(items);
+
+const Meni = () => {
   const listmeni = [
     {
       title: 'Supe i čorbe',
@@ -112,9 +109,6 @@ const Meni = (items) => {
       button: 'Dodaj',
     },
   ];
-  let Foods = [];
-  const dispatch = useDispatch();
-  console.error('add food :', addFood);
   return (
     <div className='main-meni'>
       <Header />
@@ -138,12 +132,7 @@ const Meni = (items) => {
                     <span className='dl'>{data.dl}</span>
                     <div className='price-button'>
                       <span className='price'>{data.price}</span>
-                      <button
-                        className='meni-button'
-                        onClick={() => dispatch(addFood(3))}
-                      >
-                        {data.button}
-                      </button>
+                      <button className='meni-button'>{data.button}</button>
                     </div>
                   </div>
                 </div>
@@ -153,11 +142,6 @@ const Meni = (items) => {
           <div className='calculator'>
             <p className='calculator-paragraf'>KALKULATOR</p>
             <div className='calculator-hr' />
-            <p>
-              {Foods.map((item, key) => {
-                return <tr key={key}>{item.name}</tr>;
-              })}
-            </p>
           </div>
         </div>
       </div>

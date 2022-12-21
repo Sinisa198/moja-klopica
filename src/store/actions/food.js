@@ -4,7 +4,6 @@ export const INCREMENTE = 'INCREMENTE';
 export const DECREMENTE = 'DECREMENTE';
 
 export const addFood = (payload) => (dispatch) => {
-  console.log('addddddd');
   return {
     type: ADD_FOOD,
     payload,

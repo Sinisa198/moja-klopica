@@ -7,7 +7,7 @@ let initState = {
 const foodReducer = (state = initState, action) => {
   switch (action.type) {
     case ADD_FOOD:
-      return { ...state, foods: state.foods.push(action.payload) };
+      return { ...state, foods: [...state.foods, action.payload] };
     default:
       return state;
 

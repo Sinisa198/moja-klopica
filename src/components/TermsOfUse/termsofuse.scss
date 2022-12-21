@@ -1,0 +1,192 @@
+.App-terms-of-use {
+  background: url('../../images/background-terms.png');
+}
+
+.main-terms {
+  display: flex;
+  padding-top: 20px;
+  margin-left: 50px;
+  background: url('../../images/background-terms.png');
+}
+.title-termsofuse {
+  color: red;
+}
+.input {
+  margin-top: -50px;
+  display: flex;
+  gap: 2.1rem;
+  border: 1px solid #aaa;
+  border-radius: 40px;
+  margin-left: 400px;
+  justify-content: center;
+  background-color: #ffff;
+}
+input {
+  all: unset;
+}
+.button-restoran {
+  width: 194px;
+  height: 67px;
+  left: 1180px;
+  top: 59px;
+  background: #c63a2f;
+  border-radius: 10px;
+  font-family: 'Nunito';
+  border: 1px solid #c63a2f;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 34px;
+  margin-left: 310px;
+  color: #ffffff;
+}
+.prefix,
+.suffix {
+  color: #ffff;
+  margin-top: 10px;
+  background-color: #c63a2f;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  border-radius: 30px;
+}
+.prefix {
+  border-radius: 40px 0px 0px 40px;
+}
+.title-for-termsofuse {
+  margin-left: 50px;
+  margin-top: 300px;
+  padding-bottom: 120px;
+  left: 491px;
+  top: 394px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 33px;
+  color: #ffffff;
+}
+.list-terms {
+  position: absolute;
+  width: 292px;
+  height: 33px;
+  left: 113px;
+  top: 200px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
+.lorem-ipsum {
+  position: absolute;
+  height: 36px;
+  left: 564px;
+  margin-right: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+.text-terms {
+  margin-top: 90px;
+}
+.text-terms2 {
+  margin-top: 200px;
+}
+.paragraf-terms {
+  width: 759px;
+  height: 72px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+.box-terms {
+  position: absolute;
+  width: 1316px;
+  height: 1167px;
+  left: 63px;
+  margin-top: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+.red {
+  width: 400px;
+  height: 83px;
+  left: 71px;
+  top: 361px;
+  font-family: 'Londrina Solid';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 83px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #c63a2f;
+}
+.second-box-terms {
+  position: absolute;
+  width: 1441px;
+  height: 1289px;
+  left: 0px;
+  top: 632px;
+  background-color: #f3f1f0;
+}
+.notification-text {
+  width: 501px;
+  height: 36px;
+  left: 564px;
+  top: 745px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+.notification-paragraf {
+  width: 759px;
+  height: 972px;
+  left: 564px;
+  top: 799px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+.text-for-terms {
+  width: 206px;
+  height: 36px;
+  left: 564px;
+  top: 745px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+.paragraf-for-terms {
+  width: 759px;
+  height: 972px;
+  left: 564px;
+  top: 799px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+.ss {
+  margin-top: 1250px;
+}

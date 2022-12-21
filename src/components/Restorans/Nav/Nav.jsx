@@ -14,7 +14,7 @@ const Nav = () => {
     navigate('/topfood');
   };
   const navigateToGalery = () => {
-    navigate('galery');
+    navigate('/galery');
   };
   const navigateToImpressions = () => {
     navigate('/impressions');
