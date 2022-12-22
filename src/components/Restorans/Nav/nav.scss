@@ -1,5 +1,4 @@
-.restoran-top-food {
-  background: url('../../images/background-restoran.png');
+.main-nav {
   padding-top: 20px;
   padding-left: 20px;
   padding-bottom: 200px;
@@ -74,7 +73,6 @@
   }
   .location {
     margin-top: 35px;
-    margin-left: 100px;
   }
   .restoran-paragraf {
     font-family: 'Londrina Solid';
@@ -188,22 +186,7 @@
     box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
     border-radius: 30px 30px 0px 0px;
   }
-  .paragraf-restoran {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: #8a8a8a;
-  }
-  .second-paragraf {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: #8a8a8a;
-  }
+
   .title-for-restoran {
     font-family: 'Poppins';
     font-style: normal;
@@ -212,22 +195,11 @@
     line-height: 75px;
     color: #333333;
   }
-  .text-for-restoran {
-    padding-top: 40px;
-    margin-left: 119px;
-  }
   input {
     all: unset;
   }
   .prefix {
     border-radius: 40px 0px 0px 40px;
-  }
-  .box {
-    margin-top: 20px;
-    width: 1316px;
-    height: 299px;
-    box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
   }
   .prefix,
   .suffix {
@@ -238,14 +210,6 @@
     height: 30px;
     font-size: 30px;
     border-radius: 30px;
-  }
-  .phone-restoran,
-  .location-restoran {
-    display: flex;
-    height: 25px;
-  }
-  .phone-restoran {
-    width: 25px;
   }
   .button-restoran {
     width: 194px;
@@ -262,49 +226,5 @@
     line-height: 34px;
     margin-left: 310px;
     color: #ffffff;
-  }
-  .first-box-picture {
-    display: flex;
-    width: 267.69px;
-    height: 185.4px;
-    left: 1006.31px;
-    top: 1894px;
-    background: #ffffff;
-    box-shadow: 0px 0px 2.97884px rgba(0, 0, 0, 0.2);
-    border-radius: 5.95768px;
-    margin-top: -600px;
-    margin-left: 200px;
-  }
-  .list-rating {
-    margin-left: 70px;
-    color: #c63a2f;
-  }
-  .second-box-picture {
-    display: flex;
-    margin-left: 200px;
-  }
-  .title-rating {
-    display: flex;
-  }
-  .list-picture1 {
-    padding-bottom: 70px;
-  }
-  .foreach-box {
-    background: #ffffff;
-    box-shadow: 0px 0px 2.97884px rgba(0, 0, 0, 0.2);
-    border-radius: 5.95768px;
-  }
-  .title-list {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 7.74499px;
-    line-height: 12px;
-    color: #8a8a8a;
-  }
-  .list-pictures {
-    display: flex;
-    grid-column-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
   }
 }

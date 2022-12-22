@@ -1,0 +1,112 @@
+.nav-and-rating {
+  background: #f3f1f0;
+  margin-top: -150px;
+  padding-bottom: 100px;
+}
+.main-i {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 100px;
+  margin-top: -150px;
+}
+.list-starrating {
+  color: red;
+  float: right;
+  margin-right: 20px;
+}
+.second-star {
+  background-color: #ffff;
+}
+.impressions-first-box {
+  box-sizing: border-box;
+  width: 763px;
+  height: 783px;
+  background: #ffffff;
+  box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+.impressions-text {
+  height: 30px;
+  left: 886px;
+  top: 1174px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+.impressions-input {
+  margin-left: 20px;
+  width: 224px;
+  height: 141px;
+}
+.impressions-second-box {
+  margin-left: 20px;
+  width: 350px;
+  height: 783px;
+  background: #ffffff;
+  box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+.impressions-hr {
+  height: 1px;
+  width: 300px;
+  margin-left: 20px;
+  background-color: #d9d9d9;
+}
+.star-rating-meni {
+  margin-left: 20px;
+}
+.impressions-second-hr {
+  height: 1px;
+  background-color: #d9d9d9;
+  width: 300px;
+}
+.first-hr,
+.second-hr,
+.three-hr {
+  background-color: #d9d9d9;
+  color: gray;
+  width: 600px;
+  margin-left: 70px;
+  height: 1px;
+}
+.impressions-button {
+  width: 154px;
+  height: 42px;
+  left: 886px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  top: 1765px;
+  background: #c63a2f;
+  border: 1px solid #c63a2f;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 6.23711px;
+}
+.impressions {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  margin-left: 20px;
+  color: #333333;
+}
+.paragraf-for-first-box,
+.second-paragraf-impressions,
+.three-paragraf,
+.four-paragraf {
+  padding-left: 73px;
+  padding-top: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}

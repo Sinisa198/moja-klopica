@@ -1,5 +1,4 @@
-.restoran-top-food {
-  background: url('../../images/background-restoran.png');
+.main-header {
   padding-top: 20px;
   padding-left: 20px;
   padding-bottom: 200px;
@@ -74,7 +73,6 @@
   }
   .location {
     margin-top: 35px;
-    margin-left: 100px;
   }
   .restoran-paragraf {
     font-family: 'Londrina Solid';
@@ -247,6 +245,10 @@
   .phone-restoran {
     width: 25px;
   }
+  .three-div {
+    margin-left: -900px;
+    margin-top: 700px;
+  }
   .button-restoran {
     width: 194px;
     height: 67px;
@@ -262,49 +264,5 @@
     line-height: 34px;
     margin-left: 310px;
     color: #ffffff;
-  }
-  .first-box-picture {
-    display: flex;
-    width: 267.69px;
-    height: 185.4px;
-    left: 1006.31px;
-    top: 1894px;
-    background: #ffffff;
-    box-shadow: 0px 0px 2.97884px rgba(0, 0, 0, 0.2);
-    border-radius: 5.95768px;
-    margin-top: -600px;
-    margin-left: 200px;
-  }
-  .list-rating {
-    margin-left: 70px;
-    color: #c63a2f;
-  }
-  .second-box-picture {
-    display: flex;
-    margin-left: 200px;
-  }
-  .title-rating {
-    display: flex;
-  }
-  .list-picture1 {
-    padding-bottom: 70px;
-  }
-  .foreach-box {
-    background: #ffffff;
-    box-shadow: 0px 0px 2.97884px rgba(0, 0, 0, 0.2);
-    border-radius: 5.95768px;
-  }
-  .title-list {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 7.74499px;
-    line-height: 12px;
-    color: #8a8a8a;
-  }
-  .list-pictures {
-    display: flex;
-    grid-column-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -5,20 +5,33 @@ import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import { MdFavoriteBorder } from 'react-icons/md';
 import firstimageRestoran from '../../images/firstimageRestoran.png';
 import map from '../../images/map.png';
-
-const listpictures = [
-  {
-    image: '',
-    name: 'Lorem Ipsum',
-    description: 'RESTORANI * Lorem ipsum',
-    rating: '4.2',
-  },
-];
+import RestoranIcon from '../../images/Vector.png';
+import Notepad from '../../images/notepad.png';
+import Star from '../../images/star.png';
+import Picture from '../../images/picture.png';
+import Burger from '../../images/burger.png';
+import Location from '../../images/location.png';
+import Phone from '../../images/phone.png';
+import listpicture from '../../images/listpicture.png';
+import { useNavigate } from 'react-router';
+import { AiTwotoneStar } from 'react-icons/ai';
+import { RiStarSFill } from 'react-icons/ri';
+import FooterForRestoran from './FooterForRestoran/FooterForRestoran';
 const RestoranTopFood = () => {
+  const navigate = useNavigate();
+  const navigateToMeni = () => {
+    navigate('/meni');
+  };
+  const navigateToImpressions = () => {
+    navigate('/impressions');
+  };
+  const navigateToGalery = () => {
+    navigate('/galery');
+  };
   return (
     <div className='restoran-top-food'>
       <div className='burger-logo'>
-        TEST
+        <img src={Burger} className='burger-meni' alt='' />
         <img src={miniLogo} alt='' className='logo-restoran' />
         <div>
           <p className='restoran-paragraf'>Moja klopica</p>
@@ -45,7 +58,8 @@ const RestoranTopFood = () => {
           <div className='text-for-restoran'>
             <h2 className='title-for-restoran'>Restoran Top Food 021</h2>
             <p className='paragraf-restoran'>
-              RESTORANI * Domaca kuhinja * 4,2 60 ocena Besplatna dostava
+              RESTORANI * Domaca kuhinja * 4,2
+              <AiTwotoneStar className='star-icon' /> 60 ocena Besplatna dostava
             </p>
             <p className='second-paragraf'>
               <span className='span-green'> Otvoreno sad </span>* Zatvara se u
@@ -57,16 +71,29 @@ const RestoranTopFood = () => {
       <div className='navigation-menu'>
         <div className='nav'>
           <div className='nav-restoran'>
-            <p>O restoranu</p>
+            <img src={RestoranIcon} className='meni-icon' alt='' />
+            <p className='paragraf-meni'>O restoranu</p>
           </div>
           <div className='nav-meni'>
-            <p>Meni</p>
+            <img src={Notepad} className='meni-icon' alt='' />
+            <p className='paragraf-meni' onClick={() => navigateToMeni()}>
+              Meni
+            </p>
           </div>
-          <div className='nav-utisci'>
-            <p>Utisci</p>
+          <div className='nav-impressions'>
+            <img src={Star} className='meni-icon' alt='' />
+            <p
+              className='paragraf-meni'
+              onClick={() => navigateToImpressions()}
+            >
+              Utisci
+            </p>
           </div>
-          <div className='nav-galerija'>
-            <p>Galerija</p>
+          <div className='nav-galery'>
+            <img src={Picture} className='meni-icon' alt='' />
+            <p className='paragraf-meni' onClick={() => navigateToGalery()}>
+              Galerija
+            </p>
           </div>
         </div>
         <div className='text-and-location'>
@@ -93,13 +120,111 @@ const RestoranTopFood = () => {
           </p>
           <div className='location'>
             <p>Restoran Top Food 021</p>
-            <p>Svetozala Miletica 26, 21000 Novi Sad</p>
-            <p>0644226471</p>
+            <div className='location-restoran'>
+              <img src={Location} alt='' />
+              <p>Svetozala Miletica 26, 21000 Novi Sad</p>
+            </div>
+            <div className='phone-restoran'>
+              <img src={Phone} alt='' className='phone-image' />
+              <p>0644226471</p>
+            </div>
             <img src={map} className='image-map' alt='' />{' '}
             {/*Stavljena slika samo zbog pregleda*/}
           </div>
         </div>
+        <div className='main-list-picture'>
+          <div className='list-picture1'>
+            <div className='first-box-picture'>
+              <div className='foreach-box'>
+                <img src={listpicture} alt='' />
+                <p>Lorem Ipsum</p>
+                <div className='title-rating'>
+                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
+                  <span className='list-rating'>
+                    4.2
+                    <RiStarSFill />
+                  </span>
+                </div>
+              </div>
+              <div className='foreach-box'>
+                <img src={listpicture} alt='' />
+                <p>Lorem Ipsum</p>
+                <div className='title-rating'>
+                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
+                  <span className='list-rating'>
+                    4.2 <RiStarSFill />
+                  </span>
+                </div>
+              </div>
+              <div className='foreach-box'>
+                <img src={listpicture} alt='' />
+                <p>Lorem Ipsum</p>
+                <div className='title-rating'>
+                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
+                  <span className='list-rating'>
+                    4.2 <RiStarSFill />
+                  </span>
+                </div>
+              </div>
+              <div className='foreach-box'>
+                <img src={listpicture} alt='' />
+                <p>Lorem Ipsum</p>
+                <div className='title-rating'>
+                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
+                  <span className='list-rating'>
+                    4.2 <RiStarSFill />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='list-picture2'>
+            <div className='second-box-picture'>
+              <div className='foreach-box'>
+                <img src={listpicture} alt='' />
+                <p>Lorem Ipsum</p>
+                <div className='title-rating'>
+                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
+                  <span className='list-rating'>
+                    4.2 <RiStarSFill />
+                  </span>
+                </div>
+              </div>
+              <div className='foreach-box'>
+                <img src={listpicture} alt='' />
+                <p>Lorem Ipsum</p>
+                <div className='title-rating'>
+                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
+                  <span className='list-rating'>
+                    4.2 <RiStarSFill />
+                  </span>
+                </div>
+              </div>
+              <div className='foreach-box'>
+                <img src={listpicture} alt='' />
+                <p>Lorem Ipsum</p>
+                <div className='title-rating'>
+                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
+                  <span className='list-rating'>
+                    4.2 <RiStarSFill />
+                  </span>
+                </div>
+              </div>
+              <div className='foreach-box'>
+                <img src={listpicture} alt='' />
+                <p>Lorem Ipsum</p>
+                <div className='title-rating'>
+                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
+                  <span className='list-rating'>
+                    4.2 <RiStarSFill />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      {/* <FooterForRestoran /> */}
     </div>
   );
 };
