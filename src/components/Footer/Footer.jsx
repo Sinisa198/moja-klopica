@@ -4,7 +4,6 @@ import { BsInstagram } from 'react-icons/bs';
 import { GrFacebookOption } from 'react-icons/gr';
 import { SiTiktok } from 'react-icons/si';
 import { BsApple } from 'react-icons/bs';
-import { FaGooglePlay } from 'react-icons/fa';
 import { TiLocation } from 'react-icons/ti';
 import { BiWorld } from 'react-icons/bi';
 import GooglePlay from '../../images/googleplay.png';

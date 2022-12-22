@@ -7,7 +7,7 @@
   padding-top: 80px;
   position: absolute;
   width: 1440px;
-  height: 1497px;
+  height: 1697px;
   left: 0px;
   margin-top: -110px;
   top: 906px;
@@ -40,7 +40,7 @@
   flex-direction: column;
 }
 .day-and-price-second {
-  margin-top: -33px;
+  margin-top: -63px;
   width: 167px;
   height: 24px;
   left: 118px;
@@ -53,7 +53,7 @@
   color: #333333;
 }
 .day-and-price-last {
-  margin-top: -55px;
+  margin-top: -48px;
   width: 167px;
   height: 24px;
   left: 118px;
@@ -92,15 +92,27 @@
   line-height: 22px;
   color: #c63a2f;
 }
+
 .icon-home {
+  margin-top: -5px;
   width: 25px;
   height: 25px;
+}
+.nav-icons {
+  grid-column-gap: 220px;
 }
 .three-nav {
   display: flex;
   box-sizing: border-box;
-  border: 2px solid black;
-  grid-column-gap: 500px;
+  margin-left: 100px;
+  margin-top: 0px;
+  grid-column-gap: 380px;
+}
+.hr-for-nav {
+  width: 1307px;
+  height: 1px;
+  margin-top: 30px;
+  background: #d9d9d9;
 }
 .three-span {
   padding-top: 12px;
@@ -153,9 +165,8 @@
 .nav-home-last {
   display: flex;
   margin-top: -10px;
-  margin-left: 950px;
+  margin-left: 960px;
   width: 51px;
-  height: 24px;
   left: 1282px;
   top: 1320px;
   font-family: 'Poppins';
@@ -164,12 +175,12 @@
   font-size: 16px;
   line-height: 24px;
   color: #333333;
-  width: 112px;
-  height: 43px;
+  width: 90px;
   left: 1236px;
   top: 1257px;
-  background: lightcoral;
+  background-color: lightcoral;
   border-radius: 40px;
+  padding: 3px 2px 2px 2px;
 }
 .first-box {
   display: flex;
@@ -191,13 +202,6 @@
   height: 167px;
   margin-left: 30px;
   margin-top: 26px;
-}
-.home-stars {
-  left: 6.24%;
-  right: 6.24%;
-  top: 6.24%;
-  bottom: 9.37%;
-  color: #c63a2f;
 }
 .title-home {
   margin-left: 285px;
@@ -249,11 +253,9 @@
   color: #333333;
 }
 .day-price-second {
-  margin-top: -30px;
+  margin-top: -20px;
   width: 289px;
   height: 25px;
-  left: 574px;
-  top: 1253px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -291,9 +293,8 @@
   color: #8a8a8a;
 }
 .nav-home {
-  margin-left: 353px;
+  margin-left: 358px;
   width: 40px;
-  display: flex;
   height: 24px;
   left: 1284px;
   top: 1212px;
@@ -303,14 +304,14 @@
   font-size: 16px;
   line-height: 24px;
   color: #333333;
-  width: 112px;
-  height: 43px;
-  background: lightcoral;
+  width: 90px;
+  padding: 3px 3px 3px 3px;
+  background-color: lightcoral;
   border-radius: 40px;
 }
 .nav-second {
   display: flex;
-  margin-left: 320px;
+  margin-left: 327px;
   margin-top: -10px;
   width: 39px;
   height: 24px;
@@ -321,15 +322,26 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #333333;
-  width: 112px;
-  height: 43px;
-  background: lightcoral;
+  width: 93px;
+  padding: 2px 2px 2px 2px;
+  background-color: lightcoral;
   border-radius: 40px;
+  color: #333333;
+}
+.paragraf-rating {
+  color: black;
+}
+.stars-home {
+  margin-top: -170px;
+  color: #c63a2f;
+  margin-left: 916px;
 }
 .three-box-home {
   margin-top: 650px;
 }
 .four-box-home {
   margin-top: 1140px;
+}
+.footer-restoran {
+  margin-top: 1600px;
 }
