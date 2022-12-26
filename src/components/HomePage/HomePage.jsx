@@ -10,12 +10,22 @@ import { RiStarSFill } from 'react-icons/ri';
 import { AiOutlineStar } from 'react-icons/ai';
 
 const HomePage = () => {
+  const arrayHomePage = [
+    {
+      paragraf: 'RESTORANI * Domaca Kuhinja',
+      title: 'Restoran Top FOOD 021',
+      adress: 'Svetozara Miletića 26, 21000 Novi Sad',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia nulla luctus sapien malesuada congue. Phasellus ut felismi. Quis<br /> que pulvinar tincidunt arcu quis dignissim. Duis et egestasa sem...',
+      rating: '30 ocena',
+    },
+  ];
   return (
     <div className='forms'>
       <div className='main-home'>
         <Navigation />
         <Forms />
       </div>
+
       <div className='second-box-home'>
         <div className='first-box'>
           <img src={miniTopFood} alt='' className='mini-top-food' />

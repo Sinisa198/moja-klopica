@@ -16,8 +16,57 @@ import listpicture from '../../images/listpicture.png';
 import { useNavigate } from 'react-router';
 import { AiTwotoneStar } from 'react-icons/ai';
 import { RiStarSFill } from 'react-icons/ri';
-import FooterForRestoran from './FooterForRestoran/FooterForRestoran';
 const RestoranTopFood = () => {
+  const foreachBox = [
+    {
+      image: listpicture,
+      paragraf: 'Lorem Ipsum',
+      title: 'RESTORANI * Lorem ipsum',
+      rating: '4.2',
+    },
+    {
+      image: listpicture,
+      paragraf: 'Lorem Ipsum',
+      title: 'RESTORANI * Lorem ipsum',
+      rating: '4.2',
+    },
+    {
+      image: listpicture,
+      paragraf: 'Lorem Ipsum',
+      title: 'RESTORANI * Lorem ipsum',
+      rating: '4.2',
+    },
+    {
+      image: listpicture,
+      paragraf: 'Lorem Ipsum',
+      title: 'RESTORANI * Lorem ipsum',
+      rating: '4.2',
+    },
+    {
+      image: listpicture,
+      paragraf: 'Lorem Ipsum',
+      title: 'RESTORANI * Lorem ipsum',
+      rating: '4.2',
+    },
+    {
+      image: listpicture,
+      paragraf: 'Lorem Ipsum',
+      title: 'RESTORANI * Lorem ipsum',
+      rating: '4.2',
+    },
+    {
+      image: listpicture,
+      paragraf: 'Lorem Ipsum',
+      title: 'RESTORANI * Lorem ipsum',
+      rating: '4.2',
+    },
+    {
+      image: listpicture,
+      paragraf: 'Lorem Ipsum',
+      title: 'RESTORANI * Lorem ipsum',
+      rating: '4.2',
+    },
+  ];
   const navigate = useNavigate();
   const navigateToMeni = () => {
     navigate('/meni');
@@ -26,7 +75,7 @@ const RestoranTopFood = () => {
     navigate('/impressions');
   };
   const navigateToGalery = () => {
-    navigate('/galery');
+    navigate('/gallery');
   };
   return (
     <div className='restoran-top-food'>
@@ -130,101 +179,34 @@ const RestoranTopFood = () => {
             </div>
             <img src={map} className='image-map' alt='' />{' '}
             {/*Stavljena slika samo zbog pregleda*/}
+            <p className='same-place'>Slična mesta</p>
+            <div className='hr-for-restoran'></div>
           </div>
         </div>
-        <div className='main-list-picture'>
-          <div className='list-picture1'>
-            <div className='first-box-picture'>
-              <div className='foreach-box'>
-                <img src={listpicture} alt='' />
-                <p>Lorem Ipsum</p>
-                <div className='title-rating'>
-                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
-                  <span className='list-rating'>
-                    4.2
-                    <RiStarSFill />
-                  </span>
-                </div>
-              </div>
-              <div className='foreach-box'>
-                <img src={listpicture} alt='' />
-                <p>Lorem Ipsum</p>
-                <div className='title-rating'>
-                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
-                  <span className='list-rating'>
-                    4.2 <RiStarSFill />
-                  </span>
-                </div>
-              </div>
-              <div className='foreach-box'>
-                <img src={listpicture} alt='' />
-                <p>Lorem Ipsum</p>
-                <div className='title-rating'>
-                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
-                  <span className='list-rating'>
-                    4.2 <RiStarSFill />
-                  </span>
-                </div>
-              </div>
-              <div className='foreach-box'>
-                <img src={listpicture} alt='' />
-                <p>Lorem Ipsum</p>
-                <div className='title-rating'>
-                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
-                  <span className='list-rating'>
-                    4.2 <RiStarSFill />
-                  </span>
+        <div className='list-restoran-div'>
+          {foreachBox.map((item) => (
+            <div className='main-div'>
+              <div className='div-for-list-restoran'>
+                <div>
+                  <img
+                    src={listpicture}
+                    alt=''
+                    className='image-div-restoran'
+                  />
+                  <p className='list-paragraf-restoran'>{item.paragraf}</p>
+                  <div className='div-for-title-rating'>
+                    <p className='list-title-restoran'>{item.title}</p>
+                    <div className='rating-div'>
+                      <p className='rating-restoran'>{item.rating}</p>{' '}
+                      <RiStarSFill className='rating-star-restoran' />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className='list-picture2'>
-            <div className='second-box-picture'>
-              <div className='foreach-box'>
-                <img src={listpicture} alt='' />
-                <p>Lorem Ipsum</p>
-                <div className='title-rating'>
-                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
-                  <span className='list-rating'>
-                    4.2 <RiStarSFill />
-                  </span>
-                </div>
-              </div>
-              <div className='foreach-box'>
-                <img src={listpicture} alt='' />
-                <p>Lorem Ipsum</p>
-                <div className='title-rating'>
-                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
-                  <span className='list-rating'>
-                    4.2 <RiStarSFill />
-                  </span>
-                </div>
-              </div>
-              <div className='foreach-box'>
-                <img src={listpicture} alt='' />
-                <p>Lorem Ipsum</p>
-                <div className='title-rating'>
-                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
-                  <span className='list-rating'>
-                    4.2 <RiStarSFill />
-                  </span>
-                </div>
-              </div>
-              <div className='foreach-box'>
-                <img src={listpicture} alt='' />
-                <p>Lorem Ipsum</p>
-                <div className='title-rating'>
-                  <span className='title-list'>RESTORANI * Lorem ipsum</span>
-                  <span className='list-rating'>
-                    4.2 <RiStarSFill />
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
-      {/* <FooterForRestoran /> */}
     </div>
   );
 };

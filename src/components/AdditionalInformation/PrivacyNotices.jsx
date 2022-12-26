@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router';
 import termsofuseLogo from '../../images/termsofuse-logo.png';
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import { MdFavoriteBorder } from 'react-icons/md';
-import FooterForRestoran from '../Restorans/FooterForRestoran/FooterForRestoran';
 const TermsOfUse = () => {
   const navigate = useNavigate();
 
@@ -103,9 +102,7 @@ const TermsOfUse = () => {
             </p>
           </div>
         </div>
-        <div className='ss'>
-          <FooterForRestoran />
-        </div>
+        <div className='ss'></div>
       </div>
     </div>
   );

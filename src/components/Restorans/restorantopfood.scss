@@ -8,6 +8,7 @@
     width: 132px;
     height: 63.06px;
     left: 52px;
+    margin-left: 120px;
     top: 60px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
       drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -69,6 +70,7 @@
     height: 299px;
   }
   .box-together {
+    width: 90%;
     margin-top: 50px;
     margin-left: 40px;
   }
@@ -247,6 +249,26 @@
   .phone-restoran {
     width: 25px;
   }
+  .same-place {
+    width: 158px;
+    height: 36px;
+    top: 1820px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+  }
+  .hr-for-restoran {
+    position: absolute;
+    margin-top: -160px;
+    width: 1009px;
+    height: 1px;
+    left: 142px;
+    top: 1771px;
+    background: #d9d9d9;
+  }
   .button-restoran {
     width: 194px;
     height: 67px;
@@ -260,12 +282,13 @@
     font-weight: 800;
     font-size: 25px;
     line-height: 34px;
-    margin-left: 310px;
+    margin-left: 280px;
     color: #ffffff;
   }
   .first-box-picture {
     display: flex;
     width: 267.69px;
+    grid-column-gap: 20px;
     height: 185.4px;
     left: 1006.31px;
     top: 1894px;
@@ -273,7 +296,7 @@
     box-shadow: 0px 0px 2.97884px rgba(0, 0, 0, 0.2);
     border-radius: 5.95768px;
     margin-top: -600px;
-    margin-left: 200px;
+    margin-left: 140px;
   }
   .list-rating {
     margin-left: 70px;
@@ -281,18 +304,73 @@
   }
   .second-box-picture {
     display: flex;
-    margin-left: 200px;
+    margin-left: 140px;
+    grid-column-gap: 20px;
   }
   .title-rating {
     display: flex;
   }
-  .list-picture1 {
-    padding-bottom: 70px;
+  .main-list-picture {
+    grid-column-gap: 20px;
   }
-  .foreach-box {
+  .div-for-list-restoran {
+    display: flex;
+  }
+  .main-div {
+    display: flex;
     background: #ffffff;
     box-shadow: 0px 0px 2.97884px rgba(0, 0, 0, 0.2);
     border-radius: 5.95768px;
+    padding: 7px 7px 7px 7px;
+  }
+
+  .rating-restoran {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.4759px;
+    line-height: 24px;
+    text-align: right;
+    color: #c63a2f;
+  }
+  .rating-div {
+    display: flex;
+    margin-top: -20px;
+    margin-left: 100px;
+  }
+  .list-paragraf-restoran {
+    width: 78px;
+    height: 18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.9154px;
+    line-height: 18px;
+    color: #333333;
+  }
+  .div-for-title-rating {
+    margin-top: -15px;
+    display: flex;
+  }
+  .list-restoran-div {
+    margin-top: -600px;
+    grid-column-gap: 20px;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+  }
+  .list-title-restoran {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7.74499px;
+    line-height: 12px;
+    color: #8a8a8a;
+  }
+  .rating-star-restoran {
+    margin-top: 22px;
+    margin-left: 5px;
+    color: #c63a2f;
   }
   .title-list {
     font-family: 'Poppins';

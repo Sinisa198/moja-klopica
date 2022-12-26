@@ -1,3 +1,7 @@
+// .App {
+//   background: url('../../images/background-header.png') no-repeat;
+//   height: 800px;
+// }
 .App {
   background: url('../../images/background-header.png') no-repeat;
   height: 800px;
@@ -11,17 +15,18 @@
 .icon-favorite {
   background: #c63a2f;
   border-radius: 40px 0px 0px 40px;
+  padding: 10px 3px 15px 3px;
   width: 50px;
-  height: 40px;
-  margin-top: 10px;
+  height: 20px;
   color: #ffff;
 }
 .icon-arrow {
   width: 40px;
-  height: 40px;
+  height: 20px;
   margin-top: 15px;
   background: #c63a2f;
-  border-radius: 30px;
+  padding: 3px 3px 3px 3px;
+  border-radius: 40px;
   color: #ffff;
 }
 
@@ -82,7 +87,7 @@
       all: unset;
       border-radius: 40px;
       width: 527px;
-      height: 67px;
+      height: 37px;
       left: 91px;
       top: 589px;
       text-align: center;

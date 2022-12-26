@@ -6,23 +6,25 @@ import { SiTiktok } from 'react-icons/si';
 import { BsApple } from 'react-icons/bs';
 import { TiLocation } from 'react-icons/ti';
 import { BiWorld } from 'react-icons/bi';
-import GooglePlay from '../../images/googleplay.png';
 import { BiCopyright } from 'react-icons/bi';
-const Footer = () => {
+import GoogleplayImage from '../../images/googleplay.png';
+const FooterForRestoran = () => {
   return (
     <div className='footer-main'>
       <img src={logoFooter} className='logo-footer' alt='' />
       <div className='box-for-appstore'>
         <div>
-          <BsApple className='icons-box' />
+          <p className='paragraf-app'>
+            {' '}
+            <BsApple className='icons-box' />
+            Nabavite na
+          </p>
         </div>
-        <p className='paragrafApp'>
-          Nabavite na <br /> <span className='span-app'>App Store</span>
-        </p>
+        <p className='paragrafApp'></p>
       </div>
       <div className='box-for-googleplay'>
         <div>
-          <GooglePlay />
+          <img src={GoogleplayImage} alt='' className='icons-box' />
         </div>
         <p className='paragrafGoogle'>
           Nabavite na <br /> <span className='span-google'>Google Play</span>
@@ -61,4 +63,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterForRestoran;

@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../Header/Header';
+import HeaderRestoran from '../Header-Restoran/Header-Restoran';
 import Nav from '../Nav/Nav';
 import { RiStarSFill } from 'react-icons/ri';
-import FooterForRestoran from '../FooterForRestoran/FooterForRestoran';
+import FooterForRestoran from '../../Footer/FooterForRestoran';
 const Impressions = () => {
   return (
     <div className='main-impressions'>
-      <Header />
+      <HeaderRestoran />
       <div className='nav-and-rating'>
         <Nav />
 

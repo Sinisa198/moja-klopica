@@ -10,21 +10,21 @@ export const addFood = (payload) => {
   };
 };
 
-export const deleteFood = (payload) => (dispatch) => {
+export const deleteFood = (payload) => {
   return {
     type: DELETE_FOOD,
     payload,
   };
 };
 
-export const incremente = (payload) => (dispatch) => {
+export const incremente = (payload) => {
   return {
     type: INCREMENTE,
     payload,
   };
 };
 
-export const decremente = (payload) => (dispatch) => {
+export const decremente = (payload) => {
   return {
     type: DECREMENTE,
     payload,

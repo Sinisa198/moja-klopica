@@ -1,13 +1,13 @@
 import React from 'react';
 import Nav from '../Nav/Nav';
-import Header from '../Header/Header';
-import FooterForRestoran from '../FooterForRestoran/FooterForRestoran';
+import HeaderRestoran from '../Header-Restoran/Header-Restoran';
 import lorem1 from '../../../images/lorem1.png';
 import arrow from '../../../images/arrow.png';
-const Galery = () => {
+import FooterForRestoran from '../../Footer/FooterForRestoran';
+const Gallery = () => {
   return (
     <div className='main-galery'>
-      <Header />
+      <HeaderRestoran />
       <div className='nav-and-galery'>
         <Nav />
 
@@ -42,4 +42,4 @@ const Galery = () => {
   );
 };
 
-export default Galery;
+export default Gallery;
