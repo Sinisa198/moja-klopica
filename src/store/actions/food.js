@@ -3,29 +3,28 @@ export const DELETE_FOOD = 'DELETE_FOOD';
 export const INCREMENTE = 'INCREMENTE';
 export const DECREMENTE = 'DECREMENTE';
 
-export const addFood = (payload) => (dispatch) => {
-  console.log('addddddd');
+export const addFood = (payload) => {
   return {
     type: ADD_FOOD,
     payload,
   };
 };
 
-export const deleteFood = (payload) => (dispatch) => {
+export const deleteFood = (payload) => {
   return {
     type: DELETE_FOOD,
     payload,
   };
 };
 
-export const incremente = (payload) => (dispatch) => {
+export const incremente = (payload) => {
   return {
     type: INCREMENTE,
     payload,
   };
 };
 
-export const decremente = (payload) => (dispatch) => {
+export const decremente = (payload) => {
   return {
     type: DECREMENTE,
     payload,
