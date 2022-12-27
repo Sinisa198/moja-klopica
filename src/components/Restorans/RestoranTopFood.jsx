@@ -16,57 +16,9 @@ import listpicture from '../../images/listpicture.png';
 import { useNavigate } from 'react-router';
 import { AiTwotoneStar } from 'react-icons/ai';
 import { RiStarSFill } from 'react-icons/ri';
+import itemsBox from '../data/restoranItems';
+import FooterForRestoran from '../Footer/FooterForRestoran';
 const RestoranTopFood = () => {
-  const foreachBox = [
-    {
-      image: listpicture,
-      paragraf: 'Lorem Ipsum',
-      title: 'RESTORANI * Lorem ipsum',
-      rating: '4.2',
-    },
-    {
-      image: listpicture,
-      paragraf: 'Lorem Ipsum',
-      title: 'RESTORANI * Lorem ipsum',
-      rating: '4.2',
-    },
-    {
-      image: listpicture,
-      paragraf: 'Lorem Ipsum',
-      title: 'RESTORANI * Lorem ipsum',
-      rating: '4.2',
-    },
-    {
-      image: listpicture,
-      paragraf: 'Lorem Ipsum',
-      title: 'RESTORANI * Lorem ipsum',
-      rating: '4.2',
-    },
-    {
-      image: listpicture,
-      paragraf: 'Lorem Ipsum',
-      title: 'RESTORANI * Lorem ipsum',
-      rating: '4.2',
-    },
-    {
-      image: listpicture,
-      paragraf: 'Lorem Ipsum',
-      title: 'RESTORANI * Lorem ipsum',
-      rating: '4.2',
-    },
-    {
-      image: listpicture,
-      paragraf: 'Lorem Ipsum',
-      title: 'RESTORANI * Lorem ipsum',
-      rating: '4.2',
-    },
-    {
-      image: listpicture,
-      paragraf: 'Lorem Ipsum',
-      title: 'RESTORANI * Lorem ipsum',
-      rating: '4.2',
-    },
-  ];
   const navigate = useNavigate();
   const navigateToMeni = () => {
     navigate('/meni');
@@ -166,11 +118,12 @@ const RestoranTopFood = () => {
             vitae placerat mi maximus. Pellentesque <br />
             elementum nibh vitae lectus facilisis, in ornare
             <br /> turpis suscipit.
+            <p className='same-place'>Slična mesta</p>
           </p>
           <div className='location'>
             <p>Restoran Top Food 021</p>
             <div className='location-restoran'>
-              <img src={Location} alt='' />
+              <img src={Location} alt='' className='location-image' />
               <p>Svetozala Miletica 26, 21000 Novi Sad</p>
             </div>
             <div className='phone-restoran'>
@@ -179,12 +132,11 @@ const RestoranTopFood = () => {
             </div>
             <img src={map} className='image-map' alt='' />{' '}
             {/*Stavljena slika samo zbog pregleda*/}
-            <p className='same-place'>Slična mesta</p>
             <div className='hr-for-restoran'></div>
           </div>
         </div>
         <div className='list-restoran-div'>
-          {foreachBox.map((item) => (
+          {itemsBox.map((item) => (
             <div className='main-div'>
               <div className='div-for-list-restoran'>
                 <div>
@@ -206,6 +158,9 @@ const RestoranTopFood = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className='div-for-footer-restoran'>
+        <FooterForRestoran />
       </div>
     </div>
   );

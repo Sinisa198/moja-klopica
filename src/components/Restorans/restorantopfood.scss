@@ -8,7 +8,7 @@
     width: 132px;
     height: 63.06px;
     left: 52px;
-    margin-left: 120px;
+    margin-left: 70px;
     top: 60px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
       drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -57,7 +57,7 @@
     display: flex;
     margin-top: 40px;
     width: 1116px;
-    height: 1316px;
+    height: 1516px;
     margin-left: 100px;
     left: 58px;
     top: 1070px;
@@ -127,9 +127,9 @@
     margin-left: -20px;
     width: 1440px;
     height: 1569px;
+    padding-bottom: 200px;
     background: #f3f1f0;
     margin-top: 20px;
-    height: 5000px;
     background: #f3f1f0;
     font-family: 'Poppins';
     padding-top: 40px;
@@ -252,7 +252,7 @@
   .same-place {
     width: 158px;
     height: 36px;
-    top: 1820px;
+    margin-top: 200px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -262,8 +262,8 @@
   }
   .hr-for-restoran {
     position: absolute;
-    margin-top: -160px;
     width: 1009px;
+    margin-top: -80px;
     height: 1px;
     left: 142px;
     top: 1771px;
@@ -282,7 +282,7 @@
     font-weight: 800;
     font-size: 25px;
     line-height: 34px;
-    margin-left: 280px;
+    margin-left: 210px;
     color: #ffffff;
   }
   .first-box-picture {
@@ -318,6 +318,7 @@
   }
   .main-div {
     display: flex;
+    width: 240px;
     background: #ffffff;
     box-shadow: 0px 0px 2.97884px rgba(0, 0, 0, 0.2);
     border-radius: 5.95768px;
@@ -354,10 +355,10 @@
   }
   .list-restoran-div {
     margin-top: -600px;
-    grid-column-gap: 20px;
     display: grid;
+    margin-left: 125px;
     grid-row-gap: 20px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 270px 270px 270px 270px;
   }
   .list-title-restoran {
     font-family: 'Poppins';
@@ -384,5 +385,8 @@
     display: flex;
     grid-column-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .div-for-footer-restoran {
+    margin-left: -20px;
   }
 }

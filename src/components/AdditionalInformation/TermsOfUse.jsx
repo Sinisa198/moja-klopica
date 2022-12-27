@@ -3,17 +3,18 @@ import { useNavigate } from 'react-router';
 import termsofuseLogo from '../../images/termsofuse-logo.png';
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import { MdFavoriteBorder } from 'react-icons/md';
+import FooterForRestoran from '../Footer/FooterForRestoran';
 const TermsOfUse = () => {
   const navigate = useNavigate();
 
   const navigateToNotifications = () => {
-    navigate('/notifications');
+    navigate('/privacynotices');
   };
   const navigateToTerms = () => {
     navigate('/termsofuse');
   };
   const toTerms = () => {
-    navigate('/terms');
+    navigate('/askedquestions');
   };
   return (
     <div className='terms-of-use'>
@@ -32,7 +33,7 @@ const TermsOfUse = () => {
               </span>
             </div>
           </div>
-          <div className='button-for-restoran'>
+          <div className='button-for-restoran-terms'>
             <button className='button-restoran'>Ulogujte se</button>
           </div>
         </div>
@@ -50,6 +51,7 @@ const TermsOfUse = () => {
               Obaveštenje o privatnosti
             </p>
             <p onClick={() => toTerms()}>Uslovi korišćenja</p>
+            <div className='hr-for-terms'></div>
           </div>
           <div className='lorem-ipsum'>
             <h4 className='text-for-terms'>Uslovi korišćenja</h4>
@@ -100,7 +102,9 @@ const TermsOfUse = () => {
             </p>
           </div>
         </div>
-        <div className='ss'></div>
+      </div>
+      <div className='footer-terms'>
+        <FooterForRestoran />
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from '../../images/logo-homepage.png';
 import { BsInstagram } from 'react-icons/bs';
+import { GrFacebookOption } from 'react-icons/gr';
 import { SiTiktok } from 'react-icons/si';
 import { BiCopyright } from 'react-icons/bi';
-import { FaFacebook } from 'react-icons/fa';
 import { BsApple } from 'react-icons/bs';
 import GooglePlay from '../../images/googleplay.png';
 const FooterForHomePage = () => {
@@ -39,7 +39,7 @@ const FooterForHomePage = () => {
           <BsInstagram />
         </div>
         <div className='div-facebook'>
-          <FaFacebook />
+          <GrFacebookOption />
         </div>
         <div className='div-tiktok'>
           <SiTiktok />

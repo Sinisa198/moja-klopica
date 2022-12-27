@@ -1,10 +1,8 @@
-// .App {
-//   background: url('../../images/background-header.png') no-repeat;
-//   height: 800px;
-// }
 .App {
   background: url('../../images/background-header.png') no-repeat;
-  height: 800px;
+  background-size: 100%;
+  width: 1440px;
+  height: 1050px;
 }
 .span-heart {
   background: #c63a2f;
@@ -12,20 +10,13 @@
   width: 100%;
   color: white;
 }
-.icon-favorite {
-  background: #c63a2f;
-  border-radius: 40px 0px 0px 40px;
-  padding: 10px 3px 15px 3px;
-  width: 50px;
-  height: 20px;
-  color: #ffff;
-}
+
 .icon-arrow {
   width: 40px;
   height: 20px;
   margin-top: 15px;
   background: #c63a2f;
-  padding: 3px 3px 3px 3px;
+  padding: 5px 5px 5px 5px;
   border-radius: 40px;
   color: #ffff;
 }
@@ -46,14 +37,13 @@
 }
 .forms-main {
   width: 400px;
-  height: 83px;
+  height: 1000px;
   margin-left: 90px;
-  margin-top: 250px;
+  margin-top: 100px;
   font-family: 'Londrina Solid';
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: #c63a2f;
 
   .form-title {
@@ -66,20 +56,26 @@
     text-transform: uppercase;
     color: #c63a2f;
   }
+  .icon-for-input {
+    background: #c63a2f;
+    border-radius: 40px 0px 0px 40px;
+    padding: 2px 2px 2px 5px;
+  }
   .form-text {
     width: 477px;
     height: 66px;
+    left: 90px;
+    top: 477px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 35px;
     line-height: 33px;
     color: #ffffff;
   }
-  .divv {
+  .div-for-input {
     background-color: #ffff;
     border-radius: 40px;
-    padding: 5px;
     border: 1px solid #ddd;
     width: max-content;
 
@@ -87,9 +83,6 @@
       all: unset;
       border-radius: 40px;
       width: 527px;
-      height: 37px;
-      left: 91px;
-      top: 589px;
       text-align: center;
       background-color: #ffff;
     }

@@ -50,3 +50,5 @@ export const itemsBox = [
     rating: '4.2',
   },
 ];
+
+export default itemsBox;

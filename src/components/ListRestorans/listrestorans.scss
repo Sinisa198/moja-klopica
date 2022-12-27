@@ -3,7 +3,8 @@
   flex-wrap: wrap;
   align-items: center;
   background: #f3f1f0;
-  margin-top: 280px;
+  margin-top: -400px;
+  padding-top: 60px;
   justify-content: center;
   padding-bottom: 100px;
   grid-column-gap: 20px;
@@ -12,12 +13,10 @@
     text-decoration: none;
   }
   .button-for-restoran {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: black;
+    border-radius: 10px;
+    justify-content: center;
+    margin-left: 260px;
+    color: #ffffff;
     width: 112px;
     height: 43px;
     left: 657px;
@@ -25,6 +24,12 @@
     background: #8a8a8a;
     opacity: 0.2;
     border-radius: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
   }
   .image-for-listrestoran {
     width: 378.01px;

@@ -3,7 +3,7 @@
   src: url('../../fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf');
 }
 @font-face {
-  font-family: 'Londrina Solid' ;
+  font-family: 'Londrina Solid';
   src: url('../../fonts/Londrina_Solid/LondrinaSolid-Black.ttf');
 }
 .navigation {
@@ -13,13 +13,12 @@
   justify-content: space-around;
   text-align: center;
   align-items: center;
-  .logo{
-    margin-left:-30px;
+  .logo {
+    margin-left: 70px;
   }
   button {
     width: 194px;
     height: 67px;
-    left: 1180px;
     top: 59px;
     background: #c63a2f;
     border-radius: 10px;
@@ -35,6 +34,7 @@
     font-family: 'Londrina Solid';
     font-style: normal;
     font-size: 13px;
+    margin-left: 400px;
     font-weight: 800;
     line-height: 41px;
     color: #ffffff;

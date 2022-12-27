@@ -2,11 +2,10 @@ import React from 'react';
 import logoRestoran from '../../../images/logo-restoran.png';
 import miniLogo from '../../../images/miniLogo.png';
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
-import { MdFavoriteBorder } from 'react-icons/md';
 import firstimageRestoran from '../../../images/firstimageRestoran.png';
 import Burger from '../../../images/burger.png';
 import { AiTwotoneStar } from 'react-icons/ai';
-
+import favorite from '../../../images/icon-for-input.png';
 const Header = () => {
   return (
     <div className='main-header'>
@@ -18,7 +17,7 @@ const Header = () => {
         </div>{' '}
         <div class='input'>
           <span class='prefix'>
-            <MdFavoriteBorder />
+            <img src={favorite} alt='' />
           </span>
           <input />
           <span class='suffix'>

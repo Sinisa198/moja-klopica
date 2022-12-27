@@ -14,10 +14,11 @@ const FooterForRestoran = () => {
       <img src={logoFooter} className='logo-footer' alt='' />
       <div className='box-for-appstore'>
         <div>
+          <BsApple className='icon-apple' />
           <p className='paragraf-app'>
-            {' '}
-            <BsApple className='icons-box' />
             Nabavite na
+            <br />
+            <span className='span-app'>App Store</span>
           </p>
         </div>
         <p className='paragrafApp'></p>

@@ -7,13 +7,13 @@ const TermsOfUse = () => {
   const navigate = useNavigate();
 
   const navigateToNotifications = () => {
-    navigate('/notifications');
+    navigate('/privacynotices');
   };
   const navigateToTerms = () => {
     navigate('/termsofuse');
   };
   const toTerms = () => {
-    navigate('/terms');
+    navigate('/askedquestions');
   };
   return (
     <div className='terms-of-use'>
