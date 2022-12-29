@@ -1,9 +1,10 @@
 import React from 'react';
 import Nav from '../Nav/Nav';
 import HeaderRestoran from '../Header-Restoran/Header-Restoran';
-import lorem1 from '../../../images/lorem1.png';
-import arrow from '../../../images/arrow.png';
-import FooterForRestoran from '../../Footer/FooterForRestoran';
+import lorem1 from '../../../../images/lorem1.png';
+import arrow from '../../../../images/arrow.png';
+import FooterForRestoran from '../../../Footer/FooterForRestoran';
+
 const Gallery = () => {
   return (
     <div className='main-galery'>

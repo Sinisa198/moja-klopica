@@ -3,16 +3,15 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router';
 import { RiStarSFill } from 'react-icons/ri';
 import { AiOutlineStar } from 'react-icons/ai';
-import Forms from '../Forms/Forms';
-import Navigation from '../Navigation/Navigation';
-import FooterForRestoran from '../Footer/FooterForRestoran';
-import listrestorans from '../data/listrestoranitem';
+import Forms from '../../Forms/Forms';
+import Navigation from '../../Navigation/Navigation';
+import FooterForRestoran from '../../Footer/FooterForRestoran';
+import listrestorans from '../../data/listrestoranitem';
 
 const ListRestorans = () => {
   const navigate = useNavigate();
-  const navigateToRestoran = () => {
-    navigate('/topfood');
-  };
+  const navigateToRestoran = () => navigate('/topfood');
+
   return (
     <div>
       <Navigation />
@@ -23,7 +22,7 @@ const ListRestorans = () => {
             <Link to='/topfood'>
               <img
                 className='image-for-listrestoran'
-                onClick={() => navigateToRestoran()}
+                onClick={navigateToRestoran}
                 src={item.img}
                 alt=''
               />
@@ -46,11 +45,9 @@ const ListRestorans = () => {
             </div>
           </div>
         ))}
-        <div className='button-restoraan'>
-          <button className='button-for-restoran'>Vidi više</button>
-        </div>
+        <button className='div-button-restoran'>Vidi više</button>
       </div>
-      {/* <FooterForRestoran /> */}
+      <FooterForRestoran />
     </div>
   );
 };

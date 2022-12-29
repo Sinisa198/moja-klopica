@@ -1,15 +1,21 @@
 import React from 'react';
-import Navigation from '../Navigation/Navigation';
-import Forms from '../Forms/Forms';
-import miniTopFood from '../../images/mini-top-food.png';
-import restoran from '../../images/home-restoran.png';
-import meni from '../../images/meni-home.png';
-import phone from '../../images/home-phone.png';
-import FooterForHomePage from '../Footer/FooterForHomePage';
+import Navigation from '../../Navigation/Navigation';
+import Forms from '../../Forms/Forms';
+import miniTopFood from '../../../images/mini-top-food.png';
+import restoran from '../../../images/home-restoran.png';
+import meni from '../../../images/meni-home.png';
+import phone from '../../../images/home-phone.png';
+import FooterForHomePage from '../../Footer/FooterForHomePage';
 import { RiStarSFill } from 'react-icons/ri';
 import { AiOutlineStar } from 'react-icons/ai';
+import { useNavigate } from 'react-router';
 
 const HomePage = () => {
+  const navigate = useNavigate();
+  const goToMeni = () => navigate('/meni');
+  const goToRestoran = () => navigate('/topfood');
+  const goToPhone = () => navigate('/topfood');
+
   return (
     <div className='forms'>
       <div className='main-home'>
@@ -52,7 +58,7 @@ const HomePage = () => {
                       Cena dnevnog menija:{' '}
                       <span className='home-price'>460-600 din</span>
                     </p>
-                    <p className='nav-home'>
+                    <p className='nav-home' onClick={goToRestoran}>
                       <img src={restoran} alt='' className='icon-home' />
                       Profil
                     </p>
@@ -63,7 +69,7 @@ const HomePage = () => {
                       Cena Komplet menija:{' '}
                       <span className='home-price'>539-630 din</span>
                     </p>
-                    <p className='nav-second'>
+                    <p className='nav-second' onClick={goToMeni}>
                       <img src={meni} alt='' className='icon-home' />
                       Meni
                     </p>
@@ -72,7 +78,7 @@ const HomePage = () => {
                     <p className='day-and-price-last'>
                       Sub-Ned: <span className='closed'>Zatvoreno</span>
                     </p>
-                    <p className='nav-home-last'>
+                    <p className='nav-home-last' onClick={goToPhone}>
                       <img src={phone} alt='' className='icon-home' />
                       Pozovi
                     </p>
@@ -109,9 +115,15 @@ const HomePage = () => {
             <div className='home-hr'></div>
             <p className='working-time'>RADNO VREME</p>
             <div className='three-day-times'>
-              <p>Pon-Čet: 08:00 - 23:00</p>
-              <p>Pet: 08:00 - 02:00</p>
-              <p>Sub-Ned: Zatvoreno</p>
+              <p>
+                Pon-Čet: <span className='time'>08:00 - 23:00</span>
+              </p>
+              <p>
+                Pet: <span className='time'>08:00 - 02:00</span>
+              </p>
+              <p>
+                Sub-Ned: <span className='time'>Zatvoreno</span>
+              </p>
             </div>
             <div className='three-price'>
               <p>
@@ -126,20 +138,20 @@ const HomePage = () => {
             <div className='hr-for-nav'></div>
             <div className='three-nav'>
               <div className='div-call'>
-                <p>
+                <p className='phone-navigation' onClick={goToPhone}>
                   <img src={phone} alt='' className='nav-icons' />
                   Pozovi
                 </p>
               </div>
               <div className='div-meni'>
-                <p>
+                <p className='meni-navigation' onClick={goToMeni}>
                   {' '}
                   <img src={meni} alt='' className='nav-icons' />
                   Pogledaj Meni
                 </p>
               </div>
               <div className='div-restoran'>
-                <p>
+                <p className='restoran-navigation' onClick={goToRestoran}>
                   {' '}
                   <img src={restoran} alt='' className='nav-icons' />
                   Profil Restorana
@@ -192,16 +204,20 @@ const HomePage = () => {
             </div>
             <div className='hr-for-nav'></div>
             <div className='three-nav'>
-              <p>
-                <img src={phone} alt='' className='nav-icons' />
+              <p className='phone-navigation'>
+                <img
+                  src={phone}
+                  alt=''
+                  className='nav-icons'
+                  onClick={goToPhone}
+                />
                 Pozovi
               </p>
-              <p>
-                {' '}
+              <p className='meni-navigation' onClick={goToMeni}>
                 <img src={meni} alt='' className='nav-icons' />
                 Pogledaj Meni
               </p>
-              <p>
+              <p className='restoran-navigation' onClick={goToRestoran}>
                 {' '}
                 <img src={restoran} alt='' className='nav-icons' />
                 Profil Restorana

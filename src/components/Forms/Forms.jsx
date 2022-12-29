@@ -1,6 +1,7 @@
 import React from 'react';
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import favorite from '../../images/icon-for-input.png';
+
 const Forms = () => {
   return (
     <div className='forms-main'>

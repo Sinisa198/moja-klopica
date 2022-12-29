@@ -8,6 +8,7 @@ import { TiLocation } from 'react-icons/ti';
 import { BiWorld } from 'react-icons/bi';
 import { BiCopyright } from 'react-icons/bi';
 import GoogleplayImage from '../../images/googleplay.png';
+
 const FooterForRestoran = () => {
   return (
     <div className='footer-main'>

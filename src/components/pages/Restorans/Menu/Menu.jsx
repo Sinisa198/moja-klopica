@@ -1,9 +1,10 @@
 import React from 'react';
 import HeaderRestoran from '../Header-Restoran/Header-Restoran';
 import Nav from '../Nav/Nav';
-import logoMeni from '../../../images/logo-for-meni.png';
-import FooterForRestoran from '../../Footer/FooterForRestoran';
-import itemsMeni from '../../data/menuitems';
+import logoMeni from '../../../../images/logo-for-meni.png';
+import FooterForRestoran from '../../../Footer/FooterForRestoran';
+import itemsMeni from '../../../data/menuitems';
+
 const Menu = () => {
   return (
     <div className='main-meni'>

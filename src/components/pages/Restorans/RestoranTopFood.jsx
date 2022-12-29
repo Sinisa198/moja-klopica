@@ -1,34 +1,30 @@
 import React from 'react';
-import logoRestoran from '../../images/logo-restoran.png';
-import miniLogo from '../../images/miniLogo.png';
+import logoRestoran from '../../../images/logo-restoran.png';
+import miniLogo from '../../../images/miniLogo.png';
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import { MdFavoriteBorder } from 'react-icons/md';
-import firstimageRestoran from '../../images/firstimageRestoran.png';
-import map from '../../images/map.png';
-import RestoranIcon from '../../images/Vector.png';
-import Notepad from '../../images/notepad.png';
-import Star from '../../images/star.png';
-import Picture from '../../images/picture.png';
-import Burger from '../../images/burger.png';
-import Location from '../../images/location.png';
-import Phone from '../../images/phone.png';
-import listpicture from '../../images/listpicture.png';
+import firstimageRestoran from '../../../images/firstimageRestoran.png';
+import map from '../../../images/map.png';
+import RestoranIcon from '../../../images/Vector.png';
+import Notepad from '../../../images/notepad.png';
+import Star from '../../../images/star.png';
+import Picture from '../../../images/picture.png';
+import Burger from '../../../images/burger.png';
+import Location from '../../../images/location.png';
+import Phone from '../../../images/phone.png';
+import listpicture from '../../../images/listpicture.png';
 import { useNavigate } from 'react-router';
 import { AiTwotoneStar } from 'react-icons/ai';
 import { RiStarSFill } from 'react-icons/ri';
-import itemsBox from '../data/restoranItems';
-import FooterForRestoran from '../Footer/FooterForRestoran';
+import itemsBox from '../../data/restoranItems';
+import FooterForRestoran from '../../Footer/FooterForRestoran';
+
 const RestoranTopFood = () => {
   const navigate = useNavigate();
-  const navigateToMeni = () => {
-    navigate('/meni');
-  };
-  const navigateToImpressions = () => {
-    navigate('/impressions');
-  };
-  const navigateToGalery = () => {
-    navigate('/gallery');
-  };
+  const navigateToMeni = () => navigate('/meni');
+  const navigateToImpressions = () => navigate('/impressions');
+  const navigateToGalery = () => navigate('/gallery');
+
   return (
     <div className='restoran-top-food'>
       <div className='burger-logo'>
@@ -77,22 +73,19 @@ const RestoranTopFood = () => {
           </div>
           <div className='nav-meni'>
             <img src={Notepad} className='meni-icon' alt='' />
-            <p className='paragraf-meni' onClick={() => navigateToMeni()}>
+            <p className='paragraf-meni' onClick={navigateToMeni}>
               Meni
             </p>
           </div>
           <div className='nav-impressions'>
             <img src={Star} className='meni-icon' alt='' />
-            <p
-              className='paragraf-meni'
-              onClick={() => navigateToImpressions()}
-            >
+            <p className='paragraf-meni' onClick={navigateToImpressions}>
               Utisci
             </p>
           </div>
           <div className='nav-galery'>
             <img src={Picture} className='meni-icon' alt='' />
-            <p className='paragraf-meni' onClick={() => navigateToGalery()}>
+            <p className='paragraf-meni' onClick={navigateToGalery}>
               Galerija
             </p>
           </div>
@@ -159,9 +152,7 @@ const RestoranTopFood = () => {
           ))}
         </div>
       </div>
-      <div className='div-for-footer-restoran'>
-        <FooterForRestoran />
-      </div>
+      <FooterForRestoran />
     </div>
   );
 };

@@ -2,7 +2,9 @@ import React from 'react';
 import HeaderRestoran from '../Header-Restoran/Header-Restoran';
 import Nav from '../Nav/Nav';
 import { RiStarSFill } from 'react-icons/ri';
-import FooterForRestoran from '../../Footer/FooterForRestoran';
+import FooterForRestoran from '../../../Footer/FooterForRestoran';
+import emptystar from '../../../../images/emptystar.png';
+
 const Impressions = () => {
   return (
     <div className='main-impressions'>
@@ -45,71 +47,71 @@ const Impressions = () => {
               <p className='impressions-text'>
                 Opsta{' '}
                 <span className='list-starrating'>
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill className='second-star' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <img src={emptystar} alt='' className='image-empty-star' />
                 </span>
               </p>
               <p className='impressions-text'>
                 Ambijent{' '}
                 <span className='list-starrating'>
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <img src={emptystar} alt='' className='image-empty-star' />
                 </span>
               </p>
               <p className='impressions-text'>
                 Atmosfera{' '}
                 <span className='list-starrating'>
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <img src={emptystar} alt='' className='image-empty-star' />
                 </span>
               </p>
               <p className='impressions-text'>
                 Hrana{' '}
                 <span className='list-starrating'>
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <img src={emptystar} alt='' className='image-empty-star' />
                 </span>
               </p>
               <p className='impressions-text'>
                 Higijena{' '}
                 <span className='list-starrating'>
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <img src={emptystar} alt='' className='image-empty-star' />
                 </span>
               </p>
               <p className='impressions-text'>
                 Cena{' '}
                 <span className='list-starrating'>
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <img src={emptystar} alt='' className='image-empty-star' />
                 </span>
               </p>
               <p className='impressions-text'>
                 Usluga{' '}
                 <span className='list-starrating'>
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
-                  <RiStarSFill />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <RiStarSFill className='star-for-impressions' />
+                  <img src={emptystar} alt='' className='image-empty-star' />
                 </span>
               </p>
               <div className='impressions-second-hr'></div>

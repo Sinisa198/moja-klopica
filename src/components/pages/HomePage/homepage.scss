@@ -68,7 +68,7 @@
   width: 167px;
   height: 24px;
   left: 118px;
-  top: 1254px;
+  margin-top: 25px;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -93,12 +93,12 @@
 }
 
 .icon-home {
-  margin-top: -5px;
-  width: 25px;
-  height: 25px;
+  margin-top: 3px;
+  width: 15px;
+  height: 15px;
 }
-.nav-icons {
-  grid-column-gap: 220px;
+.time {
+  color: gray;
 }
 .three-nav {
   display: flex;
@@ -164,7 +164,7 @@
 .nav-home-last {
   display: flex;
   margin-top: -10px;
-  margin-left: 960px;
+  margin-left: 957px;
   width: 51px;
   left: 1282px;
   top: 1320px;
@@ -194,6 +194,8 @@
 }
 .forms {
   margin-top: -220px;
+  width: 100%;
+  max-width: 1440px;
 }
 .mini-top-food {
   position: absolute;
@@ -264,7 +266,7 @@
   color: #8a8a8a;
 }
 .day-price {
-  margin-left: 308px;
+  margin-left: 338px;
   width: 289px;
   height: 25px;
   left: 574px;
@@ -292,7 +294,7 @@
   color: #8a8a8a;
 }
 .nav-home {
-  margin-left: 358px;
+  margin-left: 328px;
   width: 40px;
   height: 24px;
   left: 1284px;
@@ -328,7 +330,8 @@
   color: #333333;
 }
 .paragraf-rating {
-  color: black;
+  margin-top: 0px;
+  color: gray;
 }
 .stars-home {
   margin-top: -170px;
