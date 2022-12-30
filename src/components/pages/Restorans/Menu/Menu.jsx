@@ -4,6 +4,7 @@ import Nav from '../Nav/Nav';
 import logoMeni from '../../../../images/logo-for-meni.png';
 import FooterForRestoran from '../../../Footer/FooterForRestoran';
 import itemsMeni from '../../../data/menuitems';
+import ButtonMenu from '../../../ButtonMenu';
 
 const Menu = () => {
   return (
@@ -31,7 +32,7 @@ const Menu = () => {
                         <span className='dl'>{item.dl}</span>
                         <div className='price-button'>
                           <span className='price'>{item.price}</span>
-                          <button className='meni-button'>{item.button}</button>
+                          <ButtonMenu>{item.button}</ButtonMenu>
                         </div>
                       </div>
                     </div>

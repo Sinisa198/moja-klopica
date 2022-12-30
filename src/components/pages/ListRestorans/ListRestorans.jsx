@@ -7,6 +7,7 @@ import Forms from '../../Forms/Forms';
 import Navigation from '../../Navigation/Navigation';
 import FooterForRestoran from '../../Footer/FooterForRestoran';
 import listrestorans from '../../data/listrestoranitem';
+import ButtonForRestoran from '../../ButtonForRestoran';
 
 const ListRestorans = () => {
   const navigate = useNavigate();
@@ -45,7 +46,7 @@ const ListRestorans = () => {
             </div>
           </div>
         ))}
-        <button className='div-button-restoran'>Vidi više</button>
+        <ButtonForRestoran>Vidi više</ButtonForRestoran>
       </div>
       <FooterForRestoran />
     </div>

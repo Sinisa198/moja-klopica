@@ -6,6 +6,9 @@ import { SiTiktok } from 'react-icons/si';
 import { BiCopyright } from 'react-icons/bi';
 import { BsApple } from 'react-icons/bs';
 import GooglePlay from '../../images/googleplay.png';
+import BoxForGooglePlay from '../BoxForGooglePlay';
+import ListLinks from '../ListLinks';
+
 const FooterForHomePage = () => {
   return (
     <div className='footer-homepage'>
@@ -19,13 +22,13 @@ const FooterForHomePage = () => {
               <span className='span-home'>APP STORE</span>
             </p>
           </div>
-          <div className='home-google'>
+          <BoxForGooglePlay>
             <img src={GooglePlay} alt='' className='google-image' />
             <p className='paragraf-for-home-google'>
               Nabavite na <br />
               <span className='span-home'>APP STORE</span>
             </p>
-          </div>
+          </BoxForGooglePlay>
         </div>
       </div>
       <div className='hr-footer'></div>
@@ -34,7 +37,7 @@ const FooterForHomePage = () => {
         <p> Obaveštenje o privatnosti</p>
         <p> FAQ</p>
       </div>
-      <div className='links-homepage'>
+      <ListLinks>
         <div className='div-instagram'>
           <BsInstagram />
         </div>
@@ -44,7 +47,7 @@ const FooterForHomePage = () => {
         <div className='div-tiktok'>
           <SiTiktok />
         </div>
-      </div>
+      </ListLinks>
       <p className='p-footer'>
         <BiCopyright />
         Moja klopica 2022

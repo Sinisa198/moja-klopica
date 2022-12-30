@@ -1,15 +1,17 @@
 .main-home {
   margin-top: 220px;
+  .navigation {
+    width: 100%;
+  }
 }
 
 .second-box-home {
   padding-top: 80px;
   position: absolute;
-  width: 1440px;
+  width: 100%;
   height: 1697px;
   left: 0px;
   top: 906px;
-  margin-top: -155px;
   background: #f3f1f0;
 }
 .working-time {
@@ -93,6 +95,7 @@
 }
 
 .icon-home {
+  color: #c63a2f;
   margin-top: 3px;
   width: 15px;
   height: 15px;
@@ -184,6 +187,7 @@
 .first-box {
   display: flex;
   position: absolute;
+  margin-left: 220px;
   padding-bottom: 70px;
   width: 1307px;
   height: 402px;
@@ -293,42 +297,6 @@
   line-height: 21px;
   color: #8a8a8a;
 }
-.nav-home {
-  margin-left: 328px;
-  width: 40px;
-  height: 24px;
-  left: 1284px;
-  top: 1212px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #333333;
-  width: 90px;
-  padding: 3px 3px 3px 3px;
-  background-color: lightcoral;
-  border-radius: 40px;
-}
-.nav-second {
-  display: flex;
-  margin-left: 327px;
-  margin-top: -10px;
-  width: 39px;
-  height: 24px;
-  left: 1282.53px;
-  top: 1266px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  width: 93px;
-  padding: 2px 2px 2px 2px;
-  background-color: lightcoral;
-  border-radius: 40px;
-  color: #333333;
-}
 .paragraf-rating {
   margin-top: 0px;
   color: gray;
@@ -339,11 +307,330 @@
   margin-left: 916px;
 }
 .three-box-home {
-  margin-top: 50px;
+  margin-top: 200px;
 }
 .four-box-home {
-  margin-top: 550px;
+  margin-top: 700px;
 }
 .footer-restoran {
-  margin-top: 1000px;
+  margin-top: 1200px;
+}
+//////////////////////////////////////
+@media screen and (max-width: 1440px) {
+  .main-home {
+    margin-top: 220px;
+  }
+
+  .second-box-home {
+    padding-top: 80px;
+    position: absolute;
+    width: 1440px;
+    height: 1697px;
+    left: 0px;
+    top: 906px;
+    margin-top: -155px;
+    background: #f3f1f0;
+  }
+  .working-time {
+    margin-left: 30px;
+    width: 179px;
+    height: 27px;
+    left: 96px;
+    top: 1208px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+
+    color: #8a8a8a;
+  }
+  .day-times {
+    display: flex;
+  }
+  .day-times-price {
+    margin-left: 52px;
+  }
+
+  .text-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .day-and-price-second {
+    margin-top: -63px;
+    width: 167px;
+    height: 24px;
+    left: 118px;
+    top: 1254px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+  }
+  .day-and-price-last {
+    margin-top: -48px;
+    width: 167px;
+    height: 24px;
+    left: 118px;
+    top: 1254px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+  }
+  .day-and-price {
+    width: 167px;
+    height: 24px;
+    left: 118px;
+    margin-top: 25px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+  }
+  .closed {
+    color: #c63a2f;
+  }
+  .home-price {
+    width: 89px;
+    height: 25px;
+    left: 777px;
+    top: 1254px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #c63a2f;
+  }
+
+  .icon-home {
+    color: #c63a2f;
+    margin-top: 3px;
+    width: 15px;
+    height: 15px;
+  }
+  .time {
+    color: gray;
+  }
+  .three-nav {
+    display: flex;
+    box-sizing: border-box;
+    margin-left: 100px;
+    margin-top: 0px;
+    grid-column-gap: 380px;
+  }
+  .hr-for-nav {
+    width: 1307px;
+    height: 1px;
+    margin-top: 30px;
+    background: #d9d9d9;
+  }
+  .three-span {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    left: 905px;
+    top: 1701px;
+    background: lightcoral;
+    border-radius: 40px;
+    width: 88px;
+    height: 23px;
+    left: 334px;
+    top: 1711px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+  }
+  .three-price {
+    display: flex;
+    margin-left: 33px;
+    grid-column-gap: 330px;
+    left: 96px;
+    top: 1710px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    color: #8a8a8a;
+  }
+  .three-day-times {
+    margin-left: 58px;
+    grid-column-gap: 300px;
+    display: flex;
+    left: 112px;
+    top: 1657px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+  }
+
+  .first-box {
+    display: flex;
+    position: absolute;
+    padding-bottom: 70px;
+    margin-left: -10px;
+    width: 1307px;
+    height: 402px;
+    left: 66px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  .forms {
+    margin-top: -220px;
+    width: 100%;
+    max-width: 1440px;
+  }
+  .mini-top-food {
+    position: absolute;
+    width: 234px;
+    height: 167px;
+    margin-left: 30px;
+    margin-top: 26px;
+  }
+  .title-home {
+    margin-left: 285px;
+    width: 389px;
+    margin-top: -5px;
+    height: 38px;
+    left: 351px;
+    top: 1029px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    color: #c63a2f;
+  }
+  .text-home {
+    margin-left: 285px;
+    width: 1034px;
+    height: 44px;
+    left: 351px;
+    top: 1113px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #8a8a8a;
+  }
+  .home-hr {
+    margin-left: 20px;
+    width: 1264px;
+    height: 1px;
+    left: 87px;
+    top: 1182px;
+    background: #d9d9d9;
+  }
+  .adress {
+    margin-left: 285px;
+    width: 300px;
+    margin-top: -5px;
+    height: 24px;
+    left: 351px;
+    top: 1070px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+  }
+  .day-price-second {
+    margin-top: -20px;
+    width: 289px;
+    height: 25px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #8a8a8a;
+  }
+  .day-price {
+    margin-left: 338px;
+    width: 289px;
+    height: 25px;
+    left: 574px;
+    top: 1253px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #8a8a8a;
+  }
+  .day-price-second {
+    margin-left: 340px;
+  }
+  .paragraf-home {
+    margin-top: 24px;
+    margin-left: 285px;
+    height: 21px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #8a8a8a;
+  }
+
+  .nav-second {
+    display: flex;
+    margin-left: 327px;
+    margin-top: -10px;
+    width: 39px;
+    height: 24px;
+    left: 1282.53px;
+    top: 1266px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    width: 93px;
+    padding: 2px 2px 2px 2px;
+    background-color: lightcoral;
+    border-radius: 40px;
+    color: #333333;
+  }
+  .paragraf-rating {
+    margin-top: 0px;
+    color: gray;
+  }
+  .stars-home {
+    margin-top: -170px;
+    color: #c63a2f;
+    margin-left: 916px;
+  }
+  .three-box-home {
+    margin-top: 50px;
+  }
+  .four-box-home {
+    margin-top: 550px;
+  }
+  .footer-restoran {
+    margin-top: 1000px;
+  }
 }

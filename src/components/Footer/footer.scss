@@ -130,11 +130,11 @@
 }
 .footer-homepage {
   position: absolute;
-  width: 1440px;
+  width: 89.2%;
   height: 523px;
-  left: 0px;
   margin-top: 100px;
   background: #333333;
+  padding-left: 200px;
 }
 .logo-homepage {
   width: 168px;
@@ -260,15 +260,6 @@
   color: #ffffff;
 }
 
-.links-homepage {
-  display: flex;
-  margin-left: 1116px;
-  margin-top: -50px;
-  width: 100px;
-  grid-column-gap: 30px;
-  color: black;
-  font-size: 30px;
-}
 .div-instagram {
   background-color: #ffffff;
   padding: 5px 5px 5px 5px;
@@ -293,4 +284,174 @@
   line-height: 24px;
   color: #ffffff;
   margin-left: 1116px;
+}
+/////////////////////////////////
+@media screen and (max-width: 1440px) {
+  .footer-homepage {
+    margin-left: -200px;
+    position: absolute;
+    width: 100%;
+    height: 523px;
+    left: 0px;
+    margin-top: 100px;
+    background: #333333;
+  }
+  .logo-homepage {
+    width: 168px;
+    height: 154.23px;
+    margin-left: 67px;
+    margin-top: 116px;
+  }
+  .logo-googleplay-app {
+    display: flex;
+  }
+  .googleplay-app {
+    margin-left: 909px;
+    margin-top: 116px;
+  }
+  .hr-footer {
+    width: 1307px;
+    height: 1px;
+    margin-left: 67px;
+    margin-top: 27px;
+    top: 2713px;
+    background: #d9d9d9;
+  }
+  .faq {
+    margin-left: 67px;
+    margin-top: 80px;
+    width: 208px;
+    height: 77px;
+    left: 67px;
+    top: 2765px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #ffffff;
+  }
+  .span-home {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 17px;
+    margin-left: 50px;
+    color: #ffffff;
+    margin-top: 300px;
+  }
+  .google-image {
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .bsapp {
+    font-size: 30px;
+    margin-left: -25px;
+    margin-top: 20px;
+  }
+  .paragraf-for-home-app {
+    margin-top: -20px;
+    margin-left: 45px;
+  }
+  .paragraf-for-home-google {
+    margin-left: 50px;
+    margin-top: -35px;
+  }
+  .paragraf-app {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.4155px;
+    line-height: 20px;
+    margin-top: -40px;
+    margin-left: 40px;
+    color: #ffffff;
+  }
+
+  .icon-apple {
+    margin-top: 10px;
+    font-size: 30px;
+    color: #ffff;
+  }
+  .home-app {
+    box-sizing: border-box;
+    width: 194px;
+    height: 67px;
+    background: rgba(198, 58, 47, 0.5);
+    border: 2px solid #c63a2f;
+    border-radius: 10px;
+    left: 1233px;
+    top: 2528px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+  .google-icon-home {
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .icon-home {
+    left: 15.92%;
+    right: 15.82%;
+    margin-left: 10px;
+    margin-top: 20px;
+    top: 9.38%;
+    bottom: 9.37%;
+    color: #ffffff;
+  }
+  .home-google {
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 194px;
+    height: 67px;
+    background: rgba(198, 58, 47, 0.5);
+    border: 2px solid #c63a2f;
+    border-radius: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+
+  .links-homepage {
+    display: flex;
+    margin-left: 1116px;
+    margin-top: -50px;
+    width: 100px;
+    grid-column-gap: 30px;
+    color: black;
+    font-size: 30px;
+  }
+  .div-instagram {
+    background-color: #ffffff;
+    padding: 5px 5px 5px 5px;
+  }
+  .div-facebook {
+    background-color: #ffffff;
+    padding: 5px 5px 5px 5px;
+  }
+  .div-tiktok {
+    background-color: #ffffff;
+    padding: 5px 5px 5px 5px;
+  }
+  .p-footer {
+    width: 208px;
+    height: 24px;
+    left: 1216px;
+    top: 2790px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-left: 1116px;
+  }
 }

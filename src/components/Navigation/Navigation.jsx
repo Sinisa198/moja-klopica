@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../images/logo.png';
+import Button from '../Button';
 
 const Navigation = () => (
   <div className='navigation'>
@@ -10,8 +11,8 @@ const Navigation = () => (
         Saznaj gde je najbliža <span>TVOJA KLOPICA</span>
       </h1>
     </div>
-    <div className='header-button'>
-      <button>Ulogujte se</button>
+    <div className='button-for-navigation'>
+      <Button>Ulogujte se</Button>
     </div>
   </div>
 );

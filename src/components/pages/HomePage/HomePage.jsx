@@ -9,6 +9,8 @@ import FooterForHomePage from '../../Footer/FooterForHomePage';
 import { RiStarSFill } from 'react-icons/ri';
 import { AiOutlineStar } from 'react-icons/ai';
 import { useNavigate } from 'react-router';
+import Menu from '../../Menu';
+import Profile from '../../Profile';
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -22,7 +24,6 @@ const HomePage = () => {
         <Navigation />
         <Forms />
       </div>
-
       <div className='second-box-home'>
         <div className='first-box'>
           <img src={miniTopFood} alt='' className='mini-top-food' />
@@ -58,10 +59,10 @@ const HomePage = () => {
                       Cena dnevnog menija:{' '}
                       <span className='home-price'>460-600 din</span>
                     </p>
-                    <p className='nav-home' onClick={goToRestoran}>
+                    <Profile>
                       <img src={restoran} alt='' className='icon-home' />
                       Profil
-                    </p>
+                    </Profile>
                   </div>
                   <div className='day-times'>
                     <p className='day-and-price-second'>Pet: 08:00 - 02:00</p>
@@ -69,10 +70,10 @@ const HomePage = () => {
                       Cena Komplet menija:{' '}
                       <span className='home-price'>539-630 din</span>
                     </p>
-                    <p className='nav-second' onClick={goToMeni}>
+                    <Menu>
                       <img src={meni} alt='' className='icon-home' />
                       Meni
-                    </p>
+                    </Menu>
                   </div>
                   <div className='day-times'>
                     <p className='day-and-price-last'>
@@ -94,7 +95,6 @@ const HomePage = () => {
           <img src={miniTopFood} alt='' className='mini-top-food' />
           <div className='paragraf-stars'>
             <p className='paragraf-home'>RESTORANI * Kineska Kuhinja</p>
-
             <p className='title-home'>Lorem Ipsum</p>
             <p className='adress'>Lorem Ipsum 26, 21000 Novi Sad</p>
             <p className='text-home'>

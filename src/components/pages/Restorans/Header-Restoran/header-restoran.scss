@@ -217,7 +217,11 @@
   input {
     all: unset;
   }
+
   .prefix {
+    width: 50px;
+    height: 55px;
+    background: #c63a2f;
     border-radius: 40px 0px 0px 40px;
   }
   .box {

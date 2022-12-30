@@ -4,6 +4,7 @@ import Nav from '../Nav/Nav';
 import { RiStarSFill } from 'react-icons/ri';
 import FooterForRestoran from '../../../Footer/FooterForRestoran';
 import emptystar from '../../../../images/emptystar.png';
+import ButtonForImpressions from '../../../ButtonForImpressions';
 
 const Impressions = () => {
   return (
@@ -123,7 +124,7 @@ const Impressions = () => {
               />
               <br />
               <br />
-              <button className='impressions-button'>Ostavite utisak</button>
+              <ButtonForImpressions>Ostavite utisak</ButtonForImpressions>
             </div>
           </div>
         </div>
