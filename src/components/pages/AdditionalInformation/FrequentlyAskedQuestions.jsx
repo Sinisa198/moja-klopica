@@ -21,7 +21,7 @@ const TermsOfUse = () => {
           <img src={termsofuseLogo} alt='' className='logo-termsofuse' />
           <div className='div-title'>
             <h3 className='title-termsofuse'>MOJA KLOPICA</h3>
-            <div className='input'>
+            <div className='input-for-terms'>
               <span className='prefix'>
                 <MdFavoriteBorder />
               </span>

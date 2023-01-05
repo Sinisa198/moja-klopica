@@ -2,6 +2,7 @@
   padding-top: 20px;
   padding-left: 20px;
   padding-bottom: 200px;
+  margin-left: 245px;
   .burger-logo {
     display: flex;
     width: 132px;
@@ -54,8 +55,8 @@
   .text-and-location {
     display: flex;
     margin-top: 40px;
-    width: 1116px;
-    height: 1316px;
+    width: 100%;
+    max-width: 1116px;
     margin-left: 100px;
     left: 58px;
     top: 1070px;
@@ -110,7 +111,6 @@
     background-color: #ffff;
     border-radius: 0 0 30px 30px;
     margin-top: -20px;
-    height: 299px;
   }
   .logo-for-restoran {
     margin-left: 120px;
@@ -121,8 +121,8 @@
   }
   .navigation-menu {
     margin-left: -20px;
-    width: 1440px;
-    height: 1569px;
+    width: 100%;
+    max-width: 1440px;
     background: #f3f1f0;
     margin-top: 20px;
     height: 5000px;

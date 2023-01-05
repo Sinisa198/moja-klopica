@@ -5,19 +5,22 @@
 .main-terms {
   display: flex;
   padding-top: 20px;
-  margin-left: 50px;
+  margin-left: 280px;
 }
 .title-termsofuse {
   color: red;
 }
 .burger-w {
-  width: 40px;
-  margin-top: 10px;
-  margin-left: -30px;
-  height: 40px;
+  width: 47px;
+  margin-top: 15px;
+  height: 37px;
+  left: 67px;
+  top: 69px;
 }
-.input {
+.input-for-terms {
   margin-top: -50px;
+  width: 400px;
+  height: 50px;
   display: flex;
   gap: 2.1rem;
   border: 1px solid #aaa;
@@ -35,6 +38,9 @@ input {
   margin-left: 700px;
   margin-top: -300px;
 }
+.logo-termsofuse {
+  margin-left: 20px;
+}
 .button-restoran {
   width: 194px;
   height: 67px;
@@ -51,21 +57,11 @@ input {
   margin-left: 310px;
   color: #ffffff;
 }
-.prefix,
-.suffix {
-  color: #ffff;
-  margin-top: 10px;
-  background-color: #c63a2f;
-  width: 30px;
-  height: 30px;
-  font-size: 30px;
-  border-radius: 30px;
-}
 .prefix {
   border-radius: 40px 0px 0px 40px;
 }
 .title-for-termsofuse {
-  margin-left: 50px;
+  margin-left: 250px;
   margin-top: 300px;
   padding-bottom: 120px;
   left: 491px;
@@ -119,10 +115,12 @@ input {
 }
 .box-terms {
   position: absolute;
-  width: 1317px;
+  max-width: 1317px;
+  width: 100%;
   height: 1167px;
   left: 63px;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-left: 200px;
   background: #ffffff;
   box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
@@ -222,10 +220,10 @@ input {
   .input {
     margin-top: -50px;
     display: flex;
-    gap: 2.1rem;
-    border: 1px solid #aaa;
+    width: 20px;
+    border: 1px sol id #aaa;
     border-radius: 40px;
-    margin-left: 400px;
+    margin-left: 500px;
     justify-content: center;
     background-color: #ffff;
   }
@@ -299,6 +297,9 @@ input {
     line-height: 36px;
     color: #000000;
   }
+  .button-for-restoran-terms {
+    margin-left: -150px;
+  }
   .text-terms {
     margin-top: 90px;
   }
@@ -317,9 +318,9 @@ input {
   }
   .box-terms {
     position: absolute;
-    width: 1316px;
-    height: 1167px;
+    width: 100%;
     left: 63px;
+    margin-left: -20px;
     margin-top: 20px;
     background: #ffffff;
     box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
@@ -359,6 +360,9 @@ input {
     line-height: 36px;
     color: #000000;
   }
+  .button-for-restoran {
+    margin-left: -170px;
+  }
   .notification-paragraf {
     width: 759px;
     height: 972px;
@@ -396,6 +400,7 @@ input {
     color: #000000;
   }
   .footer-terms {
+    width: 100%;
     margin-top: 980px;
   }
   .hr-for-terms {
@@ -415,5 +420,10 @@ input {
     margin-top: -300px;
     margin-left: 600px;
     top: 185px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .App-terms-of-use {
+    width: 1440px;
   }
 }

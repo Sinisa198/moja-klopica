@@ -1,8 +1,7 @@
 import style from 'styled-components';
 
 const ComponentButtonForImpressions = style.button`
-  width: 154px;
-  height: 42px;
+  max-width: 154px;
   left: 886px;
   font-family: 'Nunito';
   font-style: normal;

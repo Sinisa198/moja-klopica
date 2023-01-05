@@ -1,6 +1,6 @@
 import React from 'react';
-import { MdOutlineArrowForwardIos } from 'react-icons/md';
-import favorite from '../../images/icon-for-input.png';
+import favorite from '../../images/input-icon-first.svg';
+import arrow from '../../images/input-second-icon.svg';
 
 const Forms = () => {
   return (
@@ -17,7 +17,7 @@ const Forms = () => {
         <div className='div-for-input'>
           <img src={favorite} alt='' className='icon-for-input' />
           <input placeholder='Unesi adresu na kojoj se nalazis' />
-          <MdOutlineArrowForwardIos className='icon-arrow' />
+          <img src={arrow} alt='' className='icon-arrow' />
         </div>
       </div>
     </div>

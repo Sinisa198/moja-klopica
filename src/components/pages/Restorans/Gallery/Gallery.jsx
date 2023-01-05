@@ -28,7 +28,7 @@ const Gallery = () => {
             </a>
           </div>
 
-          <div class='controls'>
+          <div className='controls'>
             <a href='#slide3' className='next'>
               <img src={arrow} alt='' />
             </a>

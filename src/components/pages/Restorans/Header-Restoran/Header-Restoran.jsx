@@ -1,11 +1,11 @@
 import React from 'react';
 import logoRestoran from '../../../../images/logo-restoran.png';
 import miniLogo from '../../../../images/miniLogo.png';
-import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import firstimageRestoran from '../../../../images/firstimageRestoran.png';
 import Burger from '../../../../images/burger.png';
 import { AiTwotoneStar } from 'react-icons/ai';
-import favorite from '../../../../images/icon-for-input.png';
+import favorite from '../../../../images/input-icon-first.svg';
+import arrow from '../../../../images/input-second-icon.svg';
 
 const Header = () => {
   return (
@@ -16,13 +16,13 @@ const Header = () => {
         <div>
           <p className='restoran-paragraf'>Moja klopica</p>
         </div>{' '}
-        <div class='input'>
-          <span class='prefix'>
-            <img src={favorite} alt='' />
+        <div className='input'>
+          <span className='prefix'>
+            <img src={favorite} alt='' className='icon-favorite-input' />
           </span>
-          <input />
-          <span class='suffix'>
-            <MdOutlineArrowForwardIos />
+          <input placeholder='Unesite adresu gde se nalazite' />
+          <span className='suffix'>
+            <img src={arrow} alt='' className='arrow-icons-input' />
           </span>
         </div>
         <div className='button-for-restoran'>

@@ -1,23 +1,16 @@
 import React from 'react';
-import logoRestoran from '../../../images/logo-restoran.png';
-import miniLogo from '../../../images/miniLogo.png';
-import { MdOutlineArrowForwardIos } from 'react-icons/md';
-import { MdFavoriteBorder } from 'react-icons/md';
-import firstimageRestoran from '../../../images/firstimageRestoran.png';
 import map from '../../../images/map.png';
 import RestoranIcon from '../../../images/Vector.png';
 import Notepad from '../../../images/notepad.png';
 import Star from '../../../images/star.png';
 import Picture from '../../../images/picture.png';
-import Burger from '../../../images/burger.png';
 import Location from '../../../images/location.png';
+import HeaderRestoran from '../Restorans/Header-Restoran/Header-Restoran';
 import Phone from '../../../images/phone.png';
 import listpicture from '../../../images/listpicture.png';
 import { useNavigate } from 'react-router';
-import { AiTwotoneStar } from 'react-icons/ai';
 import { RiStarSFill } from 'react-icons/ri';
 import itemsBox from '../../data/restoranItems';
-import FooterForRestoran from '../../Footer/FooterForRestoran';
 
 const RestoranTopFood = () => {
   const navigate = useNavigate();
@@ -27,44 +20,10 @@ const RestoranTopFood = () => {
 
   return (
     <div className='restoran-top-food'>
-      <div className='burger-logo'>
-        <img src={Burger} className='burger-meni' alt='' />
-        <img src={miniLogo} alt='' className='logo-restoran' />
-        <div>
-          <p className='restoran-paragraf'>Moja klopica</p>
-        </div>{' '}
-        <div class='input'>
-          <span class='prefix'>
-            <MdFavoriteBorder />
-          </span>
-          <input />
-          <span class='suffix'>
-            <MdOutlineArrowForwardIos />
-          </span>
-        </div>
-        <div className='button-for-restoran'>
-          <button className='button-restoran'>Ulogujte se</button>
-        </div>
+      <div className='div-header'>
+        <HeaderRestoran />
       </div>
-      <div className='box-together'>
-        <div className='box'>
-          <img src={firstimageRestoran} alt='' className='background-for-box' />
-          <img src={logoRestoran} alt='' className='logo-for-restoran' />
-        </div>
-        <div className='second-box'>
-          <div className='text-for-restoran'>
-            <h2 className='title-for-restoran'>Restoran Top Food 021</h2>
-            <p className='paragraf-restoran'>
-              RESTORANI * Domaca kuhinja * 4,2
-              <AiTwotoneStar className='star-icon' /> 60 ocena Besplatna dostava
-            </p>
-            <p className='second-paragraf'>
-              <span className='span-green'> Otvoreno sad </span>* Zatvara se u
-              23:30{' '}
-            </p>
-          </div>
-        </div>
-      </div>
+
       <div className='navigation-menu'>
         <div className='nav'>
           <div className='nav-restoran'>
@@ -111,7 +70,7 @@ const RestoranTopFood = () => {
             vitae placerat mi maximus. Pellentesque <br />
             elementum nibh vitae lectus facilisis, in ornare
             <br /> turpis suscipit.
-            <p className='same-place'>Slična mesta</p>
+            <span className='same-place'>Slična mesta</span>
           </p>
           <div className='location'>
             <p>Restoran Top Food 021</p>
@@ -124,13 +83,12 @@ const RestoranTopFood = () => {
               <p>0644226471</p>
             </div>
             <img src={map} className='image-map' alt='' />{' '}
-            {/*Stavljena slika samo zbog pregleda*/}
             <div className='hr-for-restoran'></div>
           </div>
         </div>
         <div className='list-restoran-div'>
           {itemsBox.map((item) => (
-            <div className='main-div'>
+            <div className='main-div' key={item.title + item.paragraf}>
               <div className='div-for-list-restoran'>
                 <div>
                   <img
@@ -140,7 +98,7 @@ const RestoranTopFood = () => {
                   />
                   <p className='list-paragraf-restoran'>{item.paragraf}</p>
                   <div className='div-for-title-rating'>
-                    <p className='list-title-restoran'>{item.title}</p>
+                    <div className='list-title-restoran'>{item.title}</div>
                     <div className='rating-div'>
                       <p className='rating-restoran'>{item.rating}</p>{' '}
                       <RiStarSFill className='rating-star-restoran' />
@@ -152,7 +110,7 @@ const RestoranTopFood = () => {
           ))}
         </div>
       </div>
-      <FooterForRestoran />
+      {/* <FooterForRestoran /> */}
     </div>
   );
 };

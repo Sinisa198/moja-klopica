@@ -38,7 +38,7 @@ const FooterForRestoran = () => {
           <GrFacebookOption className='iconss' />
           <SiTiktok className='iconss' />
         </div>
-        <p className='paragraf'>
+        <p className='paragraf-copyright'>
           <BiCopyright className='copy-right' />
           Moja Klopica 2022
         </p>

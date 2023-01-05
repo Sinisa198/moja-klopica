@@ -21,23 +21,21 @@ const Menu = () => {
 
             {itemsMeni.map((item) => {
               return (
-                <menuitems key={item.name}>
-                  <div className='shopping-cart'>
-                    <p>{item.title}</p>
-                    <div className='shopping-hr' />
-                    <div className='div-for-complet-meni'>
-                      <img src={logoMeni} alt='' className='meni-image' />
-                      <div className='title-meni-shopping'>
-                        <p className='shopping-title'>{item.name}</p>
-                        <span className='dl'>{item.dl}</span>
-                        <div className='price-button'>
-                          <span className='price'>{item.price}</span>
-                          <ButtonMenu>{item.button}</ButtonMenu>
-                        </div>
+                <div className='shopping-cart'>
+                  <p>{item.title}</p>
+                  <div className='shopping-hr' />
+                  <div className='div-for-complet-meni'>
+                    <img src={logoMeni} alt='' className='meni-image' />
+                    <div className='title-meni-shopping'>
+                      <p className='shopping-title'>{item.name}</p>
+                      <span className='dl'>{item.dl}</span>
+                      <div className='price-button'>
+                        <span className='price'>{item.price}</span>
+                        <ButtonMenu>{item.button}</ButtonMenu>
                       </div>
                     </div>
                   </div>
-                </menuitems>
+                </div>
               );
             })}
           </div>

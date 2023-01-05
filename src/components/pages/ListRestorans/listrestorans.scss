@@ -16,8 +16,8 @@
     border-radius: 10px;
     justify-content: center;
     color: #ffffff;
-    width: 112px;
-    height: 43px;
+    width: 100%;
+    max-width: 112px;
     left: 657px;
     top: 2382px;
     background: #8a8a8a;
@@ -42,8 +42,8 @@
     transform: scale(1.5);
   }
   .title-listrestoran {
-    width: 222px;
-    height: 29px;
+    width: 100%;
+    max-width: 222px;
     left: 77.86px;
     top: 1163.18px;
     font-family: 'Poppins';
@@ -94,8 +94,8 @@
 
 .list {
   text-decoration: none;
-  width: 431.74px;
-  height: 331px;
+  width: 100%;
+  max-width: 431.74px;
   padding-left: 20px;
   left: 503.85px;
   top: 931px;
@@ -124,8 +124,8 @@
       justify-content: center;
       margin-left: 260px;
       color: #ffffff;
-      width: 112px;
-      height: 43px;
+      width: 100%;
+      max-width: 112px;
       left: 657px;
       top: 2382px;
       background: #8a8a8a;
@@ -150,8 +150,8 @@
       transform: scale(1.5);
     }
     .title-listrestoran {
-      width: 222px;
-      height: 29px;
+      width: 100%;
+      max-width: 222px;
       left: 77.86px;
       top: 1163.18px;
       font-family: 'Poppins';

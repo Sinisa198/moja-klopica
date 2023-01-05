@@ -2,6 +2,7 @@
   padding-top: 20px;
   padding-left: 20px;
   padding-bottom: 200px;
+  margin-left: 200px;
   .burger-logo {
     display: flex;
     width: 132px;
@@ -15,6 +16,18 @@
     width: 30px;
     margin-top: 20px;
     height: 20px;
+  }
+  .arrow-icons-input {
+    width: 45px;
+    height: 45px;
+    margin-left: -18px;
+    margin-top: -10px;
+  }
+  .icon-favorite-input {
+    margin-left: -15px;
+    margin-top: -11px;
+    width: 59px;
+    height: 53px;
   }
   .nav-galery,
   .nav-impressions,
@@ -85,7 +98,6 @@
     line-height: 38px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-
     color: #c63a2f;
   }
   .restoran-hr {
@@ -221,7 +233,6 @@
   .prefix {
     width: 50px;
     height: 55px;
-    background: #c63a2f;
     border-radius: 40px 0px 0px 40px;
   }
   .box {
@@ -233,13 +244,9 @@
   }
   .prefix,
   .suffix {
-    color: #ffff;
     margin-top: 10px;
-    background-color: #c63a2f;
     width: 30px;
     height: 30px;
-    font-size: 30px;
-    border-radius: 30px;
   }
   .phone-restoran,
   .location-restoran {

@@ -4,8 +4,7 @@ const ButtonForRestoranComponent = style.button`
  border-radius: 10px;
     justify-content: center;
     color: #ffffff;
-    width: 112px;
-    height: 43px;
+    max-width: 112px;
     left: 657px;
     top: 2382px;
     background: #8a8a8a;

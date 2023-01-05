@@ -3,8 +3,8 @@ import style from 'styled-components';
 const ComponentGooglePlay = style.p`
 box-sizing: border-box;
   margin-top: 10px;
-  width: 194px;
-  height: 67px;
+  width:100%;
+  max-width: 194px;
   background: rgba(198, 58, 47, 0.5);
   border: 2px solid #c63a2f;
   border-radius: 10px;
