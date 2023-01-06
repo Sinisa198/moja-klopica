@@ -12,46 +12,48 @@ import ListLinks from '../ListLinks';
 const FooterForHomePage = () => {
   return (
     <div className='footer-homepage'>
-      <div className='logo-googleplay-app'>
-        <img src={logo} alt='' className='logo-homepage' />
-        <div className='googleplay-app'>
-          <div className='home-app'>
-            <p className='paragraf-for-home-app'>
-              <BsApple className='bsapp' />
-              Nabavite na <br />
-              <span className='span-home'>APP STORE</span>
-            </p>
+      <div className='main-footer-div-for-homepage'>
+        <div className='logo-googleplay-app'>
+          <img src={logo} alt='' className='logo-homepage' />
+          <div className='googleplay-app'>
+            <div className='home-app'>
+              <p className='paragraf-for-home-app'>
+                <BsApple className='bsapp' />
+                Nabavite na <br />
+                <span className='span-home'>APP STORE</span>
+              </p>
+            </div>
+            <BoxForGooglePlay>
+              <img src={GooglePlay} alt='' className='google-image' />
+              <p className='paragraf-for-home-google'>
+                Nabavite na <br />
+                <span className='span-home'>APP STORE</span>
+              </p>
+            </BoxForGooglePlay>
           </div>
-          <BoxForGooglePlay>
-            <img src={GooglePlay} alt='' className='google-image' />
-            <p className='paragraf-for-home-google'>
-              Nabavite na <br />
-              <span className='span-home'>APP STORE</span>
-            </p>
-          </BoxForGooglePlay>
         </div>
+        <div className='hr-footer'></div>
+        <div className='faq'>
+          <p>Uslovi korišćenja</p>
+          <p> Obaveštenje o privatnosti</p>
+          <p> FAQ</p>
+        </div>
+        <ListLinks>
+          <div className='div-instagram'>
+            <BsInstagram />
+          </div>
+          <div className='div-facebook'>
+            <GrFacebookOption />
+          </div>
+          <div className='div-tiktok'>
+            <SiTiktok />
+          </div>
+        </ListLinks>
+        <p className='p-footer'>
+          <BiCopyright />
+          Moja klopica 2022
+        </p>
       </div>
-      <div className='hr-footer'></div>
-      <div className='faq'>
-        <p>Uslovi korišćenja</p>
-        <p> Obaveštenje o privatnosti</p>
-        <p> FAQ</p>
-      </div>
-      <ListLinks>
-        <div className='div-instagram'>
-          <BsInstagram />
-        </div>
-        <div className='div-facebook'>
-          <GrFacebookOption />
-        </div>
-        <div className='div-tiktok'>
-          <SiTiktok />
-        </div>
-      </ListLinks>
-      <p className='p-footer'>
-        <BiCopyright />
-        Moja klopica 2022
-      </p>
     </div>
   );
 };

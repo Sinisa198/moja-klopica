@@ -6,6 +6,7 @@
   .burger-logo {
     display: flex;
     width: 132px;
+    margin-left: 55px;
     height: 63.06px;
     left: 52px;
     top: 60px;
@@ -230,11 +231,6 @@
     all: unset;
   }
 
-  .prefix {
-    width: 50px;
-    height: 55px;
-    border-radius: 40px 0px 0px 40px;
-  }
   .box {
     margin-top: 20px;
     width: 1316px;
@@ -273,7 +269,21 @@
     font-weight: 800;
     font-size: 25px;
     line-height: 34px;
-    margin-left: 310px;
+    margin-left: 270px;
     color: #ffffff;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .box {
+    width: 20px;
+  }
+  .main-header {
+    margin-left: 5px;
+    .input {
+      width: 400px;
+    }
+    .box-together {
+      margin-left: -5px;
+    }
   }
 }

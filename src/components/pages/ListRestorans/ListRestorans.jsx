@@ -15,8 +15,10 @@ const ListRestorans = () => {
 
   return (
     <div>
-      <Navigation />
-      <Forms />
+      <div className='navi-forms'>
+        <Navigation />
+        <Forms />
+      </div>
       <div className='listrestoran-main'>
         {listrestorans.map((item) => (
           <div className='list' key={item.id}>

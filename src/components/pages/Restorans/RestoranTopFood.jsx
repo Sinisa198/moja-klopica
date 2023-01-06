@@ -1,23 +1,14 @@
 import React from 'react';
 import map from '../../../images/map.png';
-import RestoranIcon from '../../../images/Vector.png';
-import Notepad from '../../../images/notepad.png';
-import Star from '../../../images/star.png';
-import Picture from '../../../images/picture.png';
 import Location from '../../../images/location.png';
 import HeaderRestoran from '../Restorans/Header-Restoran/Header-Restoran';
 import Phone from '../../../images/phone.png';
 import listpicture from '../../../images/listpicture.png';
-import { useNavigate } from 'react-router';
 import { RiStarSFill } from 'react-icons/ri';
 import itemsBox from '../../data/restoranItems';
+import Nav from './Nav/Nav';
 
 const RestoranTopFood = () => {
-  const navigate = useNavigate();
-  const navigateToMeni = () => navigate('/meni');
-  const navigateToImpressions = () => navigate('/impressions');
-  const navigateToGalery = () => navigate('/gallery');
-
   return (
     <div className='restoran-top-food'>
       <div className='div-header'>
@@ -25,30 +16,7 @@ const RestoranTopFood = () => {
       </div>
 
       <div className='navigation-menu'>
-        <div className='nav'>
-          <div className='nav-restoran'>
-            <img src={RestoranIcon} className='meni-icon' alt='' />
-            <p className='paragraf-meni'>O restoranu</p>
-          </div>
-          <div className='nav-meni'>
-            <img src={Notepad} className='meni-icon' alt='' />
-            <p className='paragraf-meni' onClick={navigateToMeni}>
-              Meni
-            </p>
-          </div>
-          <div className='nav-impressions'>
-            <img src={Star} className='meni-icon' alt='' />
-            <p className='paragraf-meni' onClick={navigateToImpressions}>
-              Utisci
-            </p>
-          </div>
-          <div className='nav-galery'>
-            <img src={Picture} className='meni-icon' alt='' />
-            <p className='paragraf-meni' onClick={navigateToGalery}>
-              Galerija
-            </p>
-          </div>
-        </div>
+        <Nav />
         <div className='text-and-location'>
           <p className='text-restoran'>
             {' '}

@@ -6,6 +6,7 @@ import Burger from '../../../../images/burger.png';
 import { AiTwotoneStar } from 'react-icons/ai';
 import favorite from '../../../../images/input-icon-first.svg';
 import arrow from '../../../../images/input-second-icon.svg';
+import timerIcon from '../../../../images/timer-for-closed.png';
 
 const Header = () => {
   return (
@@ -42,6 +43,7 @@ const Header = () => {
               <AiTwotoneStar /> 60 ocena Besplatna dostava
             </p>
             <p className='second-paragraf'>
+              <img src={timerIcon} alt='' />{' '}
               <span className='span-green'> Otvoreno sad </span>* Zatvara se u
               23:30{' '}
             </p>

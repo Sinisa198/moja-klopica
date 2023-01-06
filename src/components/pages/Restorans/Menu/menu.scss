@@ -40,6 +40,7 @@
   height: 3500px;
   padding-bottom: 50px;
   margin-top: -150px;
+  margin-left: 360px;
   background: #ffffff;
   box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
@@ -48,6 +49,7 @@
   position: absolute;
   width: 300px;
   height: 335px;
+  margin-left: 230px;
   left: 950px;
   top: 980px;
   background: #ffffff;
@@ -59,6 +61,7 @@
   width: 258px;
   height: 36px;
   left: 158px;
+  margin-left: 270px;
   top: 1022px;
   font-family: 'Poppins';
   font-style: normal;
@@ -77,7 +80,7 @@
 .shopping-cart {
   width: 898px;
   margin-top: -280px;
-  margin-left: 250px;
+  margin-left: 300px;
   height: 500px;
   font-family: 'Poppins';
   font-style: normal;
@@ -123,4 +126,15 @@
   margin-left: 10px;
   top: 1175px;
   background: #d9d9d9;
+}
+@media screen and (max-width: 1440px) {
+  .calculator {
+    margin-left: 10px;
+  }
+  .meni {
+    margin-left: 150px;
+  }
+  .nav-meni-meni {
+    margin-left: 50px;
+  }
 }

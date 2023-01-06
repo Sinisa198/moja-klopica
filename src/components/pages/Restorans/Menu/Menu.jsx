@@ -39,10 +39,10 @@ const Menu = () => {
               );
             })}
           </div>
-          <div className='calculator'>
-            <p className='calculator-paragraf'>KALKULATOR</p>
-            <div className='calculator-hr' />
-          </div>
+        </div>
+        <div className='calculator'>
+          <p className='calculator-paragraf'>KALKULATOR</p>
+          <div className='calculator-hr' />
         </div>
       </div>
       <FooterForRestoran />

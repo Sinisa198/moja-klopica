@@ -301,12 +301,14 @@
 /////////////////////////////////
 @media screen and (max-width: 1440px) {
   .footer-homepage {
-    width: 100%;
-    margin-left: -200px;
+    width: 1240px;
     position: absolute;
     left: 0px;
     margin-top: 200px;
     background: #333333;
+  }
+  .main-footer-div-for-homepage {
+    margin-left: -200px;
   }
   .logo-homepage {
     width: 168px;
@@ -472,6 +474,9 @@
 }
 @media screen and (max-width: 375px) {
   .footer-main {
+    width: 1640px;
+  }
+  .footer-homepage {
     width: 1640px;
   }
 }

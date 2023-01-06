@@ -31,3 +31,8 @@
   margin-top: 40px;
   grid-column-gap: 10px;
 }
+@media screen and (max-width: 1440px) {
+  .main-slider {
+    margin-left: 150px;
+  }
+}

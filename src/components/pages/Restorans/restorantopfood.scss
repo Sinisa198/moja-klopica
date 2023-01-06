@@ -54,10 +54,10 @@
   }
   .text-and-location {
     display: flex;
-    margin-top: 40px;
     width: 1116px;
+    margin-top: -120px;
     height: 1516px;
-    margin-left: 330px;
+    margin-left: 360px;
     left: 58px;
     top: 1070px;
     background: #ffffff;
@@ -125,7 +125,7 @@
   .navigation-menu {
     margin-left: -20px;
     margin-top: -80px;
-    width: 100%;
+    width: 1856px;
     padding-bottom: 200px;
     background: #f3f1f0;
     background: #f3f1f0;
@@ -260,8 +260,8 @@
   .hr-for-restoran {
     position: absolute;
     width: 1009px;
-    margin-top: -80px;
     height: 1px;
+    margin-top: 50px;
     left: 142px;
     margin-left: 270px;
     top: 1771px;
@@ -354,7 +354,7 @@
   .list-restoran-div {
     margin-top: -600px;
     display: grid;
-    margin-left: 355px;
+    margin-left: 385px;
     grid-row-gap: 20px;
     grid-template-columns: 270px 270px 270px 270px;
   }
@@ -386,5 +386,12 @@
   }
   .div-for-footer-restoran {
     margin-left: -20px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .restoran-top-food {
+    .text-and-location {
+      margin-left: 150px;
+    }
   }
 }

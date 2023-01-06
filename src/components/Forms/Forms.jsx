@@ -16,7 +16,7 @@ const Forms = () => {
       <div>
         <div className='div-for-input'>
           <img src={favorite} alt='' className='icon-for-input' />
-          <input placeholder='Unesi adresu na kojoj se nalazis' />
+          <input placeholder='Unesi adresu na kojoj se nalaziš' />
           <img src={arrow} alt='' className='icon-arrow' />
         </div>
       </div>

@@ -113,5 +113,9 @@
 @media screen and (max-width: 1440px) {
   .forms-main {
     margin-left: 60px;
+
+    .icon-for-input {
+      margin-left: -37.5px;
+    }
   }
 }
