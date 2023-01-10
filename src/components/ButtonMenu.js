@@ -13,9 +13,10 @@ margin-left: 110px;
   color: #ffffff;
 `;
 
-const ButtonMenu = ({ type, className, id, children }) => {
+const ButtonMenu = ({ type, className, id, children, callbackAction }) => {
   return (
     <ComponentButtonMenu
+      onClick={callbackAction}
       type={type ? type : 'button'}
       className={className ? `meni-button ${className}` : 'meni-button'}
       id={id}

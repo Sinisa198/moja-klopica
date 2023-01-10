@@ -1,6 +1,6 @@
 import React from 'react';
 import logoRestoran from '../../../../images/logo-restoran.png';
-import miniLogo from '../../../../images/miniLogo.png';
+import miniLogo from '../../../../images/mini-logo-header.png';
 import firstimageRestoran from '../../../../images/firstimageRestoran.png';
 import Burger from '../../../../images/burger.png';
 import { AiTwotoneStar } from 'react-icons/ai';
@@ -37,7 +37,7 @@ const Header = () => {
         </div>
         <div className='second-box'>
           <div className='text-for-restoran'>
-            <h2 className='title-for-restoran'>Restoran Top Food 021</h2>
+            <h2 className='title-for-restoran'>Restoran Top FOOD 021</h2>
             <p className='paragraf-restoran'>
               RESTORANI * Domaca kuhinja * 4,2
               <AiTwotoneStar /> 60 ocena Besplatna dostava

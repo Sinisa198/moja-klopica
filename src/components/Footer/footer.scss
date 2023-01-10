@@ -2,7 +2,6 @@
   display: flex;
   background-color: #333333;
   width: 100%;
-
   .line {
     margin-left: -600px;
     top: 2631px;
@@ -107,7 +106,7 @@
   }
   .box-for-appstore {
     margin-top: 45px;
-    margin-left: 200px;
+    margin-left: 600px;
     box-sizing: border-box;
     padding-bottom: 40px;
     position: absolute;
@@ -117,10 +116,13 @@
     background: rgba(198, 58, 47, 0.5);
     border: 1.80193px solid #c63a2f;
     border-radius: 9.00966px;
+    @media screen and (max-width: 1440px) {
+      margin-left: 10px;
+    }
   }
   .box-for-googleplay {
     margin-top: 45px;
-    margin-left: 400px;
+    margin-left: 800px;
     box-sizing: border-box;
     position: absolute;
     width: 100%;
@@ -129,21 +131,26 @@
     background: rgba(198, 58, 47, 0.5);
     border: 1.80193px solid #c63a2f;
     border-radius: 9.00966px;
+    @media screen and (max-width: 1440px) {
+      margin-left: 200px;
+    }
   }
   .links {
-    margin-left: 500px;
+    margin-left: 450px;
     width: 300px;
   }
   .list-icons {
-    margin-left: 500px;
+    margin-left: 700px;
     margin-top: 50px;
     white-space: 200px;
+    @media screen and (max-width: 1440px) {
+      margin-left: 500px;
+    }
   }
 }
 .footer-homepage {
   position: absolute;
-  width: 100%;
-  max-width: 89.2%;
+  width: 91%;
   margin-top: 100px;
   background: #333333;
   padding-left: 200px;
@@ -297,6 +304,9 @@
   line-height: 24px;
   color: #ffffff;
   margin-left: 1116px;
+}
+.main-footer-div-for-homepage {
+  margin-left: 200px;
 }
 /////////////////////////////////
 @media screen and (max-width: 1440px) {

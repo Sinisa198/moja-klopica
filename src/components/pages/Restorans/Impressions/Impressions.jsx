@@ -82,7 +82,7 @@ const Impressions = () => {
                   <RiStarSFill className='star-for-impressions' />
                   <RiStarSFill className='star-for-impressions' />
                   <RiStarSFill className='star-for-impressions' />
-                  <img src={emptystar} alt='' className='image-empty-star' />
+                  <RiStarSFill className='star-for-impressions' />
                 </span>
               </p>
               <p className='impressions-text'>

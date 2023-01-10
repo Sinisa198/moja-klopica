@@ -13,7 +13,7 @@ const Gallery = () => {
         <Nav />
 
         <div className='main-slider'>
-          <div class='slider'>
+          <div className='slider'>
             <a href='#slide1'>
               <img src={lorem1} className='slide' alt='image1' />
             </a>

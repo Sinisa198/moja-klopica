@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import foodReducer from './food';
+import food from './food';
 
 const store = combineReducers({
-  foodReducer,
+  food,
 });
 export default store;

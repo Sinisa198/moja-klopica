@@ -6,12 +6,22 @@
   .burger-logo {
     display: flex;
     width: 132px;
-    margin-left: 55px;
+    margin-left: 310px;
     height: 63.06px;
     left: 52px;
     top: 60px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
       drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    @media screen and (max-width: 1440px) {
+      display: flex;
+      width: 132px;
+      margin-left: 55px;
+      height: 63.06px;
+      left: 52px;
+      top: 60px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
   }
   .burger-meni {
     width: 30px;
@@ -80,10 +90,14 @@
   .background-for-box {
     width: 1316px;
     height: 299px;
+    @media screen and (max-width: 1440px) {
+      width: 1316px;
+      height: 299px;
+    }
   }
   .box-together {
     margin-top: 50px;
-    margin-left: 40px;
+    margin-left: 300px;
   }
   .location {
     margin-top: 35px;
@@ -122,8 +136,15 @@
     padding-bottom: 50px;
     background-color: #ffff;
     border-radius: 0 0 30px 30px;
-    margin-top: -20px;
     height: 299px;
+    @media screen and (max-width: 1440px) {
+      width: 1316px;
+      padding-bottom: 50px;
+      background-color: #ffff;
+      border-radius: 0 0 30px 30px;
+      margin-top: -20px;
+      height: 299px;
+    }
   }
   .logo-for-restoran {
     margin-left: 120px;
@@ -216,9 +237,12 @@
     color: #8a8a8a;
   }
   .title-for-restoran {
-    font-family: 'Poppins';
+    width: 577px;
+    height: 75px;
+    left: 177px;
+    top: 591.88px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 450;
     font-size: 50px;
     line-height: 75px;
     color: #333333;
@@ -271,6 +295,9 @@
     line-height: 34px;
     margin-left: 270px;
     color: #ffffff;
+    @media screen and (max-width: 1440px) {
+      margin-left: 400px;
+    }
   }
 }
 @media screen and (max-width: 1440px) {

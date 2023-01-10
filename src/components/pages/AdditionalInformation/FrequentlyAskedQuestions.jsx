@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
 import termsofuseLogo from '../../../images/termsofuse-logo.png';
-import { MdOutlineArrowForwardIos } from 'react-icons/md';
-import { MdFavoriteBorder } from 'react-icons/md';
+import favorite from '../../../images/input-icon-first.svg';
+import arrow from '../../../images/input-second-icon.svg';
 import FooterForRestoran from '../../Footer/FooterForRestoran';
 import tan from '../../../images/tan.png';
 import burgerw from '../../../images/burger-w.png';
@@ -22,16 +22,15 @@ const TermsOfUse = () => {
           <div className='div-title'>
             <h3 className='title-termsofuse'>MOJA KLOPICA</h3>
             <div className='input-for-terms'>
-              <span className='prefix'>
-                <MdFavoriteBorder />
-              </span>
-              <input placeholder='Unesi adresu na kojoj se nalaziš' />
-              <span className='suffix'>
-                <MdOutlineArrowForwardIos />
-              </span>
+              <img src={favorite} alt='' className='icon-favorite-input' />
+              <input
+                placeholder='Unesi adresu na kojoj se nalaziš'
+                className='inputterms'
+              />
+              <img src={arrow} alt='' className='arrow-icon-input' />
             </div>
           </div>
-          <div className='button-for-restoran'>
+          <div className='button-for-restoran-terms'>
             <button className='button-restoran'>Ulogujte se</button>
           </div>
         </div>
