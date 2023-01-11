@@ -1,23 +1,16 @@
 import React from 'react';
-import { useNavigate } from 'react-router';
-import termsofuseLogo from '../../../images/termsofuse-logo.png';
-import favorite from '../../../images/input-icon-first.svg';
-import arrow from '../../../images/input-second-icon.svg';
-import FooterForRestoran from '../../Footer/FooterForRestoran';
-import tan from '../../../images/tan.png';
-import burgerw from '../../../images/burger-w.png';
+import { NavLink } from 'react-router-dom';
+import termsofuseLogo from '../../images/termsofuse-logo.png';
+import favorite from '../../images/input-icon-first.svg';
+import arrow from '../../images/input-second-icon.svg';
+import FooterForRestoran from '../../components/Footer/FooterForRestoran';
+import tan from '../../images/tan.png';
 
 const TermsOfUse = () => {
-  const navigate = useNavigate();
-  const navigateToNotifications = () => navigate('/privacynotices');
-  const navigateToTerms = () => navigate('/termsofuse');
-  const toTerms = () => navigate('/askedquestions');
-
   return (
     <div className='terms-of-use'>
       <div className='App-terms-of-use'>
         <div className='main-terms'>
-          <img src={burgerw} alt='' className='burger-w' />
           <img src={termsofuseLogo} alt='' className='logo-termsofuse' />
           <div className='div-title'>
             <h3 className='title-termsofuse'>MOJA KLOPICA</h3>
@@ -45,16 +38,19 @@ const TermsOfUse = () => {
         <div className='box-terms'>
           <div className='list-terms'>
             <div className='hr-for-terms'></div>
-            <p onClick={() => navigateToTerms()}>Često postavljana pitanja</p>
+            <NavLink to='/termsofuse' activeClassName='active'>
+              Često postavljana pitanja
+            </NavLink>
             <div className='hr-for-terms'></div>
 
-            <p onClick={() => navigateToNotifications()}>
+            <NavLink to='/privacynotices' activeClassName='active'>
               Obaveštenje o privatnosti
-            </p>
+            </NavLink>
             <div className='hr-for-terms'></div>
 
-            <p onClick={() => toTerms()}>Uslovi korišćenja</p>
-            <div className='hr-for-terms'></div>
+            <NavLink to='/askedquestions' activeClassName='active'>
+              Uslovi korišćenja
+            </NavLink>
           </div>
           <div className='lorem-ipsum'>
             <h3 className='notification-text'>

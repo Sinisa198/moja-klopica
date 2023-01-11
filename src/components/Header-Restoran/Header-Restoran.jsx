@@ -1,18 +1,16 @@
 import React from 'react';
-import logoRestoran from '../../../../images/logo-restoran.png';
-import miniLogo from '../../../../images/mini-logo-header.png';
-import firstimageRestoran from '../../../../images/firstimageRestoran.png';
-import Burger from '../../../../images/burger.png';
+import logoRestoran from '../../images/logo-restoran.png';
+import miniLogo from '../../images/mini-logo-header.png';
+import firstimageRestoran from '../../images/firstimageRestoran.png';
 import { AiTwotoneStar } from 'react-icons/ai';
-import favorite from '../../../../images/input-icon-first.svg';
-import arrow from '../../../../images/input-second-icon.svg';
-import timerIcon from '../../../../images/timer-for-closed.png';
+import favorite from '../../images/input-icon-first.svg';
+import arrow from '../../images/input-second-icon.svg';
+import timerIcon from '../../images/timer-for-closed.png';
 
 const Header = () => {
   return (
     <div className='main-header'>
       <div className='burger-logo'>
-        <img src={Burger} className='burger-meni' alt='' />
         <img src={miniLogo} alt='' className='logo-restoran' />
         <div>
           <p className='restoran-paragraf'>Moja klopica</p>

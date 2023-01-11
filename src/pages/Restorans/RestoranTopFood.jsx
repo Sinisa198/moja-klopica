@@ -1,12 +1,12 @@
 import React from 'react';
-import map from '../../../images/map.png';
-import Location from '../../../images/location.png';
-import HeaderRestoran from '../Restorans/Header-Restoran/Header-Restoran';
-import Phone from '../../../images/phone.png';
-import listpicture from '../../../images/listpicture.png';
+import map from '../../images/map.png';
+import Location from '../../images/location.png';
+import HeaderRestoran from '../../components/Header-Restoran/Header-Restoran';
+import Phone from '../../images/phone.png';
+import listpicture from '../../images/listpicture.png';
 import { RiStarSFill } from 'react-icons/ri';
-import itemsBox from '../../data/restoranItems';
-import Nav from './Nav/Nav';
+import itemsBox from '../../components/data/restoranItems';
+import Nav from '../../components/Nav/Nav';
 
 const RestoranTopFood = () => {
   return (
@@ -17,6 +17,31 @@ const RestoranTopFood = () => {
 
       <div className='navigation-menu'>
         <Nav />
+        <div className='container'>
+          <input type='checkbox' name='' id='' className='check' />
+          <ul className='menu-items'>
+            <li>
+              <p>Početna</p>
+            </li>
+            <li>
+              <p>Kategorije</p>
+            </li>
+            <li>
+              <p>Ponude</p>
+            </li>
+            <li>
+              <p>Pomoć</p>
+            </li>
+            <li>
+              <p>Kontakt</p>
+            </li>
+          </ul>
+          <div className='ham-menu'>
+            <span className='line line1'></span>
+            <span className='line line2'></span>
+            <span className='line line3'></span>
+          </div>
+        </div>
         <div className='text-and-location'>
           <p className='text-restoran'>
             {' '}

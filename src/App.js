@@ -2,16 +2,16 @@ import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation';
 import Forms from './components/Forms/Forms';
-import ListRestorans from './components/pages/ListRestorans/ListRestorans';
+import ListRestorans from './pages/ListRestorans/ListRestorans';
 import FooterForRestoran from './components/Footer/FooterForRestoran';
-import RestoranTopFood from './components/pages/Restorans/RestoranTopFood';
-import Menu from './components/pages/Restorans/Menu/Menu';
-import Impressions from './components/pages/Restorans/Impressions/Impressions';
-import Gallery from './components/pages/Restorans/Gallery/Gallery';
-import FrequentlyAskedQuestions from './components/pages/AdditionalInformation/FrequentlyAskedQuestions';
-import PrivacyNotices from './components/pages/AdditionalInformation/PrivacyNotices';
-import TermsOfUse from './components/pages/AdditionalInformation/TermsOfUse';
-import HomePage from './components/pages/HomePage/HomePage';
+import RestoranTopFood from './pages/Restorans/RestoranTopFood';
+import Menu from './pages/Restorans/Menu/Menu';
+import Impressions from './pages/Restorans/Impressions/Impressions';
+import Gallery from './pages/Restorans/Gallery/Gallery';
+import FrequentlyAskedQuestions from './pages/AdditionalInformation/FrequentlyAskedQuestions';
+import PrivacyNotices from './pages/AdditionalInformation/PrivacyNotices';
+import TermsOfUse from './pages/AdditionalInformation/TermsOfUse';
+import HomePage from './pages/HomePage/HomePage';
 
 const App = () => {
   return (

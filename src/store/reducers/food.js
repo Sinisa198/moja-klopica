@@ -33,7 +33,10 @@ const foodReducer = (state = initState, action) => {
         foods: [...state.foods, action.payload],
         sum: state.sum + action.payload.price,
       };
-
+    case 'INCREMENT':
+      return state + 1;
+    case 'DECREMENT':
+      return state - 1;
     default:
       return state;
   }

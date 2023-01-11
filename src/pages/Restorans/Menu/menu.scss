@@ -1,5 +1,5 @@
 .main-meni {
-  background: url('../../../../images/background-restoran.png');
+  background: url('../../../images/background-restoran.png');
 }
 .main-nav-with-meni {
   margin-top: -150px;
@@ -110,15 +110,13 @@
   line-height: 36px;
   color: #333333;
 }
-.text-nav:hover {
-  position: absolute;
-  width: 159px;
-  height: 3px;
-  background: #c63a2f;
-  border-radius: 0px;
-}
 .div-for-complet-meni {
   display: flex;
+}
+.my-line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
 }
 .price-button {
   display: flex;
@@ -234,8 +232,35 @@
   top: 14.71%;
   bottom: 14.71%;
 }
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+ul li a {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+ul li a:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.active {
+  background-color: red;
+  text-decoration: none;
+  cursor: default;
+  pointer-events: none;
+  justify-content: center;
+  text-decoration: none;
+}
 .name-food {
-  width: 118px;
+  width: 500px;
   height: 30px;
   left: 1078px;
   top: 1200px;

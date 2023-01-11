@@ -1,11 +1,14 @@
 .App-terms-of-use {
-  background: url('../../../images/background-terms.png');
+  background: url('../../images/background-terms.png');
   width: 100%;
+  @media screen and (max-width: 768px) {
+    width: 187%;
+  }
 }
 .main-terms {
   display: flex;
   padding-top: 20px;
-  margin-left: 280px;
+  margin-left: 480px;
 }
 .title-termsofuse {
   color: red;
@@ -61,7 +64,7 @@ input {
   border-radius: 40px 0px 0px 40px;
 }
 .title-for-termsofuse {
-  margin-left: 250px;
+  margin-left: 550px;
   margin-top: 300px;
   padding-bottom: 120px;
   left: 491px;
@@ -120,10 +123,13 @@ input {
   height: 1167px;
   left: 63px;
   margin-top: 40px;
-  margin-left: 200px;
+  margin-left: 450px;
   background: #ffffff;
   box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
+}
+.arrow-icon-input {
+  margin-left: -10px;
 }
 .red {
   width: 400px;
@@ -139,6 +145,7 @@ input {
   text-transform: uppercase;
   color: #c63a2f;
 }
+
 .second-box-terms {
   position: absolute;
   width: 100%;
@@ -146,6 +153,9 @@ input {
   left: 0px;
   top: 632px;
   background-color: #f3f1f0;
+}
+.burger-menu-together {
+  margin-left: 200px;
 }
 .notification-text {
   width: 501px;
@@ -205,9 +215,14 @@ input {
   top: 833px;
   background: #d9d9d9;
 }
-.hr-for-terms:hover {
-  background-color: red;
+.text-for-terms-use {
+  text-decoration: none;
+  cursor: default;
+  pointer-events: none;
+  text-decoration: none;
+  text-decoration: underline;
 }
+
 @media screen and (max-width: 1440px) {
   .main-terms {
     display: flex;
@@ -272,6 +287,7 @@ input {
     line-height: 33px;
     color: #ffffff;
   }
+
   .list-terms {
     position: absolute;
     width: 292px;
@@ -280,11 +296,16 @@ input {
     top: 200px;
     font-family: 'Nunito';
     font-style: normal;
+    color: green;
     font-weight: 800;
     font-size: 24px;
     line-height: 33px;
-    color: #000000;
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
+    text-decoration: none;
   }
+
   .lorem-ipsum {
     position: absolute;
     height: 36px;
@@ -325,6 +346,9 @@ input {
     background: #ffffff;
     box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
+  }
+  .arrow-icon-input {
+    margin-left: -12px;
   }
   .red {
     width: 400px;

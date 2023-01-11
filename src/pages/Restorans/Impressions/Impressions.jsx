@@ -1,10 +1,11 @@
 import React from 'react';
-import HeaderRestoran from '../Header-Restoran/Header-Restoran';
-import Nav from '../Nav/Nav';
+import HeaderRestoran from '../../../components/Header-Restoran/Header-Restoran';
+import Nav from '../../../components/Nav/Nav';
 import { RiStarSFill } from 'react-icons/ri';
-import FooterForRestoran from '../../../Footer/FooterForRestoran';
-import emptystar from '../../../../images/emptystar.png';
-import ButtonForImpressions from '../../../ButtonForImpressions';
+import FooterForRestoran from '../../../components/Footer/FooterForRestoran';
+import emptystar from '../../../images/emptystar.png';
+import ButtonForImpressions from '../../../components/ButtonForImpressions';
+import starempty from '../../../images/emptystar.svg';
 
 const Impressions = () => {
   return (
@@ -12,7 +13,31 @@ const Impressions = () => {
       <HeaderRestoran />
       <div className='nav-and-rating'>
         <Nav />
-
+        <div className='container'>
+          <input type='checkbox' name='' id='' className='check' />
+          <ul className='menu-items'>
+            <li>
+              <p>Početna</p>
+            </li>
+            <li>
+              <p>Kategorije</p>
+            </li>
+            <li>
+              <p>Ponude</p>
+            </li>
+            <li>
+              <p>Pomoć</p>
+            </li>
+            <li>
+              <p>Kontakt</p>
+            </li>
+          </ul>
+          <div className='ham-menu'>
+            <span className='line line1'></span>
+            <span className='line line2'></span>
+            <span className='line line3'></span>
+          </div>
+        </div>
         <div className='main-i'>
           <div className='impressions-first-box'>
             <p className='paragraf-for-first-box'>
@@ -20,25 +45,28 @@ const Impressions = () => {
               <br /> adipiscing elit. Nullam mi elit, commodo nec ante
               <br /> id, ornare efficitur dui. Nulla in quam sed ex
               <br /> aliquam feugiat. In varius risus est, sed placerat <br />
-              tortor mollis a. -Pera Perić
+              tortor mollis a. - <span className='text-name'>Pera Perić</span>
             </p>{' '}
             <br />
             <div className='first-hr' />
             <p className='second-paragraf-impressions'>
               Lorem ipsum dolor sit amet, consectetur
               <br /> adipiscing elit. Nullam mi elit, commodo nec ante
-              <br /> id, ornare efficitur dui. - Marija Simic
+              <br /> id, ornare efficitur dui. -
+              <span className='text-name'> Marija Simic</span>
             </p>
             <div className='second-hr' />
             <p className='three-paragraf'>
               Lorem ipsum dolor sit amet, consectetur <br />
-              adipiscing elit. - Jovan Jovanovic
+              adipiscing elit. -{' '}
+              <span className='text-name'>Jovan Jovanovic</span>
             </p>
             <div className='three-hr' />
             <p className='four-paragraf'>
               Nullam mi elit, commodo nec ante id, ornare
               <br /> efficitur dui. Nulla in quam sed ex aliquam feugiat.
-              <br /> In varius risus est. - Sima Simic
+              <br /> In varius risus est. -
+              <span className='text-name'> Sima Simic</span>
             </p>
           </div>
           <div className='impressions-second-box'>
@@ -52,7 +80,7 @@ const Impressions = () => {
                   <RiStarSFill className='star-for-impressions' />
                   <RiStarSFill className='star-for-impressions' />
                   <RiStarSFill className='star-for-impressions' />
-                  <img src={emptystar} alt='' className='image-empty-star' />
+                  <img src={starempty} alt='' className='image-empty-star' />
                 </span>
               </p>
               <p className='impressions-text'>

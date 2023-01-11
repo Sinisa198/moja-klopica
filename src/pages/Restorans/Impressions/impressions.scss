@@ -1,5 +1,5 @@
 .main-impressions {
-  background: url('../../../../images/background-restoran.png');
+  background: url('../../../images/background-restoran.png');
 }
 
 .nav-and-rating {
@@ -18,8 +18,17 @@
   float: right;
   margin-right: 20px;
 }
+.text-name {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
 .star-for-impressions {
   color: #c63a2f;
+  width: 18px;
 }
 .image-empty-star {
   width: 18px;

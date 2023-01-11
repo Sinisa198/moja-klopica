@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router';
 import { RiStarSFill } from 'react-icons/ri';
 import { AiOutlineStar } from 'react-icons/ai';
-import Forms from '../../Forms/Forms';
-import Navigation from '../../Navigation/Navigation';
-import FooterForRestoran from '../../Footer/FooterForRestoran';
-import listrestorans from '../../data/listrestoranitem';
-import ButtonForRestoran from '../../ButtonForRestoran';
+import Forms from '../../components/Forms/Forms';
+import Navigation from '../../components/Navigation/Navigation';
+import FooterForRestoran from '../../components/Footer/FooterForRestoran';
+import listrestorans from '../../components/data/listrestoranitem';
+import ButtonForRestoran from '../../components/ButtonForRestoran';
 
 const ListRestorans = () => {
   const navigate = useNavigate();
@@ -40,6 +40,7 @@ const ListRestorans = () => {
               <div class='list-stars'>
                 <RiStarSFill />
                 <RiStarSFill />
+
                 <RiStarSFill />
                 <RiStarSFill />
                 <AiOutlineStar className='star-rating' />

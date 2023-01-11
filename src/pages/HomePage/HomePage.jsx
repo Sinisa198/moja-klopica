@@ -1,16 +1,16 @@
 import React from 'react';
-import Navigation from '../../Navigation/Navigation';
-import Forms from '../../Forms/Forms';
-import miniTopFood from '../../../images/mini-top-food.png';
-import restoran from '../../../images/home-restoran.png';
-import meni from '../../../images/meni-home.png';
-import phone from '../../../images/home-phone.png';
-import FooterForHomePage from '../../Footer/FooterForHomePage';
+import Navigation from '../../components/Navigation/Navigation';
+import Forms from '../../components/Forms/Forms';
+import miniTopFood from '../../images/mini-top-food.png';
+import restoran from '../../images/home-restoran.png';
+import meni from '../../images/meni-home.png';
+import phone from '../../images/home-phone.png';
+import FooterForHomePage from '../../components/Footer/FooterForHomePage';
 import { RiStarSFill } from 'react-icons/ri';
 import { AiOutlineStar } from 'react-icons/ai';
 import { useNavigate } from 'react-router';
-import Menu from '../../Menu';
-import Profile from '../../Profile';
+import Menu from '../../components/Menu';
+import Profile from '../../components/Profile';
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -24,6 +24,7 @@ const HomePage = () => {
         <Navigation />
         <Forms />
       </div>
+
       <div className='second-box-home'>
         <div className='first-box'>
           <img src={miniTopFood} alt='' className='mini-top-food' />

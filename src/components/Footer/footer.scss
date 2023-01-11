@@ -3,14 +3,17 @@
   background-color: #333333;
   width: 100%;
   .line {
-    margin-left: -600px;
-    top: 2631px;
+    margin-left: -640px;
+    width: 100%;
+    width: 1307px;
+    height: 1px;
     background: #d9d9d9;
   }
   .icons-box {
     width: 100%;
     max-width: 30px;
     height: 30px;
+    margin-left: 5px;
     padding-top: 10px;
     color: white;
   }
@@ -91,8 +94,12 @@
   .logo-footer {
     width: 103px;
     height: 94.56px;
-    margin-left: 250px;
+    margin-left: 500px;
     margin-top: 30px;
+
+    @media screen and (max-width: 1440px) {
+      margin-left: 250px;
+    }
   }
   .paragraf-copyright {
     max-width: 146px;
@@ -140,7 +147,7 @@
     width: 300px;
   }
   .list-icons {
-    margin-left: 700px;
+    margin-left: 550px;
     margin-top: 50px;
     white-space: 200px;
     @media screen and (max-width: 1440px) {
@@ -206,8 +213,9 @@
   margin-left: 20px;
 }
 .bsapp {
-  font-size: 30px;
-  margin-left: -25px;
+  width: 35px;
+  height: 35px;
+  margin-left: -20px;
   margin-top: 20px;
 }
 .paragraf-for-home-app {
@@ -231,6 +239,7 @@
 
 .icon-apple {
   margin-top: 10px;
+  margin-left: 5px;
   font-size: 30px;
   color: #ffff;
 }
