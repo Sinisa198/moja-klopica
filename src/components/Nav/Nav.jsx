@@ -19,12 +19,13 @@ const Nav = () => {
             O restoranu
           </NavLink>
         </div>
+
         <div className='nav-meni' href='#'>
           <img src={Notepad} className='meni-icon' alt='' />
           <NavLink
-            to='/meni'
-            activeClassName='active'
             className='paragraf-meni'
+            activeClassName='active'
+            to='/menu'
           >
             Meni
           </NavLink>

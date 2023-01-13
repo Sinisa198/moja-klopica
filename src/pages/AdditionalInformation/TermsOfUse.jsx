@@ -11,6 +11,31 @@ const TermsOfUse = () => {
     <div className='terms-of-use'>
       <div className='App-terms-of-use'>
         <div className='main-terms'>
+          <div className='container'>
+            <input type='checkbox' name='' id='' className='check' />
+            <ul className='menu-items'>
+              <li>
+                <p className='text'>Početna</p>
+              </li>
+              <li>
+                <p>Kategorije</p>
+              </li>
+              <li>
+                <p>Ponude</p>
+              </li>
+              <li>
+                <p>Pomoć</p>
+              </li>
+              <li>
+                <p>Kontakt</p>
+              </li>
+            </ul>
+            <div className='ham-menu'>
+              <span className='line line1'></span>
+              <span className='line line2'></span>
+              <span className='line line3'></span>
+            </div>
+          </div>
           <img src={termsofuseLogo} alt='' className='logo-termsofuse' />
           <div className='div-title'>
             <h3 className='title-termsofuse'>MOJA KLOPICA</h3>
@@ -47,12 +72,18 @@ const TermsOfUse = () => {
             </NavLink>
             <div className='hr-for-terms'></div>
 
-            <NavLink to='/privacynotices' activeClassName='active'>
+            <NavLink to='/privacynotices' className='text-for-terms-use'>
               Obaveštenje o privatnosti
             </NavLink>
-            <div className='hr-for-terms'></div>
+            <NavLink activeClassName='active'>
+              <div className='hr-for-terms'></div>
+            </NavLink>
 
-            <NavLink to='/askedquestions' activeClassName='active'>
+            <NavLink
+              to='/askedquestions'
+              activeClassName='active'
+              className='text-for-terms-use'
+            >
               Uslovi korišćenja
             </NavLink>
             <div className='hr-for-terms'></div>

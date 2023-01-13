@@ -2,6 +2,8 @@
   display: flex;
   background-color: #333333;
   width: 100%;
+  justify-content: center;
+  padding-top: 50px;
   .line {
     margin-left: -640px;
     width: 100%;
@@ -94,7 +96,6 @@
   .logo-footer {
     width: 103px;
     height: 94.56px;
-    margin-left: 500px;
     margin-top: 30px;
 
     @media screen and (max-width: 1440px) {
@@ -113,13 +114,12 @@
   }
   .box-for-appstore {
     margin-top: 45px;
-    margin-left: 600px;
+    justify-content: center;
     box-sizing: border-box;
     padding-bottom: 40px;
     position: absolute;
     width: 100%;
     width: 174.79px;
-    left: 217px;
     background: rgba(198, 58, 47, 0.5);
     border: 1.80193px solid #c63a2f;
     border-radius: 9.00966px;
@@ -129,12 +129,10 @@
   }
   .box-for-googleplay {
     margin-top: 45px;
-    margin-left: 800px;
     box-sizing: border-box;
     position: absolute;
     width: 100%;
     max-width: 174.79px;
-    left: 217px;
     background: rgba(198, 58, 47, 0.5);
     border: 1.80193px solid #c63a2f;
     border-radius: 9.00966px;
@@ -157,10 +155,11 @@
 }
 .footer-homepage {
   position: absolute;
-  width: 91%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   margin-top: 100px;
   background: #333333;
-  padding-left: 200px;
 }
 .logo-homepage {
   width: 100%;
@@ -182,15 +181,12 @@
   height: 1px;
   margin-left: 67px;
   margin-top: 27px;
-  top: 2713px;
   background: #d9d9d9;
 }
 .faq {
   margin-left: 67px;
   margin-top: 80px;
   width: 208px;
-  left: 67px;
-  top: 2765px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -251,7 +247,6 @@
   border: 2px solid #c63a2f;
   border-radius: 10px;
   left: 1233px;
-  top: 2528px;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -269,8 +264,6 @@
   right: 15.82%;
   margin-left: 10px;
   margin-top: 20px;
-  top: 9.38%;
-  bottom: 9.37%;
   color: #ffffff;
 }
 .home-google {
@@ -304,8 +297,6 @@
 .p-footer {
   width: 100%;
   max-width: 208px;
-  left: 1216px;
-  top: 2790px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -314,15 +305,11 @@
   color: #ffffff;
   margin-left: 1116px;
 }
-.main-footer-div-for-homepage {
-  margin-left: 200px;
-}
 /////////////////////////////////
 @media screen and (max-width: 1440px) {
   .footer-homepage {
     width: 1240px;
     position: absolute;
-    left: 0px;
     margin-top: 200px;
     background: #333333;
   }
@@ -347,7 +334,6 @@
     height: 1px;
     margin-left: 67px;
     margin-top: 27px;
-    top: 2713px;
     background: #d9d9d9;
   }
   .faq {
@@ -355,8 +341,6 @@
     margin-top: 80px;
     width: 100%;
     max-width: 208px;
-    left: 67px;
-    top: 2765px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -451,10 +435,6 @@
     font-size: 16px;
     line-height: 22px;
     color: #ffffff;
-  }
-  .footer-main {
-    margin-left: -200px;
-    width: 113.8%;
   }
   .links-homepage {
     display: flex;

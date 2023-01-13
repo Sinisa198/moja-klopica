@@ -1,4 +1,4 @@
-import { ADD_FOOD } from '../actions/food';
+import { ADD_FOOD, REMOVE_FROM_CART } from '../actions/food';
 
 let initState = {
   foods: [],
@@ -33,6 +33,10 @@ const foodReducer = (state = initState, action) => {
         foods: [...state.foods, action.payload],
         sum: state.sum + action.payload.price,
       };
+    case 'REMOVE_FROM_CART':
+      const removeFood = state.foods.filter(
+        (item) => item.product.id != action.payload.productId
+      );
     case 'INCREMENT':
       return state + 1;
     case 'DECREMENT':

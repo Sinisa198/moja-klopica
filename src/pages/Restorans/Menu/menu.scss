@@ -17,8 +17,6 @@
 .meni-image {
   width: 121px;
   height: 110.31px;
-  left: 381px;
-  top: 1209px;
   margin-top: 30px;
   background: #ffffff;
   border-radius: 2.97884px;
@@ -29,8 +27,6 @@
 .title-for-shopping-cart {
   width: 250px;
   height: 45px;
-  left: 381px;
-  top: 1115px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -63,24 +59,29 @@
   margin-top: -20px;
 }
 .meni {
-  margin-left: 115px;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   height: 3500px;
+  margin-left: -250px;
   padding-bottom: 50px;
-  margin-top: -168px;
-  margin-left: 620px;
   background: #ffffff;
   box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
+}
+.a-burger-menu-text {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+  margin-top: -100px;
 }
 .calculator {
   position: absolute;
   width: 300px;
   height: 335px;
-  margin-left: 480px;
-  left: 950px;
-  margin-top: -5px;
-  top: 980px;
   background: #ffffff;
   box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
@@ -101,9 +102,6 @@
   position: absolute;
   width: 258px;
   height: 36px;
-  left: 158px;
-  margin-left: 500px;
-  top: 1022px;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -152,8 +150,6 @@
 .calculator-paragraf {
   width: 117px;
   height: 36px;
-  left: 1108px;
-  margin-left: 20px;
   top: 1115px;
   font-family: 'Poppins';
   font-style: normal;
@@ -251,25 +247,24 @@ ul li a:hover {
   color: #fff;
 }
 
-.active {
-  background-color: red;
-  text-decoration: none;
-  cursor: default;
-  pointer-events: none;
-  justify-content: center;
-  text-decoration: none;
-}
 .name-food {
   width: 500px;
   height: 30px;
   left: 1078px;
   top: 1200px;
+  margin-left: 20px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
   color: #333333;
+}
+.main-main-meni {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
 }
 .hr-for-calculator {
   width: 271px;
@@ -282,6 +277,7 @@ ul li a:hover {
   width: 82px;
   margin-left: 100px;
   height: 30px;
+  margin-left: 20px;
   left: 1267px;
   top: 1324px;
   font-family: 'Poppins';
@@ -311,9 +307,6 @@ ul li a:hover {
 @media screen and (max-width: 1440px) {
   .calculator {
     margin-left: 10px;
-  }
-  .meni {
-    margin-left: 150px;
   }
   .nav-meni-meni {
     margin-left: 50px;

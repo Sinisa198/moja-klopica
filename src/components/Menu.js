@@ -7,7 +7,6 @@ const MenuComponent = style.p`
   margin-top: -10px;
   width: 39px;
   left: 1282.53px;
-  top: 1266px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;

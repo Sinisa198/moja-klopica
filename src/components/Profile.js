@@ -3,8 +3,6 @@ import styled from 'styled-components';
 const ProfileComponent = styled.p`
   margin-left: 328px;
   width: 40px;
-  left: 1284px;
-  top: 1212px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;

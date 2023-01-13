@@ -10,9 +10,13 @@ import starempty from '../../../images/emptystar.svg';
 const Impressions = () => {
   return (
     <div className='main-impressions'>
-      <HeaderRestoran />
+      <div className='navigation-menu-for-restoran'>
+        <HeaderRestoran />
+      </div>
       <div className='nav-and-rating'>
-        <Nav />
+        <div className='navigation-menu-for-restoran'>
+          <Nav />
+        </div>
         <div className='container'>
           <input type='checkbox' name='' id='' className='check' />
           <ul className='menu-items'>

@@ -21,10 +21,11 @@ const HomePage = () => {
   return (
     <div className='forms'>
       <div className='main-home'>
-        <Navigation />
+        <div className='home-page-navigation'>
+          <Navigation />
+        </div>
         <Forms />
       </div>
-
       <div className='second-box-home'>
         <div className='first-box'>
           <img src={miniTopFood} alt='' className='mini-top-food' />

@@ -8,9 +8,13 @@ import FooterForRestoran from '../../../components/Footer/FooterForRestoran';
 const Gallery = () => {
   return (
     <div className='main-galery'>
-      <HeaderRestoran />
+      <div className='navigation-menu-for-restoran'>
+        <HeaderRestoran />
+      </div>
       <div className='nav-and-galery'>
-        <Nav />
+        <div className='navigation-menu-for-restoran'>
+          <Nav />
+        </div>
         <div className='container'>
           <input type='checkbox' name='' id='' className='check' />
           <ul className='menu-items'>
@@ -36,29 +40,31 @@ const Gallery = () => {
             <span className='line line3'></span>
           </div>
         </div>
-        <div className='main-slider'>
-          <div className='slider'>
-            <a href='#slide1'>
-              <img src={lorem1} className='slide' alt='image1' />
-            </a>
-            <a href='#slide2'>
-              <img src={lorem1} className='slide' alt='image2' />
-            </a>
-            <a href='#slide3'>
-              <img src={lorem1} className='slide' alt='image3' />
-            </a>
-            <a href='#slide4'>
-              <img src={lorem1} className='slide' alt='image3' />
-            </a>
-          </div>
+        <div className='main-main-slide'>
+          <div className='main-slider'>
+            <div className='slider'>
+              <a href='#slide1'>
+                <img src={lorem1} className='slide' alt='image1' />
+              </a>
+              <a href='#slide2'>
+                <img src={lorem1} className='slide' alt='image2' />
+              </a>
+              <a href='#slide3'>
+                <img src={lorem1} className='slide' alt='image3' />
+              </a>
+              <a href='#slide4'>
+                <img src={lorem1} className='slide' alt='image3' />
+              </a>
+            </div>
 
-          <div className='controls'>
-            <a href='#slide3' className='next'>
-              <img src={arrow} alt='' />
-            </a>
-            <a href='#slide3' className='next'>
-              <img src={arrow} alt='' />
-            </a>
+            <div className='controls'>
+              <a href='#slide3' className='next'>
+                <img src={arrow} alt='' />
+              </a>
+              <a href='#slide3' className='next'>
+                <img src={arrow} alt='' />
+              </a>
+            </div>
           </div>
         </div>
       </div>

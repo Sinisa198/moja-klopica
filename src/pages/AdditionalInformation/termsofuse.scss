@@ -8,7 +8,8 @@
 .main-terms {
   display: flex;
   padding-top: 20px;
-  margin-left: 480px;
+  width: 100%;
+  justify-content: center;
 }
 .title-termsofuse {
   color: red;
@@ -17,8 +18,6 @@
   width: 47px;
   margin-top: 15px;
   height: 37px;
-  left: 67px;
-  top: 69px;
 }
 .input-for-terms {
   margin-top: -50px;
@@ -38,7 +37,6 @@ input {
 .tan-image {
   width: 667px;
   height: 609.58px;
-  margin-left: 700px;
   margin-top: -300px;
 }
 .logo-termsofuse {
@@ -47,8 +45,6 @@ input {
 .button-restoran {
   width: 194px;
   height: 67px;
-  left: 1180px;
-  top: 59px;
   background: #c63a2f;
   border-radius: 10px;
   font-family: 'Nunito';
@@ -57,14 +53,12 @@ input {
   font-weight: 800;
   font-size: 25px;
   line-height: 34px;
-  margin-left: 310px;
   color: #ffffff;
 }
 .prefix {
   border-radius: 40px 0px 0px 40px;
 }
 .title-for-termsofuse {
-  margin-left: 550px;
   margin-top: 300px;
   padding-bottom: 120px;
   left: 491px;
@@ -80,6 +74,7 @@ input {
   position: absolute;
   width: 292px;
   height: 33px;
+  color: green;
   left: 113px;
   top: 200px;
   font-family: 'Nunito';
@@ -87,7 +82,6 @@ input {
   font-weight: 800;
   font-size: 24px;
   line-height: 33px;
-  color: #000000;
 }
 .lorem-ipsum {
   position: absolute;
@@ -121,9 +115,7 @@ input {
   max-width: 1317px;
   width: 100%;
   height: 1167px;
-  left: 63px;
   margin-top: 40px;
-  margin-left: 450px;
   background: #ffffff;
   box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
@@ -148,9 +140,10 @@ input {
 
 .second-box-terms {
   position: absolute;
+  display: flex;
   width: 100%;
+  justify-content: center;
   height: 1289px;
-  left: 0px;
   top: 632px;
   background-color: #f3f1f0;
 }
@@ -217,10 +210,12 @@ input {
 }
 .text-for-terms-use {
   text-decoration: none;
-  cursor: default;
-  pointer-events: none;
-  text-decoration: none;
-  text-decoration: underline;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
 }
 
 @media screen and (max-width: 1440px) {
@@ -275,10 +270,8 @@ input {
     border-radius: 40px 0px 0px 40px;
   }
   .title-for-termsofuse {
-    margin-left: 50px;
     margin-top: 300px;
     padding-bottom: 120px;
-    left: 491px;
     top: 394px;
     font-family: 'Nunito';
     font-style: normal;
@@ -296,7 +289,6 @@ input {
     top: 200px;
     font-family: 'Nunito';
     font-style: normal;
-    color: green;
     font-weight: 800;
     font-size: 24px;
     line-height: 33px;
@@ -341,8 +333,6 @@ input {
     position: absolute;
     width: 100%;
     left: 63px;
-    margin-left: -20px;
-    margin-top: 20px;
     background: #ffffff;
     box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
@@ -353,8 +343,6 @@ input {
   .red {
     width: 400px;
     height: 83px;
-    left: 71px;
-    top: 361px;
     font-family: 'Londrina Solid';
     font-style: normal;
     font-weight: 400;
@@ -409,7 +397,6 @@ input {
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
-    color: #000000;
   }
   .paragraf-for-terms {
     width: 759px;

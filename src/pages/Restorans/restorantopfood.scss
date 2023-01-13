@@ -2,6 +2,7 @@
   background: url('../../images/background-restoran.png');
   padding-top: 20px;
   padding-left: 20px;
+  width: 100%;
 
   .burger-logo {
     display: flex;
@@ -55,11 +56,8 @@
   .text-and-location {
     display: flex;
     width: 1116px;
-    margin-top: -120px;
+    justify-content: center;
     height: 1516px;
-    margin-left: 620px;
-    left: 58px;
-    top: 1070px;
     background: #ffffff;
     box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
@@ -351,10 +349,8 @@
   .list-restoran-div {
     margin-top: -600px;
     display: grid;
-    margin-left: 385px;
     grid-row-gap: 20px;
     grid-template-columns: 270px 270px 270px 270px;
-    margin-left: 645px;
   }
   .list-title-restoran {
     font-family: 'Poppins';
