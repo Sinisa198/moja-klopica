@@ -3,10 +3,8 @@ import style from 'styled-components';
 const ButtonForRestoranComponent = style.button`
  border-radius: 10px;
     justify-content: center;
-    color: #ffffff;
+    color: #333333  ;
     max-width: 112px;
-    left: 657px;
-    top: 2382px;
     background: #8a8a8a;
     opacity: 0.2;
     border-radius: 40px;
@@ -15,7 +13,6 @@ const ButtonForRestoranComponent = style.button`
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: black;
 `;
 const ButtonForRestoran = ({ type, className, id, children }) => {
   return (

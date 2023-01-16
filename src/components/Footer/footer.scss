@@ -3,13 +3,15 @@
   background-color: #333333;
   width: 100%;
   justify-content: center;
-  padding-top: 50px;
   .line {
     margin-left: -640px;
     width: 100%;
     width: 1307px;
     height: 1px;
     background: #d9d9d9;
+  }
+  .box-for-appgoogle-together {
+    margin-left: 20px;
   }
   .icons-box {
     width: 100%;
@@ -40,6 +42,7 @@
   .text-for-footer {
     display: flex;
     grid-column-gap: 20px;
+    color: #d26c64;
   }
   .paragrafApp {
     margin-left: 35px;
@@ -74,15 +77,15 @@
   }
   .location {
     display: flex;
+    justify-content: center;
     margin-top: 50px;
-    grid-column-gap: 750px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 22px;
-    color: #ffffff;
-    margin-left: -600px;
+    margin-left: -720px;
+    grid-column-gap: 630px;
   }
   .left-text {
     display: flex;
@@ -92,6 +95,7 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 22px;
+    color: #d26c64;
   }
   .logo-footer {
     width: 103px;
@@ -120,7 +124,7 @@
     position: absolute;
     width: 100%;
     width: 174.79px;
-    background: rgba(198, 58, 47, 0.5);
+    background: #c63a2f;
     border: 1.80193px solid #c63a2f;
     border-radius: 9.00966px;
     @media screen and (max-width: 1440px) {
@@ -133,7 +137,8 @@
     position: absolute;
     width: 100%;
     max-width: 174.79px;
-    background: rgba(198, 58, 47, 0.5);
+    margin-left: 200px;
+    background: #c63a2f;
     border: 1.80193px solid #c63a2f;
     border-radius: 9.00966px;
     @media screen and (max-width: 1440px) {

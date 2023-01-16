@@ -1,14 +1,12 @@
 .restoran-top-food {
   background: url('../../images/background-restoran.png');
   padding-top: 20px;
-  padding-left: 20px;
   width: 100%;
 
   .burger-logo {
     display: flex;
     width: 132px;
     height: 63.06px;
-    margin-left: 270px;
     top: 60px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
       drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -17,6 +15,11 @@
     width: 30px;
     margin-top: 20px;
     height: 20px;
+  }
+  .main-main-restoran {
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
   .nav-galery,
   .nav-impressions,
@@ -55,9 +58,8 @@
   }
   .text-and-location {
     display: flex;
-    width: 1116px;
     justify-content: center;
-    height: 1516px;
+    height: 1416px;
     background: #ffffff;
     box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
@@ -69,7 +71,6 @@
   .box-together {
     width: 90%;
     margin-top: 50px;
-    margin-left: 245px;
   }
   .location {
     margin-top: 35px;
@@ -121,9 +122,8 @@
     color: #00872f;
   }
   .navigation-menu {
-    margin-left: -20px;
     margin-top: -80px;
-    width: 101%;
+    width: 100%;
     padding-bottom: 200px;
     background: #f3f1f0;
     background: #f3f1f0;
@@ -165,9 +165,6 @@
     text-align: center;
     width: 329px;
     height: 90px;
-    left: 58px;
-    top: 933px;
-
     background: #ffffff;
     border-width: 1px 0px 1px 1px;
     border-style: solid;
@@ -178,9 +175,6 @@
     display: flex;
     width: 1116px;
     align-items: center;
-    margin-left: 330px;
-    left: 58px;
-    top: 933px;
     background: #ffffff;
     box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
     border-radius: 30px 30px 0px 0px;
@@ -193,6 +187,7 @@
     line-height: 30px;
     color: #8a8a8a;
   }
+
   .second-paragraf {
     font-family: 'Poppins';
     font-style: normal;
@@ -347,7 +342,9 @@
     display: flex;
   }
   .list-restoran-div {
-    margin-top: -600px;
+    margin-top: -750px;
+    width: 100%;
+    justify-content: center;
     display: grid;
     grid-row-gap: 20px;
     grid-template-columns: 270px 270px 270px 270px;
@@ -380,15 +377,5 @@
   }
   .div-for-footer-restoran {
     margin-left: -20px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .restoran-top-food {
-    .text-and-location {
-      margin-left: 150px;
-    }
-    .list-restoran-div {
-      margin-left: 180px;
-    }
   }
 }

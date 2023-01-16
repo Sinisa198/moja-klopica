@@ -10,8 +10,10 @@
   padding-top: 20px;
   width: 100%;
   justify-content: center;
+  grid-column-gap: 100px;
 }
 .title-termsofuse {
+  margin-left: -80px;
   color: red;
 }
 .burger-w {
@@ -20,14 +22,12 @@
   height: 37px;
 }
 .input-for-terms {
-  margin-top: -50px;
   width: 400px;
   height: 50px;
   display: flex;
   gap: 2.1rem;
   border: 1px solid #aaa;
   border-radius: 40px;
-  margin-left: 400px;
   justify-content: center;
   background-color: #ffff;
 }
@@ -37,10 +37,6 @@ input {
 .tan-image {
   width: 667px;
   height: 609.58px;
-  margin-top: -300px;
-}
-.logo-termsofuse {
-  margin-left: 20px;
 }
 .button-restoran {
   width: 194px;
@@ -55,14 +51,17 @@ input {
   line-height: 34px;
   color: #ffffff;
 }
+.title-for-terms-of-use {
+  justify-content: center;
+  margin-top: 250px;
+}
 .prefix {
   border-radius: 40px 0px 0px 40px;
 }
 .title-for-termsofuse {
-  margin-top: 300px;
-  padding-bottom: 120px;
-  left: 491px;
-  top: 394px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 800;
@@ -144,7 +143,6 @@ input {
   width: 100%;
   justify-content: center;
   height: 1289px;
-  top: 632px;
   background-color: #f3f1f0;
 }
 .burger-menu-together {
@@ -199,7 +197,7 @@ input {
   color: #000000;
 }
 .footer-terms {
-  margin-top: 980px;
+  margin-top: 1280px;
 }
 .hr-for-terms {
   width: 378px;
@@ -336,6 +334,7 @@ input {
     background: #ffffff;
     box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
+    padding-bottom: 55px;
   }
   .arrow-icon-input {
     margin-left: -12px;
@@ -356,8 +355,6 @@ input {
     position: absolute;
     width: 1440px;
     height: 1289px;
-    left: 0px;
-    top: 632px;
     background-color: #f3f1f0;
   }
   .notification-text {
@@ -427,10 +424,6 @@ input {
   .tan-image {
     width: 667px;
     height: 609.58px;
-    left: 722px;
-    margin-top: -300px;
-    margin-left: 600px;
-    top: 185px;
   }
 }
 @media screen and (max-width: 375px) {

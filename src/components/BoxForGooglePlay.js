@@ -1,7 +1,7 @@
 import style from 'styled-components';
 
 const ComponentGooglePlay = style.p`
-box-sizing: border-box;
+  box-sizing: border-box;
   margin-top: 10px;
   width:100%;
   max-width: 194px;

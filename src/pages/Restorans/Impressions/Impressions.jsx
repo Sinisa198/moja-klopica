@@ -17,31 +17,7 @@ const Impressions = () => {
         <div className='navigation-menu-for-restoran'>
           <Nav />
         </div>
-        <div className='container'>
-          <input type='checkbox' name='' id='' className='check' />
-          <ul className='menu-items'>
-            <li>
-              <p>Početna</p>
-            </li>
-            <li>
-              <p>Kategorije</p>
-            </li>
-            <li>
-              <p>Ponude</p>
-            </li>
-            <li>
-              <p>Pomoć</p>
-            </li>
-            <li>
-              <p>Kontakt</p>
-            </li>
-          </ul>
-          <div className='ham-menu'>
-            <span className='line line1'></span>
-            <span className='line line2'></span>
-            <span className='line line3'></span>
-          </div>
-        </div>
+
         <div className='main-i'>
           <div className='impressions-first-box'>
             <p className='paragraf-for-first-box'>

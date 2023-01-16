@@ -18,7 +18,7 @@ const Menu = () => {
       <div className='navigation-menu-for-restoran'>
         <HeaderRestoran />
       </div>
-      <div className='container'>
+      {/* <div className='container'>
         <input type='checkbox' name='' id='' className='check' />
         <ul className='menu-items'>
           <li className='li-for-burger-menu'>
@@ -42,7 +42,7 @@ const Menu = () => {
           <span className='line line2'></span>
           <span className='line line3'></span>
         </div>
-      </div>
+      </div> */}
       <div className='main-nav-with-meni'>
         <div className='navigation-menu-for-restoran'>
           <Nav />
@@ -50,11 +50,13 @@ const Menu = () => {
         <div className='main-main-meni'>
           <div className='meni'>
             <div className='nav-meni-meni'>
-              <p className='text-nav'>SUPE I ČORBE</p>
-              <p className='text-nav'>GLAVNA JELA</p>
-              <p className='text-nav'>SALATE</p>
-              <p className='text-nav'>DEZERTI</p>
-              {itemsMeni.map(({ item }) => {
+              <div className='nav-for-shoppingcart'>
+                <p className='text-nav'>SUPE I ČORBE</p>
+                <p className='text-nav'>GLAVNA JELA</p>
+                <p className='text-nav'>SALATE</p>
+                <p className='text-nav'>DEZERTI</p>
+              </div>
+              {itemsMeni.map((item) => {
                 return (
                   <div className='shopping-cart'>
                     <p className='title-for-shopping-cart'>{item.title}</p>

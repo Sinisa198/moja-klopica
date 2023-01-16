@@ -12,41 +12,14 @@ import FooterForRestoran from '../../components/Footer/FooterForRestoran';
 const RestoranTopFood = () => {
   return (
     <div className='restoran-top-food'>
-      <div className='div-header'>
-        <div claasName='navigation-menu-for-restoran'>
-          <HeaderRestoran />
-        </div>
+      <div className='navigation-menu-for-restoran'>
+        <HeaderRestoran />
       </div>
-
       <div className='navigation-menu'>
         <div className='navigation-menu-for-restoran'>
           <Nav />
         </div>
-        <div className='container'>
-          <input type='checkbox' name='' id='' className='check' />
-          <ul className='menu-items'>
-            <li>
-              <p>Početna</p>
-            </li>
-            <li>
-              <p>Kategorije</p>
-            </li>
-            <li>
-              <p>Ponude</p>
-            </li>
-            <li>
-              <p>Pomoć</p>
-            </li>
-            <li>
-              <p>Kontakt</p>
-            </li>
-          </ul>
-          <div className='ham-menu'>
-            <span className='line line1'></span>
-            <span className='line line2'></span>
-            <span className='line line3'></span>
-          </div>
-        </div>
+
         <div className='main-main-restoran'>
           <div className='text-and-location'>
             <p className='text-restoran'>
@@ -82,33 +55,29 @@ const RestoranTopFood = () => {
                 <p>0644226471</p>
               </div>
               <img src={map} className='image-map' alt='' />{' '}
-              <div className='hr-for-restoran'></div>
+              {/* <div className='hr-for-restoran'></div> */}
             </div>
           </div>
-          <div className='list-restoran-div'>
-            {itemsBox.map((item) => (
-              <div className='main-div' key={item.title + item.paragraf}>
-                <div className='div-for-list-restoran'>
-                  <div>
-                    <img
-                      src={listpicture}
-                      alt=''
-                      className='image-div-restoran'
-                    />
-                    <p className='list-paragraf-restoran'>{item.paragraf}</p>
-                    <div className='div-for-title-rating'>
-                      <div className='list-title-restoran'>{item.title}</div>
-                      <div className='rating-div'>
-                        <p className='rating-restoran'>{item.rating}</p>{' '}
-                        <RiStarSFill className='rating-star-restoran' />
-                      </div>
-                    </div>
+        </div>
+      </div>
+      <div className='list-restoran-div'>
+        {itemsBox.map((item) => (
+          <div className='main-div' key={item.title + item.paragraf}>
+            <div className='div-for-list-restoran'>
+              <div>
+                <img src={listpicture} alt='' className='image-div-restoran' />
+                <p className='list-paragraf-restoran'>{item.paragraf}</p>
+                <div className='div-for-title-rating'>
+                  <div className='list-title-restoran'>{item.title}</div>
+                  <div className='rating-div'>
+                    <p className='rating-restoran'>{item.rating}</p>{' '}
+                    <RiStarSFill className='rating-star-restoran' />
                   </div>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
-        </div>
+        ))}
       </div>
       <FooterForRestoran />
     </div>
