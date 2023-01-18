@@ -1,0 +1,428 @@
+.App-terms-of-use {
+  background: url('../../images/background-terms.png');
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    width: 187%;
+  }
+}
+.main-terms {
+  display: flex;
+  padding-top: 20px;
+  width: 100%;
+  justify-content: center;
+  grid-column-gap: 100px;
+}
+.title-termsofuse {
+  color: red;
+}
+.text-h4 {
+  color: #c63a2f;
+}
+.text-terms {
+  color: #c63a2f;
+}
+.burger-w {
+  width: 47px;
+  margin-top: 15px;
+  height: 37px;
+}
+.input-for-terms {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  gap: 2.1rem;
+  border: 1px solid #aaa;
+  border-radius: 40px;
+  justify-content: center;
+  background-color: #ffff;
+}
+input {
+  all: unset;
+}
+.tan-image {
+  width: 667px;
+  height: 609.58px;
+}
+.button-restoran {
+  width: 194px;
+  height: 67px;
+  border: 4px solid #c63a2f;
+  border-radius: 40px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 34px;
+  color: #ffffff;
+}
+.title-for-terms-of-use {
+  justify-content: center;
+  margin-top: 250px;
+}
+.prefix {
+  border-radius: 40px 0px 0px 40px;
+}
+.title-for-termsofuse {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 33px;
+  color: #ffffff;
+}
+.list-terms {
+  position: absolute;
+  width: 292px;
+  height: 33px;
+  color: green;
+  left: 113px;
+  top: 200px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+.lorem-ipsum {
+  position: absolute;
+  height: 36px;
+  left: 564px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+.text-terms {
+  margin-top: 90px;
+}
+.text-terms2 {
+  color: #c63a2f;
+  margin-top: 200px;
+}
+.paragraf-terms {
+  width: 759px;
+  height: 72px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+.box-terms {
+  position: absolute;
+  max-width: 1317px;
+  width: 100%;
+  height: 1167px;
+  margin-top: 40px;
+  background: #ffffff;
+  box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+.arrow-icon-input {
+  margin-left: -10px;
+}
+.red {
+  width: 400px;
+  height: 83px;
+  left: 71px;
+  top: 361px;
+  font-family: 'Londrina Solid';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 83px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #c63a2f;
+}
+
+.second-box-terms {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 1289px;
+  background-color: #f3f1f0;
+}
+.burger-menu-together {
+  margin-left: 200px;
+}
+.notification-text {
+  width: 501px;
+  height: 36px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #c63a2f;
+}
+.notification-paragraf {
+  width: 759px;
+  height: 972px;
+  left: 564px;
+  top: 799px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+.text-for-terms {
+  width: 206px;
+  height: 36px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #c63a2f;
+}
+.paragraf-for-terms {
+  width: 759px;
+  height: 972px;
+  left: 564px;
+  top: 799px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+.footer-terms {
+  margin-top: 1280px;
+}
+.hr-for-terms {
+  width: 378px;
+  height: 1px;
+  left: 113px;
+  top: 833px;
+  background: #d9d9d9;
+}
+.text-for-terms-use {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
+
+@media screen and (max-width: 1440px) {
+  .main-terms {
+    display: flex;
+    padding-top: 20px;
+    margin-left: 50px;
+  }
+  .title-termsofuse {
+    color: red;
+  }
+  .input {
+    margin-top: -50px;
+    display: flex;
+    width: 20px;
+    border: 1px sol id #aaa;
+    border-radius: 40px;
+    margin-left: 500px;
+    justify-content: center;
+    background-color: #ffff;
+  }
+  input {
+    all: unset;
+  }
+  .button-restoran {
+    width: 194px;
+    height: 67px;
+    left: 1180px;
+    top: 59px;
+    background: #c63a2f;
+    border-radius: 10px;
+    font-family: 'Nunito';
+    border: 1px solid #c63a2f;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 34px;
+    margin-left: 310px;
+    color: #ffffff;
+  }
+  .prefix,
+  .suffix {
+    color: #ffff;
+    margin-top: 10px;
+    background-color: #c63a2f;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    border-radius: 30px;
+  }
+  .prefix {
+    border-radius: 40px 0px 0px 40px;
+  }
+  .title-for-termsofuse {
+    margin-top: 300px;
+    padding-bottom: 120px;
+    top: 394px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 33px;
+    color: #ffffff;
+  }
+
+  .list-terms {
+    position: absolute;
+    width: 292px;
+    height: 33px;
+    left: 113px;
+    top: 200px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
+    text-decoration: none;
+  }
+
+  .lorem-ipsum {
+    position: absolute;
+    height: 36px;
+    left: 564px;
+    margin-right: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+  }
+  .button-for-restoran-terms {
+    margin-left: -150px;
+  }
+  .text-terms {
+    margin-top: 90px;
+    color: #c63a2f;
+  }
+  .text-terms2 {
+    margin-top: 200px;
+  }
+  .paragraf-terms {
+    width: 759px;
+    height: 72px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+  }
+  .box-terms {
+    position: absolute;
+    width: 100%;
+    left: 63px;
+    background: #ffffff;
+    box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding-bottom: 55px;
+  }
+  .arrow-icon-input {
+    background-color: white;
+    margin-left: -12px;
+  }
+  .red {
+    width: 400px;
+    height: 83px;
+    font-family: 'Londrina Solid';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 83px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #c63a2f;
+  }
+  .second-box-terms {
+    position: absolute;
+    width: 1440px;
+    height: 1289px;
+    background-color: #f3f1f0;
+  }
+  .notification-text {
+    width: 501px;
+    height: 36px;
+    left: 564px;
+    top: 745px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #c63a2f;
+  }
+  .button-for-restoran {
+    margin-left: -170px;
+  }
+  .notification-paragraf {
+    width: 759px;
+    height: 972px;
+    left: 564px;
+    top: 799px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+  }
+  .text-for-terms {
+    width: 206px;
+    height: 36px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .paragraf-for-terms {
+    width: 759px;
+    height: 972px;
+    left: 564px;
+    top: 799px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+  }
+  .footer-terms {
+    width: 100%;
+    margin-top: 980px;
+  }
+  .hr-for-terms {
+    width: 378px;
+    height: 1px;
+    left: 113px;
+    top: 833px;
+    background: #d9d9d9;
+  }
+  .hr-for-terms:hover {
+    background-color: red;
+  }
+}
+@media screen and (max-width: 375px) {
+  .App-terms-of-use {
+    width: 1440px;
+  }
+}

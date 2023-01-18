@@ -1,18 +1,41 @@
-import { ADD_FOOD, DELETE_FOOD } from '../actions/food';
+import { ADD_FOOD } from '../actions/food';
 
 let initState = {
   foods: [],
+  sum: 0,
 };
 
 const foodReducer = (state = initState, action) => {
   switch (action.type) {
     case ADD_FOOD:
-      return { ...state, foods: state.foods.push(action.payload) };
+      const sameFoodIndex = state.foods.findIndex(
+        (food) => food.name === action.payload.name
+      );
+
+      if (sameFoodIndex >= 0) {
+        let foods = [...state.foods];
+        foods[sameFoodIndex] = {
+          ...foods[sameFoodIndex],
+          count: foods[sameFoodIndex].count
+            ? foods[sameFoodIndex].count + 1
+            : 2,
+        };
+
+        return {
+          ...state,
+          sum: state.sum + action.payload.price,
+          foods,
+        };
+      }
+
+      return {
+        ...state,
+        foods: [...state.foods, action.payload],
+        sum: state.sum + action.payload.price,
+      };
+
     default:
       return state;
-
-    case DELETE_FOOD:
-      return { ...state, foods: state.foods.filter((i) => i.id !== this.id) };
   }
 };
 

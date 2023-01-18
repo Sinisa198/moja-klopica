@@ -1,31 +1,32 @@
 export const ADD_FOOD = 'ADD_FOOD';
-export const DELETE_FOOD = 'DELETE_FOOD';
+export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
 export const INCREMENTE = 'INCREMENTE';
 export const DECREMENTE = 'DECREMENTE';
 
-export const addFood = (payload) => (dispatch) => {
-  console.log('addddddd');
+export const addFood = (payload) => {
   return {
     type: ADD_FOOD,
     payload,
   };
 };
 
-export const deleteFood = (payload) => (dispatch) => {
+export const removeFromCart = (productId) => {
   return {
-    type: DELETE_FOOD,
-    payload,
+    type: 'REMOVE_FROM_CART',
+    payload: {
+      productId: productId,
+    },
   };
 };
 
-export const incremente = (payload) => (dispatch) => {
+export const incremente = (payload) => {
   return {
     type: INCREMENTE,
     payload,
   };
 };
 
-export const decremente = (payload) => (dispatch) => {
+export const decremente = (payload) => {
   return {
     type: DECREMENTE,
     payload,

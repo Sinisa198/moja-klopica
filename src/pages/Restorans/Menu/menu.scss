@@ -1,0 +1,322 @@
+.main-meni {
+  background: url('../../../images/background-restoran.png');
+}
+.main-nav-with-meni {
+  margin-top: -150px;
+  background: #f3f1f0;
+  padding-bottom: 100px;
+  .shopping-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+  }
+}
+.meni-image {
+  width: 121px;
+  height: 110.31px;
+  margin-top: 30px;
+  background: #ffffff;
+  border-radius: 2.97884px;
+}
+.title-meni-shopping {
+  margin-left: 20px;
+}
+.title-for-shopping-cart {
+  width: 250px;
+  height: 45px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #333333;
+}
+.dl {
+  width: 36px;
+  height: 36px;
+  left: 534px;
+  top: 1252px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 275;
+  font-size: 24px;
+  line-height: 36px;
+  color: gray;
+}
+.price {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #c63a2f;
+}
+.dl-and-price {
+  margin-top: -20px;
+}
+.meni {
+  width: 100%;
+  max-width: 775px;
+  height: 3500px;
+  padding-bottom: 50px;
+  background: #ffffff;
+  box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+.a-burger-menu-text {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+  margin-top: -100px;
+}
+.calculator {
+  width: 329px;
+  height: 335px;
+  margin-left: 10px;
+  background: #ffffff;
+  box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+.name-and-count {
+  margin-left: 20px;
+}
+.total-price {
+  margin-left: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+.nav-for-shoppingcart {
+  margin-top: 50px;
+}
+.text-nav {
+  width: 100%;
+  display: flex;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+.nav-meni-meni {
+  position: absolute;
+  width: 258px;
+  height: 36px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+.div-for-complet-meni {
+  display: flex;
+}
+.my-line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+.price-button {
+  display: flex;
+}
+.shopping-cart {
+  width: 898px;
+  margin-top: -280px;
+  margin-left: 300px;
+  height: 500px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  color: #333333;
+}
+.shopping-hr,
+.salate-hr,
+.dezert-hr {
+  width: 369px;
+  height: 1px;
+  left: 381px;
+  top: 1175px;
+  background: #333333;
+}
+.main-hrr {
+  left: 181px;
+  top: 1175px;
+  width: 369px;
+  height: 1px;
+  background: #333333;
+}
+.calculator-paragraf {
+  width: 117px;
+  height: 36px;
+  padding-left: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+.calculator-hr {
+  width: 271px;
+  height: 1px;
+  margin-left: 10px;
+  top: 1175px;
+  background: #d9d9d9;
+}
+.button-dec {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  left: 1108px;
+  top: 1250px;
+  background: #d9d9d9;
+  border: 1px solid #b7b7b8;
+  border-radius: 5.98242px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  left: 1087px;
+  top: 1250px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+.button-inc {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  left: 1195px;
+  top: 1250px;
+  background: #d94034;
+  border: 1px solid #d9d9d9;
+  border-radius: 5.98242px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  left: 1173px;
+  top: 1250px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.name-and-remove-food {
+  display: flex;
+}
+.remove-food {
+  box-sizing: border-box;
+  width: 17px;
+  height: 17px;
+  left: 1348px;
+  padding: 5px 5px 5px 5px;
+  margin-top: 28px;
+  margin-left: 120px;
+  top: 1205px;
+  background: #d94034;
+  border: 0.566667px solid #d9d9d9;
+  border-radius: 3.39004px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.image-for-remove-food {
+  position: absolute;
+  left: 14.71%;
+  right: 14.71%;
+  top: 14.71%;
+  bottom: 14.71%;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+ul li a {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+ul li a:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.name-food {
+  width: 500px;
+  height: 30px;
+  left: 1078px;
+  top: 1200px;
+  margin-left: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+.main-main-meni {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+}
+.hr-for-calculator {
+  width: 271px;
+  height: 1px;
+  left: 1078px;
+  top: 1294px;
+  background: #d9d9d9;
+}
+.sum-price {
+  width: 82px;
+  margin-left: 100px;
+  height: 30px;
+  margin-left: 20px;
+  left: 1267px;
+  top: 1324px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: right;
+  color: #333333;
+}
+.count {
+  height: 30px;
+  margin-left: 10px;
+  left: 1133px;
+  margin-top: -0.5px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+.div-for-count-and-button {
+  display: flex;
+  margin-top: -35px;
+}
+@media screen and (max-width: 1440px) {
+  .calculator {
+    margin-left: 10px;
+  }
+  .nav-meni-meni {
+    margin-left: 50px;
+  }
+}

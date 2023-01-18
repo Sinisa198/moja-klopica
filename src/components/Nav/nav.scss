@@ -1,0 +1,229 @@
+.main-nav {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background: #f3f1f0;
+  .burger-logo {
+    display: flex;
+    width: 132px;
+    height: 63.06px;
+    left: 52px;
+    top: 60px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+      drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .burger-meni {
+    width: 30px;
+    margin-top: 20px;
+    height: 20px;
+  }
+  .hr-for-gallery {
+    width: 200px;
+    background-color: red;
+    height: 2px;
+  }
+  .active {
+    border: 4px solid #c63a2f;
+    border-radius: 40px;
+    text-decoration: none;
+  }
+  .nav-galery,
+  .nav-impressions,
+  .nav-restoran,
+  .nav-meni {
+    display: flex;
+  }
+  .meni-icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 30px;
+    margin-left: 85px;
+  }
+  .paragraf-meni {
+    margin-top: 35px;
+    margin-left: 15px;
+    text-decoration: none;
+    height: 20px;
+    font-size: 18px;
+    color: black;
+  }
+  .input {
+    display: flex;
+    gap: 2.1rem;
+    border: 1px solid #aaa;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-left: 150px;
+    background-color: #ffff;
+  }
+  .text-restoran {
+    margin-left: 50px;
+    margin-top: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+  }
+  .text-and-location {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1116px;
+    margin-left: 100px;
+    left: 58px;
+    top: 1070px;
+    background: #ffffff;
+    box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+  }
+  .background-for-box {
+    width: 1316px;
+    height: 299px;
+  }
+  .box-together {
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+  .location {
+    margin-top: 35px;
+  }
+  .restoran-paragraf {
+    font-family: 'Londrina Solid';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    width: 200px;
+    margin-left: 5px;
+    margin-top: 10px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #c63a2f;
+  }
+  .restoran-hr {
+    width: 1139px;
+    height: 1px;
+    left: 142px;
+    top: 1771px;
+    color: gray;
+  }
+  .image-map {
+    width: 373px;
+    height: 394px;
+    margin-right: 30px;
+    left: 858px;
+    margin-top: 40px;
+    top: 1263px;
+    border-radius: 4.7971px;
+  }
+  .second-box {
+    width: 1316px;
+    padding-bottom: 50px;
+    background-color: #ffff;
+    border-radius: 0 0 30px 30px;
+    margin-top: -20px;
+  }
+  .logo-for-restoran {
+    margin-left: 120px;
+    margin-top: -100px;
+  }
+  .span-green {
+    color: #00872f;
+  }
+  .navigation-menu {
+    margin-left: -20px;
+    width: 100%;
+    max-width: 1440px;
+    background: #f3f1f0;
+    margin-top: 20px;
+    height: 5000px;
+    background: #f3f1f0;
+
+    font-family: 'Poppins';
+    padding-top: 40px;
+  }
+  .nav-meni {
+    text-align: center;
+    width: 329px;
+    height: 90px;
+    text-decoration: none;
+  }
+  .nav-impressions {
+    text-align: center;
+    width: 329px;
+    height: 90px;
+    text-decoration: none;
+  }
+
+  .nav-galery {
+    text-align: center;
+    width: 329px;
+    height: 90px;
+    text-decoration: none;
+  }
+  .nav-restoran {
+    text-align: center;
+    width: 329px;
+    height: 90px;
+    text-decoration: none;
+  }
+  .nav {
+    display: flex;
+    width: 1116px;
+    align-items: center;
+  }
+
+  .title-for-restoran {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 75px;
+    color: #333333;
+  }
+  input {
+    all: unset;
+  }
+  .prefix {
+    border-radius: 40px 0px 0px 40px;
+  }
+  .prefix,
+  .suffix {
+    color: #ffff;
+    margin-top: 10px;
+    background-color: #c63a2f;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    border-radius: 30px;
+  }
+  .button-restoran {
+    width: 194px;
+    height: 67px;
+    left: 1180px;
+    top: 59px;
+    background: #c63a2f;
+    border-radius: 10px;
+    font-family: 'Nunito';
+    border: 1px solid #c63a2f;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 34px;
+    margin-left: 310px;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .main-nav {
+    margin-left: 35px;
+  }
+}
+.main-nav-for-information {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

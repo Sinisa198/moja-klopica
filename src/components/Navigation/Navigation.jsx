@@ -1,17 +1,19 @@
-import React from "react";
+import React from 'react';
 import logo from '../../images/logo.png';
-const Header = () => {
-  return(
-    <div className='navigation'>
-      <img src={logo} className="logo" alt=""/>
-      <div className='header-text'>
-        <h1> Saznaj gde je najbliža <span>TVOJA KLOPICA</span></h1>
-      </div>
-      <div className='header-button'>
-        <button>Ulogujte se</button>
-      </div>
-    </div>
-  )
-}
+import Button from '../Button';
 
-export default Header;
+const Navigation = () => (
+  <div className='navigation'>
+    <img src={logo} className='logo' alt='' />
+    <div className='header-text'>
+      <h1>
+        Saznaj gde je najbliža <span>TVOJA KLOPICA</span>
+      </h1>
+    </div>
+    <div className='button-for-navigation'>
+      <Button>Ulogujte se</Button>
+    </div>
+  </div>
+);
+
+export default Navigation;

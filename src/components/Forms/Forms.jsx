@@ -1,7 +1,7 @@
 import React from 'react';
-import { BsApple } from 'react-icons/bs';
-import {MdOutlineArrowForwardIos} from 'react-icons/md';
-import {MdFavoriteBorder} from 'react-icons/md';
+import favorite from '../../images/input-icon-first.svg';
+import arrow from '../../images/input-second-icon.svg';
+
 const Forms = () => {
   return (
     <div className='forms-main'>
@@ -14,10 +14,10 @@ const Forms = () => {
         </h4>
       </div>
       <div>
-        <div className='divv'>
-          <span><MdFavoriteBorder className='icon-favorite'/></span>
-          <input placeholder='Unesi adresu na kojoj se nalazis'/>
-          <span className='span-arrow'><MdOutlineArrowForwardIos className='icon-arrow'/></span>
+        <div className='div-for-input'>
+          <img src={favorite} alt='' className='icon-for-input' />
+          <input placeholder='Unesi adresu na kojoj se nalaziš' />
+          <img src={arrow} alt='' className='icon-arrow' />
         </div>
       </div>
     </div>
