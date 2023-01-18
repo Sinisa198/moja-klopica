@@ -50,7 +50,6 @@ const ListRestorans = () => {
         ))}
         <ButtonForRestoran>Vidi više</ButtonForRestoran>
       </div>
-
       <FooterForRestoran />
     </div>
   );

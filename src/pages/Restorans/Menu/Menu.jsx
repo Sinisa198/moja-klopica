@@ -6,7 +6,7 @@ import FooterForRestoran from '../../../components/Footer/FooterForRestoran';
 import itemsMeni from '../../../components/data/menuitems';
 import ButtonMenu from '../../../components/ButtonMenu';
 import { useDispatch, useSelector } from 'react-redux';
-import { addFood, incremente, decremente } from '../../../store/actions/food';
+import { addFood } from '../../../store/actions/food';
 import removefood from '../../../images/removefood.svg';
 
 const Menu = () => {
@@ -97,7 +97,7 @@ const Menu = () => {
               return (
                 <div className='name-and-count'>
                   <div className='name-and-remove-food'>
-                    <p className='name-food'>{food.name}</p>{' '}
+                    <p className='name-food'>{food.name}</p>
                     <button className='remove-food'>
                       <img
                         src={removefood}
@@ -108,19 +108,9 @@ const Menu = () => {
                   </div>
                   <br />
                   <div className='div-for-count-and-button'>
-                    <button
-                      className='button-dec'
-                      onClick={() => dispatch(decremente())}
-                    >
-                      -
-                    </button>{' '}
+                    <button className='button-dec'>-</button>{' '}
                     <p className='count'>{food.count}</p>
-                    <button
-                      className='button-inc'
-                      onClick={() => dispatch(incremente())}
-                    >
-                      +
-                    </button>
+                    <button className='button-inc'>+</button>
                   </div>
                 </div>
               );

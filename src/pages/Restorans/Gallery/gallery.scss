@@ -15,12 +15,17 @@
   margin-top: -160px;
 }
 .slider {
-  margin-left: 20px;
+  margin-top: 55px;
+  margin-left: 60px;
 }
 .navigation-menu-for-restoran {
   display: flex;
   width: 100%;
   justify-content: center;
+}
+.arrow-for-sliders {
+  width: 20px;
+  height: 20px;
 }
 .main-slider {
   width: 1121px;
@@ -32,10 +37,10 @@
   border-radius: 30px;
 }
 .slide {
-  width: 268px;
-  height: 185px;
-  margin-top: 40px;
-  grid-column-gap: 10px;
+  padding: 15px;
+  width: 208px;
+  height: 145px;
+  border-radius: 5px;
 }
 @media screen and (max-width: 1440px) {
   .main-slider {

@@ -10,7 +10,6 @@ const TermsOfUse = () => {
       <div className='second-box-terms'>
         <div className='box-terms'>
           <div className='list-terms'>
-            <div className='hr-for-terms'></div>
             <NavLink
               to='/termsofuse'
               activeClassName='active'
@@ -18,8 +17,7 @@ const TermsOfUse = () => {
             >
               Često postavljana pitanja
             </NavLink>
-            <div className='hr-for-terms'></div>
-
+            <br />
             <NavLink
               to='/privacynotices'
               activeClassName='active'
@@ -27,8 +25,7 @@ const TermsOfUse = () => {
             >
               Obaveštenje o privatnosti
             </NavLink>
-            <div className='hr-for-terms'></div>
-
+            <br />
             <NavLink
               to='/askedquestions'
               activeClassName='active'
@@ -36,7 +33,7 @@ const TermsOfUse = () => {
             >
               Uslovi korišćenja
             </NavLink>
-            <div className='hr-for-terms'></div>
+            <br />
           </div>
           <div className='lorem-ipsum'>
             <h3 className='notification-text'>

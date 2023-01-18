@@ -9,47 +9,31 @@ const Nav = () => {
   return (
     <div className='main-nav'>
       <div className='nav'>
-        <div className='nav-restoran' href='#'>
+        <NavLink
+          className='nav-restoran'
+          to='/topfood'
+          activeClassName='active'
+        >
           <img src={RestoranIcon} className='meni-icon' alt='' />
-          <NavLink
-            to='/topfood'
-            activeClassName='active'
-            className='paragraf-meni'
-          >
-            O restoranu
-          </NavLink>
-        </div>
+          <p className='paragraf-meni'>O restoranu</p>
+        </NavLink>
 
-        <div className='nav-meni' href='#'>
+        <NavLink className='nav-meni' activeClassName='active' to='/menu'>
           <img src={Notepad} className='meni-icon' alt='' />
-          <NavLink
-            className='paragraf-meni'
-            activeClassName='active'
-            to='/menu'
-          >
-            Meni
-          </NavLink>
-        </div>
-        <div className='nav-impressions' href='#'>
+          <p className='paragraf-meni'>Meni</p>
+        </NavLink>
+        <NavLink
+          className='nav-impressions'
+          to='/impressions'
+          activeClassName='active'
+        >
           <img src={Star} className='meni-icon' alt='' />
-          <NavLink
-            to='/impressions'
-            activeClassName='active'
-            className='paragraf-meni'
-          >
-            Utisci
-          </NavLink>
-        </div>
-        <div className='nav-galery' href='#'>
+          <p className='paragraf-meni'>Utisci</p>
+        </NavLink>
+        <NavLink className='nav-galery' to='/gallery' activeClassName='active'>
           <img src={Picture} className='meni-icon' alt='' />
-          <NavLink
-            to='/gallery'
-            activeClassName='active'
-            className='paragraf-meni'
-          >
-            Galerija
-          </NavLink>
-        </div>
+          <p className='paragraf-meni'>Galerija</p>
+        </NavLink>
       </div>
     </div>
   );

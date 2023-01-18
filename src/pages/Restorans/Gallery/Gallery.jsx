@@ -2,8 +2,9 @@ import React from 'react';
 import Nav from '../../../components/Nav/Nav';
 import HeaderRestoran from '../../../components/Header-Restoran/Header-Restoran';
 import lorem1 from '../../../images/lorem1.png';
-import arrow from '../../../images/arrow.png';
 import FooterForRestoran from '../../../components/Footer/FooterForRestoran';
+import leftArrow from '../../../images/left-arrow.svg';
+import rightArrow from '../../../images/right-arrow.svg';
 
 const Gallery = () => {
   return (
@@ -43,6 +44,8 @@ const Gallery = () => {
         <div className='main-main-slide'>
           <div className='main-slider'>
             <div className='slider'>
+              <img src={leftArrow} alt='' className='arrow-for-slider' />
+
               <a href='#slide1'>
                 <img src={lorem1} className='slide' alt='image1' />
               </a>
@@ -54,15 +57,7 @@ const Gallery = () => {
               </a>
               <a href='#slide4'>
                 <img src={lorem1} className='slide' alt='image3' />
-              </a>
-            </div>
-
-            <div className='controls'>
-              <a href='#slide3' className='next'>
-                <img src={arrow} alt='' />
-              </a>
-              <a href='#slide3' className='next'>
-                <img src={arrow} alt='' />
+                <img src={rightArrow} alt='' className='arrow-for-slider' />
               </a>
             </div>
           </div>

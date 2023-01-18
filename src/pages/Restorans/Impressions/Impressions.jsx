@@ -48,91 +48,91 @@ const Impressions = () => {
               <br /> In varius risus est. -
               <span className='text-name'> Sima Simic</span>
             </p>
-          </div>
-          <div className='impressions-second-box'>
-            <p className='impressions'>VAS UTISAK</p>
-            <div className='impressions-hr'></div>
-            <div className='star-rating-meni'>
-              <p className='impressions-text'>
-                Opsta{' '}
-                <span className='list-starrating'>
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <img src={starempty} alt='' className='image-empty-star' />
-                </span>
-              </p>
-              <p className='impressions-text'>
-                Ambijent{' '}
-                <span className='list-starrating'>
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <img src={emptystar} alt='' className='image-empty-star' />
-                </span>
-              </p>
-              <p className='impressions-text'>
-                Atmosfera{' '}
-                <span className='list-starrating'>
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <img src={emptystar} alt='' className='image-empty-star' />
-                </span>
-              </p>
-              <p className='impressions-text'>
-                Hrana{' '}
-                <span className='list-starrating'>
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                </span>
-              </p>
-              <p className='impressions-text'>
-                Higijena{' '}
-                <span className='list-starrating'>
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <img src={emptystar} alt='' className='image-empty-star' />
-                </span>
-              </p>
-              <p className='impressions-text'>
-                Cena{' '}
-                <span className='list-starrating'>
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <img src={emptystar} alt='' className='image-empty-star' />
-                </span>
-              </p>
-              <p className='impressions-text'>
-                Usluga{' '}
-                <span className='list-starrating'>
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <RiStarSFill className='star-for-impressions' />
-                  <img src={emptystar} alt='' className='image-empty-star' />
-                </span>
-              </p>
-              <div className='impressions-second-hr'></div>
-              <h3 className='impressions-comentar'>Komentar</h3>
-              <input
-                type='text'
-                placeholder='Ovde upisite komentar'
-                className='impressions-input'
-              />
-              <br />
-              <br />
-              <ButtonForImpressions>Ostavite utisak</ButtonForImpressions>
+            <div className='impressions-second-boxs'>
+              <p className='impressions'>VAS UTISAK</p>
+              <div className='impressions-hr'></div>
+              <div className='star-rating-meni'>
+                <p className='impressions-text'>
+                  Opsta{' '}
+                  <span className='list-starrating'>
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <img src={starempty} alt='' className='image-empty-star' />
+                  </span>
+                </p>
+                <p className='impressions-text'>
+                  Ambijent{' '}
+                  <span className='list-starrating'>
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <img src={emptystar} alt='' className='image-empty-star' />
+                  </span>
+                </p>
+                <p className='impressions-text'>
+                  Atmosfera{' '}
+                  <span className='list-starrating'>
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <img src={emptystar} alt='' className='image-empty-star' />
+                  </span>
+                </p>
+                <p className='impressions-text'>
+                  Hrana{' '}
+                  <span className='list-starrating'>
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                  </span>
+                </p>
+                <p className='impressions-text'>
+                  Higijena{' '}
+                  <span className='list-starrating'>
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <img src={emptystar} alt='' className='image-empty-star' />
+                  </span>
+                </p>
+                <p className='impressions-text'>
+                  Cena{' '}
+                  <span className='list-starrating'>
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <img src={emptystar} alt='' className='image-empty-star' />
+                  </span>
+                </p>
+                <p className='impressions-text'>
+                  Usluga{' '}
+                  <span className='list-starrating'>
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <img src={emptystar} alt='' className='image-empty-star' />
+                  </span>
+                </p>
+                <div className='impressions-second-hr'></div>
+                <h3 className='impressions-comentar'>Komentar</h3>
+                <input
+                  type='text'
+                  placeholder='Ovde upisite komentar'
+                  className='impressions-input'
+                />
+                <br />
+                <br />
+                <ButtonForImpressions>Ostavite utisak</ButtonForImpressions>
+              </div>
             </div>
           </div>
         </div>

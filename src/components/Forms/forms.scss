@@ -42,6 +42,7 @@
 .forms-main {
   width: 100%;
   max-width: 400px;
+  margin-left: 100px;
   font-family: 'Londrina Solid';
   font-style: normal;
   font-weight: 400;
@@ -79,7 +80,7 @@
   .div-for-input {
     background-color: #ffff;
     border-radius: 40px;
-    border: 1px solid #ddd;
+    border: 1px solid #c63a2f;
     width: max-content;
     input {
       all: unset;

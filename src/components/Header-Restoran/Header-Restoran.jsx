@@ -41,9 +41,9 @@ const Header = () => {
               <AiTwotoneStar /> 60 ocena Besplatna dostava
             </p>
             <p className='second-paragraf'>
-              <img src={timerIcon} alt='' />{' '}
+              <img src={timerIcon} alt='' className='timer-icon' />{' '}
               <span className='span-green'> Otvoreno sad </span>* Zatvara se u
-              23:30{' '}
+              23:00{' '}
             </p>
           </div>
         </div>
