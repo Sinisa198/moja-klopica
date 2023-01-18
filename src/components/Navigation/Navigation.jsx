@@ -7,7 +7,6 @@ const Navigation = () => (
     <img src={logo} className='logo' alt='' />
     <div className='header-text'>
       <h1>
-        {' '}
         Saznaj gde je najbliža <span>TVOJA KLOPICA</span>
       </h1>
     </div>

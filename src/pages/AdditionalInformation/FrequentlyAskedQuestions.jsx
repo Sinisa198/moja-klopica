@@ -20,7 +20,7 @@ const TermsOfUse = () => {
             </NavLink>
             <br />
             <NavLink
-              to='/privacynotices'
+              to='/faq'
               activeClassName='active'
               className='text-for-terms-use'
             >
@@ -44,9 +44,9 @@ const TermsOfUse = () => {
               <br /> Sed ornare laoreet vulputate. Cras sed placerat elit, vitae
               mattis <br />
               sapien. Mauris a ex eu eros tempor congue. Sed eget lacinia
-              <br /> massa, sit amet ullamcorper erat. Nam elementum dui ut ante{' '}
+              <br /> massa, sit amet ullamcorper erat. Nam elementum dui ut ante
               <br />
-              porta venenatis at a dolor. Proin vestibulum felis non aliquet{' '}
+              porta venenatis at a dolor. Proin vestibulum felis non aliquet
               <br />
               posuere. Donec quis pharetra odio. Sed rhoncus tellus leo, in
               <br /> elementum turpis iaculis ac. Nullam ut magna felis. Sed
@@ -56,15 +56,15 @@ const TermsOfUse = () => {
               tristique
               <br /> justo scelerisque sit amet. Sed dui dolor, convallis id
               elementum <br />
-              non, mollis eget massa. Proin et egestas nisi. Donec feugiat nibh{' '}
+              non, mollis eget massa. Proin et egestas nisi. Donec feugiat nibh
               <br />
-              quis arcu rutrum efficitur. Nam eget venenatis odio, at mattis{' '}
+              quis arcu rutrum efficitur. Nam eget venenatis odio, at mattis
               <br />
-              lectus. Donec commodo id metus a tristique. Vestibulum at dui{' '}
+              lectus. Donec commodo id metus a tristique. Vestibulum at dui
               <br />
-              quis risus fringilla rhoncus. Interdum et malesuada fames ac{' '}
+              quis risus fringilla rhoncus. Interdum et malesuada fames ac
               <br />
-              ante ipsum primis in faucibus. Donec vel elit vitae elit dapibus{' '}
+              ante ipsum primis in faucibus. Donec vel elit vitae elit dapibus
               <br />
               eleifend. Nulla blandit, elit nec egestas condimentum, arcu
               <br /> nulla euismod risus, nec ultrices felis ipsum eu arcu.

@@ -1,7 +1,7 @@
 import React from 'react';
 import map from '../../images/map.png';
 import Location from '../../images/location.png';
-import HeaderRestoran from '../../components/Header-Restoran/Header-Restoran';
+import HeaderRestaurant from '../../components/Header-Restaurant/Header-Restaurant';
 import Phone from '../../images/phone.png';
 import listpicture from '../../images/listpicture.png';
 import { RiStarSFill } from 'react-icons/ri';
@@ -14,7 +14,7 @@ const RestoranTopFood = () => {
     <div>
       <div className='restoran-top-food'>
         <div className='navigation-menu-for-restoran'>
-          <HeaderRestoran />
+          <HeaderRestaurant />
         </div>
         <div className='navigation-menu'>
           <div className='navigation-menu-for-restoran'>
@@ -54,8 +54,7 @@ const RestoranTopFood = () => {
                   <img src={Phone} alt='' className='phone-image' />
                   <p>0644226471</p>
                 </div>
-                <img src={map} className='image-map' alt='' />{' '}
-                {/* <div className='hr-for-restoran'></div> */}
+                <img src={map} className='image-map' alt='' />
               </div>
             </div>
           </div>
@@ -74,7 +73,7 @@ const RestoranTopFood = () => {
                   <div className='div-for-title-rating'>
                     <div className='list-title-restoran'>{item.title}</div>
                     <div className='rating-div'>
-                      <p className='rating-restoran'>{item.rating}</p>{' '}
+                      <p className='rating-restoran'>{item.rating}</p>
                       <RiStarSFill className='rating-star-restoran' />
                     </div>
                   </div>

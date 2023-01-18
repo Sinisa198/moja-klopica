@@ -24,7 +24,7 @@ const App = () => {
         <Route path='/menu' element={<Menu />} />
         <Route path='/impressions' element={<Impressions />} />
         <Route path='/gallery' element={<Gallery />} />
-        <Route path='/askedquestions' element={<FrequentlyAskedQuestions />} />
+        <Route path='/faq' element={<FrequentlyAskedQuestions />} />
         <Route path='/privacynotices' element={<PrivacyNotices />} />
         <Route path='/termsofuse' element={<TermsOfUse />} />
       </Routes>

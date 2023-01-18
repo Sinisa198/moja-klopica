@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderRestoran from '../../../components/Header-Restoran/Header-Restoran';
+import HeaderRestaurant from '../../../components/Header-Restaurant/Header-Restaurant';
 import Nav from '../../../components/Nav/Nav';
 import { RiStarSFill } from 'react-icons/ri';
 import FooterForRestoran from '../../../components/Footer/FooterForRestoran';
@@ -11,7 +11,7 @@ const Impressions = () => {
   return (
     <div className='main-impressions'>
       <div className='navigation-menu-for-restoran'>
-        <HeaderRestoran />
+        <HeaderRestaurant />
       </div>
       <div className='nav-and-rating'>
         <div className='navigation-menu-for-restoran'>
@@ -26,7 +26,7 @@ const Impressions = () => {
               <br /> id, ornare efficitur dui. Nulla in quam sed ex
               <br /> aliquam feugiat. In varius risus est, sed placerat <br />
               tortor mollis a. - <span className='text-name'>Pera Perić</span>
-            </p>{' '}
+            </p>
             <br />
             <div className='first-hr' />
             <p className='second-paragraf-impressions'>
@@ -38,7 +38,7 @@ const Impressions = () => {
             <div className='second-hr' />
             <p className='three-paragraf'>
               Lorem ipsum dolor sit amet, consectetur <br />
-              adipiscing elit. -{' '}
+              adipiscing elit. -
               <span className='text-name'>Jovan Jovanovic</span>
             </p>
             <div className='three-hr' />
@@ -53,7 +53,7 @@ const Impressions = () => {
               <div className='impressions-hr'></div>
               <div className='star-rating-meni'>
                 <p className='impressions-text'>
-                  Opsta{' '}
+                  Opsta
                   <span className='list-starrating'>
                     <RiStarSFill className='star-for-impressions' />
                     <RiStarSFill className='star-for-impressions' />
@@ -63,7 +63,7 @@ const Impressions = () => {
                   </span>
                 </p>
                 <p className='impressions-text'>
-                  Ambijent{' '}
+                  Ambijent
                   <span className='list-starrating'>
                     <RiStarSFill className='star-for-impressions' />
                     <RiStarSFill className='star-for-impressions' />
@@ -73,7 +73,7 @@ const Impressions = () => {
                   </span>
                 </p>
                 <p className='impressions-text'>
-                  Atmosfera{' '}
+                  Atmosfera
                   <span className='list-starrating'>
                     <RiStarSFill className='star-for-impressions' />
                     <RiStarSFill className='star-for-impressions' />
@@ -83,7 +83,7 @@ const Impressions = () => {
                   </span>
                 </p>
                 <p className='impressions-text'>
-                  Hrana{' '}
+                  Hrana
                   <span className='list-starrating'>
                     <RiStarSFill className='star-for-impressions' />
                     <RiStarSFill className='star-for-impressions' />
@@ -93,17 +93,7 @@ const Impressions = () => {
                   </span>
                 </p>
                 <p className='impressions-text'>
-                  Higijena{' '}
-                  <span className='list-starrating'>
-                    <RiStarSFill className='star-for-impressions' />
-                    <RiStarSFill className='star-for-impressions' />
-                    <RiStarSFill className='star-for-impressions' />
-                    <RiStarSFill className='star-for-impressions' />
-                    <img src={emptystar} alt='' className='image-empty-star' />
-                  </span>
-                </p>
-                <p className='impressions-text'>
-                  Cena{' '}
+                  Higijena
                   <span className='list-starrating'>
                     <RiStarSFill className='star-for-impressions' />
                     <RiStarSFill className='star-for-impressions' />
@@ -113,7 +103,17 @@ const Impressions = () => {
                   </span>
                 </p>
                 <p className='impressions-text'>
-                  Usluga{' '}
+                  Cena
+                  <span className='list-starrating'>
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <RiStarSFill className='star-for-impressions' />
+                    <img src={emptystar} alt='' className='image-empty-star' />
+                  </span>
+                </p>
+                <p className='impressions-text'>
+                  Usluga
                   <span className='list-starrating'>
                     <RiStarSFill className='star-for-impressions' />
                     <RiStarSFill className='star-for-impressions' />

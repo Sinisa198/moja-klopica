@@ -15,10 +15,9 @@ const ComponentButtonForImpressions = style.button`
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
   border-radius: 6.23711px;
 `;
-const ButtonForImpressions = ({ type, className, id, children }) => {
+const ButtonForImpressions = ({ className, id, children }) => {
   return (
     <ComponentButtonForImpressions
-      type={type ? type : 'button'}
       className={
         className
           ? `button-for-navigation ${className}`

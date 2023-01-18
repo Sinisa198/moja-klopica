@@ -16,10 +16,9 @@ const ComponentGooglePlay = style.p`
   color: #ffffff;
 `;
 
-const BoxForGooglePlay = ({ type, className, id, children }) => {
+const BoxForGooglePlay = ({ className, id, children }) => {
   return (
     <ComponentGooglePlay
-      type={type ? type : 'div'}
       className={className ? `home-google ${className}` : 'home-google'}
       id={id}
     >

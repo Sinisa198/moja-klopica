@@ -16,10 +16,9 @@ const ButtonComponent = styled.button`
   color: #ffffff;
 `;
 
-const Button = ({ type, className, variant, id, children }) => {
+const Button = ({ className, variant, id, children }) => {
   return (
     <ButtonComponent
-      type={type ? type : 'button'}
       variant={variant}
       className={
         className

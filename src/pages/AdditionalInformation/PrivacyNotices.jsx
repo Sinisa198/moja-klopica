@@ -27,7 +27,7 @@ const TermsOfUse = () => {
             </NavLink>
             <br />
             <NavLink
-              to='/askedquestions'
+              to='/faq'
               activeClassName='active'
               className='text-for-terms-use'
             >
@@ -43,15 +43,15 @@ const TermsOfUse = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               <br /> Vivamus quis dolor nec dui auctor lobortis. Ut placerat
               velit eu
-              <br /> placerat molestie. Suspendisse auctor quis quam in semper.{' '}
+              <br /> placerat molestie. Suspendisse auctor quis quam in semper.
               <br />
               Sed ornare laoreet vulputate. Cras sed placerat elit, vitae mattis
               <br /> sapien. Mauris a ex eu eros tempor congue. Sed eget lacinia
-              <br /> massa, sit amet ullamcorper erat. Nam elementum dui ut ante{' '}
+              <br /> massa, sit amet ullamcorper erat. Nam elementum dui ut ante
               <br />
-              porta venenatis at a dolor. Proin vestibulum felis non aliquet{' '}
+              porta venenatis at a dolor. Proin vestibulum felis non aliquet
               <br />
-              posuere. Donec quis pharetra odio. Sed rhoncus tellus leo, in{' '}
+              posuere. Donec quis pharetra odio. Sed rhoncus tellus leo, in
               <br />
               elementum turpis iaculis ac. Nullam ut magna felis. Sed
               <br /> egestas dui id eleifend ullamcorper. Curabitur nisi lorem,
@@ -70,7 +70,7 @@ const TermsOfUse = () => {
               <br /> ante ipsum primis in faucibus. Donec vel elit vitae elit
               dapibus <br />
               eleifend. Nulla blandit, elit nec egestas condimentum, arcu <br />
-              nulla euismod risus, nec ultrices felis ipsum eu arcu. Praesent{' '}
+              nulla euismod risus, nec ultrices felis ipsum eu arcu. Praesent
               <br />
               pharetra tincidunt libero, vel placerat sem ullamcorper nec.
               <br /> Vestibulum hendrerit, erat a ultricies elementum, nibh

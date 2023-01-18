@@ -20,12 +20,12 @@ const PhoneComponent = style.p`
   background-color: lightcoral;
   border-radius: 40px;
   padding: 3px 2px 2px 2px;`;
-const Phone = ({ type, className, onClick, children, id }) => {
-  <PhoneComponent>
-    type={type ? type : 'p'}
-    className=
-    {className ? `nav-home-last ${className}` : 'nav-home-last'}
+
+const Phone = ({ className, onClick, children, id }) => {
+  <PhoneComponent
+    className={className ? `nav-home-last ${className}` : 'nav-home-last'}
     id={id}
+  >
     {children}
   </PhoneComponent>;
 };

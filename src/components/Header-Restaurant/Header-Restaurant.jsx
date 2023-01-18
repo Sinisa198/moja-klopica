@@ -1,4 +1,3 @@
-import React from 'react';
 import logoRestoran from '../../images/logo-restoran.png';
 import miniLogo from '../../images/mini-logo-header.png';
 import firstimageRestoran from '../../images/firstimageRestoran.png';
@@ -7,14 +6,14 @@ import favorite from '../../images/input-icon-first.svg';
 import arrow from '../../images/input-second-icon.svg';
 import timerIcon from '../../images/timer-for-closed.png';
 
-const Header = () => {
+const HeaderRestaurant = () => {
   return (
     <div className='main-header'>
       <div className='burger-logo'>
         <img src={miniLogo} alt='' className='logo-restoran' />
         <div>
           <p className='restoran-paragraf'>Moja klopica</p>
-        </div>{' '}
+        </div>
         <div className='input'>
           <span className='prefix'>
             <img src={favorite} alt='' className='icon-favorite-input' />
@@ -41,9 +40,9 @@ const Header = () => {
               <AiTwotoneStar /> 60 ocena Besplatna dostava
             </p>
             <p className='second-paragraf'>
-              <img src={timerIcon} alt='' className='timer-icon' />{' '}
+              <img src={timerIcon} alt='' className='timer-icon' />
               <span className='span-green'> Otvoreno sad </span>* Zatvara se u
-              23:00{' '}
+              23:00
             </p>
           </div>
         </div>
@@ -52,4 +51,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderRestaurant;

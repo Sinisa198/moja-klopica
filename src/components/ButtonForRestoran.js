@@ -14,10 +14,9 @@ const ButtonForRestoranComponent = style.button`
     font-size: 16px;
     line-height: 24px;
 `;
-const ButtonForRestoran = ({ type, className, id, children }) => {
+const ButtonForRestoran = ({ className, id, children }) => {
   return (
     <ButtonForRestoranComponent
-      type={type ? type : 'button'}
       className={
         className
           ? `button-for-navigation ${className}`

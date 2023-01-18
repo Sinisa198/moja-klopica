@@ -1,5 +1,5 @@
 import { React } from 'react';
-import HeaderRestoran from '../../../components/Header-Restoran/Header-Restoran';
+import HeaderRestaurant from '../../../components/Header-Restaurant/Header-Restaurant';
 import Nav from '../../../components/Nav/Nav';
 import logoMeni from '../../../images/logo-for-meni.png';
 import FooterForRestoran from '../../../components/Footer/FooterForRestoran';
@@ -16,33 +16,9 @@ const Menu = () => {
   return (
     <div className='main-meni'>
       <div className='navigation-menu-for-restoran'>
-        <HeaderRestoran />
+        <HeaderRestaurant />
       </div>
-      {/* <div className='container'>
-        <input type='checkbox' name='' id='' className='check' />
-        <ul className='menu-items'>
-          <li className='li-for-burger-menu'>
-            <p>Početna</p>
-          </li>
-          <li>
-            <p>Kategorije</p>
-          </li>
-          <li>
-            <p>Ponude</p>
-          </li>
-          <li>
-            <p>Pomoć</p>
-          </li>
-          <li>
-            <p>Kontakt</p>
-          </li>
-        </ul>
-        <div className='ham-menu'>
-          <span className='line line1'></span>
-          <span className='line line2'></span>
-          <span className='line line3'></span>
-        </div>
-      </div> */}
+
       <div className='main-nav-with-meni'>
         <div className='navigation-menu-for-restoran'>
           <Nav />
@@ -108,7 +84,7 @@ const Menu = () => {
                   </div>
                   <br />
                   <div className='div-for-count-and-button'>
-                    <button className='button-dec'>-</button>{' '}
+                    <button className='button-dec'>-</button>
                     <p className='count'>{food.count}</p>
                     <button className='button-inc'>+</button>
                   </div>
