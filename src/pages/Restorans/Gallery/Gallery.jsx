@@ -1,10 +1,10 @@
 import React from 'react';
 import Nav from '../../../components/Nav/Nav';
 import HeaderRestaurant from '../../../components/Header-Restaurant/Header-Restaurant';
-import lorem1 from '../../../images/lorem1.png';
 import FooterForRestoran from '../../../components/Footer/FooterForRestoran';
-import leftArrow from '../../../images/left-arrow.svg';
-import rightArrow from '../../../images/right-arrow.svg';
+import slideImage from '../../../images/lorem1.png';
+import leftArrow from '../../../images/arrow-for-slide.svg';
+import rightArrow from '../../../images/icon-right.png';
 
 const Gallery = () => {
   return (
@@ -16,27 +16,10 @@ const Gallery = () => {
         <div className='navigation-menu-for-restoran'>
           <Nav />
         </div>
-        <div className='main-main-slide'>
-          <div className='main-slider'>
-            <div className='slider'>
-              <img src={leftArrow} alt='' className='arrow-for-slider' />
-
-              <a href='#slide1'>
-                <img src={lorem1} className='slide' alt='image1' />
-              </a>
-              <a href='#slide2'>
-                <img src={lorem1} className='slide' alt='image2' />
-              </a>
-              <a href='#slide3'>
-                <img src={lorem1} className='slide' alt='image3' />
-              </a>
-              <a href='#slide4'>
-                <img src={lorem1} className='slide' alt='image3' />
-                <img src={rightArrow} alt='' className='arrow-for-slider' />
-              </a>
-            </div>
-          </div>
-        </div>
+        <img src={leftArrow} alt='' className='icon-arrow' />
+        <img src={slideImage} alt='' className='image-for-slide' />
+        <img src={slideImage} alt='' className='image-for-slide2' />
+        <img src={rightArrow} alt='' />
       </div>
       <FooterForRestoran />
     </div>

@@ -1,5 +1,5 @@
 import logoRestoran from '../../images/logo-restoran.png';
-import miniLogo from '../../images/mini-logo-header.png';
+import miniLogo from '../../images/logo-for-gallery.png';
 import firstimageRestoran from '../../images/firstimageRestoran.png';
 import { AiTwotoneStar } from 'react-icons/ai';
 import favorite from '../../images/input-icon-first.svg';
@@ -11,9 +11,6 @@ const HeaderRestaurant = () => {
     <div className='main-header'>
       <div className='burger-logo'>
         <img src={miniLogo} alt='' className='logo-restoran' />
-        <div>
-          <p className='restoran-paragraf'>Moja klopica</p>
-        </div>
         <div className='input'>
           <span className='prefix'>
             <img src={favorite} alt='' className='icon-favorite-input' />

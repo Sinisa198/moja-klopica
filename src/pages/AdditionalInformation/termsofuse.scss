@@ -43,7 +43,7 @@ input {
   width: 667px;
   height: 609.58px;
 }
-.button-restoran {
+.div-for-button-termsofuse {
   width: 194px;
   height: 67px;
   border: 4px solid #c63a2f;
@@ -61,6 +61,23 @@ input {
 }
 .prefix {
   border-radius: 40px 0px 0px 40px;
+}
+.button-for-termsofuse {
+  background-color: transparent;
+  width: 200px;
+  margin-top: 15px;
+  height: 21px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  border: 1px solid transparent;
+  line-height: 30px;
+  color: #ffffff;
+}
+.active {
+  border: 4px solid #c63a2f;
+  border-radius: 40px;
 }
 .title-for-termsofuse {
   display: flex;
