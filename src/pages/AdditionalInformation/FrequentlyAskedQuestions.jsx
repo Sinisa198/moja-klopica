@@ -10,7 +10,7 @@ const TermsOfUse = () => {
       <div className='second-box-terms'>
         <div className='box-terms'>
           <div className='list-terms'>
-            <br />
+            <br /> <br />
             <NavLink
               to='/termsofuse'
               activeClassName='active'
@@ -18,7 +18,7 @@ const TermsOfUse = () => {
             >
               Često postavljana pitanja
             </NavLink>
-            <br />
+            <br /> <br />
             <NavLink
               to='/faq'
               activeClassName='active'
@@ -26,9 +26,9 @@ const TermsOfUse = () => {
             >
               Obaveštenje o privatnosti
             </NavLink>
-            <br />
+            <br /> <br />
             <NavLink
-              to='/askedquestions'
+              to='/privacynotices'
               activeClassName='active'
               className='text-for-terms-use'
             >
@@ -36,7 +36,6 @@ const TermsOfUse = () => {
             </NavLink>
           </div>
           <div className='lorem-ipsum'>
-            <h4 className='text-for-terms'>Uslovi korišćenja</h4>
             <p className='paragraf-for-terms'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
               Vivamus quis dolor nec dui auctor lobortis. Ut placerat velit eu

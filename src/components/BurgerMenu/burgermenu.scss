@@ -69,17 +69,15 @@
 }
 
 .ham-menu {
-  position: absolute;
   width: 57px;
   height: 47px;
-  top: 8rem;
-  margin-top: -100px;
-  left: 9.5rem;
+  top: 2.2rem;
   z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border-radius: 0.25em;
+  padding-top: 10px;
 }
 
 .ham-menu .line {

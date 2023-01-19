@@ -17,8 +17,7 @@ const TermsOfUse = () => {
             >
               Često postavljana pitanja
             </NavLink>
-            <br />
-
+            <br /> <br />
             <NavLink
               to='/privacynotices'
               className='text-for-terms-use'
@@ -26,7 +25,7 @@ const TermsOfUse = () => {
             >
               Obaveštenje o privatnosti
             </NavLink>
-            <br />
+            <br /> <br />
             <NavLink
               to='/faq'
               activeClassName='active'

@@ -1,5 +1,5 @@
 .App-terms-of-use {
-  background: url('../../images/background-terms.png');
+  background: url('../../images/termsofuse-background.png');
   width: 100%;
   @media screen and (max-width: 768px) {
     width: 187%;
@@ -10,9 +10,58 @@
   padding-top: 20px;
   width: 100%;
   justify-content: center;
-  grid-column-gap: 100px;
+  grid-column-gap: 250px;
+}
+.logo-termsofuse {
+  display: flex;
+  margin-top: -20px;
+  justify-content: center;
+}
+.div-for-logo-and-text {
+  display: flex;
+}
+.active {
+  width: 378px;
+  height: 94px;
+  border: 4px solid #c10016;
+  border-radius: 40px;
+  padding: 10px 5px 10px 5px;
+}
+.div-for-button-termsofuse {
+  width: 194px;
+  height: 67px;
+  border: 4px solid #c10016;
+  border-radius: 40px;
+  text-align: center;
+}
+.button-for-termsofuse {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-top: 15px;
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+.paragraf-login {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.paragraf-login-div {
+  text-align: center;
+  width: 194px;
+  height: 67px;
+  border: 4px solid #c10016;
+  border-radius: 40px;
 }
 .title-termsofuse {
+  width: 200px;
   color: red;
 }
 .text-h4 {
@@ -27,10 +76,10 @@
   height: 37px;
 }
 .input-for-terms {
-  width: 400px;
+  width: 527px;
   height: 50px;
   display: flex;
-  gap: 2.1rem;
+  gap: 6rem;
   border: 1px solid #aaa;
   border-radius: 40px;
   justify-content: center;
@@ -40,8 +89,8 @@ input {
   all: unset;
 }
 .tan-image {
-  width: 667px;
-  height: 609.58px;
+  width: 567px;
+  height: 509.58px;
 }
 .button-restoran {
   width: 194px;
@@ -58,6 +107,7 @@ input {
 .title-for-terms-of-use {
   justify-content: center;
   margin-top: 250px;
+  padding-left: 100px;
 }
 .prefix {
   border-radius: 40px 0px 0px 40px;
@@ -77,7 +127,6 @@ input {
   position: absolute;
   width: 292px;
   height: 33px;
-  color: green;
   left: 113px;
   top: 200px;
   font-family: 'Nunito';
