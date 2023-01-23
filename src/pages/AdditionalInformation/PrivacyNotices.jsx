@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import FooterForRestoran from '../../components/Footer/FooterForRestoran';
 import HeaderTermsofuse from '../../components/Header-Termsofuse/HeaderTermsofuse';
+import MenuForTerms from '../../components/MenuForTerms/MenuForTerms';
 
 const TermsOfUse = () => {
   return (
@@ -9,32 +9,7 @@ const TermsOfUse = () => {
       <HeaderTermsofuse />
       <div className='second-box-terms'>
         <div className='box-terms'>
-          <div className='list-terms'>
-            <NavLink
-              to='/termsofuse'
-              activeClassName='active'
-              className='text-for-terms-use'
-            >
-              Često postavljana pitanja
-            </NavLink>
-            <br />
-            <NavLink
-              to='/privacynotices'
-              activeClassName='active'
-              className='text-for-terms-use'
-            >
-              Obaveštenje o privatnosti
-            </NavLink>
-            <br />
-            <NavLink
-              to='/faq'
-              activeClassName='active'
-              className='text-for-terms-use'
-            >
-              Uslovi korišćenja
-            </NavLink>
-            <br />
-          </div>
+          <MenuForTerms />
           <div className='lorem-ipsum'>
             <h3 className='notification-text'>
               MOJA KLOPICA Obaveštenje o privatnosti

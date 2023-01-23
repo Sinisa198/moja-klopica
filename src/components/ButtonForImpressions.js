@@ -1,19 +1,19 @@
 import style from 'styled-components';
 
 const ComponentButtonForImpressions = style.button`
-  width: 154px;
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-  padding-top:5px;
-  padding-bottom:5px;
-  background: #c63a2f;
-  border: 1px solid #c63a2f;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 6.23711px;
+ box-sizing: border-box;
+position: absolute;
+width: 154px;
+background:transparent;
+height: 42px;
+border: 2px solid #C10016;
+border-radius: 10px;
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+color: #333333;
 `;
 const ButtonForImpressions = ({ className, id, children }) => {
   return (

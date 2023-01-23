@@ -27,10 +27,11 @@ const Menu = () => {
           <div className='meni'>
             <div className='nav-meni-meni'>
               <div className='nav-for-shoppingcart'>
-                <p className='text-nav'>SUPE I ČORBE</p>
-                <p className='text-nav'>GLAVNA JELA</p>
-                <p className='text-nav'>SALATE</p>
-                <p className='text-nav'>DEZERTI</p>
+                <p className='text-nav'>PONEDELJAK</p>
+                <p className='text-nav'>UTORAK</p>
+                <p className='text-nav'>SREDA</p>
+                <p className='text-nav'>CETVRTAK</p>
+                <p className='text-nav'>PETAK</p>
               </div>
               {itemsMeni.map((item) => {
                 return (

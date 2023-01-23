@@ -1,5 +1,5 @@
 .main-impressions {
-  background: url('../../../images/background-restoran.png');
+  background: url('../../../images/b-for-all.png');
 }
 
 .nav-and-rating {
@@ -127,4 +127,115 @@
   .impressions-first-box {
     margin-left: -200px;
   }
+}
+
+.impressions-main-div {
+  display: flex;
+  justify-content: center;
+  height: 783px;
+  background: #ffffff;
+  border-radius: 30px;
+}
+.paragraf-for-impressions {
+  width: 612px;
+  height: 180px;
+  justify-content: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+.paragraf-for-impressions4 {
+  width: 612px;
+  height: 180px;
+  margin-top: -40px;
+  justify-content: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+.span-for-impressions {
+  position: absolute;
+  height: 36px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  padding-left: 10px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+.div-for-rating-impressions {
+  display: flex;
+  margin-top: -10px;
+}
+.stars-for-impressions {
+  justify-content: right;
+}
+.div-for-stars {
+  padding-top: 15px;
+  padding-left: 220px;
+}
+.text-commentar {
+  width: 118px;
+  height: 36px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+.input-for-impressionss {
+  width: 424px;
+  height: 141px;
+  margin-top: -20px;
+  background: #ffffff;
+  border: 2px solid #c10016;
+  border-radius: 10px;
+}
+.title-impressions {
+  width: 121px;
+  height: 36px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+.hr-for-impressions-under-text {
+  width: 512px;
+  height: 1px;
+  background-color: red;
+}
+.hr-for-impressions-under-text4 {
+  margin-top: 50px;
+  width: 512px;
+  height: 1px;
+  background-color: red;
+}
+.hr-for-impressions-under-text2 {
+  margin-top: -10px;
+  width: 426px;
+  background-color: red;
+  height: 2px;
+}
+.three-box-text {
+  margin-top: -40px;
+}
+.paragraf-impressions-p {
+  width: 54px;
+  height: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
 }
