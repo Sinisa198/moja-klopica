@@ -6,7 +6,7 @@ import Phone from '../../images/phone.png';
 import listpicture from '../../images/listpicture.png';
 import { RiStarSFill } from 'react-icons/ri';
 import itemsBox from '../../components/data/restoranItems';
-import Nav from '../../components/Nav/Nav';
+import RestaurantNavigation from '../../components/RestaurantNavigation/RestaurantNavigation';
 import FooterForRestoran from '../../components/Footer/FooterForRestoran';
 
 const RestoranTopFood = () => {
@@ -18,7 +18,7 @@ const RestoranTopFood = () => {
         </div>
         <div className='navigation-menu'>
           <div className='navigation-menu-for-restoran'>
-            <Nav />
+            <RestaurantNavigation />
           </div>
 
           <div className='main-main-restoran'>
