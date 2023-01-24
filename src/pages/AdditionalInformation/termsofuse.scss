@@ -1,16 +1,17 @@
 .App-terms-of-use {
   background: url('../../images/termsofuse-background.png');
   width: 100%;
-  @media screen and (max-width: 768px) {
-    width: 187%;
-  }
+  height: 600px;
 }
 .main-terms {
   display: flex;
   padding-top: 20px;
   width: 100%;
   justify-content: center;
-  grid-column-gap: 250px;
+  grid-column-gap: 150px;
+}
+.footer-terms {
+  margin-top: 1250px;
 }
 .logo-termsofuse {
   display: flex;
@@ -22,7 +23,6 @@
 }
 .active {
   width: 378px;
-  height: 94px;
   border: 4px solid #c10016;
   border-radius: 40px;
   padding: 10px 5px 10px 5px;
@@ -89,8 +89,12 @@ input {
   all: unset;
 }
 .tan-image {
-  width: 567px;
-  height: 509.58px;
+  position: absolute;
+  width: 667px;
+  height: 609.58px;
+  left: 1000px;
+  top: 150px;
+  mix-blend-mode: normal;
 }
 .button-restoran {
   width: 194px;
@@ -98,6 +102,7 @@ input {
   border: 4px solid #c63a2f;
   border-radius: 40px;
   font-family: 'Nunito';
+  background-color: transparent;
   font-style: normal;
   font-weight: 800;
   font-size: 25px;
@@ -107,7 +112,6 @@ input {
 .title-for-terms-of-use {
   justify-content: center;
   margin-top: 250px;
-  padding-left: 100px;
 }
 .prefix {
   border-radius: 40px 0px 0px 40px;
@@ -125,8 +129,6 @@ input {
 }
 .list-terms {
   position: absolute;
-  width: 292px;
-  height: 33px;
   left: 113px;
   top: 200px;
   font-family: 'Nunito';
@@ -246,9 +248,6 @@ input {
   line-height: 36px;
   color: #000000;
 }
-.footer-terms {
-  margin-top: 1280px;
-}
 .hr-for-terms {
   width: 378px;
   height: 1px;
@@ -257,6 +256,8 @@ input {
   background: #d9d9d9;
 }
 .text-for-terms-use {
+  display: flex;
+  width: 300px;
   text-decoration: none;
   font-weight: 800;
   font-size: 24px;
@@ -291,7 +292,7 @@ input {
     height: 67px;
     left: 1180px;
     top: 59px;
-    background: #c63a2f;
+    background: transparent;
     border-radius: 10px;
     font-family: 'Nunito';
     border: 1px solid #c63a2f;
@@ -328,7 +329,6 @@ input {
   }
 
   .list-terms {
-    position: absolute;
     width: 292px;
     height: 33px;
     left: 113px;
@@ -345,7 +345,6 @@ input {
   }
 
   .lorem-ipsum {
-    position: absolute;
     height: 36px;
     left: 564px;
     margin-right: 20px;
@@ -454,10 +453,6 @@ input {
     font-size: 24px;
     line-height: 36px;
     color: #000000;
-  }
-  .footer-terms {
-    width: 100%;
-    margin-top: 980px;
   }
   .hr-for-terms {
     width: 378px;

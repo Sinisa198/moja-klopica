@@ -5,10 +5,13 @@ import { AiTwotoneStar } from 'react-icons/ai';
 import favorite from '../../images/input-icon-first.svg';
 import arrow from '../../images/input-second-icon.svg';
 import timerIcon from '../../images/timer-for-closed.png';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 const HeaderRestaurant = () => {
   return (
     <div className='main-header'>
+      <BurgerMenu />
+
       <div className='burger-logo'>
         <img src={miniLogo} alt='' className='logo-restoran' />
         <div>

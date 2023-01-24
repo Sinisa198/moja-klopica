@@ -18,6 +18,7 @@
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-axios": "^2.0.6",
+    "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-redux": "^8.0.5",
@@ -57,5 +58,4 @@
   "devDependencies": {
     "sass": "^1.56.2"
   }
-
 }

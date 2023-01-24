@@ -2,7 +2,7 @@ import { React } from 'react';
 import HeaderRestaurant from '../../../components/Header-Restaurant/Header-Restaurant';
 import Nav from '../../../components/Nav/Nav';
 import logoMeni from '../../../images/logo-for-meni.png';
-import FooterForRestoran from '../../../components/Footer/FooterForRestoran';
+import FooterForRestaurant from '../../../components/Footer/FooterForRestaurant';
 import itemsMeni from '../../../components/data/menuitems';
 import ButtonMenu from '../../../components/ButtonMenu';
 import { useDispatch, useSelector } from 'react-redux';
@@ -97,7 +97,7 @@ const Menu = () => {
           </div>
         </div>
       </div>
-      <FooterForRestoran />
+      <FooterForRestaurant />
     </div>
   );
 };

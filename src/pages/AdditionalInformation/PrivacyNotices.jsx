@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import FooterForRestoran from '../../components/Footer/FooterForRestoran';
+import FooterForRestaurant from '../../components/Footer/FooterForRestaurant';
 import HeaderTermsofuse from '../../components/Header-Termsofuse/HeaderTermsofuse';
 
 const TermsOfUse = () => {
@@ -11,13 +11,12 @@ const TermsOfUse = () => {
         <div className='box-terms'>
           <div className='list-terms'>
             <NavLink
-              to='/termsofuse'
+              to='/faq'
               activeClassName='active'
               className='text-for-terms-use'
             >
               Često postavljana pitanja
             </NavLink>
-            <br /> <br />
             <NavLink
               to='/privacynotices'
               activeClassName='active'
@@ -25,15 +24,13 @@ const TermsOfUse = () => {
             >
               Obaveštenje o privatnosti
             </NavLink>
-            <br /> <br />
             <NavLink
-              to='/faq'
+              to='/termsofuse'
               activeClassName='active'
               className='text-for-terms-use'
             >
               Uslovi korišćenja
             </NavLink>
-            <br />
           </div>
           <div className='lorem-ipsum'>
             <h3 className='notification-text'>
@@ -88,7 +85,7 @@ const TermsOfUse = () => {
         </div>
       </div>
       <div className='footer-terms'>
-        <FooterForRestoran />
+        <FooterForRestaurant />
       </div>
     </div>
   );

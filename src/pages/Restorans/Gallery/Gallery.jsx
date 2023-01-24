@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from '../../../components/Nav/Nav';
 import HeaderRestaurant from '../../../components/Header-Restaurant/Header-Restaurant';
 import lorem1 from '../../../images/lorem1.png';
-import FooterForRestoran from '../../../components/Footer/FooterForRestoran';
+import FooterForRestaurant from '../../../components/Footer/FooterForRestaurant';
 import leftArrow from '../../../images/left-arrow.svg';
 import rightArrow from '../../../images/right-arrow.svg';
 
@@ -38,7 +38,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <FooterForRestoran />
+      <FooterForRestaurant />
     </div>
   );
 };

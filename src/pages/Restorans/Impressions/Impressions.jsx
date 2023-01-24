@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderRestaurant from '../../../components/Header-Restaurant/Header-Restaurant';
 import Nav from '../../../components/Nav/Nav';
 import { RiStarSFill } from 'react-icons/ri';
-import FooterForRestoran from '../../../components/Footer/FooterForRestoran';
+import FooterForRestaurant from '../../../components/Footer/FooterForRestaurant';
 import emptystar from '../../../images/emptystar.png';
 import ButtonForImpressions from '../../../components/ButtonForImpressions';
 import starempty from '../../../images/emptystar.svg';
@@ -137,7 +137,7 @@ const Impressions = () => {
           </div>
         </div>
       </div>
-      <FooterForRestoran />
+      <FooterForRestaurant />
     </div>
   );
 };

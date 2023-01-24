@@ -7,7 +7,7 @@ import listpicture from '../../images/listpicture.png';
 import { RiStarSFill } from 'react-icons/ri';
 import itemsBox from '../../components/data/restoranItems';
 import Nav from '../../components/Nav/Nav';
-import FooterForRestoran from '../../components/Footer/FooterForRestoran';
+import FooterForRestaurant from '../../components/Footer/FooterForRestaurant';
 
 const RestoranTopFood = () => {
   return (
@@ -84,7 +84,7 @@ const RestoranTopFood = () => {
         </div>
       </div>
       <div className='footer-for-home-page'>
-        <FooterForRestoran />
+        <FooterForRestaurant />
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import { RiStarSFill } from 'react-icons/ri';
 import { AiOutlineStar } from 'react-icons/ai';
 import Forms from '../../components/Forms/Forms';
 import Navigation from '../../components/Navigation/Navigation';
-import FooterForRestoran from '../../components/Footer/FooterForRestoran';
+import FooterForRestaurant from '../../components/Footer/FooterForRestaurant';
 import listrestorans from '../../components/data/listrestoranitem';
 import ButtonForRestoran from '../../components/ButtonForRestoran';
 
@@ -50,7 +50,7 @@ const ListRestorans = () => {
         ))}
         <ButtonForRestoran>Vidi više</ButtonForRestoran>
       </div>
-      <FooterForRestoran />
+      <FooterForRestaurant />
     </div>
   );
 };

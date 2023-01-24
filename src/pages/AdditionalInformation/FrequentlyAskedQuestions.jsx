@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import FooterForRestoran from '../../components/Footer/FooterForRestoran';
+import FooterForRestaurant from '../../components/Footer/FooterForRestaurant';
 import HeaderTermsofuse from '../../components/Header-Termsofuse/HeaderTermsofuse';
 
 const TermsOfUse = () => {
@@ -10,25 +10,22 @@ const TermsOfUse = () => {
       <div className='second-box-terms'>
         <div className='box-terms'>
           <div className='list-terms'>
-            <br /> <br />
-            <NavLink
-              to='/termsofuse'
-              activeClassName='active'
-              className='text-for-terms-use'
-            >
-              Često postavljana pitanja
-            </NavLink>
-            <br /> <br />
             <NavLink
               to='/faq'
               activeClassName='active'
               className='text-for-terms-use'
             >
-              Obaveštenje o privatnosti
+              Često postavljana pitanja
             </NavLink>
-            <br /> <br />
             <NavLink
               to='/privacynotices'
+              activeClassName='active'
+              className='text-for-terms-use'
+            >
+              Obaveštenje o privatnosti
+            </NavLink>
+            <NavLink
+              to='/termsofuse'
               activeClassName='active'
               className='text-for-terms-use'
             >
@@ -36,56 +33,57 @@ const TermsOfUse = () => {
             </NavLink>
           </div>
           <div className='lorem-ipsum'>
-            <p className='paragraf-for-terms'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-              Vivamus quis dolor nec dui auctor lobortis. Ut placerat velit eu
-              <br /> placerat molestie. Suspendisse auctor quis quam in semper.
-              <br /> Sed ornare laoreet vulputate. Cras sed placerat elit, vitae
-              mattis <br />
-              sapien. Mauris a ex eu eros tempor congue. Sed eget lacinia
-              <br /> massa, sit amet ullamcorper erat. Nam elementum dui ut ante
+            <h4 className='text-h4'>Lorem ipsum?</h4>
+            <p className='paragraf-terms'>
+              Nullam mi elit, commodo nec ante id, ornare efficitur dui. Nulla
               <br />
-              porta venenatis at a dolor. Proin vestibulum felis non aliquet
+              in quam sed ex aliquam feugiat. In varius risus est.
+            </p>
+            <h4 className='text-h4'>Lorem ipsum dolor sit?</h4>
+            <p className='paragraf-terms'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
               <br />
-              posuere. Donec quis pharetra odio. Sed rhoncus tellus leo, in
-              <br /> elementum turpis iaculis ac. Nullam ut magna felis. Sed
-              <br /> egestas dui id eleifend ullamcorper. Curabitur nisi lorem,
-              <br /> bibendum et eleifend et, gravida et erat.
-              <br /> Maecenas ac varius ipsum. Nullam blandit enim leo, a
-              tristique
-              <br /> justo scelerisque sit amet. Sed dui dolor, convallis id
-              elementum <br />
-              non, mollis eget massa. Proin et egestas nisi. Donec feugiat nibh
+              mi elit, commodo nec ante id, ornare efficitur dui. Nullam mi
+              elit,
               <br />
-              quis arcu rutrum efficitur. Nam eget venenatis odio, at mattis
+              commodo nec ante id, ornare efficitur dui. Nulla in quam sed ex
               <br />
-              lectus. Donec commodo id metus a tristique. Vestibulum at dui
+              aliquam feugiat. In varius risus est.
+            </p>
+            <h4 className='text-terms'>Lorem ipsum?</h4>
+            <p className='paragraf-terms'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              <br /> mi elit, commodo nec ante id, ornare efficitur dui. Nullam
+              mi elit,
               <br />
-              quis risus fringilla rhoncus. Interdum et malesuada fames ac
+              commodo nec ante id, ornare efficitur dui. Nulla in quam sed ex
               <br />
-              ante ipsum primis in faucibus. Donec vel elit vitae elit dapibus
+              aliquam feugiat. In varius risus est.
+            </p>
+            <h4 className='text-terms'>Lorem ipsum dolor sit amet?</h4>
+            <p className='paragraf-terms'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              <br /> mi elit, commodo nec ante id, ornare efficitur dui. Nullam
+              mi elit,
+              <br /> commodo nec ante id, ornare efficitur dui. Nulla in quam
+              sed ex
+              <br /> aliquam feugiat. In varius risus est. Nullam mi elit,
+              commodo
+              <br /> nec ante id, ornare efficitur dui. Nulla in quam sed ex
+              aliquam
+              <br /> feugiat. In varius risus est.
+            </p>
+            <h4 className='text-terms2'>Lorem ipsum?</h4>
+            <p className='paragraf-terms'>
+              Nullam mi elit, commodo nec ante id, ornare efficitur dui. Nulla
               <br />
-              eleifend. Nulla blandit, elit nec egestas condimentum, arcu
-              <br /> nulla euismod risus, nec ultrices felis ipsum eu arcu.
-              Praesent
-              <br /> pharetra tincidunt libero, vel placerat sem ullamcorper
-              nec.
-              <br /> Vestibulum hendrerit, erat a ultricies elementum, nibh
-              dolor <br />
-              eleifend felis, id pharetra tellus est at eros. Donec sodales
-              tellus
-              <br /> vel est maximus, imperdiet fermentum mauris condimentum.
-              <br /> Cras libero est, iaculis non sapien in, feugiat eleifend
-              lectus.
-              <br /> Aenean ultrices dictum rutrum. Suspendisse mattis congue
-              elit <br />
-              at ullamcorper.
+              in quam sed ex aliquam feugiat. In varius risus est.
             </p>
           </div>
         </div>
       </div>
       <div className='footer-terms'>
-        <FooterForRestoran />
+        <FooterForRestaurant />
       </div>
     </div>
   );
