@@ -10,12 +10,13 @@ import BurgerMenu from '../BurgerMenu/BurgerMenu';
 const HeaderRestaurant = () => {
   return (
     <div className='main-header'>
-      <BurgerMenu />
-
       <div className='burger-logo'>
-        <img src={miniLogo} alt='' className='logo-restoran' />
-        <div>
-          <p className='restoran-paragraf'>Moja klopica</p>
+        <BurgerMenu />
+        <div className='div-for-image-and-text'>
+          <img src={miniLogo} alt='' className='logo-restoran' />
+          <div>
+            <p className='restoran-paragraf'>Moja klopica</p>
+          </div>
         </div>
         <div className='input'>
           <span className='prefix'>

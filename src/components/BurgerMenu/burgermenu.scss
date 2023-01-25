@@ -2,7 +2,6 @@
   position: relative;
   margin-top: 20px;
 }
-
 .burger-button {
   display: flex;
   flex-direction: column;
@@ -14,7 +13,6 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .burger-line {
   width: 100%;
   height: 2px;
@@ -22,44 +20,26 @@
   border-radius: 10px;
   transition: all 0.3s ease;
 }
-.burger-line.opet {
-  background-color: #ffff;
-  transition: all 0.3s ease;
-}
 .burger-button.open {
-  transform: rotate(45deg);
+  margin-left: -100px;
 }
-
-.burger-button.open .burger-line:nth-child(1) {
-  transform: rotate(90deg) translate(5px, 5px);
-}
-
-.burger-button.open .burger-line:nth-child(2) {
-  opacity: 0;
-}
-
-.burger-button.open .burger-line:nth-child(3) {
-  transform: rotate(-90deg) translate(5px, -5px);
-}
-
 .menu {
   position: absolute;
   top: 100%;
   width: 300px;
   background: rgba(47, 3, 3, 0.94);
   height: 0;
-  left: -100px;
+  left: 0px;
   overflow: hidden;
   transition: all 0.3s ease;
 }
 
 .menu.open {
   left: -165px;
-  z-index: 20;
   width: 524px;
   top: -35px;
+  z-index: -1;
   height: 1738px;
-  background: rgba(47, 3, 3, 0.94);
 }
 
 .menu a {
