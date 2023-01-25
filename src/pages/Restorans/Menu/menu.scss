@@ -1,5 +1,18 @@
 .main-meni {
-  background: url('../../../images/background-restoran.png');
+  background: url('../../../images/b-for-termsofuse.png');
+  ul li a {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  ul li a:hover {
+    background-color: red;
+    color: #fff;
+  }
 }
 .main-nav-with-meni {
   margin-top: -150px;
@@ -240,19 +253,6 @@ ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
-}
-ul li a {
-  text-decoration: none;
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  font-weight: bold;
-  color: #fff;
-}
-
-ul li a:hover {
-  background-color: red;
-  color: #fff;
 }
 
 .name-food {

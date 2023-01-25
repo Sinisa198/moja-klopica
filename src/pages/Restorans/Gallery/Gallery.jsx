@@ -7,6 +7,17 @@ import leftArrow from '../../../images/arrow-for-slide.svg';
 import rightArrow from '../../../images/icon-right.png';
 
 const Gallery = () => {
+  const btnpressprev = () => {
+    const containerImage = document.querySelector('.product-container');
+    const widthBox = containerImage.clientWidth;
+    containerImage.scrollLeft = containerImage.scrollLeft - widthBox;
+  };
+
+  const btnpressnext = () => {
+    const containerImage = document.querySelector('.product-container');
+    const widthBox = containerImage.clientWidth;
+    containerImage.scrollLeft = containerImage.scrollLeft + widthBox;
+  };
   return (
     <div className='main-galery'>
       <div className='navigation-menu-for-restoran'>
@@ -16,10 +27,29 @@ const Gallery = () => {
         <div className='navigation-menu-for-restoran'>
           <Nav />
         </div>
-        <img src={leftArrow} alt='' className='icon-arrow' />
-        <img src={slideImage} alt='' className='image-for-slide' />
-        <img src={slideImage} alt='' className='image-for-slide2' />
-        <img src={rightArrow} alt='' />
+        <div className='product-carousel'>
+          <img
+            src={leftArrow}
+            alt=''
+            className='pre-btn'
+            onClick={btnpressprev}
+          />
+          <img
+            src={rightArrow}
+            alt=''
+            className='next-btn'
+            onClick={btnpressnext}
+          />
+          <div className='product-container'>
+            <img src={slideImage} alt='' className='p-image' />
+            <img src={slideImage} alt='' className='p-image' />
+            <img src={slideImage} alt='' className='p-image' />
+            <img src={slideImage} alt='' className='p-image' />
+            <img src={slideImage} alt='' className='p-image' />
+            <img src={slideImage} alt='' className='p-image' />
+            <img src={slideImage} alt='' className='p-image' />
+          </div>
+        </div>
       </div>
       <FooterForRestoran />
     </div>

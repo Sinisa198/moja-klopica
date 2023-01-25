@@ -3,13 +3,15 @@ import miniLogo from '../../images/logo-for-gallery.png';
 import firstimageRestoran from '../../images/firstimageRestoran.png';
 import { AiTwotoneStar } from 'react-icons/ai';
 import favorite from '../../images/input-icon-first.svg';
-import arrow from '../../images/input-second-icon.svg';
 import timerIcon from '../../images/timer-for-closed.png';
+import circle from '../../images/circle.svg';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 const HeaderRestaurant = () => {
   return (
     <div className='main-header'>
       <div className='burger-logo'>
+        <BurgerMenu />
         <img src={miniLogo} alt='' className='logo-restoran' />
         <div className='input'>
           <span className='prefix'>
@@ -17,7 +19,7 @@ const HeaderRestaurant = () => {
           </span>
           <input placeholder='Unesite adresu gde se nalazite' />
           <span className='suffix'>
-            <img src={arrow} alt='' className='arrow-icons-input' />
+            <img src={circle} alt='' className='arrow-icons-input' />
           </span>
         </div>
         <div className='button-for-restoran'>

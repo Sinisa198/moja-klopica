@@ -16,10 +16,10 @@ const App = () => {
   return (
     <div className='App'>
       <Routes>
+        <Route path='/' element={<HomePage />} />
         <Route path='/topfood' element={<RestoranTopFood />} />
         <Route path='/navigation' element={<Navigation />} />
         <Route path='/forms' element={<Forms />} />
-        <Route path='/' element={<HomePage />} />
         <Route path='/footer' element={<FooterForRestoran />} />
         <Route path='/menu' element={<Menu />} />
         <Route path='/impressions' element={<Impressions />} />
