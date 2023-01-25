@@ -1,28 +1,32 @@
 import React, { useState } from 'react';
-import { slide as Menu } from 'react-burger-menu';
 import { NavLink } from 'react-router-dom';
 
 const BurgerMenu = () => {
-  const [state] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <Menu isOpen={state.menuOpen}>
-      <NavLink className='menu-item' to='/'>
-        POCETNA
-      </NavLink>
-      <NavLink className='menu-item' to='/topfood'>
-        O RESTORANU
-      </NavLink>
-      <NavLink className='menu-item' to='/menu'>
-        MENI
-      </NavLink>
-      <NavLink className='menu-item' to='/impressions'>
-        UTISCI
-      </NavLink>
-      <NavLink className='menu-item' to='/gallery'>
-        GALERIJA
-      </NavLink>
-    </Menu>
+    <div className='burger-menu'>
+      <button
+        className={`burger-button ${isOpen ? 'open' : ''}`}
+        onClick={toggleMenu}
+      >
+        <div className='burger-line'></div>
+        <div className='burger-line'></div>
+        <div className='burger-line'></div>
+      </button>
+      <nav className={`menu ${isOpen ? 'open' : ''}`}>
+        <NavLink to='/'>POCETNA</NavLink>
+        <NavLink to='/topfood'>O RESTORANU</NavLink>
+        <NavLink to='/menu'>MENI</NavLink>
+        <NavLink to='/impressions'>UTISCI</NavLink>
+        <NavLink to='/gallery'>GALERIJA</NavLink>
+      </nav>
+    </div>
   );
 };
+
 export default BurgerMenu;

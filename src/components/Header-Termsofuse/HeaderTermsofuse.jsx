@@ -2,7 +2,7 @@ import React from 'react';
 import termsofuseLogo from '../../images/logo-for-terms-of-use.png';
 import tan from '../../images/tan-for-terms-of-use.png';
 import favorite from '../../images/input-icon-first.svg';
-import arrow from '../../images/input-second-icon.svg';
+import circle from '../../images/circle.svg';
 import BurgerMenu from '../../components/BurgerMenu/BurgerMenu';
 
 const HeaderTermsofuse = () => {
@@ -10,7 +10,6 @@ const HeaderTermsofuse = () => {
     <div className='App-terms-of-use'>
       <div className='main-terms'>
         <BurgerMenu />
-
         <img src={termsofuseLogo} alt='' className='logo-termsofuse' />
 
         <div className='div-title'>
@@ -20,7 +19,7 @@ const HeaderTermsofuse = () => {
               placeholder='Unesi adresu na kojoj se nalaziš'
               className='inputterms'
             />
-            <img src={arrow} alt='' className='arrow-icon-input' />
+            <img src={circle} alt='' className='arrow-icon-input' />
           </div>
         </div>
         <div className='button-for-restoran-terms'>
