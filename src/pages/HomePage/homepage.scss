@@ -1,7 +1,8 @@
 .home-page-header {
-  background: url('../../images/background-image-for-home-page.png') no-repeat;
-  background-size: 100%;
-  height: 1150px;
+  background-image: url('../../images/background-image-for-home-page.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: '100%';
 
   .main-div-homepage {
     background-color: #ffff;
