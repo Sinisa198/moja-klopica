@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router';
 import { RiStarSFill } from 'react-icons/ri';
 import { AiOutlineStar } from 'react-icons/ai';
 import Forms from '../../components/Forms/Forms';
-import Navigation from '../../components/Navigation/Navigation';
+import Navigation from '../../components/Header/Header';
 import FooterForRestoran from '../../components/Footer/FooterForRestoran';
 import listrestorans from '../../components/data/listrestoranitem';
 import ButtonForRestoran from '../../components/ButtonForRestoran';

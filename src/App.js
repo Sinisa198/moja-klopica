@@ -1,6 +1,6 @@
 import './App.scss';
 import { Route, Routes } from 'react-router-dom';
-import Navigation from './components/Navigation/Navigation';
+import Navigation from './components/Header/Header';
 import Forms from './components/Forms/Forms';
 import HomePage from './pages/HomePage/HomePage';
 import FooterForRestoran from './components/Footer/FooterForRestoran';
