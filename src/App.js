@@ -1,7 +1,6 @@
 import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import Navigation from './components/Header/Header';
-import Forms from './components/Forms/Forms';
 import HomePage from './pages/HomePage/HomePage';
 import FooterForRestoran from './components/Footer/FooterForRestoran';
 import RestoranTopFood from './pages/Restorans/RestoranTopFood';
@@ -18,7 +17,6 @@ const App = () => {
       <Routes>
         <Route path='/topfood' element={<RestoranTopFood />} />
         <Route path='/navigation' element={<Navigation />} />
-        <Route path='/forms' element={<Forms />} />
         <Route path='/' element={<HomePage />} />
         <Route path='/footer' element={<FooterForRestoran />} />
         <Route path='/menu' element={<Menu />} />
