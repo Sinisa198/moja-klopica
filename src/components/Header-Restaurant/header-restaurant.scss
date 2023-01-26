@@ -57,7 +57,7 @@
     border: 1px solid #c63a2f;
     border-radius: 40px;
     margin-top: 10px;
-    margin-left: 150px;
+    margin-left: 300px;
     background-color: #ffff;
   }
   .text-restoran {
@@ -133,6 +133,12 @@
       margin-top: -20px;
       height: 299px;
     }
+  }
+  .logo-restoran {
+    width: 100px;
+    height: 120px;
+    margin-left: 20px;
+    margin-top: -20px;
   }
   .logo-for-restoran {
     margin-left: 120px;
@@ -262,10 +268,10 @@
   .button-restoran {
     width: 194px;
     height: 67px;
-    background: #9d2218;
-    border-radius: 10px;
+    background: transparent;
     font-family: 'Nunito';
-    border: 1px solid #9d2218;
+    border: 4px solid #c10016;
+    border-radius: 40px;
     font-style: normal;
     font-weight: 800;
     font-size: 25px;

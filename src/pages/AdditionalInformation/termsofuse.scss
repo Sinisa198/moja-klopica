@@ -1,5 +1,5 @@
 .App-terms-of-use {
-  background: url('../../images/background-terms.png');
+  background: url('../../images/backgroundtermsofuse.png');
   width: 100%;
   @media screen and (max-width: 768px) {
     width: 187%;
@@ -50,6 +50,7 @@ input {
   border-radius: 40px;
   font-family: 'Nunito';
   font-style: normal;
+  background-color: transparent;
   font-weight: 800;
   font-size: 25px;
   line-height: 34px;
@@ -77,9 +78,9 @@ input {
   position: absolute;
   width: 292px;
   height: 33px;
-  color: green;
   left: 113px;
   top: 200px;
+  column-gap: 20px;
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 800;
@@ -141,7 +142,15 @@ input {
   text-transform: uppercase;
   color: #c63a2f;
 }
-
+.active {
+  box-sizing: border-box;
+  width: 378px;
+  height: 94px;
+  left: 121px;
+  top: 985px;
+  border: 4px solid #c63a2f;
+  border-radius: 40px;
+}
 .second-box-terms {
   position: absolute;
   display: flex;
@@ -197,9 +206,6 @@ input {
   line-height: 36px;
   color: #000000;
 }
-.footer-terms {
-  margin-top: 1280px;
-}
 .hr-for-terms {
   width: 378px;
   height: 1px;
@@ -237,22 +243,6 @@ input {
   input {
     all: unset;
   }
-  .button-restoran {
-    width: 194px;
-    height: 67px;
-    left: 1180px;
-    top: 59px;
-    background: #c63a2f;
-    border-radius: 10px;
-    font-family: 'Nunito';
-    border: 1px solid #c63a2f;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 25px;
-    line-height: 34px;
-    margin-left: 310px;
-    color: #ffffff;
-  }
   .prefix,
   .suffix {
     color: #ffff;
@@ -289,10 +279,6 @@ input {
     font-weight: 800;
     font-size: 24px;
     line-height: 33px;
-    text-decoration: none;
-    cursor: default;
-    pointer-events: none;
-    text-decoration: none;
   }
 
   .lorem-ipsum {
@@ -405,10 +391,6 @@ input {
     font-size: 24px;
     line-height: 36px;
     color: #000000;
-  }
-  .footer-terms {
-    width: 100%;
-    margin-top: 980px;
   }
   .hr-for-terms {
     width: 378px;

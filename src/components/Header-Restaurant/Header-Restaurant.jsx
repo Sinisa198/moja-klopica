@@ -1,19 +1,18 @@
 import logoRestoran from '../../images/logo-restoran.png';
-import miniLogo from '../../images/mini-logo-header.png';
 import firstimageRestoran from '../../images/firstimageRestoran.png';
 import { AiTwotoneStar } from 'react-icons/ai';
 import favorite from '../../images/input-icon-first.svg';
 import arrow from '../../images/input-second-icon.svg';
 import timerIcon from '../../images/timer-for-closed.png';
+import logo from '../../images/logo-klopica.png';
+import burgermenu from '../../images/burgermenu.svg';
 
 const HeaderRestaurant = () => {
   return (
     <div className='main-header'>
       <div className='burger-logo'>
-        <img src={miniLogo} alt='' className='logo-restoran' />
-        <div>
-          <p className='restoran-paragraf'>Moja klopica</p>
-        </div>
+        <img src={burgermenu} alt='' />
+        <img src={logo} alt='' className='logo-restoran' />
         <div className='input'>
           <span className='prefix'>
             <img src={favorite} alt='' className='icon-favorite-input' />

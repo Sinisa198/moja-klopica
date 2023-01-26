@@ -3,11 +3,15 @@ import map from '../../images/map.png';
 import Location from '../../images/location.png';
 import HeaderRestaurant from '../../components/Header-Restaurant/Header-Restaurant';
 import Phone from '../../images/phone.png';
-import listpicture from '../../images/listpicture.png';
-import { RiStarSFill } from 'react-icons/ri';
-import itemsBox from '../../components/data/restoranItems';
 import RestaurantNavigation from '../../components/RestaurantNavigation/RestaurantNavigation';
 import FooterForRestoran from '../../components/Footer/FooterForRestoran';
+import atinaImage from '../../images/restoranatina.png';
+import topFood from '../../images/restorantopfood.png';
+import mimaImage from '../../images/restoranmima.png';
+import leftArrow from '../../images/left-arrow.svg';
+import rightArrow from '../../images/right-arrow.svg';
+import starsImpressions from '../../images/image-star-for-impressions.svg';
+import emptystarr from '../../images/emptystarr.svg';
 
 const RestoranTopFood = () => {
   return (
@@ -42,45 +46,124 @@ const RestoranTopFood = () => {
                 vitae placerat mi maximus. Pellentesque <br />
                 elementum nibh vitae lectus facilisis, in ornare
                 <br /> turpis suscipit.
-                <span className='same-place'>Slična mesta</span>
               </p>
               <div className='location'>
-                <p>Restoran Top Food 021</p>
+                <p className='paragraf-for-location'>Restoran Top Food 021</p>
                 <div className='location-restoran'>
                   <img src={Location} alt='' className='location-image' />
-                  <p>Svetozala Miletica 26, 21000 Novi Sad</p>
+                  <p className='text-for-location'>
+                    Svetozala Miletica 26, 21000 Novi Sad
+                  </p>
                 </div>
                 <div className='phone-restoran'>
                   <img src={Phone} alt='' className='phone-image' />
-                  <p>0644226471</p>
+                  <p className='text-for-location'>0644226471</p>
                 </div>
                 <img src={map} className='image-map' alt='' />
               </div>
             </div>
           </div>
-        </div>
-        <div className='list-restoran-div'>
-          {itemsBox.map((item) => (
-            <div className='main-div' key={item.title + item.paragraf}>
-              <div className='div-for-list-restoran'>
-                <div>
-                  <img
-                    src={listpicture}
-                    alt=''
-                    className='image-div-restoran'
-                  />
-                  <p className='list-paragraf-restoran'>{item.paragraf}</p>
-                  <div className='div-for-title-rating'>
-                    <div className='list-title-restoran'>{item.title}</div>
-                    <div className='rating-div'>
-                      <p className='rating-restoran'>{item.rating}</p>
-                      <RiStarSFill className='rating-star-restoran' />
-                    </div>
-                  </div>
+          <div className='box-for-slide-top-food'>
+            <p className='same-place-restoran'>Slicna mesta</p>
+            <div className='slide-box-together'>
+              <img src={leftArrow} alt='' className='icon-for-slide' />
+
+              <div className='box-together-topfood'>
+                <img src={atinaImage} alt='' className='image-for-slide' />
+                <div className='second-placee'>
+                  <p className='name-for-restoran'>Restoran Atina</p>
+                  <p className='under-name'>RESTORANI Cafe Bar</p>
+                  <p className='rating'>
+                    4.5
+                    <img
+                      src={starsImpressions}
+                      alt=''
+                      className='stars-top-food'
+                    />
+                    <img
+                      src={starsImpressions}
+                      alt=''
+                      className='stars-top-food'
+                    />
+                    <img
+                      src={starsImpressions}
+                      alt=''
+                      className='stars-top-food'
+                    />
+                    <img
+                      src={starsImpressions}
+                      alt=''
+                      className='stars-top-food'
+                    />
+                    <img src={emptystarr} alt='' className='stars-top-food' />
+                  </p>
                 </div>
               </div>
+              <div className='box-together-topfood'>
+                <img src={topFood} alt='' className='image-for-slide' />
+                <div className='second-placee'>
+                  <p className='name-for-restoran'>Restoran Top FOOD 021</p>
+                  <p className='under-name'>RESTORANI * DOmaca Kuhinja</p>
+                  <p className='rating'>
+                    4.5
+                    <img
+                      src={starsImpressions}
+                      alt=''
+                      className='stars-top-food'
+                    />
+                    <img
+                      src={starsImpressions}
+                      alt=''
+                      className='stars-top-food'
+                    />
+                    <img
+                      src={starsImpressions}
+                      alt=''
+                      className='stars-top-food'
+                    />
+                    <img
+                      src={starsImpressions}
+                      alt=''
+                      className='stars-top-food'
+                    />
+                    <img src={emptystarr} alt='' className='stars-top-food' />
+                  </p>
+                </div>
+              </div>
+              <div className='box-together-topfood'>
+                <img src={mimaImage} alt='' className='image-for-slide' />
+                <div className='second-placee'>
+                  <p className='name-for-restoran'>Restoran Mima' s</p>
+                  <p className='under-name'>RESTORANI Cafe Bar</p>
+                  <p className='rating'>
+                    4.5
+                    <img
+                      src={starsImpressions}
+                      alt=''
+                      className='stars-top-food'
+                    />
+                    <img
+                      src={starsImpressions}
+                      alt=''
+                      className='stars-top-food'
+                    />
+                    <img
+                      src={starsImpressions}
+                      alt=''
+                      className='stars-top-food'
+                    />
+                    <img
+                      src={starsImpressions}
+                      alt=''
+                      className='stars-top-food'
+                    />
+                    <img src={emptystarr} alt='' className='stars-top-food' />
+                  </p>
+                </div>
+              </div>
+              <img src={rightArrow} alt='' className='icon-for-slide' />
             </div>
-          ))}
+          </div>
         </div>
       </div>
       <div className='footer-for-home-page'>

@@ -1,8 +1,5 @@
-.footer-for-home-page {
-  margin-top: 200px;
-}
 .restoran-top-food {
-  background: url('../../images/background-restoran.png');
+  background: url('../../images/b-for-all.png');
   width: 100%;
 
   .burger-logo {
@@ -17,6 +14,26 @@
     width: 30px;
     margin-top: 20px;
     height: 20px;
+  }
+  .slide-box-together {
+    display: flex;
+  }
+  .second-placee {
+    background-color: #ffff;
+    width: 470px;
+    border-radius: 0px 0px 30px 30px;
+    height: 150px;
+    padding-left: 30px;
+    padding-top: 40px;
+    margin-top: -20px;
+  }
+  .box-together-topfood {
+    margin-left: 20px;
+  }
+  .first-box-for-slide {
+    margin-left: 200px;
+    width: 208px;
+    height: 494px;
   }
   .main-main-restoran {
     display: flex;
@@ -61,14 +78,54 @@
   .text-and-location {
     display: flex;
     justify-content: center;
-    height: 1416px;
+    height: 716px;
     background: #ffffff;
     box-shadow: 0px 0px 14.3778px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
   }
+  .same-place-restoran {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    padding-left: 60px;
+    line-height: 52px;
+    color: #c63a2f;
+  }
   .background-for-box {
     width: 1316px;
     height: 299px;
+  }
+  .stars-top-food {
+    width: 20px;
+    height: 20px;
+  }
+  .rating {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15.3507px;
+    line-height: 21px;
+    color: #c63a2f;
+  }
+  .under-name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.4725px;
+    line-height: 19px;
+    color: #8a8a8a;
+  }
+  .name-for-restoran {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+  }
+  .icon-for-slide {
+    width: 50px;
   }
   .box-together {
     width: 90%;
@@ -98,6 +155,10 @@
     left: 142px;
     top: 1771px;
     color: gray;
+  }
+  .image-for-slide {
+    width: 500px;
+    height: 350px;
   }
   .image-map {
     width: 373px;
