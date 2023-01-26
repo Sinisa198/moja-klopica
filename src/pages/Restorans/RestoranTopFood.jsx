@@ -3,7 +3,7 @@ import map from '../../images/map.png';
 import Location from '../../images/location.png';
 import HeaderRestaurant from '../../components/Header-Restaurant/Header-Restaurant';
 import Phone from '../../images/phone.png';
-import Nav from '../../components/Nav/Nav';
+import RestaurantNavigation from '../../components/RestaurantNavigation/RestaurantNavigation';
 import FooterForRestoran from '../../components/Footer/FooterForRestoran';
 import atinaImage from '../../images/restoranatina.png';
 import topFood from '../../images/restorantopfood.png';
@@ -22,7 +22,7 @@ const RestoranTopFood = () => {
         </div>
         <div className='navigation-menu'>
           <div className='navigation-menu-for-restoran'>
-            <Nav />
+            <RestaurantNavigation />
           </div>
 
           <div className='main-main-restoran'>

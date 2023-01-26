@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderRestaurant from '../../../components/Header-Restaurant/Header-Restaurant';
-import Nav from '../../../components/Nav/Nav';
+import RestaurantNavigation from '../../../components/RestaurantNavigation/RestaurantNavigation';
 import FooterForRestoran from '../../../components/Footer/FooterForRestoran';
 import ButtonForImpressions from '../../../components/ButtonForImpressions';
 import starsImpressions from '../../../images/image-star-for-impressions.svg';
@@ -14,7 +14,7 @@ const Impressions = () => {
       </div>
       <div className='nav-and-rating'>
         <div className='navigation-menu-for-restoran'>
-          <Nav />
+          <RestaurantNavigation />
         </div>
 
         <div className='impressions-main-div'>

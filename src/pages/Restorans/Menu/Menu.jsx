@@ -1,6 +1,6 @@
 import { React } from 'react';
 import HeaderRestaurant from '../../../components/Header-Restaurant/Header-Restaurant';
-import Nav from '../../../components/Nav/Nav';
+import RestaurantNavigation from '../../../components/RestaurantNavigation/RestaurantNavigation';
 import logoMeni from '../../../images/logo-for-meni.png';
 import FooterForRestoran from '../../../components/Footer/FooterForRestoran';
 import itemsMeni from '../../../components/data/menuitems';
@@ -21,7 +21,7 @@ const Menu = () => {
 
       <div className='main-nav-with-meni'>
         <div className='navigation-menu-for-restoran'>
-          <Nav />
+          <RestaurantNavigation />
         </div>
         <div className='main-main-meni'>
           <div className='meni'>

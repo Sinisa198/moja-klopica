@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from '../../../components/Nav/Nav';
+import RestaurantNavigation from '../../../components/RestaurantNavigation/RestaurantNavigation';
 import HeaderRestaurant from '../../../components/Header-Restaurant/Header-Restaurant';
 import lorem1 from '../../../images/lorem1.png';
 import FooterForRestoran from '../../../components/Footer/FooterForRestoran';
@@ -14,7 +14,7 @@ const Gallery = () => {
       </div>
       <div className='nav-and-galery'>
         <div className='navigation-menu-for-restoran'>
-          <Nav />
+          <RestaurantNavigation />
         </div>
         <div className='main-main-slide'>
           <img src={leftArrow} alt='' />
