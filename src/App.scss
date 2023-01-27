@@ -1,12 +1,14 @@
-@import './components/HomePageHeader/homepageheader.scss';
-@import './components/Header/header.scss';
 @import './pages/HomePage/homepage.scss';
-@import './components/Footer/footer.scss';
 @import './pages/Restorans/restorantopfood.scss';
 @import './pages/Restorans/Menu/menu.scss';
-@import './components/RestaurantNavigation/restaurant-navigation.scss';
-@import './components/Header-Restaurant/header-restaurant.scss';
 @import './pages/Restorans/Impressions/impressions.scss';
 @import './pages/Restorans/Gallery/gallery.scss';
 @import './pages/AdditionalInformation/termsofuse.scss';
+
+@import './components/HomePageHeader/homepageheader.scss';
+@import './components/Header/header.scss';
+@import './components/Footer/footer.scss';
+@import './components/RestaurantNavigation/restaurant-navigation.scss';
+@import './components/Header-Restaurant/header-restaurant.scss';
 @import './components/BurgerMenu/burgermenu.scss';
+@import './components/Accordion/accordion.scss';
