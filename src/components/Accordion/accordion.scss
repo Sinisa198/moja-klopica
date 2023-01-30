@@ -13,7 +13,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 48px;
     text-align: center;
     color: #333333;
@@ -22,17 +22,33 @@
       text-align: center;
     }
   }
-
+  .icon-arrow {
+    display: flex;
+    margin-left: 5px;
+    width: 26px;
+    height: 26px;
+    align-items: center;
+    justify-content: center;
+  }
   .text {
     display: none;
     font-family: 'Poppins';
     width: 350px;
-    float: left;
+    text-align: left;
     font-style: normal;
+    flex-direction: column;
     font-weight: 300;
     font-size: 24px;
     line-height: 36px;
     color: #333333;
+  }
+  .text.show {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-family: 'Nunito';
+    width: 100%;
+    text-align: justify;
   }
 
   .show {

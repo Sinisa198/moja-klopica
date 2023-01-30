@@ -8,14 +8,14 @@ const Accordion = ({ title, text }) => {
   return (
     <div className='accordion'>
       <div className='title'>
-        <p> {title} </p>
-        <span onClick={() => toggle(!selected)}>
+        <div>{title}</div>
+        <div className='icon-arrow' onClick={() => toggle(!selected)}>
           {selected ? (
             <img src={arrowSecond} alt='' />
           ) : (
             <img src={arrowmenu} alt='' />
           )}
-        </span>
+        </div>
       </div>
       <div className={selected ? 'text show' : 'text'}>{text}</div>
     </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const DaysButtons = () => {
-  const [activeButton, setActiveButton] = useState('');
+  const [activeButton, setActiveButton] = useState('button2');
 
   const handleClick = (id) => {
     setActiveButton(id);
@@ -13,8 +13,9 @@ const DaysButtons = () => {
         <button
           id='button1'
           style={{
-            backgroundColor: activeButton === 'button1' ? 'red' : 'white',
-            color: activeButton === 'button1' ? 'white' : 'gray',
+            border: '1px solid lightgray',
+            backgroundColor: activeButton === 'button1' ? '#C10016' : 'white',
+            color: activeButton === 'button1' ? 'white' : ' lightgray',
           }}
           className='button-for-days'
           onClick={() => handleClick('button1')}
@@ -24,8 +25,9 @@ const DaysButtons = () => {
         <button
           id='button2'
           style={{
-            backgroundColor: activeButton === 'button2' ? 'red' : 'white',
-            color: activeButton === 'button2' ? 'white' : 'gray',
+            border: '1px solid lightgray',
+            backgroundColor: activeButton === 'button2' ? '#C10016' : 'white',
+            color: activeButton === 'button2' ? 'white' : ' lightgray',
           }}
           className='button-for-days'
           onClick={() => handleClick('button2')}
@@ -35,8 +37,9 @@ const DaysButtons = () => {
         <button
           id='button3'
           style={{
-            backgroundColor: activeButton === 'button3' ? 'red' : 'white',
-            color: activeButton === 'button3' ? 'white' : 'gray',
+            border: '1px solid lightgray',
+            backgroundColor: activeButton === 'button3' ? '#C10016' : 'white',
+            color: activeButton === 'button3' ? 'white' : 'lightgray',
           }}
           className='button-for-days'
           onClick={() => handleClick('button3')}
@@ -46,10 +49,11 @@ const DaysButtons = () => {
         <button
           id='button4'
           style={{
-            backgroundColor: activeButton === 'button4' ? 'red' : 'white',
-            color: activeButton === 'button4' ? 'white' : 'gray',
+            border: '1px solid lightgray',
+            backgroundColor: activeButton === 'button4' ? '#C10016' : 'white',
+            color: activeButton === 'button4' ? 'white' : 'lightgray',
           }}
-          className='button-for-days'
+          className='button-for-days active'
           onClick={() => handleClick('button4')}
         >
           Cetvrtak
@@ -57,8 +61,9 @@ const DaysButtons = () => {
         <button
           id='button5'
           style={{
-            backgroundColor: activeButton === 'button5' ? 'red' : 'white',
-            color: activeButton === 'button5' ? 'white' : 'gray',
+            border: '1px solid lightgray',
+            backgroundColor: activeButton === 'button5' ? '#C10016' : 'white',
+            color: activeButton === 'button5' ? 'white' : 'lightgray',
           }}
           className='button-for-days'
           onClick={() => handleClick('button5')}
@@ -68,8 +73,9 @@ const DaysButtons = () => {
         <button
           id='button6'
           style={{
-            backgroundColor: activeButton === 'button6' ? 'red' : 'white',
-            color: activeButton === 'button6' ? 'white' : 'gray',
+            border: '1px solid lightgray',
+            backgroundColor: activeButton === 'button6' ? '#C10016' : 'white',
+            color: activeButton === 'button6' ? 'white' : 'lightgray',
           }}
           className='button-for-days'
           onClick={() => handleClick('button6')}
