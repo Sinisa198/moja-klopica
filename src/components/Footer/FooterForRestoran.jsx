@@ -1,70 +1,62 @@
 import React from 'react';
-import logoFooter from '../../images/logo.png';
-import { BsInstagram } from 'react-icons/bs';
-import { GrFacebookOption } from 'react-icons/gr';
-import { SiTiktok } from 'react-icons/si';
-import { BsApple } from 'react-icons/bs';
-import { BiCopyright } from 'react-icons/bi';
-import GoogleplayImage from '../../images/googleplay.png';
-import iconFooter from '../../images/icon-for-footer.png';
-import secondFooter from '../../images/second-icon-footer.png';
-import threeFooter from '../../images/footer-three.svg';
+import { NavLink } from 'react-router-dom';
+import logoFooter from '../../images/logofooter.png';
+import location from '../../images/location.svg';
+import planet from '../../images/planet.png';
+import appBox from '../../images/app-box.svg';
+import googleBox from '../../images/google-box.svg';
+import copyRight from '../../images/copyr.svg';
 
-const FooterForRestoran = () => {
+const Footer = () => {
   return (
-    <div className='footer-main'>
-      <img src={logoFooter} className='logo-footer' alt='' />
-      <div className='box-for-appgoogle-together'>
-        <div className='box-for-appstore'>
-          <div>
-            <BsApple className='icon-apple' />
-            <p className='paragraf-app'>
-              Nabavite na
-              <br />
-              <span className='span-app'>App Store</span>
-            </p>
-          </div>
-          <p className='paragrafApp'></p>
+    <div className='footer-wrapper'>
+      <div className='footer-nav'>
+        <div className='footer-logo'>
+          <img src={logoFooter} alt='' className='logo-for-footer' />
         </div>
-        <div className='box-for-googleplay'>
-          <div>
-            <img src={GoogleplayImage} alt='' className='icons-box' />
+        <div className='footer-links'>
+          <NavLink to='' className='links'>
+            Pocetna
+          </NavLink>
+          <NavLink to='/menu' className='links'>
+            Meni
+          </NavLink>
+          <NavLink to='/about' className='links'>
+            O nama
+          </NavLink>
+        </div>
+        <div className='app-google-box'>
+          <div className='app-box'>
+            <img src={appBox} alt='' />
           </div>
-          <p className='paragrafGoogle'>
-            Nabavite na <br /> <span className='span-google'>Google Play</span>
-          </p>
+          <div className='google-box'>
+            <img src={googleBox} alt='' />
+          </div>
         </div>
       </div>
-      <div className='list-icons'>
-        <div className='links'>
-          <BsInstagram className='iconss' />
-          <GrFacebookOption className='iconss' />
-          <SiTiktok className='iconss' />
-        </div>
-        <p className='paragraf-copyright'>
-          <BiCopyright className='copy-right' />
-          Moja Klopica 2022
-        </p>
-        <div className='line'></div>
-        <div className='location'>
-          <div className='text-for-footer'>
-            <p>
-              <img src={threeFooter} alt='' />
-              Srbija
-            </p>
-            <p>
-              <img src={secondFooter} alt='' />
-              Srpski
-            </p>
-            <p>
-              <img src={iconFooter} alt='' />
-              Pristupačnost
-            </p>
+
+      <hr className='hr-footer' />
+
+      <div className='footer-privacy'>
+        <div className='langue-footer'>
+          <div className='text-and-icon'>
+            <img src={location} alt='' className='icon-location' />
+            Srbija
           </div>
-          <div className='left-text'>
-            <p>Izjava o pristupačnosti</p>
-            <p>Uslovi korišćenja</p>
+          <div className='text-and-icon-second'>
+            <img src={planet} alt='' className='icon-planet' />
+            Srpski
+          </div>
+        </div>
+        <div className='terms-of-use-footer'>
+          <div className='other-termsofuse'>
+            <p>Uslovi koriscenja</p>
             <p>Politika privatnosti</p>
+            <p>FAQ</p>
+          </div>
+          <div className='div-for-copyright'>
+            <img src={copyRight} alt='' className='icon-copyright' />
+            Moja klopica 2022
           </div>
         </div>
       </div>
@@ -72,4 +64,4 @@ const FooterForRestoran = () => {
   );
 };
 
-export default FooterForRestoran;
+export default Footer;
