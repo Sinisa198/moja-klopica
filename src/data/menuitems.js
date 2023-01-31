@@ -1,4 +1,4 @@
-import logoMeni from '../../images/logo-for-meni.png';
+import logoMeni from '../images/logo-for-meni.png';
 
 export const menuitems = [
   {

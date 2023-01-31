@@ -3,7 +3,7 @@ import HeaderRestaurant from '../../../components/Header-Restaurant/Header-Resta
 import RestaurantNavigation from '../../../components/RestaurantNavigation/RestaurantNavigation';
 import logoMeni from '../../../images/logo-for-meni.png';
 import FooterForRestoran from '../../../components/Footer/FooterForRestoran';
-import itemsMeni from '../../../components/data/menuitems';
+import itemsMeni from '../../../data/menuitems';
 import ButtonMenu from '../../../components/ButtonMenu';
 import { useDispatch, useSelector } from 'react-redux';
 import { addFood } from '../../../store/actions/food';
