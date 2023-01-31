@@ -6,17 +6,11 @@
 .footer-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 300px;
   background: #171717;
+  justify-content: space-between;
 
   .footer-links {
     display: flex;
-    flex: 2;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
     .links {
       text-decoration: none;
       width: 101px;
@@ -33,7 +27,6 @@
       flex-direction: column;
       justify-content: center;
       box-sizing: border-box;
-
       align-items: center;
       padding: 10px;
       width: 154px;
@@ -43,86 +36,29 @@
   }
   .footer-logo {
     display: flex;
-    flex: 1;
     width: 154.08px;
     height: 100%;
     align-items: center;
   }
-  .footer-nav {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding-left: 55px;
-    padding-right: 36px;
-  }
+}
+.icon-location,
+.icon-planet,
+.icon-copyright {
+  margin-right: 3px;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 13px;
+}
 
-  .app-google-box {
+.footer-privacy {
+  display: flex;
+  flex-direction: column;
+  .langue-footer {
     display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    .play-store {
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 27px;
-      color: #ffffff;
-    }
-    .app-box {
-      margin-bottom: 20px;
-    }
-    .google-play {
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 27px;
-      color: #ffffff;
-    }
-    .text-box {
-      width: 81.06px;
-      height: 20px;
-      font-weight: 400;
-      font-size: 14.4155px;
-      line-height: 20px;
-      color: #ffffff;
-    }
-  }
-  .icon-location,
-  .icon-planet,
-  .icon-copyright {
-    margin-right: 3px;
-    align-items: center;
-    justify-content: center;
-    width: 14px;
-    height: 13px;
-  }
-  .hr-footer {
-    display: flex;
-    justify-content: center;
-    padding-left: 18px;
-    width: 96%;
-    height: 1px;
-    background-color: #c10016;
-    border: 1px solid #c10016;
-  }
-  .footer-privacy {
-    display: flex;
-    justify-content: space-between;
-    .langue-footer {
-      display: flex;
-      grid-column-gap: 51px;
-      padding-left: 28px;
-      font-family: 'Poppins';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 15px;
-      line-height: 22px;
-      color: #ffffff;
-    }
-  }
-  .terms-of-use-footer {
-    display: flex;
-    padding-right: 38px;
     grid-column-gap: 51px;
+    padding-left: 38px;
+    justify-content: space-between;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -130,30 +66,42 @@
     line-height: 22px;
     color: #ffffff;
   }
-  .text-and-icon {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-  }
-  .text-and-icon-second {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-  }
-  .div-for-copyright {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-  }
-  .other-termsofuse {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    grid-column-gap: 25px;
-  }
+}
+.terms-of-use-footer {
+  display: flex;
+  padding-right: 38px;
+  grid-column-gap: 51px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.text-and-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  grid-column-gap: 30px;
+}
+.text-and-icon-second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.div-for-copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.other-termsofuse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  grid-column-gap: 25px;
 }
