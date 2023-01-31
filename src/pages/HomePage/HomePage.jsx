@@ -4,6 +4,7 @@ import Header from '../../components/Header/Header';
 import listItemsMenu from '../../data/listitemsmenu';
 import WeekButtons from '../../components/WeekButtons/WeekButtons';
 import Accordion from '../../components/Accordion/Accordion';
+import Footer from '../../components/Footer/FooterForRestoran';
 
 const HomePage = () => {
   return (
@@ -29,6 +30,7 @@ const HomePage = () => {
           })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
