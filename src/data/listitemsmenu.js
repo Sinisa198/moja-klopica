@@ -5,7 +5,7 @@ import listimage4 from '../images/listimage4.png';
 import listimage5 from '../images/listimage5.png';
 import listimage6 from '../images/listimage6.png';
 
-export const listitemsformenu = [
+export const listItemsMenu = [
   {
     image: listimage1,
     description: 'Pasulj sa kobasicom ',
@@ -69,4 +69,4 @@ export const listitemsformenu = [
   },
 ];
 
-export default listitemsformenu;
+export default listItemsMenu;

@@ -1,8 +1,8 @@
 import React from 'react';
 import HomePageHeader from '../../components/HomePageHeader/HomePageHeader';
 import Header from '../../components/Header/Header';
-import listitemsmenu from '../../data/listitemsmenu';
-import DaysButtons from '../../components/DayButton/DayButton';
+import listItemsMenu from '../../data/listitemsmenu';
+import WeekButtons from '../../components/WeekButtons/WeekButtons';
 import Accordion from '../../components/Accordion/Accordion';
 
 const HomePage = () => {
@@ -12,17 +12,17 @@ const HomePage = () => {
       <HomePageHeader />
       <div className='div-main-homepage'>
         <p className='restourant-title'>Resotran Top FOOD 021</p>
-        <p className='text-for-meny'>Dnevni meni 1/27/2023</p>
-        <DaysButtons />
+        <p className='text-for-meny'>Dnevni meni 1/31/2023</p>
+        <WeekButtons />
         <div className='main-for-list'>
-          {listitemsmenu.map((items) => {
+          {listItemsMenu.map((item) => {
             return (
-              <div className='together-list-image'>
-                <img src={items.image} alt='' className='image-list' />
-                <Accordion title={items.description} text={items.text} />
+              <div key={item.description} className='together-list-image'>
+                <img src={item.image} alt='' className='image-list' />
+                <Accordion title={item.description} text={item.text} />
                 <div className='div-for-menu-price'>
-                  <p className='menu-price'>{items.menu}</p>
-                  <p className='price'>{items.price}</p>
+                  <p className='menu-price'>{item.menu}</p>
+                  <p className='price'>{item.price}</p>
                 </div>
               </div>
             );

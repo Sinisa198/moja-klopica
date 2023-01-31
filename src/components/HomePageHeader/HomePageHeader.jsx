@@ -21,7 +21,7 @@ const HomePageHeader = () => {
       <div className='div-for-today-meny'>
         <p className='text-menu'>
           Dnevni meni
-          <img src={arrowHomePage} classname='arrow-image-homepage' alt='' />
+          <img src={arrowHomePage} className='arrow-image-homepage' alt='' />
         </p>
       </div>
     </div>

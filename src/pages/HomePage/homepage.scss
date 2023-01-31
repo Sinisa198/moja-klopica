@@ -26,6 +26,10 @@
     border: 2px solid #c10016;
     border-radius: 18px;
   }
+  .div-for-days {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
   .div-for-menu-price {
     display: flex;
     width: 100%;
@@ -91,21 +95,32 @@
     width: 100%;
     justify-content: center;
     grid-column-gap: 20px;
+
+    .button-not-active {
+      width: 200px;
+      height: 67px;
+      color: #28272033;
+      border: 1px solid #44454733;
+      border-radius: 20px;
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 44px;
+    }
   }
-  .button-for-days {
-    box-sizing: border-box;
-    width: 218px;
+  .button-active {
+    background-color: #c10016;
+    color: #ffffff;
+    width: 200px;
     height: 67px;
-    border: 2px solid #444547;
-    border-radius: 40px;
+    border: 1px solid #44454733;
+    border-radius: 20px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
-    opacity: 2;
     line-height: 44px;
-    color: #282720;
-    cursor: pointer;
   }
 
   .list-meni-text {
