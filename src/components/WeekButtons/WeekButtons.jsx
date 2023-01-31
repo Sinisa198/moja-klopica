@@ -36,7 +36,6 @@ const WeekButtons = () => {
           return (
             <DayButton
               key={day.id}
-              id={day.id}
               active={day.id === activeButton}
               text={day.name}
               onPress={() => {
