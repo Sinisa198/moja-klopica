@@ -10,6 +10,7 @@ import Gallery from './pages/Restorans/Gallery/Gallery';
 import FrequentlyAskedQuestions from './pages/AdditionalInformation/FrequentlyAskedQuestions';
 import PrivacyNotices from './pages/AdditionalInformation/PrivacyNotices';
 import TermsOfUse from './pages/AdditionalInformation/TermsOfUse';
+import RestourantTopFood from './pages/RestourantTopFood/RestourantTopFood';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path='/faq' element={<FrequentlyAskedQuestions />} />
         <Route path='/privacynotices' element={<PrivacyNotices />} />
         <Route path='/termsofuse' element={<TermsOfUse />} />
+        <Route path='/restouranttopfood' element={<RestourantTopFood />} />
       </Routes>
     </div>
   );
