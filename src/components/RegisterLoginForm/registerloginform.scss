@@ -1,0 +1,210 @@
+.div-for-forms {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  .div-for-together-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div-for-today-meny {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .text-for-big-title {
+    width: 600px;
+    height: 83px;
+    font-family: 'Londrina Solid', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 83px;
+    text-transform: uppercase;
+    color: #c10016;
+    padding-left: 67px;
+  }
+
+  .lorem-text {
+    width: 525px;
+    height: 104px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 52px;
+    color: #ffffff;
+    padding-left: 67px;
+  }
+  .buttons-for-home-page {
+    display: flex;
+    flex-direction: row;
+    grid-column-gap: 29px;
+    padding-left: 48px;
+    cursor: pointer;
+  }
+  .text-for-buttons {
+    width: 145px;
+    height: 30px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 30px;
+    color: #ffffff;
+    box-sizing: border-box;
+    width: 194px;
+    height: 67px;
+    background-color: transparent;
+    border: 4px solid #c10016;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .text-menu {
+    display: flex;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 34px;
+    color: #ffffff;
+    grid-column-gap: 10px;
+    cursor: pointer;
+  }
+}
+.hr-for-or-left {
+  width: 250px;
+  height: 1px;
+  background: rgba(51, 51, 51, 0.5);
+  border-radius: 100px;
+}
+.hr-for-or-right {
+  width: 250px;
+  height: 1px;
+  background: rgba(51, 51, 51, 0.5);
+  border-radius: 100px;
+}
+.div-for-line {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.icon-and-placeholder {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  grid-column-gap: 10px;
+}
+.div-register-button {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.div-for-login-button {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.modal-content-login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1057px;
+  height: 400px;
+  background: rgba(231, 231, 231, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  padding: 14px 28px;
+  max-width: 700px;
+  min-width: 300px;
+  padding: 81px;
+}
+.validation-form-text {
+  color: red;
+  font-size: 15px;
+}
+.validation-form-text-phone {
+  color: red;
+  font-size: 15px;
+  padding-bottom: 30px;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1057px;
+  height: 686px;
+  background: rgba(231, 231, 231, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  padding: 14px 28px;
+  max-width: 600px;
+  min-width: 300px;
+  padding: 81px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+}
+.title-login {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #333333;
+}
+.hr-input {
+  height: 1px;
+  width: 100%;
+  background: rgba(51, 51, 51, 0.5);
+  border-radius: 100px;
+}
+.div-for-inputs {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  grid-row-gap: 20px;
+  justify-content: center;
+}
+.icon-email-google {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-column-gap: 30px;
+}

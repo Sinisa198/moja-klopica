@@ -1,5 +1,5 @@
 import React from 'react';
-import HomePageHeader from '../../components/HomePageHeader/HomePageHeader';
+import HomePageHeader from '../../components/RegisterLoginForm/RegisterLoginForm';
 import Header from '../../components/Header/Header';
 import listItemsMenu from '../../data/listitemsmenu';
 import WeekButtons from '../../components/WeekButtons/WeekButtons';
@@ -15,6 +15,9 @@ const HomePage = () => {
         <p className='restourant-title'>Resotran Top FOOD 021</p>
         <p className='text-for-meny'>Dnevni meni 1/31/2023</p>
         <WeekButtons />
+        <div className='modal-hiden' id='modal2'>
+          {' '}
+        </div>
         <div className='main-for-list'>
           {listItemsMenu.map((item) => {
             return (

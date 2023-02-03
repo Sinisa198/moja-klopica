@@ -184,3 +184,142 @@
     width: 100%;
   }
 }
+.form__item {
+  position: relative;
+}
+
+.rule {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  margin: 0;
+  margin-bottom: 5px;
+  opacity: 0.5;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.input {
+  padding: 7px;
+  border: 2px solid #dcdcdc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.input:focus {
+  border: 2px solid #8a307f;
+  outline: none;
+}
+
+.fa-eye,
+.fa-eye-slash {
+  position: absolute;
+  right: 10px;
+  transform: translateY(50%);
+  font-size: 1rem;
+  cursor: pointer;
+  color: #606060;
+}
+
+.check {
+  display: none;
+}
+
+.valid .times {
+  display: none;
+}
+
+.valid .check {
+  display: block;
+}
+
+.shake {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+.error {
+  font-size: 0.8rem;
+  color: #e31010;
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.text-paragraf-message {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #c10016;
+}
+
+.modal-content2 {
+  background-color: #e7e7e7;
+  display: inline-block;
+  min-width: 300px;
+  text-align: center;
+  padding: 100px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  background-color: #c10016;
+  border: 1px solid #c10016;
+  border-radius: 30px;
+  height: 54.28px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.register-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #333333;
+}
+.div-icon-validate {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  grid-column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.text-register {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #333333;
+}
+.paragraf-validation {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #c10016;
+  text-align: left;
+}
