@@ -26,10 +26,6 @@
     border: 2px solid #c10016;
     border-radius: 18px;
   }
-  .div-for-days {
-    padding-left: 28px;
-    padding-right: 28px;
-  }
   .div-for-menu-price {
     display: flex;
     width: 100%;
@@ -95,6 +91,9 @@
     width: 100%;
     justify-content: center;
     grid-column-gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
 
     .button-not-active {
       width: 200px;
