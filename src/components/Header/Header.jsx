@@ -15,7 +15,7 @@ const Header = () => {
         <NavLink to='/menu' className='text-for-menu'>
           Meni
         </NavLink>
-        <NavLink to='/about' className='text-for-menu'>
+        <NavLink to='/aboutus' className='text-for-menu'>
           O nama
         </NavLink>
       </div>
