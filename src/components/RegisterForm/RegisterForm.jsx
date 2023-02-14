@@ -4,42 +4,60 @@ import nameIcon from '../../images/name-icon.svg';
 import phoneIcon from '../../images/phone-icon.svg';
 import passwordIcon from '../../images/password-icon.svg';
 import emailIcon from '../../images/email-icon.svg';
-import googleIcon from '../../images/icon-register-left.svg';
-import registerEmail from '../../images/icon-register-right.svg';
 import InputName from '../Inputs/InputName';
 import InputEmail from '../Inputs/InputEmail';
 import InputPhone from '../Inputs/InputPhone';
 import InputPassword from '../Inputs/InputPassword';
-import { validateRegistration } from '../utils/validations';
+import errorImage from '../../images/errorImage.svg';
 
 const RegisterForm = () => {
-  const [data, setData] = useState({});
-  const [valid, setValid] = useState(false);
+  // const [data, setData] = useState({});
+  // const [valid, setValid] = useState(false);
+  const [valueName, setValueName] = useState('');
+  const [valueEmail, setValueEmail] = useState('');
+  const [error, setError] = useState(false);
 
-  function onChange(propName, value) {
-    const newData = { ...data, [propName]: value };
-    setData(newData);
-    setValid(validateRegistration(newData));
-  }
+  const validations = () => {
+    if (valueName?.length < 8) {
+      setError(<img src={errorImage} className='error-image' alt='' />);
+      return false;
+    } else {
+      setError('');
+      return true;
+    }
+  };
+  // const onChange = (propName, value) => {
+  //   const newData = { ...data, [propName]: value };
+  //   setData(newData);
+  //   setValid(validateRegistration(newData));
+  // };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    validations();
+  };
 
   return (
-    <form onSubmit={onChange}>
+    <form onSubmit={handleSubmit}>
       <div className='modal-content'>
         <h4 className='title-login'>REGISTRUJTE SE</h4>
         <div className='div-for-inputs'>
           <div className='input-hr'>
             <div className='icon-and-placeholder'>
               <img src={nameIcon} alt='' />
-
               <InputName
                 type='text'
                 placeholder='Ime i prezime'
                 name='name'
                 className='input-login'
-                onChange={(value) => onChange('name', value)}
+                value={valueName}
+                onChange={(event) => setValueName(event.target.value)}
               />
+              <div className='input-error-message'>
+                {error && <div className='error-message'>{error}</div>}
+              </div>
             </div>
-            <hr className='hr-input' />
+
+            <hr className={!error ? 'hr-input' : 'hr-input-error'} />
           </div>
           <div className='input-hr'>
             <div className='icon-and-placeholder'>
@@ -50,10 +68,13 @@ const RegisterForm = () => {
                 className='input-login'
                 type='email'
                 name='email'
-                require
               />
+              <div className='input-error-message'>
+                {error && <div className='error-message'>{error}</div>}
+              </div>
             </div>
-            <hr className='hr-input' />
+
+            <hr className={!error ? 'hr-input' : 'hr-input-error'} />
           </div>
           <div className='input-hr'>
             <div className='icon-and-placeholder'>
@@ -65,34 +86,48 @@ const RegisterForm = () => {
                 className='input-login'
                 name='password'
               />
+
+              {error && <div className='error-message'>{error}</div>}
             </div>
 
-            <hr className='hr-input' />
+            <hr className={!error ? 'hr-input' : 'hr-input-error'} />
           </div>
+          <div className='input-hr'>
+            <div className='icon-and-placeholder'>
+              <img src={passwordIcon} alt='' />
+
+              <InputPassword
+                type='password'
+                placeholder='Potvrdi sifru'
+                className='input-login'
+                name='password'
+              />
+
+              {error && <div className='error-message'>{error}</div>}
+            </div>
+
+            <hr className={!error ? 'hr-input' : 'hr-input-error'} />
+          </div>
+
           <div className='input-hr'>
             <div className='icon-and-placeholder'>
               <img src={phoneIcon} alt='' />
 
               <InputPhone
                 name='phone'
-                placeholder='Broj telefona'
-                className='input-login'
+                placeholder='+381'
+                className='input-login-phone'
               />
+              <div className='input-error-message'>
+                {error && <div className='error-message'>{error}</div>}
+              </div>
             </div>
 
-            <hr className='hr-input' />
+            <hr className={!error ? 'hr-input-phone' : 'hr-input-error'} />
           </div>
         </div>
         <div className='div-register-button'>
           <ButtonRegister type='submit'>Registrujte se</ButtonRegister>
-        </div>
-        <div className='div-for-line'>
-          <hr className='hr-for-or-left' /> <p>ILI</p>
-          <hr className='hr-for-or-right' />
-        </div>
-        <div className='icon-email-google'>
-          <img src={googleIcon} alt='' />
-          <img src={registerEmail} alt='' />
         </div>
       </div>
     </form>

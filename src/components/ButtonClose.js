@@ -6,7 +6,7 @@ flex-direction:column;
 justify-content:center;
 text-align-center;
 align-items:center;
-width:500px;
+width:350px;
 background-color:#C10016;
 border:1px solid #C10016;
 border-radius:30px;
@@ -18,6 +18,7 @@ font-size: 28px;
 line-height: 42px;
 color: #FFFFFF;
 cursor:pointer;
+
 `;
 
 const ButtonRegister = ({ className, id, children, callbackAction }) => {

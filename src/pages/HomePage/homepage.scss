@@ -10,21 +10,32 @@
   }
   .restourant-title {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     font-family: 'Poppins';
-    margin-left: 37px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #c10016;
+    text-align: center;
+  }
+  .div-for-title-homepage {
+    height: 100%;
+  }
+  .paragraf {
+    text-align: center;
+    width: 100%;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-    color: #c10016;
-    box-sizing: border-box;
-    width: 388px;
-    height: 50px;
-    border: 2px solid #c10016;
-    border-radius: 18px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+  }
+  .home-page-hr {
+    width: 170px;
   }
   .div-for-days {
     padding-left: 28px;
@@ -211,16 +222,6 @@
 .input:focus {
   border: 2px solid #8a307f;
   outline: none;
-}
-
-.fa-eye,
-.fa-eye-slash {
-  position: absolute;
-  right: 10px;
-  transform: translateY(50%);
-  font-size: 1rem;
-  cursor: pointer;
-  color: #606060;
 }
 
 .check {

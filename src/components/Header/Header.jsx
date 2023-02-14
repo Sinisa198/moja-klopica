@@ -12,8 +12,8 @@ const Header = () => {
         <NavLink to='/' className='text-for-menu'>
           Pocetna
         </NavLink>
-        <NavLink to='/menu' className='text-for-menu'>
-          Meni
+        <NavLink to='/reservation' className='text-for-menu'>
+          Rezervisi
         </NavLink>
         <NavLink to='/about' className='text-for-menu'>
           O nama

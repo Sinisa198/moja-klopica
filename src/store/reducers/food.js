@@ -1,4 +1,4 @@
-import { ADD_FOOD } from '../actions/food';
+import { ADD_FOOD, REMOVE_FROM_CART } from '../actions/food';
 
 let initState = {
   foods: [],
@@ -11,7 +11,6 @@ const foodReducer = (state = initState, action) => {
       const sameFoodIndex = state.foods.findIndex(
         (food) => food.name === action.payload.name
       );
-
       if (sameFoodIndex >= 0) {
         let foods = [...state.foods];
         foods[sameFoodIndex] = {
@@ -36,6 +35,9 @@ const foodReducer = (state = initState, action) => {
 
     default:
       return state;
+    case REMOVE_FROM_CART:
+      const itemId = action.payload;
+      state.foods.filter((item) => item.id !== itemId);
   }
 };
 

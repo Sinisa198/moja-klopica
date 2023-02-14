@@ -1,9 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import arrowHomePage from '../../images/arrow-homepage.png';
 import LoginForm from '../LoginForm/LoginForm';
 import RegisterForm from '../RegisterForm/RegisterForm';
 
 const RegisterLoginForm = () => {
+  const [scrollAmount, setScrollAmount] = useState(0);
+
+  const handleClick = () => {
+    window.scroll({
+      top: scrollAmount + window.innerHeight,
+      behavior: 'smooth',
+    });
+    setScrollAmount(scrollAmount + window.innerHeight);
+  };
+
   const [modalRegister, setModalRegister] = useState(false);
   const [modalLogin, setModalLogin] = useState(false);
 
@@ -46,9 +56,14 @@ const RegisterLoginForm = () => {
         </div>
       </div>
       <div className='div-for-today-meny'>
-        <p className='text-menu'>
+        <p className='text-menu' onClick={handleClick}>
           Ponuda
-          <img src={arrowHomePage} className='arrow-image-homepage' alt='' />
+          <img
+            src={arrowHomePage}
+            onClick={handleClick}
+            className='arrow-image-homepage'
+            alt=''
+          />
         </p>
       </div>
 
