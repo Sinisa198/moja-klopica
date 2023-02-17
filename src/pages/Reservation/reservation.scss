@@ -1,0 +1,248 @@
+.reservation-wrapper {
+  .accordion {
+    max-width: 269px;
+    .title {
+      font-size: 22px;
+      line-height: 20px;
+    }
+    .text.show {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #333333;
+    }
+  }
+  .reservation-inc-dec {
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+  }
+  .title-reservation {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+    color: #c10016;
+  }
+
+  .reservation-main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .day-menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0px 20px 0px 20px;
+      grid-column-gap: 5px;
+      padding-bottom: 40px;
+    }
+  }
+  .paragraf-reservation {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #333333;
+    .reservation-hr {
+      width: 150px;
+    }
+  }
+  .day-reservation {
+    text-align: center;
+  }
+}
+.image-list-reservation {
+  width: 395px;
+  height: 362px;
+}
+.arrow-for-menu {
+  cursor: pointer;
+  flex-direction: column;
+}
+.together-list-image-reservation {
+  max-width: 395px;
+  width: 100%;
+}
+.main-for-list-reservation {
+  display: flex;
+  grid-column-gap: 30px;
+  padding-top: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.div-for-menu-price-reservation {
+  display: flex;
+  width: 100%;
+  max-width: 229px;
+  text-align: center;
+  grid-column-gap: 10px;
+  justify-content: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #333333;
+}
+.incremente-decremente {
+  border: 1px solid #c10016;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+}
+.inc-dec {
+  display: flex;
+  width: 100%;
+  max-width: 229px;
+  flex-direction: row;
+  grid-column-gap: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+.price-reservation {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #c10016;
+}
+.image-reservation {
+  width: 100%;
+  max-width: 103px;
+  max-height: 94px;
+  border-radius: 30px;
+  padding-left: 25px;
+}
+.hr-for-reservation {
+  width: 343px;
+  height: 1px;
+  background: rgba(193, 0, 22, 0.2);
+  border-radius: 40px;
+}
+.button-reservation {
+  max-width: 229px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.menu-for-text-reservation {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  height: 35px;
+}
+.image-list-reservation {
+  max-width: 229px;
+  max-height: 209.87px;
+}
+.button-active {
+  background-color: #c10016;
+  color: #ffffff;
+  width: 150px;
+  grid-column-gap: 20px;
+  height: 67px;
+  border: 1px solid #44454733;
+  border-radius: 20px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 44px;
+}
+.confirm-reservation {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button-not-active {
+  width: 150px;
+  height: 67px;
+  color: #28272033;
+  border: 1px solid #44454733;
+  border-radius: 20px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 44px;
+}
+.name-and-count {
+  padding-right: 20px;
+}
+.cart {
+  width: 100%;
+  max-width: 413px;
+  max-height: 647px;
+  flex-direction: column;
+  background: rgba(217, 217, 217, 0.22);
+  border-radius: 40px;
+
+  .title-cart {
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+  }
+  .name-food {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+  }
+  .main-reservation-cart {
+    display: flex;
+    flex-direction: row;
+    grid-column-gap: 20px;
+  }
+  .count-reservation {
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    align-items: center;
+    grid-column-gap: 10px;
+  }
+  .hr-div {
+    align-items: center;
+    align-items: left;
+    width: 300px;
+  }
+  .hr-reservation {
+    height: 1px;
+    background: rgba(193, 0, 22, 33);
+    border-radius: 40px;
+  }
+  .price-reservation {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+  }
+  .delete-icon-price {
+    flex-direction: column;
+  }
+  .remove-icon-reservation {
+    display: flex;
+    cursor: pointer;
+  }
+}
