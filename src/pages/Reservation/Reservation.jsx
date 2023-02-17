@@ -4,6 +4,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import listItemsMenu from '../../data/listitemsmenu';
 import Accordion from '../../components/Accordion/Accordion';
 import { addFood } from '../../store/actions/food';
+import ReservationButton from '../../components/Buttons/ReservationButton';
+import ConfirmReservation from '../../components/Buttons/ConfirmReservation';
+import removeFood from '../../images/removereservation.svg';
 
 const Reservation = () => {
   const [product, setProducts] = useState(1);
@@ -17,9 +20,9 @@ const Reservation = () => {
     if (product < 20) setProducts((product) => Number(product) + 1);
   };
   const dispatch = useDispatch();
+
   const { sum, foods } = useSelector(({ food }) => food);
   const [date, setDate] = useState(new Date());
-
   useEffect(() => {
     const intervalId = setInterval(() => {
       setDate(new Date());
@@ -44,10 +47,7 @@ const Reservation = () => {
 
           {listItemsMenu.map((item) => {
             return (
-              <div
-                key={item.description}
-                className='together-list-image-reservation'
-              >
+              <div key={item.id} className='together-list-image-reservation'>
                 <img
                   src={item.image}
                   alt=''
@@ -74,7 +74,7 @@ const Reservation = () => {
                   </span>
                 </div>
                 <div className='button-reservation'>
-                  <button
+                  <ReservationButton
                     callbackAction={() =>
                       dispatch(
                         addFood({
@@ -86,13 +86,12 @@ const Reservation = () => {
                     }
                   >
                     Rezervisi
-                  </button>
+                  </ReservationButton>
                 </div>
               </div>
             );
           })}
         </div>
-        <div></div>
         <div className='cart'>
           <p className='title-cart'>KORPA</p>
 
@@ -108,7 +107,12 @@ const Reservation = () => {
                     <p className='reservation-inc-dec'>+</p>
                   </div>
                   <div className='delete-icon-price'>
-                    <p>{food.price}</p>
+                    <img
+                      src={removeFood}
+                      alt=''
+                      className='icon-remove-reservation'
+                    />
+                    <p>{food.price} RSD</p>
                   </div>
                 </div>
               </div>
@@ -118,7 +122,7 @@ const Reservation = () => {
             Ukupno : <span className='sum-price'>{sum} RSD</span>
           </p>
           <div className='confirm-reservation'>
-            <button>Potvrdi rezervaciju</button>
+            <ConfirmReservation>Potvrdi rezervaciju</ConfirmReservation>
           </div>
         </div>
       </div>

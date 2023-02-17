@@ -1,4 +1,4 @@
-import { ADD_FOOD } from '../actions/food';
+import { ADD_FOOD, REMOVE_FROM_CART } from '../actions/food';
 
 let initState = {
   foods: [],

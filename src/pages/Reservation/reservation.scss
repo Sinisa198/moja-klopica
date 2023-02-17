@@ -239,10 +239,17 @@
     color: #333333;
   }
   .delete-icon-price {
-    flex-direction: column;
-  }
-  .remove-icon-reservation {
     display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-direction: column;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-remove-reservation {
     cursor: pointer;
+    max-width: 28px;
+    max-height: 22px;
   }
 }
