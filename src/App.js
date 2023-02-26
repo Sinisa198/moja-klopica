@@ -9,6 +9,10 @@ import Impressions from './pages/Restorans/Impressions/Impressions';
 import Gallery from './pages/Restorans/Gallery/Gallery';
 import PrivacyNotices from './pages/AdditionalInformation/PrivacyNotices';
 import TermsOfUse from './pages/AdditionalInformation/TermsOfUse';
+import Reservation from './pages/Reservation/Reservation';
+import MyReservation from './pages/MyReservation/MyReservation';
+import ChangeProfile from './pages/ChangeProfile/ChangeProfile';
+
 import RestourantTopFood from './pages/RestourantTopFood/RestourantTopFood';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Faq from './pages/AboutUs/Faq';
@@ -29,6 +33,9 @@ const App = () => {
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/privacynotices' element={<PrivacyNotices />} />
         <Route path='/termsofuse' element={<TermsOfUse />} />
+        <Route path='/reservation' element={<Reservation />} />
+        <Route path='/myreservation' element={<MyReservation />} />
+        <Route path='/changeprofile' element={<ChangeProfile />} />
         <Route path='/restouranttopfood' element={<RestourantTopFood />} />
         <Route path='/aboutus' element={<AboutUs />} />
         <Route path='/aboutus/faq' element={<Faq />} />

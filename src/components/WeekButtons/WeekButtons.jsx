@@ -1,4 +1,12 @@
 import React, { useState } from 'react';
+import DayButton from '../DayButton';
+import days from '../../data/days';
+
+const WeekButtons = () => {
+  const now = Date.now();
+  const id = new Date(now).getDay();
+
+  const [activeButton, setActiveButton] = useState('5');
 import PrimaryButton from '../PrimaryButton/PrimaryButton';
 import days from '../../data/days';
 
