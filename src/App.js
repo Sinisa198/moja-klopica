@@ -11,6 +11,8 @@ import FrequentlyAskedQuestions from './pages/AdditionalInformation/FrequentlyAs
 import PrivacyNotices from './pages/AdditionalInformation/PrivacyNotices';
 import TermsOfUse from './pages/AdditionalInformation/TermsOfUse';
 import Reservation from './pages/Reservation/Reservation';
+import MyReservation from './pages/MyReservation/MyReservation';
+import ChangeProfile from './pages/ChangeProfile/ChangeProfile';
 
 const App = () => {
   return (
@@ -27,6 +29,8 @@ const App = () => {
         <Route path='/privacynotices' element={<PrivacyNotices />} />
         <Route path='/termsofuse' element={<TermsOfUse />} />
         <Route path='/reservation' element={<Reservation />} />
+        <Route path='/myreservation' element={<MyReservation />} />
+        <Route path='/changeprofile' element={<ChangeProfile />} />
       </Routes>
     </div>
   );

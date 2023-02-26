@@ -1,7 +1,7 @@
 export const ADD_FOOD = 'ADD_FOOD';
 export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
-export const INCREMENTE = 'INCREMENTE';
-export const DECREMENTE = 'DECREMENTE';
+export const INCREMENT = 'INCREMENT';
+export const DECREMENT = 'DECREMENT';
 
 export const addFood = (payload) => {
   return {
@@ -10,25 +10,22 @@ export const addFood = (payload) => {
   };
 };
 
-export const removeFromCart = (productId) => {
+export const removeFromCart = (payload) => {
   return {
-    type: 'REMOVE_FROM_CART',
-    payload: {
-      productId: productId,
-    },
-  };
-};
-
-export const incremente = (payload) => {
-  return {
-    type: INCREMENTE,
+    type: REMOVE_FROM_CART,
     payload,
   };
 };
 
-export const decremente = (payload) => {
+export const incrementCart = (payload) => {
   return {
-    type: DECREMENTE,
+    type: INCREMENT,
+    payload,
+  };
+};
+export const decrementCart = (payload) => {
+  return {
+    type: DECREMENT,
     payload,
   };
 };

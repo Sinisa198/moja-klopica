@@ -1,34 +1,12 @@
 import React, { useState } from 'react';
 import DayButton from '../DayButton';
+import days from '../../data/days';
 
 const WeekButtons = () => {
-  const [activeButton, setActiveButton] = useState('2');
-  const days = [
-    {
-      id: '1',
-      name: 'Ponedeljak',
-    },
-    {
-      id: '2',
-      name: 'Utorak',
-    },
-    {
-      id: '3',
-      name: 'Sreda',
-    },
-    {
-      id: '4',
-      name: 'Cetvrtak',
-    },
-    {
-      id: '5',
-      name: 'Petak',
-    },
-    {
-      id: '6',
-      name: 'Subota',
-    },
-  ];
+  const now = Date.now();
+  const id = new Date(now).getDay();
+
+  const [activeButton, setActiveButton] = useState('5');
   return (
     <div className='div-for-days'>
       <div className='day-menu'>

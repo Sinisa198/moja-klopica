@@ -1,6 +1,6 @@
 import style from 'styled-components';
 
-const ReservationButton = style.button`
+const AgainReservation = style.button`
   
   background: #c63a2f;
   border: 1.19648px solid #d9d9d9;
@@ -8,23 +8,24 @@ const ReservationButton = style.button`
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px;
-  width: 193px;
-  height: 51.89px;
+  width:100%;
+  max-width: 280.11px;
+  height: 53px;
   color: #ffffff;
-  cursor: pointer;
+  cursor:pointer;
 `;
 
-const ButtonMenu = ({ type, id, children, callbackAction }) => {
+const ButtonMenu = ({ type, id, children, handleClick }) => {
   return (
-    <ReservationButton
-      onClick={callbackAction}
+    <AgainReservation
       type={type ? type : 'button'}
       id={id}
+      onClick={handleClick}
     >
       {children}
-    </ReservationButton>
+    </AgainReservation>
   );
 };
 

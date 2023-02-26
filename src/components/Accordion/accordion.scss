@@ -3,7 +3,9 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-
+  .inc-dec {
+    display: none;
+  }
   .title {
     display: flex;
     flex-direction: row;
@@ -48,7 +50,6 @@
     font-size: 24px;
     font-family: 'Nunito';
     width: 100%;
-    text-align: justify;
   }
 
   .show {

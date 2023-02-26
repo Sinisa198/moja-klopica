@@ -13,6 +13,7 @@ export const listItemsMenu = [
     menu: 'MENI 1 - ',
     price: 460,
     text: 'Lorem ipsum dolor sit\n amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros',
+    count: 1,
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ export const listItemsMenu = [
     menu: 'MENI 2 - ',
     price: 560,
     text: 'Lorem ipsum dolor sit amet\n, consectetuer adipiscing elit.\n Donec odio. Quisque volutpat\n mattis eros',
+    count: 1,
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ export const listItemsMenu = [
     menu: 'MENI 2 - ',
     price: 560,
     text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros',
+    count: 1,
   },
   {
     id: 4,
@@ -37,6 +40,7 @@ export const listItemsMenu = [
     menu: 'MENI 2 - ',
     price: 560,
     text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros',
+    count: 1,
   },
   {
     id: 5,
@@ -45,6 +49,7 @@ export const listItemsMenu = [
     menu: 'MENI 2 - ',
     price: 560,
     text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros',
+    count: 1,
   },
   {
     id: 6,
@@ -54,6 +59,7 @@ export const listItemsMenu = [
     price: 630,
 
     text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros',
+    count: 1,
   },
   {
     id: 7,
@@ -61,6 +67,7 @@ export const listItemsMenu = [
     description: 'Paradajz corba',
     price: 200,
     text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros',
+    count: 1,
   },
   {
     id: 8,
@@ -68,6 +75,7 @@ export const listItemsMenu = [
     description: 'Pire krompir',
     menu: 'Uz glavno jelo',
     text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros',
+    count: 1,
   },
   {
     id: 9,
@@ -75,6 +83,7 @@ export const listItemsMenu = [
     description: 'Rizi bizi',
     menu: 'Uz glavno jelo',
     text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros',
+    count: 1,
   },
 ];
 

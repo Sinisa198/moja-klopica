@@ -1,131 +1,114 @@
 import React, { useState, useEffect } from 'react';
-import WeekButtons from '../../components/WeekButtons/WeekButtons';
 import { useSelector, useDispatch } from 'react-redux';
-import listItemsMenu from '../../data/listitemsmenu';
-import Accordion from '../../components/Accordion/Accordion';
-import { addFood } from '../../store/actions/food';
-import ReservationButton from '../../components/Buttons/ReservationButton';
+
+import ModalReservation from '../../components/ModalReservation/ModalReservation';
+import Header from '../../components/Header/Header';
 import ConfirmReservation from '../../components/Buttons/ConfirmReservation';
 import removeFood from '../../images/removereservation.svg';
+import {
+  removeFromCart,
+  incrementCart,
+  decrementCart,
+} from '../../store/actions/food';
+import Footer from '../../components/Footer/FooterForRestoran';
+import FoodCard from '../../components/Accordion/FoodCard';
 
 const Reservation = () => {
-  const [product, setProducts] = useState(1);
-  const submitHandler = (event) => {
-    event.preventDefault();
-  };
-  const handleDecremente = () => {
-    if (product > 1) setProducts((product) => Number(product) - 1);
-  };
-  const handleIncremente = () => {
-    if (product < 20) setProducts((product) => Number(product) + 1);
-  };
+  const [showModal, setShowModal] = useState(false);
+  const [date, setDate] = useState(new Date());
   const dispatch = useDispatch();
 
-  const { sum, foods } = useSelector(({ food }) => food);
-  const [date, setDate] = useState(new Date());
+  const { sum, cart } = useSelector(({ food }) => food);
+
+  const showModalMessage = () => {
+    if (cart.length >= 1) {
+      setShowModal(true);
+    }
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
   useEffect(() => {
     const intervalId = setInterval(() => {
       setDate(new Date());
-    }, 1000);
+    });
 
     return () => clearInterval(intervalId);
   }, []);
 
   return (
     <div className='reservation-wrapper'>
+      <div className='header-reservation'>
+        <Header />
+      </div>
+
       <p className='title-reservation'>Restoran Top FOOD 021</p>
-      <p className='paragraf-reservation'>
-        OPSTE INFORMACIJE
-        <hr className='reservation-hr' />
-      </p>
-
+      <p className='paragraf-reservation'>OPSTE INFORMACIJE</p>
       <p className='day-reservation'>Dnevni meni {date.toLocaleDateString()}</p>
-
-      <div className='reservation-main'>
-        <div className='main-for-list-reservation'>
-          <WeekButtons />
-
-          {listItemsMenu.map((item) => {
-            return (
-              <div key={item.id} className='together-list-image-reservation'>
-                <img
-                  src={item.image}
-                  alt=''
-                  className='image-list-reservation'
-                />
-                <Accordion title={item.description} text={item.text} />
-                <div className='div-for-menu-price-reservation'>
-                  <p className='menu-price-reservation'>{item.menu}</p>
-                  <p className='price-reservation'>{item.price} din </p>
-                </div>
-                <div className='inc-dec'>
-                  <span
-                    className='incremente-decremente'
-                    onClick={handleDecremente}
-                  >
-                    -
-                  </span>
-                  <p onChange={submitHandler}>{product}</p>
-                  <span
-                    className='incremente-decremente'
-                    onClick={handleIncremente}
-                  >
-                    +
-                  </span>
-                </div>
-                <div className='button-reservation'>
-                  <ReservationButton
-                    callbackAction={() =>
-                      dispatch(
-                        addFood({
-                          name: item.description,
-                          price: item.price,
-                          image: item.image,
-                        })
-                      )
-                    }
-                  >
-                    Rezervisi
-                  </ReservationButton>
-                </div>
-              </div>
-            );
-          })}
+      <div>
+        <div className='modal-reservation' onClick={handleCloseModal}>
+          {showModal && <ModalReservation />}
         </div>
+      </div>
+      <div className='reservation-main'>
+        <FoodCard />
         <div className='cart'>
           <p className='title-cart'>KORPA</p>
 
-          {foods.map((food) => {
+          {cart.map((food) => {
             return (
               <div className='main-reservation-cart' key={food.id}>
                 <img src={food.image} alt='' className='image-reservation' />
                 <div className='name-inc-dec'>
                   <p>{food.name}</p>
                   <div className='count-reservation'>
-                    <p className='reservation-inc-dec'>-</p>
-                    <p>1</p>
-                    <p className='reservation-inc-dec'>+</p>
+                    <p
+                      className='reservation-inc-dec'
+                      onClick={() => dispatch(decrementCart(food.id))}
+                    >
+                      -
+                    </p>
+                    <p>{food.count}</p>
+                    <p
+                      className='reservation-inc-dec'
+                      onClick={() => dispatch(incrementCart(food.id))}
+                    >
+                      +
+                    </p>
                   </div>
                   <div className='delete-icon-price'>
                     <img
+                      onClick={() =>
+                        dispatch(
+                          removeFromCart({
+                            id: food.id,
+                            price: food.price,
+                          })
+                        )
+                      }
                       src={removeFood}
                       alt=''
                       className='icon-remove-reservation'
                     />
-                    <p>{food.price} RSD</p>
+                    <p>{food.price * food.count} RSD</p>
                   </div>
                 </div>
               </div>
             );
           })}
-          <p className='total-price'>
+
+          <div className='total-price'>
             Ukupno : <span className='sum-price'>{sum} RSD</span>
-          </p>
+          </div>
           <div className='confirm-reservation'>
-            <ConfirmReservation>Potvrdi rezervaciju</ConfirmReservation>
+            <ConfirmReservation handleClick={showModalMessage}>
+              Potvrdi rezervaciju
+            </ConfirmReservation>
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

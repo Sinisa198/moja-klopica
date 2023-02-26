@@ -1,6 +1,6 @@
 import style from 'styled-components';
 
-const ConfirmReservation = style.button`
+const Confirm = style.button`
   
   background: #c63a2f;
   border: 1.19648px solid #d9d9d9;
@@ -18,13 +18,9 @@ const ConfirmReservation = style.button`
 
 const ButtonMenu = ({ type, id, children, handleClick }) => {
   return (
-    <ConfirmReservation
-      type={type ? type : 'button'}
-      id={id}
-      onClick={handleClick}
-    >
+    <Confirm type={type ? type : 'button'} id={id} onClick={handleClick}>
       {children}
-    </ConfirmReservation>
+    </Confirm>
   );
 };
 
