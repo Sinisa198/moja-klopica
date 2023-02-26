@@ -56,3 +56,40 @@
     display: block;
   }
 }
+.accordion-about-us {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.accordion-item {
+  justify-content: center;
+  width: 900px;
+  color: black;
+}
+.accordion-title-aboutus {
+  display: flex;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #c10016;
+  justify-content: space-between;
+  padding: 10px;
+}
+.accordion-icon-aboutus {
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.content-aboutus {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  margin-left: 10px;
+  text-align: left;
+  color: #333333;
+}

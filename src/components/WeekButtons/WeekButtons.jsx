@@ -7,12 +7,18 @@ const WeekButtons = () => {
   const id = new Date(now).getDay();
 
   const [activeButton, setActiveButton] = useState('5');
+import PrimaryButton from '../PrimaryButton/PrimaryButton';
+import days from '../../data/days';
+
+const WeekButtons = () => {
+  const [activeButton, setActiveButton] = useState('2');
+
   return (
     <div className='div-for-days'>
       <div className='day-menu'>
         {days.map((day) => {
           return (
-            <DayButton
+            <PrimaryButton
               key={day.id}
               active={day.id === activeButton}
               text={day.name}

@@ -1,0 +1,83 @@
+.restourant-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.div-for-header-background {
+  background-color: #c50016;
+}
+.main-div-restourant {
+  background-color: #ffff;
+}
+.div-wrapper-restourant {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.image-list {
+  padding: 30px;
+}
+.list-image {
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+}
+.gallery-text {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+  padding-left: 68px;
+}
+.div-image-map {
+  padding-top: 60px;
+  background-color: #ffff;
+  align-items: right;
+  justify-content: right;
+}
+.title-restourant {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  color: #c10016;
+}
+.day-restourant,
+.phone-restourant,
+.adress-restourant {
+  padding: 10px;
+  grid-column-gap: 10px;
+  display: flex;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+.paragraf-text-restourant {
+  position: absolute;
+  padding-left: 20px;
+  width: 536px;
+  height: 260px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #333333;
+}
+.main-div-restourant {
+  padding-top: 88px;
+  padding-left: 61px;
+}
+.map-image {
+  width: 503px;
+  height: 521px;
+  padding-right: 73px;
+}
