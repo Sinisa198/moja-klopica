@@ -4,6 +4,7 @@
 @import './pages/Restorans/Impressions/impressions.scss';
 @import './pages/Restorans/Gallery/gallery.scss';
 @import './pages/AdditionalInformation/termsofuse.scss';
+@import './components/RegisterLoginForm/registerloginform.scss';
 @import './components/HomePageHeader/homepageheader.scss';
 @import './components/Header/header.scss';
 @import './components/Footer/footer.scss';
@@ -11,6 +12,8 @@
 @import './components/Header-Restaurant/header-restaurant.scss';
 @import './components/BurgerMenu/burgermenu.scss';
 @import './components/Accordion/accordion.scss';
+@import './components/SuccesMessageRegister/succesmessageregister.scss';
+@import './components/SuccesMessageRegister/forget-password.scss';
 @import './pages/Reservation/reservation.scss';
 @import './components/ModalReservation/modalreservation.scss';
 @import './components/DropDown/dropdown.scss';

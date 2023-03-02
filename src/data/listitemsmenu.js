@@ -57,7 +57,6 @@ export const listItemsMenu = [
     description: 'Butkica u sosu od rena',
     menu: 'MENI 3 - ',
     price: 630,
-
     text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros',
     count: 1,
   },

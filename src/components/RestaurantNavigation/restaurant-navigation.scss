@@ -27,6 +27,7 @@
     border-radius: 40px;
     text-decoration: none;
   }
+
   .nav-galery,
   .nav-impressions,
   .nav-restoran,
@@ -39,6 +40,7 @@
     margin-top: 30px;
     margin-left: 85px;
   }
+
   .paragraf-meni {
     margin-top: 35px;
     margin-left: 15px;
@@ -226,4 +228,9 @@
   display: flex;
   width: 100%;
   justify-content: center;
+}
+.hr-input-error {
+  background-color: red;
+  color: red;
+  height: 2px;
 }
