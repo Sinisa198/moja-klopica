@@ -3,8 +3,12 @@ import React, { useState } from 'react';
 import arrowmenu from './../../images/arrowmenu.svg';
 import arrowSecond from './../../images/arrow-second.svg';
 
-const Accordion = ({ title, text }) => {
+const Accordion = ({ title, text, count, updateCount }) => {
   const [selected, toggle] = useState(false);
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+  };
   return (
     <div className='accordion'>
       <div className='title'>
@@ -18,6 +22,11 @@ const Accordion = ({ title, text }) => {
         </div>
       </div>
       <div className={selected ? 'text show' : 'text'}>{text}</div>
+      <div className='inc-dec'>
+        <span className='incremente-decremente'>-</span>
+        <p onChange={submitHandler}>{count}</p>
+        <span className='incremente-decremente'>+</span>
+      </div>
     </div>
   );
 };

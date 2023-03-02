@@ -10,6 +10,7 @@
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-top: 3px solid #c40016;
 
   .footer-links {
     display: flex;
@@ -86,6 +87,10 @@
   align-items: center;
   text-align: center;
   grid-column-gap: 30px;
+}
+.hr-footer {
+  width: 200px;
+  background-color: red;
 }
 .text-and-icon-second {
   display: flex;
