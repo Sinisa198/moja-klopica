@@ -1,6 +1,6 @@
 import React from 'react';
 
-const InputPassword = ({ name, value, placeholder, type, onChange }) => {
+const Input = ({ name, value, placeholder, type, onChange }) => {
   return (
     <div>
       <input
@@ -14,4 +14,4 @@ const InputPassword = ({ name, value, placeholder, type, onChange }) => {
   );
 };
 
-export default InputPassword;
+export default Input;

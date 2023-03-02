@@ -20,10 +20,10 @@ color: #FFFFFF;
 cursor:pointer;
 `;
 
-const ButtonRegister = ({ className, id, children, callbackAction }) => {
+const ButtonRegister = ({ className, id, children, onClick }) => {
   return (
     <ComponentButtonLogin
-      onClick={callbackAction}
+      onClick={onClick}
       className={className ? `register-button ${className}` : 'register-button'}
       id={id}
     >

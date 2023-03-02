@@ -1,7 +1,8 @@
+import React from 'react';
 import validateMessageImage from '../../images/validatemessage.svg';
 import ButtonClose from '../ButtonClose';
 
-const SuccesMessageModal = () => {
+const SuccesMessageModal = (props) => {
   return (
     <div className='succes-wrapper'>
       <div className='succes-message'>
@@ -10,8 +11,8 @@ const SuccesMessageModal = () => {
         </div>
         <div className='paragraf-success-message'>
           <p className='text-for-succes-message'>
-            Poslat je verifikacioni email na peraperic@gmail.com. Neophodno je
-            verifikovati nalog kako bi se registracija zavrsila.{' '}
+            Poslat je verifikacioni email na {props.email} Neophodno je
+            verifikovati nalog kako bi se registracija zavrsila.
           </p>
         </div>
         <div className='button-succesmessage'>

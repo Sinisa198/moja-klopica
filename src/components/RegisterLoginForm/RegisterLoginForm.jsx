@@ -1,10 +1,12 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import arrowHomePage from '../../images/arrow-homepage.png';
 import LoginForm from '../LoginForm/LoginForm';
 import RegisterForm from '../RegisterForm/RegisterForm';
 
 const RegisterLoginForm = () => {
   const [scrollAmount, setScrollAmount] = useState(0);
+  const [modalRegister, setModalRegister] = useState(false);
+  const [modalLogin, setModalLogin] = useState(false);
 
   const handleClick = () => {
     window.scroll({
@@ -14,24 +16,10 @@ const RegisterLoginForm = () => {
     setScrollAmount(scrollAmount + window.innerHeight);
   };
 
-  const [modalRegister, setModalRegister] = useState(false);
-  const [modalLogin, setModalLogin] = useState(false);
-
   const toggleModalRegister = () => {
     setModalRegister(!modalRegister);
   };
 
-  if (modalRegister) {
-    document.body.classList.add('active-modal');
-  } else {
-    document.body.classList.remove('active-modal');
-  }
-
-  if (modalLogin) {
-    document.body.classList.add('active-modal');
-  } else {
-    document.body.classList.remove('active-modal');
-  }
   const toggleModalLogin = () => {
     setModalLogin(!modalLogin);
   };
@@ -58,12 +46,7 @@ const RegisterLoginForm = () => {
       <div className='div-for-today-meny'>
         <p className='text-menu' onClick={handleClick}>
           Ponuda
-          <img
-            src={arrowHomePage}
-            onClick={handleClick}
-            className='arrow-image-homepage'
-            alt=''
-          />
+          <img src={arrowHomePage} className='arrow-image-homepage' alt='' />
         </p>
       </div>
 
@@ -75,12 +58,11 @@ const RegisterLoginForm = () => {
       )}
       {modalLogin && (
         <div className='modal'>
-          <div onClick={toggleModalLogin} className='overlay'></div>
+          <div className='overlay' onClick={toggleModalLogin}></div>
           <LoginForm />
         </div>
       )}
     </div>
   );
 };
-
 export default RegisterLoginForm;

@@ -33,6 +33,8 @@
     font-size: 16px;
     line-height: 24px;
     color: #333333;
+    text-decoration: underline;
+    text-decoration-color: #333333;
   }
   .home-page-hr {
     width: 170px;
@@ -117,7 +119,12 @@
       font-style: normal;
       font-weight: 600;
       font-size: 32px;
+      background-color: #ffff;
       line-height: 44px;
+    }
+    .button-not-active:hover {
+      color: #c10016;
+      border: 1px solid #c10016;
     }
   }
   .button-active {

@@ -8,12 +8,6 @@ export const validatePhone = (phone) => {
   return regexPhone.test(phone);
 };
 
-export const validateEmail = (email) => {
-  const regexMail =
-    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return regexMail.test(email);
-};
-
 export const validateRegistration = (data) =>
   validateName(data.name) &&
   validateName(data.email) &&

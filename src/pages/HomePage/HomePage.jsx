@@ -24,10 +24,7 @@ const HomePage = () => {
       <div className='div-main-homepage'>
         <div className='div-for-title-homepage'>
           <p className='restourant-title'>Resotran Top FOOD 021</p>
-          <p className='paragraf'>
-            OPSTE INFORMACIJE
-            <hr className='home-page-hr' />
-          </p>
+          <p className='paragraf'>OPSTE INFORMACIJE</p>
         </div>
         <p className='text-for-meny'>Dnevni meni {date.toLocaleDateString()}</p>
         <WeekButtons />

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import DayButton from '../DayButton';
 
 const WeekButtons = () => {
-  const [activeButton, setActiveButton] = useState('2');
+  const [activeButton, setActiveButton] = useState('4');
   const days = [
     {
       id: '1',
