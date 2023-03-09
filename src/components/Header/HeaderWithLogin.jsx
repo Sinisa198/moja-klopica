@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import LoginForm from '../LoginForm/LoginForm';
 import logo from '../../images/logo-klopica.png';
+import DropdownMenu from '../DropDown/DropDown';
+import profile from '../../images/profile.svg';
 
 const Header = () => {
   const [modalLogin, setModalLogin] = useState(false);
@@ -19,20 +21,24 @@ const Header = () => {
       <div>
         <img src={logo} alt='' className='logo-header' />
       </div>
-      <div className='div-for-menu'>
+      <div className='div-for-menu-login-header'>
         <NavLink to='/' className='text-for-menu'>
           Pocetna
         </NavLink>
-        <span
+        <NavLink
+          to='/reservation'
           onClick={toggleModalLogin}
           className='text-for-menu-reservation-login'
         >
           Rezervisi
-        </span>
-
+        </NavLink>
         <NavLink to='/aboutus' className='text-for-menu'>
           O nama
         </NavLink>
+      </div>
+      <div className='dropdown-iconprofile'>
+        <img src={profile} alt='' />
+        <DropdownMenu />
       </div>
       {modalLogin && (
         <div className='modal'>

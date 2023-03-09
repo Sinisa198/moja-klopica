@@ -10,7 +10,6 @@
   }
   .restourant-title {
     display: flex;
-    width: 100%;
     flex-direction: column;
     justify-content: center;
     font-family: 'Poppins';
@@ -19,7 +18,6 @@
     font-size: 40px;
     line-height: 60px;
     color: #c10016;
-    text-align: center;
   }
   .div-for-title-homepage {
     height: 100%;
@@ -39,18 +37,7 @@
   .home-page-hr {
     width: 170px;
   }
-  .div-for-menu-price {
-    display: flex;
-    width: 100%;
-    text-align: center;
-    grid-column-gap: 10px;
-    justify-content: center;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    color: #333333;
-  }
+
   .price {
     font-family: 'Poppins';
     font-style: normal;
@@ -166,7 +153,6 @@
   }
   .main-for-list {
     display: flex;
-    grid-column-gap: 30px;
     padding-top: 50px;
     flex-wrap: wrap;
     justify-content: center;

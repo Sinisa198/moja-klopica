@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import ModalReservation from '../../components/ModalReservation/ModalReservation';
-import Header from '../../components/Header/Header';
+import HeaderWithLogin from '../../components/Header/HeaderWithLogin';
 import ConfirmReservation from '../../components/Buttons/ConfirmReservation';
 import removeFood from '../../images/removereservation.svg';
 import {
@@ -12,6 +12,7 @@ import {
 } from '../../store/actions/food';
 import Footer from '../../components/Footer/FooterForRestoran';
 import FoodCard from '../../components/Accordion/FoodCard';
+import WeekButtons from '../../components/WeekButtons/WeekButtons';
 
 const Reservation = () => {
   const [showModal, setShowModal] = useState(false);
@@ -40,7 +41,7 @@ const Reservation = () => {
   return (
     <div className='reservation-wrapper'>
       <div className='header-reservation'>
-        <Header />
+        <HeaderWithLogin />
       </div>
 
       <p className='title-reservation'>Restoran Top FOOD 021</p>
@@ -50,9 +51,12 @@ const Reservation = () => {
         <div className='modal-reservation' onClick={handleCloseModal}>
           {showModal && <ModalReservation />}
         </div>
+        <WeekButtons />
       </div>
+
       <div className='reservation-main'>
         <FoodCard />
+
         <div className='cart'>
           <p className='title-cart'>KORPA</p>
 

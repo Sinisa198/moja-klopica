@@ -1,11 +1,11 @@
-import Header from '../../components/Header/Header';
+import HeaderWithLogin from '../../components/Header/HeaderWithLogin';
 import WeekButtons from '../../components/WeekButtons/WeekButtons';
 
 const MyReservation = () => {
   return (
     <div className='my-reservation-wrapper'>
       <div className='header-reservation'>
-        <Header />
+        <HeaderWithLogin />
       </div>
       <div className='text-and-buttons-myreservation'>
         <p className='myreservation-text'>Moje rezervacije</p>

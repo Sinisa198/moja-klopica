@@ -16,9 +16,9 @@ const Confirm = style.button`
   cursor:pointer;
 `;
 
-const ButtonMenu = ({ type, id, children, handleClick }) => {
+const ButtonMenu = ({ type, id, children, onClick }) => {
   return (
-    <Confirm type={type ? type : 'button'} id={id} onClick={handleClick}>
+    <Confirm type={type ? type : 'button'} id={id} onClick={onClick}>
       {children}
     </Confirm>
   );

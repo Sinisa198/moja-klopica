@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ButtonRegister from '../ButtonRegister';
+import ButtonRegister from '../Buttons/ButtonRegister';
 import nameIcon from '../../images/name-icon.svg';
 import phoneIcon from '../../images/phone-icon.svg';
 import passwordIcon from '../../images/password-icon.svg';
@@ -42,9 +42,11 @@ const RegisterForm = () => {
   };
 
   const isValidRegisterForm = () => {
-    if (name.length >= 2) {
-      setSuccessRegister(true);
-    }
+    if (phone.length > 7)
+      if (password !== confirmPassword)
+        if (name.length && surname.length >= 2) {
+          setSuccessRegister(true);
+        }
   };
 
   const changeSurname = (surname) => {
@@ -244,7 +246,10 @@ const RegisterForm = () => {
       {successRegister && (
         <div className='modal'>
           <div onClick={toggleCloseSuccessModal} className='overlay'></div>
-          <SuccesMessageRegister email={email} />
+          <SuccesMessageRegister
+            email={email}
+            toggleCloseSuccessModal={toggleCloseSuccessModal}
+          />
         </div>
       )}
     </div>

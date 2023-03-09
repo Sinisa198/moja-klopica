@@ -2,6 +2,8 @@
   background-color: #c50016;
   .active {
     border: 1px solid #ffff;
+    width: 250px;
+    flex-direction: row;
   }
 }
 .reservation-wrapper {
@@ -24,6 +26,7 @@
       line-height: 20px;
     }
     .text.show {
+      width: 250px;
       font-family: 'Poppins';
       font-style: normal;
       font-weight: 300;

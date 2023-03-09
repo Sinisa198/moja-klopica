@@ -2,6 +2,13 @@
   display: flex;
   width: 100%;
   height: 100%;
+  .div-for-inputs {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    grid-row-gap: 20px;
+    justify-content: center;
+  }
   .div-for-together-text {
     display: flex;
     flex-direction: column;
@@ -99,7 +106,7 @@
   display: flex;
   height: 100%;
   align-items: center;
-  grid-column-gap: 10px;
+  grid-column-gap: 5px;
 }
 .div-register-button {
   display: flex;
@@ -219,13 +226,7 @@
   color: red;
   height: 2px;
 }
-.div-for-inputs {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  grid-row-gap: 20px;
-  justify-content: center;
-}
+
 .icon-email-google {
   display: flex;
   flex-direction: row;

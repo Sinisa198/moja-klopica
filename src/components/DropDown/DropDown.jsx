@@ -1,51 +1,40 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import arrowSecond from '../../images/arrow-second.svg';
-import arrowMenu from '../../images/arrowmenu.svg';
-import logOut from '../../images/logout.svg';
-import reservation from '../../images/reservation.svg';
-import profile from '../../images/profiledropdown.svg';
+import arrow from '../../images/arrow-login-header.svg';
+import reservationIcon from '../../images/reservation.svg';
+import changeIcon from '../../images/changeprofile-icon.svg';
+import logoutIcon from '../../images/logout-icon.svg';
 
-const DropdownMenu = () => {
-  const [selected, toggle] = useState(false);
+const Dropdown = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <div className='dropdown'>
-      <div className='accordion'>
-        <div className='title'>
-          <div className='icon-arrow' onClick={() => toggle(!selected)}>
-            {selected ? (
-              <img src={arrowSecond} alt='' />
-            ) : (
-              <img src={arrowMenu} alt='' />
-            )}
-          </div>
-        </div>
-        <div>
-          <div className={selected ? 'text show' : 'text'}>
-            <div className='text-menu'>
-              <img src={reservation} alt='' className='icon-menu' />
-              <NavLink to='/myreservation' className='paragraf-menu'>
-                Moje rezervacije
-              </NavLink>
-            </div>
-            <div className='text-menu'>
-              <img src={profile} alt='' className='icon-menu' />
-              <NavLink to='/changeprofile' className='paragraf-menu'>
-                Izmena profila
-              </NavLink>
-            </div>
-            <div className='text-menu'>
-              <img src={logOut} alt='' className='icon-menu' />
-              <NavLink to='/' className='paragraf-menu'>
-                Odjavi se
-              </NavLink>
-            </div>
-          </div>
-        </div>
+    <div className='dropdown-container'>
+      <div className='icon-arrow' onClick={toggleDropdown}>
+        <img src={arrow} alt='' />
       </div>
+      {isOpen && (
+        <div className='dropdown-menu'>
+          <NavLink className='text-dropdown' to='/myreservation'>
+            <img src={reservationIcon} alt='' />
+            Moje rezervacije
+          </NavLink>
+          <NavLink className='text-dropdown' to='/changeprofile'>
+            <img src={changeIcon} alt='' />
+            Promeni profil
+          </NavLink>
+          <NavLink className='text-dropdown' to='/'>
+            <img src={logoutIcon} alt='' />
+            Odjavi se
+          </NavLink>
+        </div>
+      )}
     </div>
   );
 };
 
-export default DropdownMenu;
+export default Dropdown;

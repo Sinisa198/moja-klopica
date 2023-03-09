@@ -1,11 +1,4 @@
 import { ADD_FOOD, REMOVE_FROM_CART } from '../actions/food';
-import {
-  ADD_FOOD,
-  REMOVE_FROM_CART,
-  INCREMENT,
-  DECREMENT,
-  removeFromCart,
-} from '../actions/food';
 
 let initState = {
   cart: [],
@@ -52,33 +45,9 @@ const foodReducer = (state = initState, action) => {
         }),
         sum: newSum,
       };
-    case INCREMENT: {
-      return {
-        ...state,
-        cart: state.cart.map((food) => {
-          if (food.id === action.payload) {
-            return { ...food, count: food.count + 1 };
-          }
-          return food;
-        }),
-      };
-    }
-    case DECREMENT: {
-      return {
-        ...state,
-        cart: state.cart.map((food) => {
-          if (food.id === action.payload) {
-            return { ...food, count: food.count - 1 };
-          }
-          return food;
-        }),
-      };
-    }
+
     default:
       return state;
-    case REMOVE_FROM_CART:
-      const itemId = action.payload;
-      state.foods.filter((item) => item.id !== itemId);
   }
 };
 

@@ -5,14 +5,19 @@ import MenuforAboutUs from '../../components/MenuforAboutUs';
 
 const PrivacyPolicy = () => {
   return (
-    <div className='div-for-header'>
-      <Header />
-      <h3 className='title-for-about'>DUNDA</h3>
-      <div className='day-menu'>
-        <MenuforAboutUs />
+    <div className='wrapper-privacy'>
+      <div className='div-for-header'>
+        <Header />
+        <h3 className='title-for-about'>DUNDA</h3>
+        <div className='day-menu'> </div>
       </div>
       <div className='privacy-wrapper'>
-        <p className='title-privacy'>MOJA KLOPICA Obaveštenje o privatnosti</p>
+        <MenuforAboutUs />
+        <div className='container-for-title-privacy'>
+          <p className='title-privacy'>
+            MOJA KLOPICA Obaveštenje o privatnosti
+          </p>
+        </div>
         <div className='div-for-privacy-text'>
           <p className='paragraf-privacy'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
