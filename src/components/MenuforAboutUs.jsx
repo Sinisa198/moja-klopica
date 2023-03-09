@@ -4,7 +4,7 @@ import PrimaryButton from './PrimaryButton/PrimaryButton';
 import navigationMenu from '../data/navigationMenu';
 
 const MenuforAboutUs = () => {
-  const [buttonActive, setButtonActive] = useState(false);
+  const [buttonActive, setButtonActive] = useState();
   const navigate = useNavigate();
   return (
     <div className='div-for-days'>

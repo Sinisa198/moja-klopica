@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderRestaurant from '../../../components/Header-Restaurant/Header-Restaurant';
 import RestaurantNavigation from '../../../components/RestaurantNavigation/RestaurantNavigation';
 import FooterForRestoran from '../../../components/Footer/FooterForRestoran';
-import ButtonForImpressions from '../../../components/ButtonForImpressions';
+import ButtonForImpressions from '../../../components/Buttons/ButtonForImpressions';
 import starsImpressions from '../../../images/image-star-for-impressions.svg';
 import emptystarr from '../../../images/emptystarr.svg';
 

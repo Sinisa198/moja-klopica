@@ -10,21 +10,23 @@ const AboutUs = () => {
       <div className='div-for-header'>
         <Header />
         <h3 className='title-for-about'>DUNDA</h3>
-        <MenuforAboutUs />
       </div>
       <div className='main-div-about-us'>
-        <div className='image-about-us'>
-          <img src={aboutusImage} alt='' />
-        </div>
-        <div className='text-about-us'>
-          <p className='title-aboutus'>Lorem ipsum?</p>
-          <p className='paragraf-aboutus'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi
-            elit, commodo nec ante id, ornare efficitur dui. Nullam mi elit,
-            commodo nec ante id, ornare effiLorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nullam mi elit, commodo nec ante id,
-            ornare efficitur dui.
-          </p>
+        <MenuforAboutUs />
+        <div className='text-and-image'>
+          <div className='image-about-us'>
+            <img src={aboutusImage} alt='' />
+          </div>
+          <div className='text-about-us'>
+            <p className='title-aboutus'>Lorem ipsum?</p>
+            <p className='paragraf-aboutus'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi
+              elit, commodo nec ante id, ornare efficitur dui. Nullam mi elit,
+              commodo nec ante id, ornare effiLorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Nullam mi elit, commodo nec ante id,
+              ornare efficitur dui.
+            </p>
+          </div>
         </div>
       </div>
       <Footer />

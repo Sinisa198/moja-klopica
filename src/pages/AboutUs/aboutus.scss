@@ -1,20 +1,29 @@
 .about-wrapper {
   display: flex;
   width: 100%;
-  flex-direction: column;
 
   @media screen and (max-width: 390px) {
     width: 100%;
     max-width: 390px;
   }
+  flex-direction: column;
+  .div-for-days {
+    height: 30%;
+    padding-bottom: 30px;
+
+    @media screen and (max-width: 390px) {
+      width: 100%;
+      max-width: 690px;
+    }
+  }
 }
 
 .div-for-header {
-  background: url('../../images/b-aboutus.png') no-repeat;
-  height: 512px;
+  background: url('../../images/b-aboutus.png');
+  background-size: cover;
 
   @media screen and (max-width: 390px) {
-    width: 390px;
+    width: 690px;
   }
 }
 .title-for-about {
@@ -28,6 +37,9 @@
   text-transform: uppercase;
   color: #c10016;
 }
+.menu-faq {
+  padding-top: 50px;
+}
 .text-lorem {
   font-family: 'Poppins';
   font-style: normal;
@@ -35,6 +47,21 @@
   font-size: 20px;
   line-height: 42px;
   color: #c10016;
+}
+.wrapper-privacy {
+  .div-for-header {
+    background: url('../../images/b-aboutus.png') no-repeat;
+    background-size: cover;
+  }
+}
+.wrapper-termsofuse {
+  .div-for-header {
+    background: url('../../images/b-aboutus.png') no-repeat;
+    background-size: cover;
+  }
+  .day-menu {
+    padding-top: 30px;
+  }
 }
 .paragraf-loremipsum {
   height: 216px;
@@ -85,9 +112,7 @@
 .image-aboutus {
   display: flex;
 }
-.div-for-days {
-  height: 30%;
-}
+
 .div-for-privacy-text {
   max-width: 900px;
   font-family: 'Poppins';
@@ -122,12 +147,16 @@
 }
 .main-div-about-us {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding-top: 100px;
   padding-bottom: 100px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+}
+.text-and-image {
+  display: flex;
+  flex-direction: row;
 }
 .privacy-wrapper {
   display: flex;

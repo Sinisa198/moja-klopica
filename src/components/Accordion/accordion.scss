@@ -1,8 +1,11 @@
-.accordion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+.accordion-wrapper {
+  .accordion {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
   .inc-dec {
     display: none;
   }
@@ -45,11 +48,11 @@
     color: #333333;
   }
   .text.show {
+    width: 100%;
     display: flex;
     flex-direction: column;
     font-size: 24px;
     font-family: 'Nunito';
-    width: 100%;
   }
 
   .show {
@@ -92,4 +95,61 @@
   margin-left: 10px;
   text-align: left;
   color: #333333;
+}
+.accordion-header {
+  position: absolute;
+}
+.inc-dec-header {
+  display: none;
+}
+.title-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 48px;
+  text-align: center;
+  color: #333333;
+
+  p {
+    text-align: center;
+  }
+}
+.icon-arrow-header {
+  display: flex;
+  margin-left: 5px;
+  width: 26px;
+  height: 26px;
+  align-items: center;
+  justify-content: center;
+}
+.text-header {
+  display: none;
+  font-family: 'Poppins';
+  width: 350px;
+  text-align: left;
+  font-style: normal;
+  flex-direction: column;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+.text.show-header {
+  width: 100%;
+  margin-top: 200px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-family: 'Nunito';
+}
+
+.show-header {
+  display: block;
 }

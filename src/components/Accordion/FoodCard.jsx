@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import WeekButtons from '../WeekButtons/WeekButtons';
+import React from 'react';
 import listItemsMenu from '../../data/listitemsmenu';
 import Accordion from './Accordion';
 import ReservationButton from '../Buttons/ReservationButton';
@@ -10,12 +9,11 @@ const FoodCard = () => {
   const dispatch = useDispatch();
   return (
     <div className='main-for-list-reservation'>
-      <WeekButtons />
-
       {listItemsMenu.map((item) => {
         return (
           <div key={item.id} className='together-list-image-reservation'>
             <img src={item.image} alt='' className='image-list-reservation' />
+
             <Accordion
               title={item.description}
               text={item.text}

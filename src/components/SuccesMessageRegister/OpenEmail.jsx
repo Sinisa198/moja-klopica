@@ -8,7 +8,12 @@ const OpenEmail = (props) => {
   };
   return (
     <div className='forget-password-modal ' onSubmit={dontRefresh}>
-      <img src={close} alt='' className='close-icon' />
+      <img
+        src={close}
+        alt=''
+        className='close-icon'
+        onClick={props.toggleModalOpenEmail}
+      />
       <p className='checkemail'>PROVERITE SVOJ EMAIL</p>
       <p className='resetemail'>
         Poslali smo Vam link za resetovanje sifre na {props.email}

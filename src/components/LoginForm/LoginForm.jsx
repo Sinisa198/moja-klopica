@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ButtonLogin from '../../components/ButtonLogin';
+import ButtonLogin from '../../components/Buttons/ButtonLogin';
 import passwordIconLogin from '../../images/password-icon.svg';
 import emailIconLogin from '../../images/email-icon.svg';
 import errorImage from '../../images/errorImage.svg';
@@ -126,7 +126,7 @@ const LoginForm = () => {
       {forgetPassword && (
         <div className='modal' onClick={setPasswordShown}>
           <div onClick={forgetPasswordModal} className='overlay'></div>
-          <ForgetPassword />
+          <ForgetPassword forgetPasswordModal={forgetPasswordModal} />
         </div>
       )}
     </div>

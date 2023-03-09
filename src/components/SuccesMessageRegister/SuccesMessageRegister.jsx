@@ -1,6 +1,6 @@
 import React from 'react';
 import validateMessageImage from '../../images/validatemessage.svg';
-import ButtonClose from '../ButtonClose';
+import ButtonClose from '../Buttons/ButtonClose';
 
 const SuccesMessageModal = (props) => {
   return (
@@ -16,7 +16,9 @@ const SuccesMessageModal = (props) => {
           </p>
         </div>
         <div className='button-succesmessage'>
-          <ButtonClose>ZATVORI</ButtonClose>
+          <ButtonClose onClick={props.toggleCloseSuccessModal}>
+            ZATVORI
+          </ButtonClose>
         </div>
       </div>
     </div>

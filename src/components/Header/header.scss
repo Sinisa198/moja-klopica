@@ -59,3 +59,17 @@
     flex-direction: row;
   }
 }
+.dropdown-iconprofile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 10px;
+}
+.div-for-menu-login-header {
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  grid-column-gap: 20px;
+}
