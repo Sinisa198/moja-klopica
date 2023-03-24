@@ -1,4 +1,9 @@
-import { ADD_FOOD, REMOVE_FROM_CART } from '../actions/food';
+import {
+  ADD_FOOD,
+  REMOVE_FROM_CART,
+  INCREMENT,
+  DECREMENT,
+} from '../actions/food';
 
 let initState = {
   cart: [],
@@ -8,10 +13,10 @@ let initState = {
 const foodReducer = (state = initState, action) => {
   switch (action.type) {
     case ADD_FOOD:
-      console.log(action.payload.count);
       const sameFoodIndex = state.cart.findIndex(
         (food) => food.name === action.payload.name
       );
+
       if (sameFoodIndex >= 0) {
         let cart = [...state.cart];
         cart[sameFoodIndex] = {
@@ -45,7 +50,35 @@ const foodReducer = (state = initState, action) => {
         }),
         sum: newSum,
       };
+    case INCREMENT: {
+      let incrementSum = state.sum;
+      return {
+        ...state,
+        cart: state.cart.map((food) => {
+          if (food.id === action.payload) {
+            incrementSum += food.price;
+            return { ...food, count: food.count + 1 };
+          }
+          return food;
+        }),
+        sum: incrementSum,
+      };
+    }
+    case DECREMENT: {
+      let decrementSum = state.sum;
+      return {
+        ...state,
 
+        cart: state.cart.map((food) => {
+          if (food.id === action.payload) {
+            decrementSum -= food.price;
+            return { ...food, count: food.count - 1 };
+          }
+          return food;
+        }),
+        sum: decrementSum,
+      };
+    }
     default:
       return state;
   }

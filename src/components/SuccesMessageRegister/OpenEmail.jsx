@@ -2,21 +2,18 @@ import React from 'react';
 import RestartPassword from '../RestartPassword';
 import close from '../../images/close.svg';
 
-const OpenEmail = (props) => {
+const OpenEmail = ({ email, closeModal }) => {
   const dontRefresh = (event) => {
     event.preventDefault();
   };
   return (
     <div className='forget-password-modal ' onSubmit={dontRefresh}>
-      <img
-        src={close}
-        alt=''
-        className='close-icon'
-        onClick={props.toggleModalOpenEmail}
-      />
+      <div className='container-for-image-openemail'>
+        <img src={close} alt='' className='close-icon' onClick={closeModal} />
+      </div>
       <p className='checkemail'>PROVERITE SVOJ EMAIL</p>
       <p className='resetemail'>
-        Poslali smo Vam link za resetovanje sifre na {props.email}
+        Poslali smo Vam link za resetovanje sifre na {email}
       </p>
 
       <div className='button-restart-password'>

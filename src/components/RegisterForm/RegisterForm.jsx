@@ -1,14 +1,25 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import ButtonRegister from '../Buttons/ButtonRegister';
 import nameIcon from '../../images/name-icon.svg';
 import phoneIcon from '../../images/phone-icon.svg';
 import passwordIcon from '../../images/password-icon.svg';
 import emailIcon from '../../images/email-icon.svg';
+import { register } from '../../store/actions/register';
 import Input from '../Input/Input';
 import errorImage from '../../images/errorImage.svg';
 import SuccesMessageRegister from '../SuccesMessageRegister/SuccesMessageRegister';
 
-const RegisterForm = () => {
+const RegisterForm = ({ toggleModalRegister }) => {
+  const dispatch = useDispatch();
+  const [credentials, setCredentials] = useState({
+    email: '',
+    surname: '',
+    password: '',
+    confirmpassword: '',
+    phoneNumber: '',
+  });
+
   const [successRegister, setSuccessRegister] = useState(false);
   const [name, setName] = useState();
   const [surname, setSurname] = useState();
@@ -17,7 +28,6 @@ const RegisterForm = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [phone, setPhone] = useState();
   const [error, setError] = useState({});
-
   const toggleCloseSuccessModal = () => {
     setSuccessRegister(!successRegister);
   };
@@ -42,11 +52,9 @@ const RegisterForm = () => {
   };
 
   const isValidRegisterForm = () => {
-    if (phone.length > 7)
-      if (password !== confirmPassword)
-        if (name.length && surname.length >= 2) {
-          setSuccessRegister(true);
-        }
+    if (name.length && surname.length >= 2 && phone.length > 7) {
+      setSuccessRegister(true);
+    }
   };
 
   const changeSurname = (surname) => {
@@ -85,6 +93,16 @@ const RegisterForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    dispatch(
+      register({
+        email,
+        surname,
+        password,
+        confirmPassword,
+        phoneNumber: phone,
+        name,
+      })
+    );
     isValidRegisterForm();
   };
 
@@ -222,7 +240,7 @@ const RegisterForm = () => {
                   <Input
                     name='phone'
                     placeholder='+381'
-                    type='number'
+                    type='text'
                     className='input-login'
                     value={phone}
                     onChange={(event) => changePhone(event.target.value)}
@@ -247,6 +265,7 @@ const RegisterForm = () => {
         <div className='modal'>
           <div onClick={toggleCloseSuccessModal} className='overlay'></div>
           <SuccesMessageRegister
+            toggleModalRegister={toggleModalRegister}
             email={email}
             toggleCloseSuccessModal={toggleCloseSuccessModal}
           />

@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import ButtonLogin from '../../components/Buttons/ButtonLogin';
 import passwordIconLogin from '../../images/password-icon.svg';
 import emailIconLogin from '../../images/email-icon.svg';
 import errorImage from '../../images/errorImage.svg';
 import showPassword from '../../images/showpassword.svg';
+import { login } from '../../store/actions/auth';
 import { useNavigate } from 'react-router';
 import ForgetPassword from '../SuccesMessageRegister/ForgetPassword';
 import Input from '../Input/Input';
+import SuccesMessageModal from '../SuccesMessageRegister/SuccesMessageRegister';
 
 const LoginForm = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const [credentials, setCredentials] = useState({ email: '', password: '' });
   const [passwordShown, setPasswordShown] = useState(false);
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
@@ -50,6 +56,12 @@ const LoginForm = () => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
+    dispatch(
+      login({
+        email,
+        password,
+      })
+    );
     isValidForm();
   };
 
@@ -118,7 +130,7 @@ const LoginForm = () => {
               </div>
             </div>
             <div className='div-for-login-button'>
-              <ButtonLogin>ULOGUJTE SE</ButtonLogin>
+              <button className='button-for-login-page'>ULOGUJTE SE</button>
             </div>
           </div>
         </form>

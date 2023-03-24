@@ -23,7 +23,7 @@
     }
     .title {
       font-size: 22px;
-      line-height: 20px;
+      height: 90px;
     }
     .text.show {
       width: 250px;
@@ -37,7 +37,8 @@
     }
   }
   .reservation-inc-dec {
-    border: 1px solid red;
+    border: 1px solid rgba(193, 0, 22, 33);
+    font-size: 20px;
     border-radius: 10px;
     padding: 5px 10px 5px 10px;
     cursor: pointer;
@@ -77,6 +78,14 @@
     .reservation-hr {
       width: 150px;
     }
+    .cart-name-food {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #333333;
+    }
   }
   .day-reservation {
     text-align: center;
@@ -92,7 +101,7 @@
 }
 
 .together-list-image-reservation {
-  width: 300px;
+  width: 370px;
 }
 .main-for-list-reservation {
   display: flex;
@@ -139,6 +148,9 @@
   height: 1px;
   background: rgba(193, 0, 22, 0.2);
   border-radius: 40px;
+}
+.name-inc-dec {
+  width: 200px;
 }
 .button-reservation {
   max-width: 229px;
@@ -221,13 +233,23 @@
     justify-content: space-between;
   }
   .sum-price {
-    padding-right: 20px;
     width: 200px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
   }
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    background-color: red;
+  .div-for-hr-cart {
+    display: flex;
+    width: 320px;
+
+    .hr-cart {
+      width: 320px;
+      background: rgba(193, 0, 22, 33);
+      border: 1px solid rgba(193, 0, 22, 33);
+      border-radius: 40px;
+    }
   }
+
   .title-cart {
     text-align: center;
     font-family: 'Poppins';

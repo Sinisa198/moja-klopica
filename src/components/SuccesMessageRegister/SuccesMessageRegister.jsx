@@ -16,7 +16,9 @@ const SuccesMessageModal = (props) => {
           </p>
         </div>
         <div className='button-succesmessage'>
-          <ButtonClose onClick={props.toggleCloseSuccessModal}>
+          <ButtonClose
+            onClick={(props.toggleCloseSuccessModal, props.toggleModalRegister)}
+          >
             ZATVORI
           </ButtonClose>
         </div>
