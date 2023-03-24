@@ -1,18 +1,27 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import RestartPassowrd from '../RestartPassword';
 import errorImage from '../../images/errorImage.svg';
 import emailIcon from '../../images/email-icon.svg';
 import close from '../../images/close.svg';
 import Input from '../Input/Input';
 import OpenEmail from '../SuccesMessageRegister/OpenEmail';
+import { resetPassword } from '../../store/actions/reset-password';
 
-const ForgetPassword = () => {
+const ForgetPassword = ({ forgetPasswordModal }) => {
+  const dispatch = useDispatch();
+  const [credentials, setCredentials] = useState({
+    email: '',
+  });
   const [openEmailModal, setOpenEmailModal] = useState(false);
   const [email, setEmail] = useState('');
   const [error, setError] = useState(false);
 
+  const closeModal = () => {
+    setOpenEmailModal(false);
+  };
   const toggleModalOpenEmail = () => {
-    setOpenEmailModal(!openEmailModal);
+    if (email.length > 5) setOpenEmailModal(!openEmailModal);
   };
 
   const changeEmail = (email) => {
@@ -29,13 +38,26 @@ const ForgetPassword = () => {
 
   const handleClickSubmit = (e) => {
     e.preventDefault();
+    toggleModalOpenEmail();
+    dispatch(
+      resetPassword({
+        email,
+      })
+    );
   };
   return (
     <div>
       {!openEmailModal && (
         <form onSubmit={handleClickSubmit} className='form-for-forgetpassword'>
           <div className='forget-password-modal '>
-            <img src={close} alt='' className='close-icon' />
+            <div className='image-container-forgetpassword'>
+              <img
+                src={close}
+                alt=''
+                className='close-icon'
+                onClick={forgetPasswordModal}
+              />
+            </div>
             <p className='checkemail'>ZABORAVILII STE SIFRU?</p>
             <p className='resetemail'>
               Ne brinite, mi cemo Vam poslati instrukcije za resetovanje
@@ -63,9 +85,9 @@ const ForgetPassword = () => {
               <hr className={!error.email ? 'hr-input' : 'hr-input-error'} />
             </div>
             <div className='button-restart-password'>
-              <RestartPassowrd onClick={toggleModalOpenEmail}>
+              <button className='button-forget-password' type='submit'>
                 RESTARARTUJ SIFRU
-              </RestartPassowrd>
+              </button>
             </div>
           </div>
         </form>
@@ -73,7 +95,7 @@ const ForgetPassword = () => {
       {openEmailModal && (
         <div className='modal-for-openemail'>
           <div className='overlay' onClick={toggleModalOpenEmail}></div>
-          <OpenEmail email={email} />
+          <OpenEmail email={email} closeModal={closeModal} />
         </div>
       )}
     </div>

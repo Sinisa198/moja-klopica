@@ -1,0 +1,23 @@
+.listrestaurant-wrapper {
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  grid-row-gap: 30px;
+  .list-restaurant-paragraf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 300px;
+    border: 2px solid black;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333333;
+    grid-row-gap: 30px;
+  }
+}

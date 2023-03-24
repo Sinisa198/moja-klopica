@@ -1,27 +1,27 @@
 export const days = [
   {
     id: '1',
-    name: 'Ponedeljak',
+    name: 'PON',
   },
   {
     id: '2',
-    name: 'Utorak',
+    name: 'UTO',
   },
   {
     id: '3',
-    name: 'Sreda',
+    name: 'SRE',
   },
   {
     id: '4',
-    name: 'Cetvrtak',
+    name: 'CET',
   },
   {
     id: '5',
-    name: 'Petak',
+    name: 'PET',
   },
   {
     id: '6',
-    name: 'Subota',
+    name: 'SUB',
   },
 ];
 

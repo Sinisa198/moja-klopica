@@ -19,13 +19,15 @@ const AboutUs = () => {
           </div>
           <div className='text-about-us'>
             <p className='title-aboutus'>Lorem ipsum?</p>
-            <p className='paragraf-aboutus'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi
-              elit, commodo nec ante id, ornare efficitur dui. Nullam mi elit,
-              commodo nec ante id, ornare effiLorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Nullam mi elit, commodo nec ante id,
-              ornare efficitur dui.
-            </p>
+            <div className='container-paragraf-aboutus'>
+              <p className='paragraf-aboutus'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                mi elit, commodo nec ante id, ornare efficitur dui. Nullam mi
+                elit, commodo nec ante id, ornare effiLorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Nullam mi elit, commodo nec
+                ante id, ornare efficitur dui.
+              </p>
+            </div>
           </div>
         </div>
       </div>

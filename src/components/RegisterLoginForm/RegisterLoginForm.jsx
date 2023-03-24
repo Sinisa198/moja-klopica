@@ -53,7 +53,7 @@ const RegisterLoginForm = () => {
       {modalRegister && (
         <div className='modal'>
           <div onClick={toggleModalRegister} className='overlay'></div>
-          <RegisterForm />
+          <RegisterForm toggleModalRegister={toggleModalRegister} />
         </div>
       )}
       {modalLogin && (

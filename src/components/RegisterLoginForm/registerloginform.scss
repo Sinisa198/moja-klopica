@@ -2,13 +2,7 @@
   display: flex;
   width: 100%;
   height: 100%;
-  .div-for-inputs {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    grid-row-gap: 20px;
-    justify-content: center;
-  }
+
   .div-for-together-text {
     display: flex;
     flex-direction: column;
@@ -21,7 +15,6 @@
     justify-content: flex-end;
     align-items: flex-end;
     height: 80%;
-    padding-right: 100px;
   }
   .text-for-big-title {
     width: 600px;
@@ -157,6 +150,24 @@
   min-width: 300px;
   padding: 81px;
 }
+.button-for-login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  background-color: #c10016;
+  border: 1px solid #c10016;
+  border-radius: 30px;
+  height: 54.28px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+  color: #ffffff;
+  cursor: pointer;
+}
 .validation-form-text {
   color: red;
   font-size: 15px;
@@ -256,4 +267,11 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+.div-for-inputs {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  grid-row-gap: 20px;
+  justify-content: center;
 }

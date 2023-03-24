@@ -1,14 +1,16 @@
 import React from 'react';
 import listItemsMenu from '../../data/listitemsmenu';
 import Accordion from './Accordion';
+import WeekButtons from '../WeekButtons/WeekButtons';
 import ReservationButton from '../Buttons/ReservationButton';
 import { useDispatch } from 'react-redux';
 import { addFood } from '../../store/actions/food';
 
-const FoodCard = () => {
+const FoodCard = ({ tempCard }) => {
   const dispatch = useDispatch();
   return (
     <div className='main-for-list-reservation'>
+      <WeekButtons />
       {listItemsMenu.map((item) => {
         return (
           <div key={item.id} className='together-list-image-reservation'>

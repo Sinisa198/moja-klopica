@@ -2,6 +2,14 @@ export const ADD_FOOD = 'ADD_FOOD';
 export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
 export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';
+export const GET_FOOD = 'GET_FOOD';
+
+export const fetchFood = (payload) => {
+  return {
+    type: GET_FOOD,
+    payload,
+  };
+};
 
 export const addFood = (payload) => {
   return {

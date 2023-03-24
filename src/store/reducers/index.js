@@ -1,7 +1,17 @@
-import { combineReducers } from 'redux';
 import food from './food';
+import client from './client';
+import restaurant from './restaurant';
+import owner from './owner';
+import login from './auth';
+import register from './register';
 
-const store = combineReducers({
+const reducers = {
   food,
-});
-export default store;
+  client,
+  restaurant,
+  owner,
+  login,
+  register,
+};
+
+export default reducers;
