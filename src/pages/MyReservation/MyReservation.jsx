@@ -44,12 +44,14 @@ const MyReservation = () => {
                   <img src={food.image} alt='' />
                   <div className='myreservation-information'>
                     <p className='name-reservation'>{food.name}</p>
-                    <p className='paragraf-myreservation'>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                      Donec odio. Quisque volutpat mattis eros.Lorem ipsum dolor
-                      sit amet, consectetuer adipiscing elit. Donec odio.
-                      Quisque volutpat mattis eros
-                    </p>
+                    <div className='text-myreservation'>
+                      <p className='paragraf-myreservation'>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Donec odio. Quisque volutpat mattis eros.Lorem
+                        ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Donec odio. Quisque volutpat mattis eros
+                      </p>
+                    </div>
                     <p className='count-myreservation'>1 porcija</p>
                     <div className='price-button'>
                       <p className='price-myreservation'>{food.price} din</p>
@@ -69,6 +71,7 @@ const MyReservation = () => {
                     </div>
                   </div>
                 </div>
+                <hr className='hr-myreservation' />
               </div>
             );
           })}

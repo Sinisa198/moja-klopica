@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PrimaryButton from '../PrimaryButton/PrimaryButton';
 import days from '../../data/days';
 
-const WeekButtons = () => {
-  const [activeButton, setActiveButton] = useState('5');
-
+const WeekButtons = ({ currentDayOfTheMenu, changeCurrentMenuDay }) => {
   return (
     <div className='div-for-days'>
       <div className='day-menu'>
@@ -12,10 +10,10 @@ const WeekButtons = () => {
           return (
             <PrimaryButton
               key={day.id}
-              active={day.id === activeButton}
+              active={day.id === currentDayOfTheMenu}
               text={day.name}
               onPress={() => {
-                setActiveButton(day.id);
+                changeCurrentMenuDay(day.id);
               }}
             />
           );

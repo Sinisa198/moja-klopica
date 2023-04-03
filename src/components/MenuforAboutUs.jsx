@@ -17,7 +17,7 @@ const MenuforAboutUs = () => {
               text={day.name}
               onPress={() => {
                 setButtonActive(day.id);
-                navigate(day.url, { replace: true });
+                navigate(day.url);
               }}
             />
           );

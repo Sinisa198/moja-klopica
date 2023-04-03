@@ -12,7 +12,6 @@ function* authConfirm(data) {
       body: JSON.stringify(data.payload),
     }
   ).then((response) => response.json());
-  console.log('response :', response);
   yield put({ type: AUTH_CONFIRM, payload: response });
 }
 

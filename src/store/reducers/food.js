@@ -8,6 +8,7 @@ import {
 let initState = {
   cart: [],
   sum: 0,
+  count: 1,
 };
 
 const foodReducer = (state = initState, action) => {
@@ -19,6 +20,7 @@ const foodReducer = (state = initState, action) => {
 
       if (sameFoodIndex >= 0) {
         let cart = [...state.cart];
+        let count = state.count;
         cart[sameFoodIndex] = {
           ...cart[sameFoodIndex],
           count: cart[sameFoodIndex].count + action.payload.count,
@@ -38,11 +40,12 @@ const foodReducer = (state = initState, action) => {
       };
     case REMOVE_FROM_CART:
       let newSum = state.sum;
+      let count = state.count;
       return {
         ...state,
         cart: state.cart.filter((food) => {
           if (food.id === action.payload.id) {
-            newSum -= food.price * food.count;
+            newSum -= food.price * count;
             return false;
           }
 
@@ -52,31 +55,37 @@ const foodReducer = (state = initState, action) => {
       };
     case INCREMENT: {
       let incrementSum = state.sum;
+      let count = state.count;
       return {
         ...state,
         cart: state.cart.map((food) => {
           if (food.id === action.payload) {
             incrementSum += food.price;
-            return { ...food, count: food.count + 1 };
+            count++;
+            return { ...food, ...count };
           }
           return food;
         }),
         sum: incrementSum,
+        count: count,
       };
     }
     case DECREMENT: {
       let decrementSum = state.sum;
+      let count = state.count;
       return {
         ...state,
 
         cart: state.cart.map((food) => {
           if (food.id === action.payload) {
             decrementSum -= food.price;
-            return { ...food, count: food.count - 1 };
+            count--;
+            return { ...food, ...count };
           }
           return food;
         }),
         sum: decrementSum,
+        count: count,
       };
     }
     default:

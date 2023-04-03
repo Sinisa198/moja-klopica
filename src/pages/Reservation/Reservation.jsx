@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import ModalReservation from '../../components/ModalReservation/ModalReservation';
@@ -11,14 +11,20 @@ import {
   decrementCart,
 } from '../../store/actions/food';
 import Footer from '../../components/Footer/FooterForRestoran';
-import FoodCard from '../../components/Accordion/FoodCard';
+import { getDayOfTheWeek } from '../../components/utils/weekDay';
+import FoodList from '../../components/Accordion/FoodList';
 
-const Reservation = ({ email }) => {
+const Reservation = () => {
+  const [currentDayOfTheMenu, setCurrentDayOfTheMenu] = useState(
+    getDayOfTheWeek()
+  );
   const [showModal, setShowModal] = useState(false);
   const [date, setDate] = useState(new Date());
   const dispatch = useDispatch();
 
-  const { sum, cart } = useSelector(({ food }) => food);
+  const { sum, cart, count } = useSelector(({ food }) => food);
+
+  const changeCurrentMenuDay = (day) => setCurrentDayOfTheMenu(day);
 
   const showModalMessage = () => {
     if (cart.length >= 1) {
@@ -26,16 +32,7 @@ const Reservation = ({ email }) => {
     }
   };
 
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setDate(new Date());
-    });
-
-    return () => clearInterval(intervalId);
-  }, []);
+  const handleCloseModal = () => setShowModal(false);
 
   return (
     <div className='reservation-wrapper'>
@@ -53,7 +50,10 @@ const Reservation = ({ email }) => {
       </div>
 
       <div className='reservation-main'>
-        <FoodCard />
+        <FoodList
+          currentDayOfTheMenu={currentDayOfTheMenu}
+          changeCurrentMenuDay={changeCurrentMenuDay}
+        />
 
         <div className='cart'>
           <p className='title-cart'>KORPA</p>
@@ -68,11 +68,11 @@ const Reservation = ({ email }) => {
                     <button
                       className='reservation-inc-dec'
                       onClick={() => dispatch(decrementCart(food.id))}
-                      disabled={food.count === 1}
+                      disabled={count === 1}
                     >
                       -
                     </button>
-                    <p>{food.count}</p>
+                    <p>{count}</p>
                     <button
                       className='reservation-inc-dec'
                       onClick={() => dispatch(incrementCart(food.id))}
@@ -95,7 +95,7 @@ const Reservation = ({ email }) => {
                       className='icon-remove-reservation'
                     />
 
-                    <p>{food.price * food.count} RSD</p>
+                    <p>{food.price * count} RSD</p>
                     <div className='div-for-hr-cart'>
                       <hr className='hr-cart' />
                     </div>
