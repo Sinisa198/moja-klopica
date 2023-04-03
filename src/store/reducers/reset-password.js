@@ -1,13 +1,13 @@
 import { RESET_PASSWORD } from '../actions/reset-password';
 
 let initState = {
-  user: '',
+  resetPass: '',
 };
 
 const resetPasswordRegister = (state = initState, action) => {
   switch (action.type) {
     case RESET_PASSWORD:
-      return { ...state, user: action.payload };
+      return { ...state, resetPass: action.payload };
     default:
       return state;
   }

@@ -8,10 +8,13 @@ import restraurantSaga from './sagas/restaurant';
 import ownerSaga from './sagas/owner';
 import loginSaga from './sagas/auth';
 import registerSaga from './sagas/register';
-import resetPasswordSaga from './sagas/reset-password';
 import authConfirmSaga from './sagas/auth-confirm';
-import authPasswordForgotSaga from './sagas/auth-password-forgot';
 import authProfileSaga from './sagas/auth-profile';
+import faqSaga from './sagas/faq';
+import orderSaga from './sagas/order';
+import menuWeekSaga from './sagas/menu-week';
+import resetPasswordSaga from './sagas/reset-password';
+import forgetPasswordSaga from './sagas/forget-password';
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -27,8 +30,11 @@ sagaMiddleware.run(restraurantSaga);
 sagaMiddleware.run(loginSaga);
 sagaMiddleware.run(registerSaga);
 sagaMiddleware.run(resetPasswordSaga);
-sagaMiddleware.run(authPasswordForgotSaga);
 sagaMiddleware.run(authProfileSaga);
 sagaMiddleware.run(authConfirmSaga);
+sagaMiddleware.run(faqSaga);
+sagaMiddleware.run(orderSaga);
+sagaMiddleware.run(menuWeekSaga);
+sagaMiddleware.run(forgetPasswordSaga);
 
 export default store;

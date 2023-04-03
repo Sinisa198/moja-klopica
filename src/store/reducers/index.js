@@ -4,14 +4,28 @@ import restaurant from './restaurant';
 import owner from './owner';
 import login from './auth';
 import register from './register';
+import faq from './faq';
+import authProfile from './auth';
+import order from './order';
+import menuWeek from './menu-week';
+import token from './token';
+import resetPassword from './reset-password';
+import forgetPassword from './forget-password';
 
 const reducers = {
   food,
   client,
+  resetPassword,
   restaurant,
   owner,
   login,
   register,
+  faq,
+  authProfile,
+  order,
+  menuWeek,
+  token,
+  forgetPassword,
 };
 
 export default reducers;

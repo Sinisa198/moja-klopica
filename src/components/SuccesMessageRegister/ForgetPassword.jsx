@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import RestartPassowrd from '../RestartPassword';
 import errorImage from '../../images/errorImage.svg';
 import emailIcon from '../../images/email-icon.svg';
 import close from '../../images/close.svg';
 import Input from '../Input/Input';
 import OpenEmail from '../SuccesMessageRegister/OpenEmail';
-import { resetPassword } from '../../store/actions/reset-password';
+import { forgetPassword } from '../../store/actions/forget-password';
 
 const ForgetPassword = ({ forgetPasswordModal }) => {
   const dispatch = useDispatch();
-  const [credentials, setCredentials] = useState({
-    email: '',
-  });
   const [openEmailModal, setOpenEmailModal] = useState(false);
   const [email, setEmail] = useState('');
   const [error, setError] = useState(false);
@@ -38,12 +34,12 @@ const ForgetPassword = ({ forgetPasswordModal }) => {
 
   const handleClickSubmit = (e) => {
     e.preventDefault();
-    toggleModalOpenEmail();
     dispatch(
-      resetPassword({
+      forgetPassword({
         email,
       })
     );
+    toggleModalOpenEmail();
   };
   return (
     <div>
@@ -62,26 +58,24 @@ const ForgetPassword = ({ forgetPasswordModal }) => {
             <p className='resetemail'>
               Ne brinite, mi cemo Vam poslati instrukcije za resetovanje
             </p>
-            <div className='input-hr' style={{ paddingBottom: '20px' }}>
+            <div className='input-hr'>
               <div className='icon-and-placeholder'>
                 <img src={emailIcon} alt='' />
                 <Input
+                  type='email'
                   placeholder='Email'
                   className='input-login'
-                  type='email'
-                  name='email'
                   value={email}
                   onChange={(e) => changeEmail(e.target.value)}
                 />
-                <div className='input-error-message'>
+                <div className='div-for-error-image'>
                   {error.email && (
-                    <div className='error-message-forget-password'>
+                    <div className='error-message-login'>
                       <img src={errorImage} className='error-image' alt='' />
                     </div>
                   )}
                 </div>
               </div>
-
               <hr className={!error.email ? 'hr-input' : 'hr-input-error'} />
             </div>
             <div className='button-restart-password'>

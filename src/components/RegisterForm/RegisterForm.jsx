@@ -12,13 +12,6 @@ import SuccesMessageRegister from '../SuccesMessageRegister/SuccesMessageRegiste
 
 const RegisterForm = ({ toggleModalRegister }) => {
   const dispatch = useDispatch();
-  const [credentials, setCredentials] = useState({
-    email: '',
-    surname: '',
-    password: '',
-    confirmpassword: '',
-    phoneNumber: '',
-  });
 
   const [successRegister, setSuccessRegister] = useState(false);
   const [name, setName] = useState();
@@ -71,7 +64,7 @@ const RegisterForm = ({ toggleModalRegister }) => {
 
     setError((prevState) => ({
       ...prevState,
-      password: password.length < 5,
+      password: password.length < 8,
     }));
   };
   const changeConfirmPassword = (confirmPassword) => {

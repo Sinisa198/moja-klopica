@@ -2,7 +2,7 @@ import { useState } from 'react';
 import arrow from '../images/arrowmenu.svg';
 import arrowSecond from '../images/arrow-second.svg';
 
-const Accordion = ({ title, content }) => {
+const Accordion = ({ answer, question }) => {
   const [show, setShow] = useState(false);
   const toggleAccordion = () => {
     setShow(!show);
@@ -11,7 +11,7 @@ const Accordion = ({ title, content }) => {
     <div className='accordion-about-us'>
       <div className='accordion-item'>
         <div className='accordion-title-aboutus' active={show ? show : false}>
-          <div>{title}</div>
+          <div>{question}</div>
           <div className='accordion-icon-aboutus' onClick={toggleAccordion}>
             {show ? (
               <img src={arrow} alt='' />
@@ -22,7 +22,7 @@ const Accordion = ({ title, content }) => {
         </div>
         {show && (
           <div className='content-aboutus'>
-            <div>{content}</div>
+            <div>{answer}</div>
           </div>
         )}
       </div>

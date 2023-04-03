@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import ButtonLogin from '../../components/Buttons/ButtonLogin';
+import { useDispatch } from 'react-redux';
 import passwordIconLogin from '../../images/password-icon.svg';
 import emailIconLogin from '../../images/email-icon.svg';
 import errorImage from '../../images/errorImage.svg';
@@ -9,13 +8,11 @@ import { login } from '../../store/actions/auth';
 import { useNavigate } from 'react-router';
 import ForgetPassword from '../SuccesMessageRegister/ForgetPassword';
 import Input from '../Input/Input';
-import SuccesMessageModal from '../SuccesMessageRegister/SuccesMessageRegister';
 
 const LoginForm = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const [credentials, setCredentials] = useState({ email: '', password: '' });
   const [passwordShown, setPasswordShown] = useState(false);
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
@@ -56,13 +53,14 @@ const LoginForm = () => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
+    isValidForm();
+
     dispatch(
       login({
         email,
         password,
       })
     );
-    isValidForm();
   };
 
   return (
