@@ -2,7 +2,11 @@ import { AUTH_PROFILE, SET_USER, AUTH_CONFIRM } from '../actions/auth';
 import { RESET_PASSWORD } from '../actions/reset-password';
 
 let initState = {
-  user: '',
+  user: {
+    name: '',
+    surname: '',
+    phoneNumber: '',
+  },
 };
 
 const clientReducer = (state = initState, action) => {

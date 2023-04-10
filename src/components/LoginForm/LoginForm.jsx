@@ -73,15 +73,17 @@ const LoginForm = () => {
               <div className='input-hr'>
                 <div className='icon-and-placeholder'>
                   <img src={emailIconLogin} alt='' />
-                  <Input
-                    type='email'
-                    placeholder='Email'
-                    className='input-login'
-                    value={email}
-                    onChange={(event) =>
-                      handleOnChangeEmail(event.target.value)
-                    }
-                  />
+                  <div className='container-for-input'>
+                    <Input
+                      type='email'
+                      placeholder='Email'
+                      className='input-login'
+                      value={email}
+                      onChange={(event) =>
+                        handleOnChangeEmail(event.target.value)
+                      }
+                    />
+                  </div>
                   <div className='div-for-error-image'>
                     {error.email && (
                       <div className='error-message-login'>
@@ -95,17 +97,18 @@ const LoginForm = () => {
               <div className='input-hr'>
                 <div className='icon-and-placeholder'>
                   <img src={passwordIconLogin} alt='' />
-
-                  <Input
-                    type={passwordShown ? 'text' : 'password'}
-                    placeholder='Sifra'
-                    className='input-login'
-                    name='name'
-                    value={password}
-                    onChange={(event) =>
-                      handleOnChangePassword(event.target.value)
-                    }
-                  />
+                  <div className='container-for-input'>
+                    <Input
+                      type={passwordShown ? 'text' : 'password'}
+                      placeholder='Sifra'
+                      className='input-login-passowrd'
+                      name='name'
+                      value={password}
+                      onChange={(event) =>
+                        handleOnChangePassword(event.target.value)
+                      }
+                    />
+                  </div>
                   <img
                     src={showPassword}
                     onClick={togglePassword}
@@ -114,7 +117,6 @@ const LoginForm = () => {
                   />
                   {error.password && (
                     <div>
-                      {' '}
                       <img src={errorImage} className='error-image' alt='' />
                     </div>
                   )}

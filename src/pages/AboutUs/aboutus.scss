@@ -137,7 +137,10 @@
   max-width: 500px;
 }
 .container-paragraf-aboutus {
-  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 .paragraf-aboutus {
   font-family: 'Poppins';

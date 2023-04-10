@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import profile from '../../images/profile.svg';
 import lock from '../../images/lock.svg';
 import pen from '../../images/icon-for-changeprofile.svg';
 import Input from '../../components/Input/Input';
 import Confirm from '../../components/Buttons/Confirm';
+import { getUserProfile } from '../../store/actions/auth';
 import HeaderWithLogin from '../../components/Header/HeaderWithLogin';
 import Footer from '../../components/Footer/FooterForRestoran';
 import nameIcon from '../../images/name-icon.svg';
@@ -11,29 +13,27 @@ import phoneIcon from '../../images/phone-icon.svg';
 import emailIcon from '../../images/email-icon.svg';
 import ModalChangePassword from '../../components/ModalChangePassword/ModalChangePassword';
 
-const ChangeProfile = () => {
+const Profile = () => {
+  const dispatch = useDispatch();
+  const user = useSelector(({ authProfile }) => authProfile.user || {});
   const [modalChangePassword, setModalChangePassword] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const [name, setName] = useState();
   const [surname, setSurname] = useState();
   const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState();
-  const [setError] = useState({});
+  const [phoneNumber, setPhoneNumber] = useState();
+  const [setError] = useState();
+
+  useEffect(() => {
+    dispatch(getUserProfile());
+  }, [dispatch]);
 
   const toggleCloseSuccessModal = () => {
     setModalChangePassword(!modalChangePassword);
   };
-  const changeEmail = (email) => {
-    setEmail(email);
-    setError((prevState) => ({
-      ...prevState,
-      email:
-        !/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-          email
-        ),
-    }));
-  };
+
   const isValidPasswordForm = () => {
-    if (name.length && surname.length && phone.length > 4) {
+    if (user.name.length && user.surname.length > 4) {
       setModalChangePassword(true);
     }
   };
@@ -45,21 +45,19 @@ const ChangeProfile = () => {
     }));
   };
 
+  const changePhoneNumber = (phoneNumber) => {
+    setPhoneNumber(phoneNumber);
+    setError((prevState) => ({
+      ...prevState,
+      phoneNumber: phoneNumber.length <= 1,
+    }));
+  };
   const changeSurname = (surname) => {
     setSurname(surname);
 
     setError((prevState) => ({
       ...prevState,
       surname: surname.length <= 3,
-    }));
-  };
-
-  const changePhone = (phone) => {
-    setPhone(phone);
-
-    setError((prevState) => ({
-      ...prevState,
-      phone: phone.length < 7,
     }));
   };
 
@@ -85,14 +83,16 @@ const ChangeProfile = () => {
             <div className='input-hr'>
               <div className='icon-and-placeholder'>
                 <img src={nameIcon} alt='' />
-                <Input
-                  type='text'
-                  placeholder='Ime '
-                  name='name'
-                  className='input-login'
-                  value={name}
-                  onChange={(event) => changeName(event.target.value)}
-                />
+                <div className='container-for-input'>
+                  <Input
+                    type='text'
+                    placeholder='Ime '
+                    name='name'
+                    className='input-login'
+                    value={user.name}
+                    onChange={(event) => changeName(event.target.value)}
+                  />
+                </div>
                 <img src={pen} alt='' className='pen-icon' />
               </div>
 
@@ -101,14 +101,16 @@ const ChangeProfile = () => {
             <div className='input-hr'>
               <div className='icon-and-placeholder'>
                 <img src={nameIcon} alt='' />
-                <Input
-                  type='text'
-                  placeholder='Prezime '
-                  name='surname'
-                  className='input-login'
-                  value={surname}
-                  onChange={(event) => changeSurname(event.target.value)}
-                />
+                <div className='container-for-input'>
+                  <Input
+                    type='text'
+                    placeholder='Prezime '
+                    name='surname'
+                    className='input-login'
+                    value={user.surname}
+                    onChange={(event) => changeSurname(event.target.value)}
+                  />
+                </div>
                 <img src={pen} alt='' className='pen-icon' />
               </div>
 
@@ -117,14 +119,12 @@ const ChangeProfile = () => {
             <div className='input-hr'>
               <div className='icon-and-placeholder'>
                 <img src={emailIcon} alt='' />
-
                 <Input
                   type='text'
                   placeholder='Email '
                   name='email'
                   className='input-login'
-                  value={email}
-                  onChange={(event) => changeEmail(event.target.value)}
+                  value={user.email}
                 />
               </div>
               <hr className='hr-input' />
@@ -133,12 +133,11 @@ const ChangeProfile = () => {
               <div className='icon-and-placeholder'>
                 <img src={phoneIcon} alt='' />
                 <Input
-                  type='number'
                   placeholder='Telefon '
-                  name='phone'
+                  name='phoneNumber'
                   className='input-login'
-                  value={phone}
-                  onChange={(event) => changePhone(event.target.value)}
+                  value={user.phoneNumber}
+                  onChange={(event) => changePhoneNumber(event.target.value)}
                 />
                 <img src={pen} alt='' className='pen-icon' />
               </div>
@@ -157,9 +156,9 @@ const ChangeProfile = () => {
           </div>
         )}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
 
-export default ChangeProfile;
+export default Profile;

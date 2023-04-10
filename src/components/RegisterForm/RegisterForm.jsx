@@ -109,14 +109,16 @@ const RegisterForm = ({ toggleModalRegister }) => {
               <div className='input-hr'>
                 <div className='icon-and-placeholder'>
                   <img src={nameIcon} alt='' />
-                  <Input
-                    type='text'
-                    placeholder='Ime '
-                    name='name'
-                    className='input-login'
-                    value={name}
-                    onChange={(event) => changeName(event.target.value)}
-                  />
+                  <div className='container-for-input'>
+                    <Input
+                      type='text'
+                      placeholder='Ime '
+                      name='name'
+                      className='input-login'
+                      value={name}
+                      onChange={(event) => changeName(event.target.value)}
+                    />
+                  </div>
                   <div className='input-error-message'>
                     {error.name && (
                       <div className='error-message'>
@@ -131,14 +133,16 @@ const RegisterForm = ({ toggleModalRegister }) => {
               <div className='input-hr'>
                 <div className='icon-and-placeholder'>
                   <img src={nameIcon} alt='' />
-                  <Input
-                    type='text'
-                    placeholder='Prezime'
-                    name='name'
-                    className='input-login'
-                    value={surname}
-                    onChange={(event) => changeSurname(event.target.value)}
-                  />
+                  <div className='container-for-input'>
+                    <Input
+                      type='text'
+                      placeholder='Prezime'
+                      name='name'
+                      className='input-login'
+                      value={surname}
+                      onChange={(event) => changeSurname(event.target.value)}
+                    />
+                  </div>
                   <div className='input-error-message'>
                     {error.surname && (
                       <div className='error-message'>
@@ -155,15 +159,17 @@ const RegisterForm = ({ toggleModalRegister }) => {
               <div className='input-hr'>
                 <div className='icon-and-placeholder'>
                   <img src={emailIcon} alt='' />
-                  <Input
-                    type='text'
-                    placeholder='Email'
-                    name='email'
-                    id='email'
-                    className='input-login'
-                    value={email}
-                    onChange={(event) => changeEmail(event.target.value)}
-                  />
+                  <div className='container-for-input'>
+                    <Input
+                      type='text'
+                      placeholder='Email'
+                      name='email'
+                      id='email'
+                      className='input-login'
+                      value={email}
+                      onChange={(event) => changeEmail(event.target.value)}
+                    />
+                  </div>
                   <div className='input-error-message'>
                     {error.email && (
                       <div className='error-message'>
@@ -178,16 +184,16 @@ const RegisterForm = ({ toggleModalRegister }) => {
               <div className='input-hr'>
                 <div className='icon-and-placeholder'>
                   <img src={passwordIcon} alt='' />
-
-                  <Input
-                    type='password'
-                    placeholder='Sifra'
-                    className='input-login'
-                    name='password'
-                    value={password}
-                    onChange={(event) => changePassword(event.target.value)}
-                  />
-
+                  <div className='container-for-input'>
+                    <Input
+                      type='password'
+                      placeholder='Sifra'
+                      className='input-login'
+                      name='password'
+                      value={password}
+                      onChange={(event) => changePassword(event.target.value)}
+                    />
+                  </div>
                   {error.password && (
                     <div className='error-message'>
                       <img src={errorImage} className='error-image' alt='' />
@@ -202,16 +208,16 @@ const RegisterForm = ({ toggleModalRegister }) => {
               <div className='input-hr'>
                 <div className='icon-and-placeholder'>
                   <img src={passwordIcon} alt='' />
-
-                  <Input
-                    type='password'
-                    placeholder='Potvrdi sifru'
-                    className='input-login'
-                    name='password'
-                    value={confirmPassword}
-                    onChange={(e) => changeConfirmPassword(e.target.value)}
-                  />
-
+                  <div className='container-for-input'>
+                    <Input
+                      type='password'
+                      placeholder='Potvrdi sifru'
+                      className='input-login'
+                      name='password'
+                      value={confirmPassword}
+                      onChange={(e) => changeConfirmPassword(e.target.value)}
+                    />
+                  </div>
                   {error.confirmPassword && (
                     <div className='error-message'>
                       <img src={errorImage} className='error-image' alt='' />
@@ -229,15 +235,16 @@ const RegisterForm = ({ toggleModalRegister }) => {
               <div className='input-hr'>
                 <div className='icon-and-placeholder'>
                   <img src={phoneIcon} alt='' />
-
-                  <Input
-                    name='phone'
-                    placeholder='+381'
-                    type='text'
-                    className='input-login'
-                    value={phone}
-                    onChange={(event) => changePhone(event.target.value)}
-                  />
+                  <div className='container-for-input'>
+                    <Input
+                      name='phone'
+                      placeholder='+381'
+                      type='number'
+                      className='input-login'
+                      value={phone}
+                      onChange={(event) => changePhone(event.target.value)}
+                    />
+                  </div>
                   {error.phone && (
                     <div className='error-message'>
                       <img src={errorImage} className='error-image' alt='' />

@@ -13,7 +13,7 @@ export const setUser = (payload) => ({
   payload,
 });
 
-export const authProfile = (payload) => ({
+export const getUserProfile = (payload) => ({
   type: AUTH_PROFILE,
   payload,
 });

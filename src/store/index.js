@@ -5,7 +5,6 @@ import reducers from './reducers';
 import foodSaga from './sagas/food';
 import clientSaga from './sagas/client';
 import restraurantSaga from './sagas/restaurant';
-import ownerSaga from './sagas/owner';
 import loginSaga from './sagas/auth';
 import registerSaga from './sagas/register';
 import authConfirmSaga from './sagas/auth-confirm';
@@ -24,7 +23,6 @@ const store = configureStore({
 });
 
 sagaMiddleware.run(foodSaga);
-sagaMiddleware.run(ownerSaga);
 sagaMiddleware.run(clientSaga);
 sagaMiddleware.run(restraurantSaga);
 sagaMiddleware.run(loginSaga);

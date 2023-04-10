@@ -3,7 +3,7 @@ import { CREATE_ORDER } from '../actions/order';
 
 function* order(data) {
   const response = yield fetch(
-    'https://qfs1bpf9kg.execute-api.us-east-1.amazonaws.com/dev/order',
+    `${process.env.REACT_APP_API_URL}/auth/client/order`,
     {
       method: 'POST',
       headers: {
