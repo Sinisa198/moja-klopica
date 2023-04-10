@@ -4,8 +4,11 @@ import arrow from '../../images/arrow-login-header.svg';
 import reservationIcon from '../../images/reservation.svg';
 import changeIcon from '../../images/changeprofile-icon.svg';
 import logoutIcon from '../../images/logout-icon.svg';
+import { useDispatch } from 'react-redux';
+import { logout } from '../utils/auth';
 
 const Dropdown = () => {
+  const dispatch = useDispatch();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -23,11 +26,18 @@ const Dropdown = () => {
             <img src={reservationIcon} alt='' />
             Moje rezervacije
           </NavLink>
-          <NavLink className='text-dropdown' to='/changeprofile'>
+          <NavLink className='text-dropdown' to='/profile'>
             <img src={changeIcon} alt='' />
             Promeni profil
           </NavLink>
-          <NavLink className='text-dropdown' to='/'>
+          <NavLink
+            className='text-dropdown'
+            onClick={() => {
+              logout('token');
+              dispatch(logout());
+            }}
+            to='/'
+          >
             <img src={logoutIcon} alt='' />
             Odjavi se
           </NavLink>

@@ -1,7 +1,6 @@
 import food from './food';
 import client from './client';
 import restaurant from './restaurant';
-import owner from './owner';
 import login from './auth';
 import register from './register';
 import faq from './faq';
@@ -17,7 +16,6 @@ const reducers = {
   client,
   resetPassword,
   restaurant,
-  owner,
   login,
   register,
   faq,

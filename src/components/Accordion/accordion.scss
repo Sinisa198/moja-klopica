@@ -153,3 +153,10 @@
 .show-header {
   display: block;
 }
+.wrapper-listhomepage {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 100px;
+  width: 100%;
+}

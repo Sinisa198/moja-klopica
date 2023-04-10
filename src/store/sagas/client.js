@@ -1,15 +1,20 @@
-import { put, takeLatest } from 'redux-saga/effects';
-import { GET_ALL_CLIENTS, SET_ALL_CLIENTS } from '../actions/client';
+import { takeLatest, put } from 'redux-saga/effects';
+import { getCookie } from '../../components/utils/auth';
+import { GET_ALL_CLIENTS } from '../actions/client';
+import { SAVE_TOKEN } from '../actions/token';
 
-function* getAllClients() {
-  const response = yield fetch(`${process.env.REACT_APP_API_URL}/client`).then(
-    (response) => response.json()
-  );
+function* getAllClients(action) {
+  const response = yield fetch(`${process.env.REACT_APP_API_URL}/auth/client`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${getCookie('token')}`,
+    },
+    body: JSON.stringify(action.payload),
+  }).then(() => response.json());
 
-  yield put({ type: SET_ALL_CLIENTS, payload: response });
+  yield put({ type: SAVE_TOKEN, payload: response.access_token });
 }
-// 'Authorization': `Bearer ${response.data.access_token}`
-// treba dobaviti token
 
 function* clientSaga() {
   yield takeLatest(GET_ALL_CLIENTS, getAllClients);

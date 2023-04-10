@@ -15,7 +15,7 @@ const FoodList = ({ changeCurrentMenuDay, currentDayOfTheMenu }) => {
   useEffect(() => {
     async function fetchData() {
       const result = await axios.get(
-        'https://qfs1bpf9kg.execute-api.us-east-1.amazonaws.com/dev/restaurant/5/menu/week'
+        `${process.env.REACT_APP_API_URL}/restaurant/5/menu/week`
       );
       setData(
         result.data.filter((menuDay) =>

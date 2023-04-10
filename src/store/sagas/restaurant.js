@@ -12,7 +12,7 @@ import {
 
 function* getAllRestaurant() {
   const response = yield fetch(
-    'https://qfs1bpf9kg.execute-api.us-east-1.amazonaws.com/dev/restaurant'
+    `${process.env.REACT_APP_API_URL}/restaurant`
   ).then((response) => response.json());
 
   yield put({ type: SET_ALL_RESTAURANT, payload: response });
@@ -25,7 +25,7 @@ function* GetActiveRestaurant() {
     dispatch(setActiveRestaurant());
   }, [dispatch]);
   const response = yield fetch(
-    `https://qfs1bpf9kg.execute-api.us-east-1.amazonaws.com/dev/restaurant/${activeRestaurant.restaurant.id}`
+    `${process.env.REACT_APP_API_URL}/restaurant/${activeRestaurant.restaurant.id}`
   ).then((response) => response.json());
 
   yield put({ type: SET_ACTIVE_RESTAURANT, payload: response });

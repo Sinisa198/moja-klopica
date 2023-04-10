@@ -1,7 +1,15 @@
 import { CREATE_ORDER } from '../actions/order';
 
 let initState = {
-  orders: [],
+  orders: {
+    date: '',
+    price: '',
+    restaurantId: '',
+    items: {
+      mealId: '',
+      quality: '',
+    },
+  },
 };
 
 const orderReducer = (state = initState, action) => {

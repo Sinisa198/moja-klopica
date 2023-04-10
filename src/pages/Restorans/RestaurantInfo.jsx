@@ -11,6 +11,7 @@ const RestaurantInfo = () => {
   useEffect(() => {
     dispatch(setActiveRestaurant());
   }, [dispatch]);
+
   useEffect(() => {
     async function fetchData() {
       const result = await axios.get(

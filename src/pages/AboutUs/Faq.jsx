@@ -10,11 +10,7 @@ import Footer from '../../components/Footer/FooterForRestoran';
 
 const Faq = () => {
   const [data, setData] = useState([]);
-  const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(getAllFaq());
-  }, [dispatch]);
   useEffect(() => {
     async function fetchData() {
       const result = await axios.get(

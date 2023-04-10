@@ -1,22 +1,27 @@
 import { put, takeLatest } from 'redux-saga/effects';
-import { AUTH_PROFILE } from '../actions/auth';
+import { AUTH_PROFILE, SET_USER } from '../actions/auth';
+import { getCookie } from '../../components/utils/auth';
 
-function* authProfile(data) {
+function* getProfile() {
   const response = yield fetch(
-    'https://qfs1bpf9kg.execute-api.us-east-1.amazonaws.com/auth/profile',
+    `${process.env.REACT_APP_API_URL}/auth/profile`,
     {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+        'Access-Control-Allow-Headers':
+          'Content-Type, Authorization, Content-Length, X-Requested-With',
+        Authorization: `Bearer ${getCookie('token')}`,
       },
-      body: JSON.stringify(data.payload),
     }
   ).then((response) => response.json());
-  yield put({ type: AUTH_PROFILE, payload: response });
+  yield put({ type: SET_USER, payload: response });
 }
 
 function* authProfileSaga() {
-  yield takeLatest(AUTH_PROFILE, authProfile);
+  yield takeLatest(AUTH_PROFILE, getProfile);
 }
 
 export default authProfileSaga;
