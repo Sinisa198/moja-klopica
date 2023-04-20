@@ -18,14 +18,9 @@ function* getAllRestaurant() {
   yield put({ type: SET_ALL_RESTAURANT, payload: response });
 }
 
-function* GetActiveRestaurant() {
-  const dispatch = useDispatch();
-  const activeRestaurant = useSelector(({ restaurant }) => restaurant);
-  useEffect(() => {
-    dispatch(setActiveRestaurant());
-  }, [dispatch]);
+function* getSingleRestaurant(id) {
   const response = yield fetch(
-    `${process.env.REACT_APP_API_URL}/restaurant/${activeRestaurant.restaurant.id}`
+    `${process.env.REACT_APP_API_URL}/restaurant/${id}`
   ).then((response) => response.json());
 
   yield put({ type: SET_ACTIVE_RESTAURANT, payload: response });
@@ -38,7 +33,7 @@ function* GetActiveMenu() {
     dispatch(setActiveMenu());
   }, [dispatch]);
   const response = yield fetch(
-    `${process.env.REACT_APP_API_URL}/client${activeMenu.restaurant.menu}`
+    `${process.env.REACT_APP_API_URL}/${activeMenu.restaurant.menu}`
   ).then((response) => response.json());
 
   yield put({ type: SET_ACTIVE_MENU, payload: response });
@@ -49,7 +44,7 @@ function* restraurantSaga() {
     GET_ALL_RESTAURANT,
     getAllRestaurant,
     GetActiveMenu,
-    GetActiveRestaurant
+    getSingleRestaurant
   );
 }
 

@@ -32,11 +32,11 @@ const Dropdown = () => {
           </NavLink>
           <NavLink
             className='text-dropdown'
+            to='/'
             onClick={() => {
               logout('token');
               dispatch(logout());
             }}
-            to='/'
           >
             <img src={logoutIcon} alt='' />
             Odjavi se

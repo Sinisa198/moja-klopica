@@ -2,7 +2,13 @@ export const LOGIN = 'LOGIN';
 export const SET_USER = 'SET_USER';
 export const AUTH_PROFILE = 'AUTH_PROFILE';
 export const AUTH_CONFIRM = 'AUTH_CONFIRM';
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGIN_FAILURE = 'LOGIN_FAILURE';
 
+export const loginFailure = (stateError) => ({
+  type: LOGIN_FAILURE,
+  stateError,
+});
 export const login = (payload) => ({
   type: LOGIN,
   payload,
@@ -18,7 +24,7 @@ export const getUserProfile = (payload) => ({
   payload,
 });
 
-export const authConfirm = (payload) => ({
-  type: AUTH_CONFIRM,
+export const loginSuccess = (payload) => ({
+  type: LOGIN_SUCCESS,
   payload,
 });

@@ -13,7 +13,6 @@ import PrivacyPolicy from './pages/AboutUs/PrivacyPolicy';
 import TermsOfUseAboutus from './pages/AboutUs/TermsOfUseAboutUs';
 import ListRestaurant from './pages/ListRestaurant/ListRestaurant';
 import RestaurantInfo from './pages/Restorans/RestaurantInfo';
-import PasswordIsChanged from './components/PasswordIsChanged/PasswordIsChanged';
 
 const App = () => {
   return (
@@ -31,7 +30,6 @@ const App = () => {
         <Route path='/aboutus/termsofuse' element={<TermsOfUseAboutus />} />
         <Route path='/listrestaurant' element={<ListRestaurant />} />
         <Route path='/restaurantinfo' element={<RestaurantInfo />} />
-        <Route path='/s' element={<PasswordIsChanged />} />
       </Routes>
     </div>
   );

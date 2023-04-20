@@ -13,9 +13,7 @@ const Faq = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const result = await axios.get(
-        'https://qfs1bpf9kg.execute-api.us-east-1.amazonaws.com/dev/faq'
-      );
+      const result = await axios.get(`${process.env.REACT_APP_API_URL}/faq`);
       setData(result.data);
     }
     fetchData();

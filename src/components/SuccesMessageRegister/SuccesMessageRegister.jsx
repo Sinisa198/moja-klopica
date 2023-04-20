@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import validateMessageImage from '../../images/validatemessage.svg';
 import ButtonClose from '../Buttons/ButtonClose';
+import { confirmTokenRequest } from '../../store/actions/auth-confirm';
 
-const SuccesMessageModal = (props) => {
+const SuccesMessageModal = ({ props, email }) => {
+  const dispatch = useDispatch();
+  const token = props.match.params.token;
+  useEffect(() => {
+    dispatch(confirmTokenRequest(token));
+  }, [dispatch, token]);
+
   return (
     <div className='succes-wrapper'>
       <div className='succes-message'>
@@ -11,8 +19,8 @@ const SuccesMessageModal = (props) => {
         </div>
         <div className='paragraf-success-message'>
           <p className='text-for-succes-message'>
-            Poslat je verifikacioni email na {props.email} Neophodno je
-            verifikovati nalog kako bi se registracija zavrsila.
+            Poslat je verifikacioni email na {email} Neophodno je verifikovati
+            nalog kako bi se registracija zavrsila.
           </p>
         </div>
         <div className='button-succesmessage'>
