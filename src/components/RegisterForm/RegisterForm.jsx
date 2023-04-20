@@ -8,11 +8,11 @@ import emailIcon from '../../images/email-icon.svg';
 import { register } from '../../store/actions/register';
 import Input from '../Input/Input';
 import errorImage from '../../images/errorImage.svg';
-import SuccesMessageRegister from '../SuccesMessageRegister/SuccesMessageRegister';
+import SuccesMessageRegister from '../../components/SuccesMessageRegister/SuccesMessageRegister';
 
 const RegisterForm = ({ toggleModalRegister }) => {
   const dispatch = useDispatch();
-
+  const [isValid, setIsValid] = useState(false);
   const [successRegister, setSuccessRegister] = useState(false);
   const [name, setName] = useState();
   const [surname, setSurname] = useState();
@@ -44,8 +44,8 @@ const RegisterForm = ({ toggleModalRegister }) => {
     }));
   };
 
-  const isValidRegisterForm = () => {
-    if (name.length && surname.length >= 2 && phone.length > 7) {
+  const isValidForm = () => {
+    if (password && email && surname && phone) {
       setSuccessRegister(true);
     }
   };
@@ -83,9 +83,47 @@ const RegisterForm = ({ toggleModalRegister }) => {
       phone: phone.length < 7,
     }));
   };
-
   const handleSubmit = (event) => {
     event.preventDefault();
+    if (!email) {
+      setError((prevState) => ({
+        ...prevState,
+        email: true,
+      }));
+    }
+
+    if (!password) {
+      setError((prevState) => ({
+        ...prevState,
+        password: true,
+      }));
+    }
+    if (!name) {
+      setError((prevState) => ({
+        ...prevState,
+        name: true,
+      }));
+    }
+
+    if (!surname) {
+      setError((prevState) => ({
+        ...prevState,
+        surname: true,
+      }));
+    }
+    if (!confirmPassword) {
+      setError((prevState) => ({
+        ...prevState,
+        confirmPassword: true,
+      }));
+    }
+
+    if (!phone) {
+      setError((prevState) => ({
+        ...prevState,
+        phone: true,
+      }));
+    }
     dispatch(
       register({
         email,
@@ -96,7 +134,7 @@ const RegisterForm = ({ toggleModalRegister }) => {
         name,
       })
     );
-    isValidRegisterForm();
+    isValidForm();
   };
 
   return (
@@ -239,10 +277,11 @@ const RegisterForm = ({ toggleModalRegister }) => {
                     <Input
                       name='phone'
                       placeholder='+381'
-                      type='number'
+                      type='text'
                       className='input-login'
                       value={phone}
                       onChange={(event) => changePhone(event.target.value)}
+                      pattern='[0-9]*'
                     />
                   </div>
                   {error.phone && (

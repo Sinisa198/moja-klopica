@@ -21,11 +21,6 @@ const ListRestaurant = () => {
         >
           <div>
             <p>{restaurant.name}</p>
-            <p>{restaurant.address}</p>
-            <p>{restaurant.category}</p>
-            <p>{restaurant.phoneNumber}</p>
-            <p>{restaurant.description}</p>
-            <img src={restaurant.image} alt='' />
           </div>
         </NavLink>
       ))}

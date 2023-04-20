@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import passwordIconLogin from '../../images/password-icon.svg';
 import emailIconLogin from '../../images/email-icon.svg';
 import errorImage from '../../images/errorImage.svg';
 import showPassword from '../../images/showpassword.svg';
 import { login } from '../../store/actions/auth';
-import { useNavigate } from 'react-router';
 import ForgetPassword from '../SuccesMessageRegister/ForgetPassword';
 import Input from '../Input/Input';
 
 const LoginForm = () => {
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
+  const errorMessage = useSelector(({ stateError }) => stateError.stateError);
   const [passwordShown, setPasswordShown] = useState(false);
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
@@ -22,17 +21,13 @@ const LoginForm = () => {
   const togglePassword = () => {
     setPasswordShown(!passwordShown);
   };
-  const isValidForm = () => {
-    if (password?.length > 5 && email?.length > 7) {
-      navigate('/reservation');
-    }
-  };
+
   const handleOnChangePassword = (password) => {
     setPassword(password);
 
     setError((prevState) => ({
       ...prevState,
-      password: password.length < 5,
+      password: password.length < 8,
     }));
   };
 
@@ -51,16 +46,25 @@ const LoginForm = () => {
   const forgetPasswordModal = () => {
     setForgetPassword(!forgetPassword);
   };
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    isValidForm();
 
-    dispatch(
-      login({
-        email,
-        password,
-      })
-    );
+    if (!email) {
+      setError((prevState) => ({
+        ...prevState,
+        email: true,
+      }));
+    }
+
+    if (!password) {
+      setError((prevState) => ({
+        ...prevState,
+        password: true,
+      }));
+    }
+    if (password && email && !error.email && !error.password) {
+      dispatch(login({ email, password }));
+    }
   };
 
   return (
@@ -92,6 +96,7 @@ const LoginForm = () => {
                     )}
                   </div>
                 </div>
+
                 <hr className={!error.email ? 'hr-input' : 'hr-input-error'} />
               </div>
               <div className='input-hr'>
@@ -115,6 +120,7 @@ const LoginForm = () => {
                     className='showpass-icon'
                     alt=''
                   />
+
                   {error.password && (
                     <div>
                       <img src={errorImage} className='error-image' alt='' />
@@ -124,17 +130,22 @@ const LoginForm = () => {
                 <hr
                   className={!error.password ? 'hr-input' : 'hr-input-error'}
                 />
+
                 <p className='forget-password' onClick={forgetPasswordModal}>
                   Zaboravili ste sifru?
                 </p>
               </div>
+              {errorMessage && <p>Email ili lozinka nisu ispravni.</p>}
             </div>
             <div className='div-for-login-button'>
-              <button className='button-for-login-page'>ULOGUJTE SE</button>
+              <button className='button-for-login-page' type='submit'>
+                ULOGUJTE SE
+              </button>
             </div>
           </div>
         </form>
       )}
+
       {forgetPassword && (
         <div className='modal' onClick={setPasswordShown}>
           <div onClick={forgetPasswordModal} className='overlay'></div>

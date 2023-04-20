@@ -10,6 +10,7 @@ import menuWeek from './menu-week';
 import token from './token';
 import resetPassword from './reset-password';
 import forgetPassword from './forget-password';
+import stateError from './auth';
 
 const reducers = {
   food,
@@ -24,6 +25,7 @@ const reducers = {
   menuWeek,
   token,
   forgetPassword,
+  stateError,
 };
 
 export default reducers;

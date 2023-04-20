@@ -6,7 +6,7 @@ import { removeFromCart } from '../../store/actions/food';
 import WeekButtons from '../../components/WeekButtons/WeekButtons';
 import ModalForRemoveItem from '../../components/SuccesMessageRegister/ModalForRemoveItem';
 
-const MyReservation = () => {
+const MyReservation = ({ changeCurrentMenuDay, currentDayOfTheMenu }) => {
   const dispatch = useDispatch();
   const [showModal, setShowModal] = useState(false);
   const { cart } = useSelector(({ food }) => food);
@@ -26,7 +26,10 @@ const MyReservation = () => {
           Rezervacije se mogu otkazati do ponoci
         </p>
       </div>
-      <WeekButtons />
+      <WeekButtons
+        changeCurrentMenuDay={changeCurrentMenuDay}
+        currentDayOfTheMenu={currentDayOfTheMenu}
+      />
       <div className='month-day'>
         <p>{month}</p>
         <p>{day}</p>

@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import HomePageHeader from '../../components/RegisterLoginForm/RegisterLoginForm';
 import Header from '../../components/Header/Header';
-import listItemsMenu from '../../data/listitemsmenu';
-import WeekButtons from '../../components/WeekButtons/WeekButtons';
-import Accordion from '../../components/Accordion/Accordion';
 import Footer from '../../components/Footer/FooterForRestoran';
 import { getDayOfTheWeek } from '../../components/utils/weekDay';
 import FoodListHomePage from '../../components/Accordion/FoodListHomePage';
