@@ -11,7 +11,7 @@ const Accordion = ({ answer, question }) => {
     <div className='accordion-about-us'>
       <div className='accordion-item'>
         <div className='accordion-title-aboutus' active={show ? show : false}>
-          <div>{question}</div>
+          <div className='questions'>{question}</div>
           <div className='accordion-icon-aboutus' onClick={toggleAccordion}>
             {show ? (
               <img src={arrow} alt='' />

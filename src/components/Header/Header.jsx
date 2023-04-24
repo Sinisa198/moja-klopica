@@ -5,19 +5,28 @@ import logo from '../../images/logo-klopica.png';
 import DropDown from '../DropDown/DropDown';
 import { getCookie } from '../utils/auth';
 import profile from '../../images/profile.svg';
+import burgerIcon from '../../images/burger-icon.svg';
+import SideBar from '../SideBar/SideBar';
 
 const Header = () => {
   const [modalLogin, setModalLogin] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(!!getCookie('token'));
   useEffect(() => {
     setIsLoggedIn(!!getCookie('token'));
   }, [[getCookie('token')]]);
-
+  const closeSideBar = () => {
+    setShowSidebar(false);
+  };
   if (modalLogin) {
     document.body.classList.add('active-modal');
   } else {
     document.body.classList.remove('active-modal');
   }
+
+  const showSideBar = () => {
+    setShowSidebar(true);
+  };
   const toggleModalLogin = () => {
     setModalLogin(!modalLogin);
   };
@@ -40,6 +49,7 @@ const Header = () => {
         <NavLink to='/aboutus' className='text-for-menu'>
           O nama
         </NavLink>
+
         {isLoggedIn && (
           <div className='drop-down-forheader'>
             <img src={profile} alt='' />
@@ -47,6 +57,12 @@ const Header = () => {
           </div>
         )}
       </div>
+      {showSidebar && (
+        <div className='modal'>
+          <div className='overlay'></div>
+          <SideBar closeSideBar={closeSideBar} />
+        </div>
+      )}
 
       {modalLogin && (
         <div className='modal'>
@@ -54,6 +70,9 @@ const Header = () => {
           <LoginForm />
         </div>
       )}
+      <div className='burger-menus'>
+        <img src={burgerIcon} alt='' onClick={showSideBar} />
+      </div>
     </div>
   );
 };
