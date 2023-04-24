@@ -15,7 +15,7 @@ const AboutUs = () => {
         <MenuforAboutUs />
         <div className='text-and-image'>
           <div className='image-about-us'>
-            <img src={aboutusImage} alt='' />
+            <img src={aboutusImage} alt='' className='image-for-about-us' />
           </div>
           <div className='text-about-us'>
             <p className='title-aboutus'>Lorem ipsum?</p>

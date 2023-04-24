@@ -10,7 +10,11 @@
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 3px solid #c40016;
+
+  @media screen and (max-width: 375px) {
+    width: 375px;
+    background-color: #ffffff;
+  }
 
   .footer-links {
     display: flex;
@@ -53,7 +57,24 @@
   width: 14px;
   height: 13px;
 }
+.responsive-footer-text {
+  display: none;
 
+  @media screen and (max-width: 375px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-column-gap: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+    color: #333333;
+  }
+}
 .footer-privacy {
   display: flex;
   flex-direction: column;
@@ -68,6 +89,21 @@
     font-size: 15px;
     line-height: 22px;
     color: #ffffff;
+  }
+}
+.test {
+  display: none;
+
+  @media screen and (max-width: 375px) {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333;
   }
 }
 .terms-of-use-footer {
@@ -104,6 +140,21 @@
   align-items: center;
   text-align: center;
 }
+@media screen and (max-width: 375px) {
+  .logo-for-footer {
+    display: none;
+  }
+}
+.divtest {
+  display: none;
+
+  @media screen and (max-width: 375px) {
+    .divtest {
+      display: flex;
+      background-color: red;
+    }
+  }
+}
 .other-termsofuse {
   display: flex;
   flex-direction: row;
@@ -111,4 +162,8 @@
   text-align: center;
   justify-content: space-between;
   grid-column-gap: 25px;
+
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
 }

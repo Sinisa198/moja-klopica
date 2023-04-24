@@ -8,10 +8,16 @@ const Footer = () => {
   return (
     <div className='footer-wrapper'>
       <div className='footer-privacy'>
+        <div className='test'>
+          <p>Pocetna</p>
+          <p>Rezervisi</p>
+          <p>izmena profila</p>
+          <p>O nama </p>
+        </div>
         <div className='langue-footer'>
           <div className='text-and-icon'>
-            <img src={logoFooter} alt='' />
-            <div>
+            <img src={logoFooter} alt='' className='logo-for-footer' />
+            <div className='country-div'>
               <img src={location} alt='' className='icon-location' />
               Srbija
             </div>
@@ -20,17 +26,24 @@ const Footer = () => {
               Srpski
             </div>
           </div>
+
           <div className='terms-of-use-footer'>
             <div className='other-termsofuse'>
               <p>Uslovi koriscenja</p>
               <p>Politika privatnosti</p>
               <p>FAQ</p>
             </div>
+
             <div className='div-for-copyright'>
               <img src={copyRight} alt='' className='icon-copyright' />
               Moja klopica 2022
             </div>
           </div>
+        </div>
+        <div className='responsive-footer-text'>
+          <p>Srbija</p>
+          <p>Srpski</p>
+          <p>Moja Klopica 2022 </p>
         </div>
       </div>
     </div>
