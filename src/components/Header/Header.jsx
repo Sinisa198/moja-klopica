@@ -58,7 +58,7 @@ const Header = () => {
         )}
       </div>
       {showSidebar && (
-        <div className='modal'>
+        <div className='modal-burger-menu'>
           <div className='overlay'></div>
           <SideBar closeSideBar={closeSideBar} />
         </div>
