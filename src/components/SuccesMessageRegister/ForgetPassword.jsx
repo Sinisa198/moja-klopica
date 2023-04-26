@@ -42,7 +42,7 @@ const ForgetPassword = ({ forgetPasswordModal }) => {
     toggleModalOpenEmail();
   };
   return (
-    <div>
+    <div className='forgetpassword-wrapper'>
       {!openEmailModal && (
         <form onSubmit={handleClickSubmit} className='form-for-forgetpassword'>
           <div className='forget-password-modal '>

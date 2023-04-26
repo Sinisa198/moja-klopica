@@ -114,7 +114,6 @@
 .div-for-menu-price-reservation {
   display: flex;
   width: 100%;
-  max-width: 229px;
   text-align: center;
   grid-column-gap: 10px;
   justify-content: center;
@@ -123,6 +122,14 @@
   font-weight: 400;
   font-size: 18px;
   color: #333333;
+
+  @media screen and (max-width: 375px) {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 .incremente-decremente {
   border: 1px solid #c10016;

@@ -37,4 +37,31 @@
   .icon-sidebar {
     margin-right: 10px;
   }
+  .icon-sidebar-and-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    grid-column-gap: 10px;
+  }
+  .login-sidebar {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 30px;
+  }
+  .name-surname-sidebar {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    color: #ffffff;
+  }
+  .span-surname {
+    margin-left: 5px;
+  }
+  .profile-icon-sidebar {
+    width: 56px;
+    height: 56px;
+  }
 }

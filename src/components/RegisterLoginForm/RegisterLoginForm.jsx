@@ -28,6 +28,7 @@ const RegisterLoginForm = () => {
       <div className='div-for-together-text'>
         <div className='big-title'>
           <p className='text-for-big-title'>MOJA KLOPICA</p>
+          <p className='title-home-page-responsive'>DUNDA</p>
         </div>
         <div className='lorem-ipsum-text'>
           <p className='lorem-text'>

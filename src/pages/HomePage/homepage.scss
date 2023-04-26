@@ -18,6 +18,21 @@
     font-size: 40px;
     line-height: 60px;
     color: #c10016;
+
+    @media screen and (max-width: 375px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 267px;
+      height: 35px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 23px;
+      line-height: 34px;
+      color: #c10016;
+    }
   }
   .div-for-title-homepage {
     height: 100%;
@@ -95,6 +110,9 @@
     align-items: center;
     text-align: center;
 
+    @media screen and (max-width: 375px) {
+      grid-column-gap: 0px;
+    }
     .button-not-active {
       width: 200px;
       height: 67px;
@@ -107,6 +125,14 @@
       font-size: 32px;
       background-color: #ffff;
       line-height: 44px;
+
+      @media screen and (max-width: 375px) {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+        border-radius: 46px;
+        padding: 20px;
+      }
     }
     .button-not-active:hover {
       color: #c10016;
@@ -125,6 +151,14 @@
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
+
+    @media screen and (max-width: 375px) {
+      width: 60px;
+      height: 60px;
+      font-size: 20px;
+      background: #c10016;
+      border-radius: 46px;
+    }
   }
 
   .list-meni-text {
