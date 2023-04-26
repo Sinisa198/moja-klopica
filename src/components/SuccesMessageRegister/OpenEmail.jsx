@@ -7,7 +7,7 @@ const OpenEmail = ({ email, closeModal }) => {
     event.preventDefault();
   };
   return (
-    <div className='forget-password-modal ' onSubmit={dontRefresh}>
+    <div className='forget-password-modal' onSubmit={dontRefresh}>
       <div className='container-for-image-openemail'>
         <img src={close} alt='' className='close-icon' onClick={closeModal} />
       </div>

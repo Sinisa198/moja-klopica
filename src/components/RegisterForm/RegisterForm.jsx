@@ -7,6 +7,7 @@ import passwordIcon from '../../images/password-icon.svg';
 import emailIcon from '../../images/email-icon.svg';
 import { register } from '../../store/actions/register';
 import Input from '../Input/Input';
+import arrow from '../../images/arrow-register-responsive.svg';
 import errorImage from '../../images/errorImage.svg';
 import SuccesMessageRegister from '../../components/SuccesMessageRegister/SuccesMessageRegister';
 

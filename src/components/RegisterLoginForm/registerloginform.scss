@@ -15,6 +15,10 @@
     justify-content: flex-end;
     align-items: flex-end;
     height: 80%;
+
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
   }
   .text-for-big-title {
     width: 600px;
@@ -27,8 +31,26 @@
     text-transform: uppercase;
     color: #c10016;
     padding-left: 67px;
-  }
 
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .title-home-page-responsive {
+      width: 210px;
+      height: 79px;
+      font-family: 'Londrina Solid';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 80px;
+      line-height: 98.8%;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #c10016;
+      padding: 40px 0px 0px 20px;
+    }
+  }
   .lorem-text {
     width: 525px;
     height: 104px;
@@ -38,6 +60,18 @@
     line-height: 52px;
     color: #ffffff;
     padding-left: 67px;
+
+    @media screen and (max-width: 375px) {
+      width: 358.53px;
+      height: 66px;
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 33px;
+      padding-left: 20px;
+      color: #ffffff;
+    }
   }
   .buttons-for-home-page {
     display: flex;
@@ -45,6 +79,12 @@
     grid-column-gap: 29px;
     padding-left: 48px;
     cursor: pointer;
+
+    @media screen and (max-width: 375px) {
+      width: 284.99px;
+      height: 45px;
+      padding-left: 20px;
+    }
   }
   .text-for-buttons {
     width: 145px;
@@ -62,6 +102,15 @@
     border: 4px solid #c10016;
     border-radius: 40px;
     cursor: pointer;
+
+    @media screen and (max-width: 375px) {
+      box-sizing: border-box;
+      width: 130px;
+      height: 45px;
+      font-size: 15px;
+      border: 3px solid #c10016;
+      border-radius: 56px;
+    }
   }
   .text-menu {
     display: flex;
@@ -160,6 +209,12 @@
   max-width: 700px;
   min-width: 300px;
   padding: 81px;
+
+  @media screen and (max-width: 375px) {
+    width: 375px;
+    height: 700px;
+    background-color: #ffffff;
+  }
 }
 .button-for-login-page {
   display: flex;
@@ -178,6 +233,15 @@
   line-height: 42px;
   color: #ffffff;
   cursor: pointer;
+
+  @media screen and (max-width: 375px) {
+    box-sizing: border-box;
+    width: 305px;
+    height: 40px;
+    background: #c10016;
+    border: 1px solid #c10016;
+    border-radius: 15px;
+  }
 }
 .validation-form-text {
   color: red;
@@ -203,6 +267,12 @@
   padding-right: 100px;
   max-width: 600px;
   min-width: 300px;
+
+  @media screen and (max-width: 375px) {
+    width: 375px;
+    height: 700px;
+    background-color: #ffffff;
+  }
 }
 .hr-input-phone {
   width: 130px;
@@ -223,6 +293,15 @@
   line-height: 48px;
   text-align: center;
   color: #333333;
+
+  @media screen and (max-width: 375px) {
+    height: 10%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
 }
 .hr-input {
   width: 100%;
@@ -284,7 +363,21 @@ input::-webkit-inner-spin-button {
 
 .input-login {
   width: 100%;
+
+  @media screen and (max-width: 375px) {
+    width: 341px;
+    height: 46px;
+    mix-blend-mode: normal;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.8);
+    padding: 20px;
+  }
 }
 .container-for-input {
   width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  .input-hr {
+    padding: 0px 20px 0px 20px;
+  }
 }
