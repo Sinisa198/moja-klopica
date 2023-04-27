@@ -132,13 +132,15 @@ const Profile = () => {
             <div className='input-hr'>
               <div className='icon-and-placeholder'>
                 <img src={phoneIcon} alt='' />
-                <Input
-                  placeholder='Telefon '
-                  name='phoneNumber'
-                  className='input-login'
-                  value={user.phoneNumber}
-                  onChange={(event) => changePhoneNumber(event.target.value)}
-                />
+                <div className='together-input-icon'>
+                  <Input
+                    placeholder='Telefon '
+                    name='phoneNumber'
+                    className='input-login'
+                    value={user.phoneNumber}
+                    onChange={(event) => changePhoneNumber(event.target.value)}
+                  />
+                </div>
                 <img src={pen} alt='' className='pen-icon' />
               </div>
 
@@ -156,7 +158,7 @@ const Profile = () => {
           </div>
         )}
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

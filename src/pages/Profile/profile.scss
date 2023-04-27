@@ -5,6 +5,10 @@
   .hr-input {
     margin-bottom: 20px;
     width: 600px;
+
+    @media screen and (max-width: 375px) {
+      width: 337px;
+    }
   }
   .changeprofile-text {
     font-family: 'Poppins';
@@ -14,6 +18,16 @@
     line-height: 48px;
     color: #333333;
     padding-left: 102px;
+
+    @media screen and (max-width: 375px) {
+      padding: 0px 0px 0px 10px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #333333;
+    }
   }
   .container-for-input {
     width: 100%;
@@ -25,9 +39,23 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 375px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+    }
+
     .icon-changeprofile {
       width: 116.97px;
       height: 125px;
+      @media screen and (max-width: 375px) {
+        width: 72px;
+        height: 72px;
+      }
     }
   }
   input[type='number'] {
@@ -64,5 +92,14 @@
   }
   .pen-icon {
     margin-left: 300px;
+
+    @media screen and (max-width: 375px) {
+      margin-left: 0;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .together-input-icon {
+    width: 100%;
   }
 }

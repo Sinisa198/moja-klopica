@@ -50,12 +50,12 @@ const SideBar = ({ closeSideBar }) => {
               <img src={reservation} alt='' className='icon-sidebar' />
               Rezervisi
             </a>
-            <a href='/' className='navigation-sidebar'>
+            <a href='/myreservation' className='navigation-sidebar'>
               <img src={myReservation} alt='' className='icon-sidebar' />
               Moje rezervacije
             </a>
 
-            <a href='/' className='navigation-sidebar'>
+            <a href='/profile' className='navigation-sidebar'>
               <img src={changeProfile} alt='' className='icon-sidebar' />
               Izmena profila
             </a>

@@ -46,9 +46,7 @@ const RegisterForm = ({ toggleModalRegister }) => {
   };
 
   const isValidForm = () => {
-    if (password && email && surname && phone) {
-      setSuccessRegister(true);
-    }
+    setSuccessRegister(true);
   };
 
   const changeSurname = (surname) => {
