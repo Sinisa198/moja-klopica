@@ -6,8 +6,7 @@
     flex-direction: row;
   }
 }
-.reservation-wrapper {
-}
+
 .image-list-reservation {
   width: 395px;
   height: 362px;
@@ -19,6 +18,16 @@
 
 .together-list-image-reservation {
   width: 370px;
+
+  @media screen and (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    width: 145px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+  }
 }
 .main-for-list-reservation {
   width: 100%;
@@ -45,6 +54,14 @@
   .title {
     font-size: 22px;
     height: 90px;
+
+    @media screen and (max-width: 375px) {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 20px;
+    }
   }
   .text.show {
     width: 250px;
@@ -55,6 +72,15 @@
     line-height: 30px;
     padding-top: 10px;
     color: #333333;
+
+    @media screen and (max-width: 375px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 10px;
+      text-align: center;
+      width: 130px;
+    }
   }
 }
 .reservation-inc-dec {
@@ -72,6 +98,20 @@
   text-align: center;
   line-height: 60px;
   color: #c10016;
+
+  @media screen and (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 35px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 34px;
+  }
 }
 
 .reservation-main {
@@ -79,13 +119,23 @@
   flex-direction: row;
   width: 100%;
 
+  @media screen and (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   .day-menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0px 20px 0px 20px;
-    grid-column-gap: 5px;
+    grid-column-gap: 10px;
     padding-bottom: 40px;
+
+    @media screen and (max-width: 375px) {
+      grid-column-gap: 0px;
+      width: 100%;
+      padding: 0px;
+    }
   }
 }
 .paragraf-reservation {
@@ -96,6 +146,10 @@
   line-height: 24px;
   text-align: center;
   color: #333333;
+
+  @media screen and (max-width: 375px) {
+    font-size: 10px;
+  }
   .reservation-hr {
     width: 150px;
   }
@@ -113,7 +167,7 @@
 }
 .div-for-menu-price-reservation {
   display: flex;
-  width: 100%;
+  width: 65%;
   text-align: center;
   grid-column-gap: 10px;
   justify-content: center;
@@ -130,11 +184,6 @@
     align-items: center;
     text-align: center;
   }
-}
-.incremente-decremente {
-  border: 1px solid #c10016;
-  border-radius: 10px;
-  padding: 10px 20px 10px 20px;
 }
 
 .price-reservation {
@@ -179,6 +228,11 @@
   max-width: 229px;
   max-height: 209.87px;
   border-radius: 40px;
+
+  @media screen and (max-width: 375px) {
+    width: 143px;
+    height: 132px;
+  }
 }
 .button-active {
   background-color: #c10016;
@@ -193,6 +247,13 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 44px;
+
+  @media screen and (max-width: 375px) {
+    width: 60px;
+    height: 60px;
+    background: #c10016;
+    border-radius: 46px;
+  }
 }
 .confirm-reservation {
   display: flex;
@@ -202,17 +263,31 @@
   justify-content: center;
   align-items: center;
 }
-.button-not-active {
-  width: 150px;
+.button-active {
+  background-color: #c10016;
+  color: #ffffff;
+  width: 200px;
   height: 67px;
-  color: #28272033;
   border: 1px solid #44454733;
   border-radius: 20px;
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 32px;
   line-height: 44px;
+
+  @media screen and (max-width: 375px) {
+    width: 50px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    height: 50px;
+
+    background: #c10016;
+    border-radius: 46px;
+  }
 }
 .name-and-count {
   padding-right: 20px;
@@ -232,6 +307,7 @@
   max-width: 413px;
   max-height: 647px;
   flex-direction: column;
+  background-color: red;
   overflow-y: scroll;
   background: rgba(217, 217, 217, 0.22);
   border-radius: 40px;
@@ -268,6 +344,7 @@
     line-height: 36px;
     color: #333333;
   }
+
   .name-food {
     font-family: 'Poppins';
     font-style: normal;

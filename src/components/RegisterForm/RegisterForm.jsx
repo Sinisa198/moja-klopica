@@ -123,17 +123,31 @@ const RegisterForm = ({ toggleModalRegister }) => {
         phone: true,
       }));
     }
-    dispatch(
-      register({
-        email,
-        surname,
-        password,
-        confirmPassword,
-        phoneNumber: phone,
-        name,
-      })
-    );
-    isValidForm();
+    if (
+      password &&
+      name &&
+      email &&
+      surname &&
+      confirmPassword &&
+      phone &&
+      !error.email &&
+      !error.password &&
+      !error.name &&
+      !error.confirmPassword &&
+      !error.phone
+    ) {
+      dispatch(
+        register({
+          email,
+          surname,
+          password,
+          confirmPassword,
+          phoneNumber: phone,
+          name,
+        })
+      );
+      isValidForm();
+    }
   };
 
   return (
