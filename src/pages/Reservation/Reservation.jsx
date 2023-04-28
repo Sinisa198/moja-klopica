@@ -12,7 +12,7 @@ import {
 } from '../../store/actions/food';
 import Footer from '../../components/Footer/FooterForRestoran';
 import { getDayOfTheWeek } from '../../components/utils/weekDay';
-import FoodList from '../../components/Accordion/FoodList';
+import FoodListHomePage from '../../components/Accordion/FoodList';
 
 const Reservation = () => {
   const [currentDayOfTheMenu, setCurrentDayOfTheMenu] = useState(
@@ -20,6 +20,7 @@ const Reservation = () => {
   );
   const [showModal, setShowModal] = useState(false);
   const [date, setDate] = useState(new Date());
+
   const dispatch = useDispatch();
 
   const { sum, cart, count } = useSelector(({ food }) => food);
@@ -50,11 +51,10 @@ const Reservation = () => {
       </div>
 
       <div className='reservation-main'>
-        <FoodList
+        <FoodListHomePage
           currentDayOfTheMenu={currentDayOfTheMenu}
           changeCurrentMenuDay={changeCurrentMenuDay}
         />
-
         <div className='cart'>
           <p className='title-cart'>KORPA</p>
 
